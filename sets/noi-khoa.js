@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Bộ đề: Nội khoa — 30 ca lâm sàng, trọng tâm chẩn đoán và bước xử trí tiếp theo.
+   Bộ đề: Nội khoa — 50 ca lâm sàng, trọng tâm chẩn đoán và bước xử trí tiếp theo.
    Đơn vị xét nghiệm theo hệ quy ước Hoa Kỳ, giống đề thi thật.
    ========================================================================== */
 window.QUIZ_SET = {
   id: "noi-khoa",
   eyebrow: "USMLE Step 2 CK · Nội khoa",
   title: "Nội khoa",
-  blurb: "30 ca nội khoa qua 10 chuyên khoa. Trọng tâm: chẩn đoán và bước xử trí tiếp theo tốt nhất — chọn đáp án trước, giải thích hiện sau.",
+  blurb: "50 ca nội khoa qua 10 chuyên khoa. Trọng tâm: chẩn đoán và bước xử trí tiếp theo tốt nhất — chọn đáp án trước, giải thích hiện sau.",
 
   cases: [
     {
@@ -1495,6 +1495,795 @@ window.QUIZ_SET = {
       },
       objective:
         "Kháng thể kháng chuỗi kép DNA đặc hiệu cao cho lupus ban đỏ hệ thống và tương quan với hoạt tính bệnh, đặc biệt là viêm thận lupus, trong khi ANA chỉ nhạy chứ không đặc hiệu. Kháng chuỗi kép DNA tăng kèm bổ thể C3, C4 giảm là dấu ấn đợt bùng phát có tổn thương thận; sinh thiết thận quyết định phác đồ điều trị."
+    },
+
+    {
+      spec: "Tim mạch",
+      task: "Bước xử trí tiếp theo",
+      short: "Đau ngực kiểu màng ngoài tim sau nhiễm siêu vi",
+      vignette: [
+        "Nam 29 tuổi đến khoa cấp cứu vì đau ngực nhói dữ dội sau xương ức khởi phát từ hôm qua. Đau tăng rõ khi hít sâu, ho hoặc khi nằm ngửa, và giảm bớt khi ngồi thẳng cúi người ra phía trước. Bệnh nhân có sốt nhẹ và đau rát họng một tuần trước.",
+        "Khám: T1, T2 rõ, nghe thấy tiếng cọ màng ngoài tim âm sắc ráp ở bờ trái xương ức khi bệnh nhân ngồi cúi người và thở ra hết sức. Phổi trong hai bên, không ran. Tĩnh mạch cổ không nổi, không phù ngoại biên.",
+        "Điện tâm đồ 12 chuyển đạo: ST chênh lên lan tỏa hình lõm lòng chảo ở hầu hết các chuyển đạo (DI, DII, aVF, V2-V6) kèm PR chênh xuống; aVR có ST chênh xuống và PR chênh lên. Men tim Troponin I trong giới hạn bình thường."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,8 °C"],
+        ["Huyết áp", "122/76"],
+        ["Mạch", "86 l/ph"],
+        ["Nhịp thở", "16 l/ph"],
+        ["SpO2", "99% khí trời"]
+      ],
+      stem: "Bước xử trí tiếp theo thích hợp nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Kháng viêm không steroid (NSAID) liều cao kết hợp Colchicine",
+        "Chọc hút dịch màng ngoài tim giải áp cấp cứu",
+        "Dùng thuốc tiêu sợi huyết Alteplase đường tĩnh mạch",
+        "Tiêm dưới da Heparin trọng lượng phân tử thấp",
+        "Dùng kháng sinh Ceftriaxone kết hợp Vancomycin tĩnh mạch"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh cảnh điển hình của <b>viêm màng ngoài tim cấp</b> (Acute Pericarditis) sau nhiễm siêu vi: đau ngực kiểu màng tim (tăng khi nằm ngửa/hít sâu, giảm khi cúi ra trước), tiếng cọ màng ngoài tim, và hình ảnh điện tâm đồ kinh điển gồm <b>ST chênh lên lan tỏa hình lõm + PR chênh xuống</b> (với aVR có hình ảnh soi gương).",
+        "Phác đồ điều trị đầu tay theo khuyến cáo là <b>NSAID liều cao</b> (như Ibuprofen 600–800 mg mỗi 8 giờ hoặc Aspirin) kết hợp với <b>Colchicine</b> trong 3 tháng. Colchicine được chứng minh giúp rút ngắn thời gian lui bệnh và giảm tới 50% nguy cơ viêm màng ngoài tim tái phát.",
+        "Troponin bình thường giúp loại trừ viêm cơ màng ngoài tim phối hợp (myopericarditis). Huyết động ổn định, không có dấu hiệu chèn ép tim (tụt huyết áp, tĩnh mạch cổ nổi, mạch nghịch lý) nên không có chỉ định chọc hút."
+      ],
+      wrongs: {
+        1: "Chọc hút dịch màng ngoài tim chỉ chỉ định khi có chèn ép tim cấp (tam chứng Beck, mạch nghịch lý >10 mmHg) hoặc nghi ngờ tràn dịch mủ/vi khuẩn. Bệnh nhân này huyết động hoàn toàn ổn định.",
+        2: "Tiêu sợi huyết chống chỉ định tuyệt đối vì có thể gây xuất huyết ồ ạt vào khoang màng ngoài tim dẫn đến chèn ép tim cấp tử vong. Cần phân biệt ST chênh lên lõm lan tỏa của viêm màng tim với ST chênh lên lồi khu trú theo vùng mạch vành của nhồi máu cơ tim.",
+        3: "Thuốc chống đông như Heparin không được chỉ định trong viêm màng ngoài tim cấp vô căn/siêu vi vì làm tăng nguy cơ biến chứng tràn máu màng tim.",
+        4: "Phần lớn viêm màng ngoài tim cấp ở người trẻ là do siêu vi (Coxsackie, Echovirus, Adenovirus) hoặc vô căn. Kháng sinh phổ rộng chỉ đặt ra khi có bằng chứng nhiễm khuẩn huyết hoặc viêm màng ngoài tim mủ."
+      },
+      objective:
+        "Viêm màng ngoài tim cấp đặc trưng bởi đau ngực giảm khi cúi ra trước, tiếng cọ màng ngoài tim, ST chênh lên lan tỏa hình lõm và PR chênh xuống. Điều trị đầu tay là NSAID liều cao kết hợp Colchicine để giảm triệu chứng và ngăn ngừa tái phát."
+    },
+
+    {
+      spec: "Tim mạch",
+      task: "Bước xử trí tiếp theo",
+      short: "Tụt huyết áp, tĩnh mạch cổ nổi và tiếng tim mờ sau chấn thương",
+      vignette: [
+        "Nam 48 tuổi có tiền sử ung thư phổi di căn được đưa vào khoa cấp cứu vì khó thở dữ dội và lơ mơ tăng dần trong 6 giờ qua.",
+        "Khám: Bệnh nhân thở nhanh nông, da tái lạnh, vã mồ hôi. Tĩnh mạch cảnh nổi căng phồng lên tận góc hàm ở tư thế 45°. Tim nghe tiếng tim rất xa xăm, mờ nhạt. Phổi thông khí đều hai bên, không có ran.",
+        "Đo huyết áp lúc hít vào thấy huyết áp tâm thu giảm 18 mm Hg so với lúc thở ra (mạch nghịch lý 18 mm Hg). Điện tâm đồ cho thấy nhịp nhanh xoang kèm hình ảnh <b>soi le điện thế</b> (electrical alternans) - biên độ phức bộ QRS thay đổi luân phiên theo từng nhát bóp."
+      ],
+      vitals: [
+        ["Nhiệt độ", "36,9 °C"],
+        ["Huyết áp", "78/52"],
+        ["Mạch", "124 l/ph"],
+        ["Nhịp thở", "28 l/ph"],
+        ["SpO2", "91% khí trời"]
+      ],
+      stem: "Bước xử trí cấp cứu tiếp theo tốt nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Chọc hút dịch màng ngoài tim dưới hướng dẫn siêu âm",
+        "Tiêm tĩnh mạch Furosemide 80 mg để giảm quá tải dịch",
+        "Bắt đầu truyền Noradrenaline và theo dõi tại phòng bệnh thường",
+        "Đặt ống dẫn lưu màng phổi kín bên phải",
+        "Chụp cắt lớp vi tính lồng ngực có tiêm thuốc cản quang"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân có đầy đủ <b>tam chứng Beck</b> (Tụt huyết áp + Tĩnh mạch cổ nổi + Tiếng tim mờ) kèm <b>mạch nghịch lý >10 mm Hg</b> và <b>soi le điện thế trên điện tâm đồ</b>. Đây là hội chứng <b>chèn ép tim cấp</b> (Cardiac Tamponade) đe dọa tính mạng, thường gặp do tràn dịch màng tim ác tính trên bệnh nhân ung thư.",
+        "Áp lực khoang màng ngoài tim tăng cao vượt quá áp lực đổ đầy buồng tim làm cản trở hoàn toàn sự hồi lưu tĩnh mạch về tim trong thì tâm trương, dẫn đến tụt cung lượng tim trầm trọng và sốc tắc nghẽn.",
+        "Xử trí cấp cứu sống còn là <b>chọc dịch màng ngoài tim giải áp</b> (Pericardiocentesis), giúp giải phóng áp lực buồng tim ngay lập tức và phục hồi huyết áp động mạch."
+      ],
+      wrongs: {
+        1: "Lợi tiểu Furosemide làm giảm thêm tiền tải, làm sập hoàn toàn lượng máu đổ về thất phải và khiến bệnh nhân ngừng tuần hoàn ngay lập tức.",
+        2: "Thuốc vận mạch chỉ là biện pháp tạm thời trong khi chuẩn bị chọc dịch; dùng vận mạch mà không giải áp màng tim không thể cứu sống bệnh nhân.",
+        3: "Phổi hai bên thông khí tốt và không có tràn khí/tràn dịch màng phổi; đặt dẫn lưu màng phổi không giải quyết được dịch trong màng ngoài tim.",
+        4: "Chụp CT tốn thời gian và làm chậm trễ can thiệp cấp cứu trên bệnh nhân đang sốc tim mất bù đe dọa tử vong từng phút."
+      },
+      objective:
+        "Chèn ép tim cấp đặc trưng bởi tam chứng Beck (tụt huyết áp, tĩnh mạch cổ nổi, tiếng tim mờ), mạch nghịch lý >10 mmHg và soi le điện thế trên ECG. Xử trí cấp cứu duy nhất cứu sống bệnh nhân là chọc hút dịch màng ngoài tim giải áp; tuyệt đối chống chỉ định thuốc lợi tiểu."
+    },
+
+    {
+      spec: "Tim mạch",
+      task: "Chống chỉ định điều trị",
+      short: "Rung nhĩ kèm hội chứng Wolff-Parkinson-White",
+      vignette: [
+        "Nam 23 tuổi được đưa vào phòng cấp cứu vì hồi hộp đánh trống ngực dữ dội, hoa mắt chóng mặt khởi phát đột ngột 45 phút trước khi đang chơi bóng đá. Tiền sử từng có những cơn nhịp nhanh ngắn tự hết.",
+        "Điện tâm đồ 12 chuyển đạo ghi nhận: Nhịp không đều, tần số thất biến đổi rất nhanh từ 190–240 l/phút, phức bộ QRS rộng dị hình và có hình dạng thay đổi liên tục giữa các nhát bóp.",
+        "Bệnh nhân tỉnh, tiếp xúc được, da ấm, huyết áp 105/65 mm Hg, SpO2 97%."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,0 °C"],
+        ["Huyết áp", "105/65"],
+        ["Mạch", "210 l/ph"],
+        ["Nhịp thở", "22 l/ph"]
+      ],
+      stem: "Thuốc nào sau đây CHỐNG CHỈ ĐỊNH tuyệt đối ở bệnh nhân này?",
+      choices: [
+        "Verapamil (hoặc Diltiazem, Digoxin, Chẹn beta, Adenosine)",
+        "Procainamide truyền tĩnh mạch",
+        "Ibutilide truyền tĩnh mạch",
+        "Kháng đông Heparin không phân đoạn",
+        "Magnesi sulfat tĩnh mạch"
+      ],
+      answer: 0,
+      why: [
+        "Điện tâm đồ biểu hiện <b>Rung nhĩ kèm hội chứng tiền kích thích (Wolff-Parkinson-White - WPW)</b>: nhịp nhanh không đều, QRS rộng không đồng dạng với tần số cực nhanh (>200 l/ph do dẫn truyền trực tiếp qua cầu Kent không bị trì hoãn như nút nhĩ thất).",
+        "Các thuốc <b>ức chế chọn lọc nút nhĩ thất</b> (AV nodal blockers) như <b>Verapamil, Diltiazem, Digoxin, Adenosine, thuốc chẹn beta</b> bị <b>CHỐNG CHỈ ĐỊNH TUYỆT ĐỐI</b>. Khi nút nhĩ thất bị chặn, tất cả các xung động nhĩ rung với tần số 300–600 l/ph sẽ dẫn truyền ồ ạt 1:1 qua đường phụ, đẩy bệnh nhân vào <b>rung thất và ngừng tim đột ngột</b>.",
+        "Điều trị chuẩn khi huyết động ổn định là <b>Procainamide</b> hoặc <b>Ibutilide</b> (thuốc kéo dài thời gian trơ của đường phụ). Nếu huyết động không ổn định (tụt HA, đau ngực, lơ mơ), cần <b>sốc điện chuyển nhịp đồng bộ</b> ngay lập tức."
+      ],
+      wrongs: {
+        1: "Procainamide là thuốc điều trị lựa chọn hàng đầu cho rung nhĩ tiền kích thích ở bệnh nhân huyết động ổn định vì ức chế dẫn truyền qua đường dẫn truyền phụ.",
+        2: "Ibutilide là thuốc chống loạn nhịp nhóm III có thể sử dụng an toàn để chuyển nhịp rung nhĩ có đường phụ.",
+        3: "Heparin không gây ức chế nút nhĩ thất và không chống chỉ định, dù không phải thuốc cắt cơn nhịp nhanh.",
+        4: "Magnesi sulfat dùng an toàn trong nhiều rối loạn nhịp và không gây nguy cơ thúc đẩy dẫn truyền qua đường phụ."
+      },
+      objective:
+        "Rung nhĩ trên bệnh nhân WPW có ECG nhịp không đều, QRS rộng dị hình và tần số rất nhanh. Chống chỉ định tuyệt đối các thuốc chẹn nút nhĩ thất (Verapamil, Diltiazem, Digoxin, Beta-blocker, Adenosine) vì gây rung thất. Điều trị bằng Procainamide hoặc sốc điện đồng bộ."
+    },
+
+    {
+      spec: "Tim mạch",
+      task: "Bước xử trí tiếp theo",
+      short: "Hẹp van động mạch chủ khít có triệu chứng ngất",
+      vignette: [
+        "Nam 74 tuổi được gia đình đưa đến khám vì bị ngất thoáng qua khi đang leo cầu thang sáng nay. Hai tháng nay bệnh nhân xuất hiện khó thở khi đi bộ nhanh và đau tức ngực khi làm việc nặng.",
+        "Khám tim: Mỏm tim đập dội, tiếng T2 mờ (A2 giảm âm sắc), nghe thấy <b>tiếng thổi tâm thu tống máu thô ráp hình quả trám ở khoang liên sườn 2 bờ phải xương ức, lan mạnh lên hai động mạch cảnh</b>. Bắt mạch cảnh thấy mạch nảy chậm và yếu (pulsus parvus et tardus).",
+        "Siêu âm tim qua thành ngực: Diện tích lỗ van động mạch chủ 0,65 cm² (bình thường 3,0–4,0 cm²), chênh áp trung bình qua van 48 mm Hg, vận tốc dòng máu tối đa 4,4 m/s. Phân suất tống máu thất trái EF 52%."
+      ],
+      vitals: [
+        ["Nhiệt độ", "36,7 °C"],
+        ["Huyết áp", "108/78"],
+        ["Mạch", "72 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Bước xử trí tiếp theo có vai trò quyết định tiên lượng sống còn cho bệnh nhân này là gì?",
+      choices: [
+        "Phẫu thuật thay van động mạch chủ (hoặc thay van qua ống thông TAVI)",
+        "Chỉ định nghiệm pháp gắng sức thảm lăn để đánh giá mức độ thiếu máu cơ tim",
+        "Bắt đầu dùng thuốc giãn mạch ức chế men chuyển Enalapril liều cao",
+        "Điều trị nội khoa bảo tồn bằng thuốc chẹn kênh canxi Diltiazem",
+        "Truyền Furosemide tĩnh mạch liều cao để giảm tiền tải thất trái"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân có <b>hẹp van động mạch chủ khít</b> (diện tích lỗ van < 1,0 cm², chênh áp trung bình > 40 mm Hg, Vmax > 4 m/s) với <b>tam chứng kinh điển SAD (Syncope - Ngất, Angina - Đau ngực, Dyspnea - Khó thở)</b>.",
+        "Khi hẹp van động mạch chủ khít đã <b>xuất hiện triệu chứng</b>, tiên lượng sống sót giảm dốc đứng (thời gian sống trung bình chỉ còn 2–3 năm nếu không mổ). <b>Thay van động mạch chủ</b> (phẫu thuật SAVR hoặc qua ống thông TAVI) là <b>phương pháp duy nhất cải thiện sống còn</b>.",
+        "<b>Nghiệm pháp gắng sức chống chỉ định tuyệt đối</b> ở bệnh nhân hẹp van động mạch chủ nặng có triệu chứng vì nguy cơ tụt huyết áp kịch phát và đột tử trong lúc làm test."
+      ],
+      wrongs: {
+        1: "Nghiệm pháp gắng sức bị chống chỉ định tuyệt đối vì thất trái không thể tăng cung lượng tim qua lỗ van bị hẹp khít, dẫn đến thiếu máu não và tụt huyết áp gây đột tử.",
+        2: "Thuốc giãn mạch mạnh như Enalapril liều cao làm giảm đột ngột hậu tải toàn thân trong khi cung lượng tim bị tắc nghẽn cố định, gây tụt huyết áp nặng nề.",
+        3: "Điều trị nội khoa đơn thuần không làm thay đổi tiến triển tắc nghẽn cơ học của hẹp van và không kéo dài được đời sống bệnh nhân.",
+        4: "Furosemide liều cao làm giảm tiền tải, khiến thất trái phì đại đồng tâm không đủ lượng dịch đổ đầy tâm trương, làm tụt huyết áp nặng."
+      },
+      objective:
+        "Hẹp van động mạch chủ khít có triệu chứng (tam chứng: khó thở, đau ngực, ngất) có chỉ định thay van động mạch chủ khẩn cấp (SAVR hoặc TAVI) để kéo dài thời gian sống. Chống chỉ định làm nghiệm pháp gắng sức và thận trọng tối đa với thuốc giãn mạch."
+    },
+
+    {
+      spec: "Hô hấp",
+      task: "Lựa chọn kháng sinh",
+      short: "Đợt bội nhiễm giãn phế quản mạn tính",
+      vignette: [
+        "Nữ 52 tuổi có tiền sử giãn phế quản từ nhỏ do di chứng lao phổi, đến khám vì ho khạc đờm mủ màu xanh lượng nhiều (khoảng 100 mL/ngày) kèm sốt và khó thở tăng dần 4 ngày nay.",
+        "Khám: Ngón tay dùi trống rõ hai bàn tay. Nghe phổi có nhiều ran nổ và ran ẩm to hạt rải rác khắp hai đáy phổi, nhiều nhất ở đáy phổi trái. Không có co kéo cơ hô hấp phụ.",
+        "Chụp CT ngực độ phân giải cao (HRCT): Hình ảnh các nhánh phế quản giãn rộng hình trụ và hình túi ở thùy dưới hai bên, đường kính trong lòng phế quản lớn hơn động mạch đi kèm (<b>dấu hiệu vòng nhẫn - signet ring sign</b>), thành phế quản dày."
+      ],
+      vitals: [
+        ["Nhiệt độ", "38,4 °C"],
+        ["Huyết áp", "120/75"],
+        ["Mạch", "92 l/ph"],
+        ["Nhịp thở", "20 l/ph"],
+        ["SpO2", "94% khí trời"]
+      ],
+      stem: "Kháng sinh kinh nghiệm ban đầu cần đặc biệt bao phủ tác nhân vi khuẩn nào sau đây?",
+      choices: [
+        "Pseudomonas aeruginosa (Trực khuẩn mủ xanh)",
+        "Streptococcus pneumoniae (Phế cầu khuẩn)",
+        "Mycoplasma pneumoniae",
+        "Legionella pneumophila",
+        "Pneumocystis jirovecii"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân có <b>đợt bội nhiễm cấp của giãn phế quản</b> (Bronchiectasis exacerbation) với tam chứng kinh điển: ho khạc đờm mủ mạn tính số lượng nhiều, ngón tay dùi trống, và hình ảnh CT ngực <b>dấu hiệu vòng nhẫn</b> (phế quản giãn to hơn động mạch đi kèm).",
+        "Ở bệnh nhân giãn phế quản mức độ trung bình-nặng hoặc có đợt cấp thường xuyên, <b>Pseudomonas aeruginosa</b> là vi khuẩn gây bệnh phổ biến và nguy hiểm nhất, làm suy giảm chức năng phổi nhanh chóng. Phác đồ kháng sinh ban đầu bắt buộc phải bao phủ trực khuẩn mủ xanh (như Ciprofloxacin đường uống, hoặc Piperacillin-Tazobactam / Cefepime đường tĩnh mạch).",
+        "Cần lấy đờm cấy vi sinh và làm kháng sinh đồ trước khi dùng liều kháng sinh đầu tiên để điều chỉnh thuốc theo kết quả."
+      ],
+      wrongs: {
+        1: "Streptococcus pneumoniae là nguyên nhân hàng đầu của viêm phổi cộng đồng thông thường, nhưng trong giãn phế quản mạn tính, Pseudomonas và H. influenzae mới là tác nhân chủ đạo quyết định phác đồ.",
+        2: "Mycoplasma pneumoniae gây viêm phổi không điển hình ở người trẻ khỏe mạnh, không phải tác nhân bội nhiễm mủ đặc trưng trong giãn phế quản.",
+        3: "Legionella lây qua nguồn nước nhân tạo (máy lạnh, tháp làm mát) gây sốt cao, lú lẫn, hạ natri máu và tiêu chảy.",
+        4: "Pneumocystis jirovecii gây viêm phổi kẽ cơ hội ở bệnh nhân suy giảm miễn dịch nặng (HIV với CD4 < 200/mm3), không gây ho khạc đờm mủ xanh hàng ngày."
+      },
+      objective:
+        "Giãn phế quản đặc trưng trên HRCT bởi dấu hiệu vòng nhẫn (đường kính phế quản > động mạch đi kèm) và ho khạc đờm mủ mạn tính. Đợt cấp đòi hỏi kháng sinh bao phủ Pseudomonas aeruginosa (như Ciprofloxacin hoặc Piperacillin-Tazobactam)."
+    },
+
+    {
+      spec: "Hô hấp",
+      task: "Bước xử trí tiếp theo",
+      short: "Hội chứng suy hô hấp cấp tiến triển (ARDS) sau viêm tụy cấp",
+      vignette: [
+        "Nam 44 tuổi nhập viện ngày thứ ba vì viêm tụy cấp thể nặng do rượu. Sáng nay bệnh nhân đột ngột khó thở dữ dội, thở co kéo cơ liên sườn và tím tái môi đầu chi.",
+        "Khám: Thở nhanh 34 l/phút, nghe phổi có ran ẩm lan tỏa khắp hai phế trường. Khám tim mạch bình thường, không có tiếng T3, tĩnh mạch cổ không nổi, không phù ngoại vi.",
+        "Khí máu động mạch (đang thở oxy qua mặt nạ không thở lại FiO2 100%): pH 7,31, PaCO2 33 mm Hg, PaO2 58 mm Hg (chỉ số <b>PaO2/FiO2 = 58</b>). X-quang ngực: Thâm nhiễm phế nang lan tỏa dạng đông đặc hai bên phổi. Siêu âm tim cho thấy chức năng tâm thu thất trái bình thường (EF 60%), áp lực mao mạch phổi bít (PCWP) 12 mm Hg."
+      ],
+      vitals: [
+        ["Nhiệt độ", "38,2 °C"],
+        ["Huyết áp", "110/68"],
+        ["Mạch", "118 l/ph"],
+        ["Nhịp thở", "34 l/ph"],
+        ["SpO2", "86% với FiO2 1,0"]
+      ],
+      stem: "Chiến lược thông khí cơ học xâm nhập nào sau đây giúp cải thiện tỉ lệ tử vong ở bệnh nhân này?",
+      choices: [
+        "Thông khí thể tích lưu thông thấp (6 mL/kg cân nặng lý tưởng) kết hợp PEEP phù hợp",
+        "Thông khí thể tích lưu thông cao (12 mL/kg) để nhanh chóng đào thải CO2",
+        "Truyền nhanh 3 lít dung dịch Ringer Lactate để duy trì huyết áp",
+        "Đặt ống dẫn lưu màng phổi hai bên để giải phóng chèn ép",
+        "Khí dung thuốc giãn phế quản Salbutamol liên tục liều cao"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân thỏa mãn đầy đủ <b>tiêu chuẩn Berlin của Hội chứng suy hô hấp cấp tiến triển (ARDS) mức độ nặng</b>: khởi phát cấp tính trong vòng 1 tuần sau biến cố viêm tụy cấp, X-quang phổi thâm nhiễm phế nang hai bên, không do suy tim (PCWP < 18 mmHg và EF bảo tồn), và tình trạng giảm oxy máu kháng trị nặng nề (PaO2/FiO2 < 100).",
+        "Nghiên cứu kinh điển của mạng lưới ARDSNet chứng minh rằng <b>chiến lược thông khí bảo vệ phổi với thể tích lưu thông thấp (Low Tidal Volume 6 mL/kg cân nặng lý tưởng - PBW)</b> và duy trì áp lực đỉnh cao nguyên (Plateau pressure ≤ 30 cmH2O) kết hợp <b>PEEP (áp lực dương cuối thì thở ra)</b> làm giảm tổn thương phổi do máy thở (barotrauma/volutrauma) và <b>giảm tỉ lệ tử vong rõ rệt</b>.",
+        "Cân nặng để cài máy thở phải tính theo <b>cân nặng lý tưởng dựa trên chiều cao (Ideal/Predicted Body Weight)</b>, không tính theo cân nặng thực tế."
+      ],
+      wrongs: {
+        1: "Thể tích lưu thông cao (10–12 mL/kg) gây căng giãn phế nang quá mức (volutrauma) và vỡ phế nang, làm tăng đáng kể tỉ lệ tử vong ở bệnh nhân ARDS.",
+        2: "Viêm tụy gây thoát dịch mao mạch toàn thân kết hợp tổn thương màng phế nang - mao mạch phổi trong ARDS; truyền dịch quá nhiều sẽ làm phù phổi không do tim nặng nề thêm.",
+        3: "Tổn thương trong ARDS là thâm nhiễm phế nang trong nhu mô phổi, không phải tràn dịch hay tràn khí màng phổi tự do nên không có chỉ định dẫn lưu.",
+        4: "Salbutamol chỉ tác dụng trên co thắt cơ trơn phế quản trong hen/COPD, không có vai trò điều trị tổn thương màng phế nang mao mạch trong ARDS."
+      },
+      objective:
+        "ARDS đặc trưng bởi suy hô hấp giảm oxy máu nặng (PaO2/FiO2 ≤ 300), thâm nhiễm phế nang 2 bên không do tim. Biện pháp duy nhất chứng minh giảm tử vong là thở máy bảo vệ phổi với thể tích lưu thông thấp (6 mL/kg cân nặng lý tưởng) và kiểm soát áp lực cao nguyên ≤ 30 cmH2O."
+    },
+
+    {
+      spec: "Tiêu hóa – Gan mật",
+      task: "Bước xử trí tiếp theo",
+      short: "Viêm phúc mạc nhiễm khuẩn nguyên phát ở bệnh nhân xơ gan",
+      vignette: [
+        "Nam 56 tuổi tiền sử xơ gan do rượu Child-Pugh C có cổ trướng mức độ nhiều, được đưa vào viện vì sốt nhẹ, đau bụng âm ỉ mơ hồ và lơ mơ chậm chạp 2 ngày nay.",
+        "Khám: Vàng da, sao mạch ngực, bụng chướng căng có sóng vỗ dương tính, ấn đau tức nhẹ toàn bộ ổ bụng, không có phản ứng thành bụng rõ rệt. Bệnh nhân có dấu hiệu run vẫy (asterixis) nhẹ.",
+        "Chọc hút dịch màng bụng xét nghiệm thu được kết quả: Dịch màu vàng hơi đục, Protein toàn phần 1,1 g/dL, Albumin dịch cổ trướng 0,4 g/dL (Albumin huyết thanh 2,2 g/dL -> SAAG = 1,8 g/dL). Số lượng bạch cầu trong dịch cổ trướng: <b>Bạch cầu đa nhân trung tính (PMN) 420/mm³</b>."
+      ],
+      vitals: [
+        ["Nhiệt độ", "38,1 °C"],
+        ["Huyết áp", "102/64"],
+        ["Mạch", "96 l/ph"],
+        ["Nhịp thở", "18 l/ph"]
+      ],
+      stem: "Bước xử trí tiếp theo tốt nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Bắt đầu ngay Cefotaxime (hoặc Ceftriaxone) đường tĩnh mạch kết hợp truyền Albumin",
+        "Chờ kết quả cấy vi khuẩn dịch màng bụng 48 giờ rồi mới dùng kháng sinh",
+        "Chỉ định phẫu thuật nội soi mở bụng thăm dò ổ phúc mạc khẩn cấp",
+        "Tăng liều thuốc lợi tiểu Spironolactone và Furosemide",
+        "Đặt ống dẫn lưu dịch màng bụng liên tục ra túi ngoài"
+      ],
+      answer: 0,
+      why: [
+        "Chẩn đoán xác định <b>Viêm phúc mạc nhiễm khuẩn nguyên phát</b> (Spontaneous Bacterial Peritonitis - SBP) dựa vào số lượng <b>bạch cầu đa nhân trung tính (PMN) trong dịch cổ trướng ≥ 250/mm³</b>, bất kể kết quả cấy vi khuẩn có dương tính hay chưa.",
+        "Điều trị kháng sinh khẩn cấp ngay bằng <b>Cephalosporin thế hệ 3 tĩnh mạch (Cefotaxime 2g mỗi 8 giờ hoặc Ceftriaxone 2g/ngày)</b>. Đồng thời, <b>truyền Albumin tĩnh mạch</b> (1,5 g/kg vào ngày 1 và 1,0 g/kg vào ngày 3) giúp giảm đáng kể nguy cơ suy thận do hội chứng gan thận và giảm tỉ lệ tử vong.",
+        "SBP xảy ra do vi khuẩn đường ruột (chủ yếu là E. coli, Klebsiella) di chuyển xuyên thành ruột vào dịch cổ trướng bị suy giảm khả năng diệt khuẩn (protein dịch < 1,5 g/dL)."
+      ],
+      wrongs: {
+        1: "Cấy dịch cổ trướng thường âm tính ở 40–50% các trường hợp SBP; trì hoãn kháng sinh để chờ kết quả cấy sẽ dẫn đến sốc nhiễm khuẩn và suy đa tạng tử vong.",
+        2: "SBP là nhiễm khuẩn nội khoa nguyên phát, phẫu thuật mở bụng chống chỉ định vì làm tăng nguy cơ tử vong do suy gan mất bù.",
+        3: "Thuốc lợi tiểu cần tạm ngừng trong đợt nhiễm trùng cấp để tránh gây suy thận cấp trước thận và rối loạn điện giải.",
+        4: "Dẫn lưu dịch màng bụng liên tục qua ống thông làm tăng nguy cơ bội nhiễm vi khuẩn từ môi trường ngoài vào khoang màng bụng."
+      },
+      objective:
+        "Viêm phúc mạc nhiễm khuẩn nguyên phát (SBP) được chẩn đoán khi PMN dịch cổ trướng ≥ 250/mm³. Xử trí cấp cứu bằng Cephalosporin thế hệ 3 tĩnh mạch kết hợp truyền Albumin để phòng ngừa hội chứng gan thận và giảm tử vong."
+    },
+
+    {
+      spec: "Tiêu hóa – Gan mật",
+      task: "Lựa chọn điều trị đầu tay",
+      short: "Bệnh não gan cấp khởi phát sau táo bón",
+      vignette: [
+        "Nam 60 tuổi có tiền sử xơ gan do viêm gan B mạn tính được người nhà đưa đến khám vì 3 ngày nay lú lẫn, ngủ gà ban ngày nhưng thức trắng đêm, không nhận ra người thân trong gia đình.",
+        "Người nhà cho biết bệnh nhân bị táo bón nặng 5 ngày nay chưa đi ngoài được. Bệnh nhân không sốt, không nôn ra máu, không đi ngoài phân đen.",
+        "Khám lâm sàng: Bệnh nhân lơ mơ, trả lời chậm chạp, có hiện tượng <b>run vẫy tay khi duỗi cổ tay (asterixis)</b>. Bụng chướng nhẹ, gan teo nhỏ, lách to dưới bờ sườn 3 cm. Khám thần kinh không có dấu hiệu liệt khu trú."
+      ],
+      vitals: [
+        ["Nhiệt độ", "36,8 °C"],
+        ["Huyết áp", "115/70"],
+        ["Mạch", "78 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Thuốc điều trị đầu tay thích hợp nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Lactulose đường uống chỉnh liều để đi ngoài 2–3 lần phân mềm mỗi ngày",
+        "Tiêm thuốc an thần Diazepam để giúp bệnh nhân ổn định giấc ngủ",
+        "Truyền Mannitol 20% tĩnh mạch liều cao để chống phù não",
+        "Cho ăn chế độ ăn tăng cường thịt đỏ và đạm động vật đậm đặc",
+        "Dùng thuốc kháng sinh Neomycin liều cao kéo dài đơn độc"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân bị <b>bệnh não gan cấp</b> (Hepatic Encephalopathy) độ II–III với biểu hiện đảo lộn chu kỳ thức ngủ, lú lẫn, mất định hướng và dấu hiệu <b>run vẫy asterixis</b>, khởi phát sau yếu tố thúc đẩy là <b>táo bón nặng</b>.",
+        "<b>Lactulose</b> là thuốc điều trị nền tảng đầu tay: vi khuẩn đại tràng chuyển hóa lactulose thành acid lactic và acid acetic, làm giảm pH lòng ruột (acid hóa lòng đại tràng). Môi trường acid chuyển NH3 (dạng khuếch tán qua màng) thành ion NH4+ (không hấp thu được và bị đào thải ra ngoài theo phân). Đồng thời lactulose có tác dụng nhuận tràng thẩm thấu tống phân ra ngoài.",
+        "Mục tiêu điều trị là chỉnh liều lactulose để bệnh nhân đi ngoài <b>2–3 lần phân mềm mỗi ngày</b>. Nếu đáp ứng kém sau 48 giờ, phối hợp thêm <b>Rifaximin</b>."
+      ],
+      wrongs: {
+        1: "Thuốc an thần nhóm Benzodiazepine (Diazepam) chống chỉ định tuyệt đối vì gan xơ không chuyển hóa được thuốc, làm bệnh nhân hôn mê sâu và ức chế trung tâm hô hấp.",
+        2: "Mannitol dùng cho phù não cấp do suy gan cấp tối cấp, không phải điều trị chuẩn cho bệnh não gan trên xơ gan mạn tính.",
+        3: "Đạm động vật bị vi khuẩn ruột giáng hóa thành nhiều NH3; chế độ ăn cần duy trì lượng đạm vừa phải (1,2–1,5 g/kg/ngày) ưu tiên đạm thực vật/sữa, không ăn thịt đỏ đậm đặc.",
+        4: "Neomycin hiện ít dùng vì có độc tính cao trên thận và thính giác, trong khi Lactulose và Rifaximin an toàn vượt trội."
+      },
+      objective:
+        "Bệnh não gan đặc trưng bởi rối loạn ý thức và run vẫy asterixis. Điều trị đầu tay là Lactulose đường uống (mục tiêu 2–3 lần phân mềm/ngày) kết hợp tìm và giải quyết yếu tố thúc đẩy (táo bón, nhiễm trùng, xuất huyết, rối loạn điện giải)."
+    },
+
+    {
+      spec: "Tiêu hóa – Gan mật",
+      task: "Bước chẩn đoán và điều trị",
+      short: "Tiêu chảy sau điều trị kháng sinh - Viêm đại tràng do C. difficile",
+      vignette: [
+        "Nữ 65 tuổi đến khám vì tiêu chảy phân lỏng nhiều nước 7–8 lần/ngày kèm đau quặn bụng dưới và sốt nhẹ trong 3 ngày qua. Bệnh nhân vừa hoàn thành đợt kháng sinh Clindamycin 10 ngày điều trị viêm mô tế bào cẳng chân cách đây 1 tuần.",
+        "Khám: Bụng mềm, ấn đau tức nhẹ dọc khung đại tràng, đặc biệt là hố chậu trái, không có phản ứng phúc mạc. Thăm trực tràng phân vàng lỏng có chất nhầy, không có máu đại thể.",
+        "Xét nghiệm máu: Bạch cầu tăng cao 16.500/mm³ (82% bạch cầu đa nhân trung tính), Creatinine huyết thanh 1,1 mg/dL (nền 0,8 mg/dL)."
+      ],
+      vitals: [
+        ["Nhiệt độ", "38,3 °C"],
+        ["Huyết áp", "125/78"],
+        ["Mạch", "94 l/ph"],
+        ["Nhịp thở", "18 l/ph"]
+      ],
+      stem: "Bước chẩn đoán và điều trị tiếp theo thích hợp nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Xét nghiệm độc tố C. difficile (NAAT/PCR hoặc EIA) trong phân và bắt đầu uống Vancomycin (hoặc Fidaxomicin)",
+        "Cho bệnh nhân uống ngay thuốc cầm tiêu chảy Loperamide liều cao",
+        "Truyền Metronidazole đường tĩnh mạch đơn độc tại nhà",
+        "Nội soi toàn bộ đại tràng khẩn cấp bằng ống soi mềm có sinh thiết",
+        "Chuyển sang dùng kháng sinh Ciprofloxacin đường uống 7 ngày"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh cảnh kinh điển của <b>nhiễm trùng Clostridioides difficile</b>: tiêu chảy nhiều lần phân lỏng, đau bụng, sốt và tăng bạch cầu xuất hiện sau khi dùng kháng sinh phổ rộng (đặc biệt là <b>Clindamycin, Fluoroquinolone, Cephalosporin</b>).",
+        "Chẩn đoán xác định bằng <b>xét nghiệm phân tìm độc tố C. difficile (NAAT/PCR hoặc độc tố A/B EIA)</b>. Khuyến cáo hiện nay chọn <b>Vancomycin đường uống</b> (125 mg x 4 lần/ngày trong 10 ngày) hoặc <b>Fidaxomicin</b> là lựa chọn đầu tay hàng đầu.",
+        "Lưu ý: <b>Vancomycin phải dùng đường UỐNG</b> vì thuốc không hấp thu qua ruột nên đạt nồng độ diệt khuẩn cực cao trong lòng đại tràng; Vancomycin truyền tĩnh mạch hoàn toàn không thải vào lòng ruột nên không có tác dụng."
+      ],
+      wrongs: {
+        1: "Thuốc ức chế nhu động ruột (Loperamide, Diphenoxylate) <b>chống chỉ định tuyệt đối</b> vì giữ độc tố vi khuẩn trong lòng ruột, dẫn đến biến chứng giãn đại tràng nhiễm độc (toxic megacolon) và thủng ruột tử vong.",
+        2: "Metronidazole hiện không còn là lựa chọn đầu tay do tỉ lệ thất bại và tái phát cao hơn rõ rệt so với Vancomycin uống hoặc Fidaxomicin.",
+        3: "Nội soi đại tràng toàn bộ không cần thiết khi xét nghiệm phân dương tính và có nguy cơ gây thủng đại tràng đang bị viêm loét giả mạc.",
+        4: "Ciprofloxacin là một trong những kháng sinh thủ phạm hàng đầu gây bùng phát C. difficile, dùng thêm sẽ làm bệnh trầm trọng hơn."
+      },
+      objective:
+        "Nhiễm Clostridioides difficile nghi ngờ khi tiêu chảy nhiều lần sau dùng kháng sinh. Chẩn đoán bằng xét nghiệm độc tố trong phân; điều trị đầu tay bằng Vancomycin đường UỐNG hoặc Fidaxomicin. Chống chỉ định dùng thuốc cầm tiêu chảy loperamide."
+    },
+
+    {
+      spec: "Nội tiết",
+      task: "Bước xử trí ưu tiên hàng đầu",
+      short: "Hôn mê tăng áp lực thẩm thấu do đái tháo đường (HHS)",
+      vignette: [
+        "Cụ bà 78 tuổi có tiền sử đái tháo đường típ 2 sống tại viện dưỡng lão, được đưa vào khoa cấp cứu trong tình trạng lơ mơ, tiếp xúc chậm chạp. Người chăm sóc cho biết 5 ngày nay cụ ăn uống kém, tiểu nhiều liên tục sau đó giảm dần lượng nước tiểu.",
+        "Khám: Dấu hiệu mất nước rất nặng: môi lưỡi khô khốc, mắt trũng sâu, véo da mất rất chậm (>3 giây). Không có hơi thở mùi táo thối (ceton), không có kiểu thở nhanh sâu Kussmaul.",
+        "Xét nghiệm máu khẩn: Glucose máu <b>940 mg/dL</b> (52 mmol/L), Natri máu 148 mEq/L, Kali máu 4,6 mEq/L, Bicarbonate huyết tương 22 mEq/L, Creatinine 2,6 mg/dL (nền 0,9 mg/dL). Khí máu động mạch: pH 7,36. Ceton máu và ceton nước tiểu: Âm tính. Áp lực thẩm thấu huyết tương ước tính: <b>348 mOsm/kg</b>."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,2 °C"],
+        ["Huyết áp", "85/55"],
+        ["Mạch", "116 l/ph"],
+        ["Nhịp thở", "18 l/ph"]
+      ],
+      stem: "Bước xử trí ưu tiên hàng đầu và quan trọng nhất lúc này là gì?",
+      choices: [
+        "Truyền tĩnh mạch nhanh dung dịch NaCl 0,9% để hồi phục thể tích tuần hoàn",
+        "Tiêm bolus tĩnh mạch Insulin tác dụng nhanh liều cao 0,3 đơn vị/kg ngay trước khi truyền dịch",
+        "Truyền dung dịch Natri Bicarbonate 8,4% đường tĩnh mạch",
+        "Tiêm thuốc lợi tiểu Furosemide để kích thích lượng nước tiểu",
+        "Cho bệnh nhân uống nước đường Glucose 20% qua sonde dạ dày"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân có bệnh cảnh kinh điển của <b>Hội chứng tăng áp lực thẩm thấu do đái tháo đường</b> (Hyperosmolar Hyperglycemic State - HHS): Glucose máu tăng cực cao (>600 mg/dL), áp lực thẩm thấu huyết tương >320 mOsm/kg, rối loạn tri giác sâu, mất nước nặng nề, nhưng <b>không có toan chuyển hóa hay toan ceton</b> (pH > 7,30, Bicarbonate > 18, ceton âm tính).",
+        "Lượng dịch thiếu hụt trong HHS là cực lớn, thường từ <b>8 đến 10 lít</b> (khoảng 100–200 mL/kg). Bước xử trí cấp bách sống còn đầu tiên là <b>hồi sức bù dịch bằng NaCl 0,9%</b> (1000–1500 mL trong giờ đầu tiên) để nâng huyết áp và cải thiện tưới máu thận.",
+        "<b>Không được tiêm bolus insulin liều cao khi chưa bù dịch</b>: Insulin đẩy glucose và nước vào trong tế bào, gây trụy mạch và sốc giảm thể tích tuần hoàn nặng hơn nếu thể tích lòng mạch chưa được phục hồi."
+      ],
+      wrongs: {
+        1: "Insulin dùng sau khi đã bắt đầu bù dịch và xác nhận Kali máu > 3,3 mEq/L. Tiêm bolus insulin ngay từ đầu khi đang sốc giảm thể tích sẽ làm tụt huyết áp sâu hơn.",
+        2: "Bicarbonate không có chỉ định trong HHS vì bệnh nhân không hề bị toan máu (pH 7,36 bình thường).",
+        3: "Furosemide chống chỉ định vì bệnh nhân đang mất nước trầm trọng; thiểu niệu ở đây là do suy thận trước thận vì thiếu dịch.",
+        4: "Bệnh nhân đang có đường huyết 940 mg/dL và áp lực thẩm thấu 348 mOsm/kg; truyền glucose sẽ làm bệnh nhân tử vong vì phù não và sốc thẩm thấu."
+      },
+      objective:
+        "HHS đặc trưng bởi đường huyết >600 mg/dL, áp lực thẩm thấu >320 mOsm/kg, tri giác xấu và không có toan ceton. Bù dịch tích cực bằng NaCl 0,9% là bước ưu tiên hàng đầu để phục hồi thể tích tuần hoàn trước khi bắt đầu truyền insulin."
+    },
+
+    {
+      spec: "Nội tiết",
+      task: "Lựa chọn điều trị duy trì",
+      short: "Đái tháo nhạt trung ương sau phẫu thuật tuyến yên",
+      vignette: [
+        "Nam 36 tuổi nhập viện sau phẫu thuật nội soi cắt bỏ u tuyến yên qua đường xoang bướm ngày thứ hai. Bệnh nhân xuất hiện triệu chứng khát nước dữ dội, uống nước liên tục và đi tiểu lượng rất lớn (theo dõi nước tiểu 24 giờ đạt <b>7,5 lít</b>).",
+        "Xét nghiệm máu và nước tiểu: Natri huyết thanh tăng <b>154 mEq/L</b> (bình thường 135–145), Áp lực thẩm thấu huyết tương tăng 310 mOsm/kg. Áp lực thẩm thấu nước tiểu rất thấp: <b>120 mOsm/kg</b> (tỷ trọng nước tiểu 1,003).",
+        "Tiến hành tiêm dưới da Desmopressin (dDAVP) thử nghiệm: Sau 2 giờ, lượng nước tiểu giảm rõ rệt và áp lực thẩm thấu nước tiểu tăng vọt lên 460 mOsm/kg (tăng >100%)."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,0 °C"],
+        ["Huyết áp", "118/74"],
+        ["Mạch", "84 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Thuốc điều trị thay thế dài hạn thích hợp nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Desmopressin (dDAVP) đường xịt mũi hoặc đường uống",
+        "Hạn chế uống nước tuyệt đối dưới 500 mL/ngày",
+        "Lợi tiểu Hydrochlorothiazide liều cao",
+        "Dung dịch Natri Clorid ưu trương 3% truyền tĩnh mạch",
+        "Bổ sung viên muối NaCl đường uống"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh cảnh điển hình của <b>Đái tháo nhạt trung ương</b> (Central Diabetes Insipidus) sau phẫu thuật tuyến yên: tổn thương cuống tuyến yên hoặc thùy sau tuyến yên làm ngừng tiết hormone chống bài niệu <b>ADH (Vasopressin)</b>, dẫn đến mất khả năng cô đặc nước tiểu tại ống góp.",
+        "Biểu hiện: tiểu nhiều nước tiểu loãng (ALTT niệu < 200 mOsm/kg), tăng natri máu và ALTT huyết tương tăng. Đáp ứng tăng ALTT nước tiểu >50% sau khi tiêm Desmopressin khẳng định chẩn đoán đái tháo nhạt trung ương (phân biệt với đái tháo nhạt do thận không đáp ứng với dDAVP).",
+        "Điều trị đặc hiệu là dùng chất đồng vận tổng hợp của ADH: <b>Desmopressin (dDAVP)</b> đường xịt mũi hoặc đường uống để kiểm soát lượng nước tiểu."
+      ],
+      wrongs: {
+        1: "Hạn chế uống nước ở bệnh nhân thiếu ADH sẽ gây mất nước ưu trương nghiêm trọng, sốc và tử vong do tăng natri máu kịch phát.",
+        2: "Hydrochlorothiazide được dùng cho đái tháo nhạt DO THẬN (kết hợp hạn chế muối), không phải điều trị đầu tay cho đái tháo nhạt trung ương.",
+        3: "Muối ưu trương 3% chống chỉ định vì bệnh nhân đã đang bị tăng natri máu nặng (154 mEq/L); truyền muối ưu trương sẽ gây tổn thương não.",
+        4: "Bổ sung muối NaCl làm tăng thêm gánh nặng thẩm thấu và làm tăng natri máu trầm trọng hơn."
+      },
+      objective:
+        "Đái tháo nhạt trung ương do thiếu hụt ADH (thường sau phẫu thuật tuyến yên hoặc chấn thương sọ não) gây tiểu nhiều, nước tiểu loãng và tăng natri máu. Khẳng định bằng đáp ứng tăng ALTT niệu với dDAVP; điều trị duy trì bằng Desmopressin (dDAVP)."
+    },
+
+    {
+      spec: "Nội tiết",
+      task: "Bước chuẩn bị trước phẫu thuật",
+      short: "U tủy thượng thận (Pheochromocytoma)",
+      vignette: [
+        "Nữ 42 tuổi đến khám vì các cơn tăng huyết áp kịch phát kèm tam chứng điển hình: <b>đau đầu dữ dội từng cơn, vã mồ hôi đầm đìa và hồi hộp đánh trống ngực</b>. Các cơn kéo dài khoảng 15–30 phút và xuất hiện 2–3 lần mỗi tuần.",
+        "Khám ngoài cơn: Huyết áp 165/100 mm Hg, mạch 94 l/ph. Khám tim phổi và bụng không phát hiện bất thường.",
+        "Xét nghiệm: Định lượng <b>Metanephrines tự do trong huyết tương</b> và Metanephrines trong nước tiểu 24 giờ tăng gấp 5 lần giới hạn trên bình thường. Chụp MRI ổ bụng phát hiện khối u tủy thượng thận bên phải kích thước 4,5 cm giàu mạch máu."
+      ],
+      vitals: [
+        ["Nhiệt độ", "36,8 °C"],
+        ["Huyết áp", "165/100"],
+        ["Mạch", "94 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Bước chuẩn bị nội khoa bắt buộc TRƯỚC KHI tiến hành phẫu thuật cắt bỏ khối u là gì?",
+      choices: [
+        "Dùng thuốc chẹn thụ thể alpha (Phenoxybenzamine) trước 10–14 ngày, sau đó mới bổ sung thuốc chẹn beta",
+        "Dùng thuốc chẹn beta giao cảm (Propranolol) đơn độc trước để kiểm soát nhịp tim",
+        "Chỉ định phẫu thuật nội soi cắt u ngay lập tức không cần dùng thuốc chuẩn bị",
+        "Dùng thuốc lợi tiểu Thiazide liều cao kết hợp hạn chế muối",
+        "Bắt đầu ngay thuốc ức chế men chuyển Enalapril liều tối đa"
+      ],
+      answer: 0,
+      why: [
+        "Nguyên tắc sống còn trong chuẩn bị trước mổ <b>U tủy thượng thận (Pheochromocytoma)</b> là: <b>KHÓA THỤ THỂ ALPHA TRƯỚC, KHÓA THỤ THỂ BETA SAU (Alpha-blockade FIRST, Beta-blockade SECOND)</b>.",
+        "Khối u tiết ồ ạt catecholamine (norepinephrine và epinephrine). Nếu dùng thuốc chẹn beta trước, thụ thể beta-2 gây giãn mạch bị phong bế, trong khi thụ thể alpha-1 gây co mạch vẫn bị catecholamine kích thích tối đa mà không có đối kháng (unopposed alpha-stimulation), dẫn đến <b>cơn tăng huyết áp ác tính kịch phát gây tai biến mạch máu não hoặc suy tim cấp tử vong</b>.",
+        "Thuốc chẹn alpha không hồi phục <b>Phenoxybenzamine</b> (hoặc Doxazosin) được dùng trước 10–14 ngày. Sau khi đã đạt chẹn alpha đủ (huyết áp kiểm soát, xuất hiện sung huyết mũi), nếu bệnh nhân còn nhịp nhanh mới thêm thuốc chẹn beta (như Propranolol/Metoprolol)."
+      ],
+      wrongs: {
+        1: "Dùng chẹn beta đơn độc là sai lầm nguy hiểm kinh điển nhất: gây co mạch alpha không đối kháng dẫn đến cơn tăng huyết áp khủng hoảng đe dọa tử vong.",
+        2: "Mổ u tủy thượng thận khi chưa chuẩn bị nội khoa sẽ giải phóng lượng lớn catecholamine khi chạm vào u trong mổ, gây rối loạn nhịp tim ác tính và tụt huyết áp mất kiểm soát sau cắt u.",
+        3: "Bệnh nhân u tủy thượng thận bị co mạch mạn tính dẫn đến giảm thể tích nội mạch; lợi tiểu làm nặng thêm tình trạng thiếu thể tích và gây sốc sau mổ.",
+        4: "Ức chế men chuyển không đối kháng được tác dụng co mạch trực tiếp của catecholamine lên thụ thể alpha-adrenergic."
+      },
+      objective:
+        "U tủy thượng thận đặc trưng bởi tam chứng đau đầu, vã mồ hôi và tim nhanh. Chuẩn bị trước mổ bắt buộc phải chẹn alpha trước (Phenoxybenzamine) 10–14 ngày, sau đó mới thêm chẹn beta để tránh cơn tăng huyết áp ác tính do co mạch alpha không đối kháng."
+    },
+
+    {
+      spec: "Nội tiết",
+      task: "Bước xử trí cấp cứu",
+      short: "Tăng canxi máu ác tính do ung thư",
+      vignette: [
+        "Nam 66 tuổi có tiền sử ung thư phổi biểu mô tế bào vảy giai đoạn muộn, được người nhà đưa vào viện vì mệt lả, chán ăn, táo bón dữ dội, tiểu nhiều và lú lẫn tăng dần trong 4 ngày qua.",
+        "Khám: Bệnh nhân lơ mơ, mất định hướng không gian, da niêm mạc khô ráp, giảm trương lực cơ toàn thân, phản xạ gân xương giảm.",
+        "Xét nghiệm máu: <b>Canxi toàn phần huyết thanh 15,2 mg/dL</b> (bình thường 8,5–10,5), Canxi ion hóa 2,1 mmol/L (bình thường 1,15–1,30), Albumin máu 3,2 g/dL. Nồng độ <b>PTH giảm thấp < 5 pg/mL</b>, trong khi <b>PTHrP (Protein liên quan PTH) tăng rất cao</b>. Điện tâm đồ: Đoạn QT ngắn lại rõ rệt."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,0 °C"],
+        ["Huyết áp", "95/60"],
+        ["Mạch", "104 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Bộ ba xử trí cấp cứu ban đầu thích hợp nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Truyền tĩnh mạch NaCl 0,9% lượng lớn kết hợp tiêm Calcitonin và Zoledronic acid (Bisphosphonate)",
+        "Tiêm Furosemide tĩnh mạch liều cao ngay lập tức trước khi truyền dịch",
+        "Bổ sung Vitamin D và viên uống Canxi carbonat liều cao",
+        "Chỉ định lọc máu cấp cứu ngay lập tức mà không cần điều trị nội khoa",
+        "Cho uống thuốc lợi tiểu Hydrochlorothiazide kết hợp chế độ ăn ít muối"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân bị <b>Cơn khủng hoảng tăng canxi máu ác tính</b> (Canxi máu > 14 mg/dL) do tế bào ung thư tiết <b>PTHrP</b> (thường gặp trong ung thư biểu mô vảy ở phổi, đầu mặt cổ, thực quản).",
+        "Phác đồ cấp cứu chuẩn 3 bước gồm: (1) <b>Bù dịch tinh thể NaCl 0,9% tốc độ 200–300 mL/giờ</b> để hồi phục thể tích và tăng thải canxi qua thận; (2) <b>Calcitonin tiêm dưới da/tĩnh mạch</b> (tác dụng hạ canxi nhanh chóng sau 4–6 giờ nhờ ức chế hủy xương, nhưng có hiện tượng trơ thuốc sau 48 giờ); (3) <b>Bisphosphonate truyền tĩnh mạch (Zoledronic acid hoặc Pamidronate)</b> để ức chế hủy cốt bào lâu dài (tác dụng tối đa sau 2–4 ngày).",
+        "Lợi tiểu quai (Furosemide) chỉ được dùng KHI ĐÃ BÙ ĐỦ DỊCH nếu có dấu hiệu quá tải thể tích, tuyệt đối không dùng khi bệnh nhân đang mất nước."
+      ],
+      wrongs: {
+        1: "Dùng Furosemide khi chưa bù dịch sẽ làm nặng thêm tình trạng giảm thể tích lòng mạch, làm giảm độ lọc cầu thận và khiến nồng độ canxi máu tăng cao hơn.",
+        2: "Bổ sung canxi và vitamin D sẽ làm trầm trọng thêm tình trạng ngộ độc canxi và đẩy bệnh nhân vào ngừng tim thì tâm thu.",
+        3: "Chạy thận nhân tạo chỉ đặt ra khi tăng canxi máu nặng trơ với điều trị nội khoa hoặc kèm suy thận nặng vô niệu / suy tim ứ huyết không thể bù dịch.",
+        4: "Lợi tiểu Thiazide làm tăng tái hấp thu canxi ở ống lượn xa nên chống chỉ định tuyệt đối vì làm tăng canxi máu."
+      },
+      objective:
+        "Tăng canxi máu ác tính nặng (>14 mg/dL) là cấp cứu nội khoa. Điều trị chuẩn phối hợp: Truyền NaCl 0,9% lượng lớn + Calcitonin (tác dụng nhanh tức thì) + Bisphosphonate tĩnh mạch (Zoledronic acid, tác dụng duy trì lâu dài)."
+    },
+
+    {
+      spec: "Huyết học",
+      task: "Bước điều trị đầu tay",
+      short: "Thiếu máu tán huyết tự miễn kháng thể ấm (Warm AIHA)",
+      vignette: [
+        "Nữ 34 tuổi đến khám vì mệt mỏi tăng dần, khó thở khi leo cầu thang và vàng mắt 2 tuần nay. Bệnh nhân nhận thấy nước tiểu sẫm màu như nước vối.",
+        "Khám: Niêm mạc mắt nhợt nhạt, củng mạc mắt vàng rõ. Tim nhịp nhanh 102 l/phút có tiếng thổi tâm thu cơ năng 2/6 ở mỏm. Lách to 2 cm dưới bờ sườn trái, không sưng đau khớp.",
+        "Xét nghiệm máu: <b>Hemoglobin 6,8 g/dL</b>, MCV 104 fL. <b>Bilirubin gián tiếp tăng 3,4 mg/dL</b>, <b>LDH tăng cao 850 U/L</b>, <b>Haptoglobin huyết thanh giảm không đo được (< 10 mg/dL)</b>. Hồng cầu lưới tăng 9,2%. Lam máu ngoại vi thấy nhiều <b>hồng cầu hình cầu nhỏ (spherocytes)</b>, không có mảnh vỡ hồng cầu schistocytes. <b>Nghiệm pháp Coombs trực tiếp (DAT) dương tính mạnh với IgG</b>."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,3 °C"],
+        ["Huyết áp", "110/70"],
+        ["Mạch", "102 l/ph"],
+        ["Nhịp thở", "18 l/ph"]
+      ],
+      stem: "Phương pháp điều trị đầu tay thích hợp nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Corticoid đường toàn thân (Prednisone 1 mg/kg/ngày đường uống)",
+        "Phẫu thuật cắt lách cấp cứu",
+        "Truyền ngay 4 đơn vị khối hồng cầu mà không cần chọn lọc hòa hợp",
+        "Bổ sung viên sắt Ferrous Sulfate và Erythropoietin liều cao",
+        "Dùng kháng sinh Cephalosporin thế hệ 3"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh cảnh kinh điển của <b>Thiếu máu tán huyết tự miễn kháng thể ấm</b> (Warm Autoimmune Hemolytic Anemia - AIHA): hội chứng thiếu máu + hội chứng tán huyết ngoài mạch (vàng da, lách to, Bilirubin gián tiếp tăng, LDH tăng, Haptoglobin giảm sút, hồng cầu lưới tăng, hồng cầu hình cầu spherocytes) và <b>Coombs trực tiếp (DAT) dương tính với IgG</b>.",
+        "Điều trị đầu tay chuẩn là <b>Corticoid toàn thân (Prednisone 1–1,5 mg/kg/ngày)</b>. Corticoid làm giảm sản xuất tự kháng thể của lympho B và ức chế các đại thực bào ở lách tiêu hủy hồng cầu gắn IgG.",
+        "Nếu bệnh nhân không đáp ứng hoặc tái phát khi giảm liều corticoid, các bước tiếp theo gồm <b>Rituximab</b> (kháng thể kháng CD20) hoặc <b>Cắt lách</b> (Splenectomy)."
+      ],
+      wrongs: {
+        1: "Cắt lách là điều trị bước hai khi thất bại với corticoid, không phải chỉ định đầu tay ngay từ đầu.",
+        2: "Truyền máu ở bệnh nhân AIHA rất khó khăn do tự kháng thể phản ứng chéo với hầu hết các đơn vị máu thử nghiệm; chỉ truyền máu khi thiếu máu đe dọa tính mạng (đau thắt ngực, suy tuần hoàn) với đơn vị máu hòa hợp nhất (least incompatible blood).",
+        3: "Tủy xương đang tăng sinh tối đa (hồng cầu lưới 9,2%) và sắt được tái sử dụng từ hồng cầu vỡ; bổ sung sắt không có vai trò điều trị nguyên nhân miễn dịch.",
+        4: "Kháng sinh không có vai trò trong bệnh lý tán huyết tự miễn vô căn."
+      },
+      objective:
+        "Thiếu máu tán huyết tự miễn kháng thể ấm (Warm AIHA) đặc trưng bởi Coombs trực tiếp dương tính với IgG và hồng cầu hình cầu spherocytes. Điều trị đầu tay là Corticoid toàn thân (Prednisone); Rituximab hoặc cắt lách là lựa chọn bước hai."
+    },
+
+    {
+      spec: "Huyết học",
+      task: "Bước xử trí cấp cứu",
+      short: "Ban xuất huyết giảm tiểu cầu huyết khối (TTP)",
+      vignette: [
+        "Nữ 32 tuổi được đưa vào khoa cấp cứu vì lú lẫn, nói nhảm và sốt dao động trong 24 giờ qua. Người nhà nhận thấy bệnh nhân xuất hiện nhiều vết bầm tím tự nhiên trên da tay chân.",
+        "Khám: Bệnh nhân lơ mơ, củng mạc mắt vàng nhẹ, nhiều chấm xuất huyết và mảng bầm máu rải rác dưới da. Không có dấu hiệu cứng gáy hay liệt khu trú.",
+        "Xét nghiệm máu khẩn: <b>Hemoglobin 7,4 g/dL</b>, <b>Tiểu cầu tụt rất thấp 14.000/mm³</b>. Bilirubin toàn phần 3,8 mg/dL (gián tiếp 3,1 mg/dL), <b>LDH tăng cực cao 1.450 U/L</b>, Haptoglobin không đo được. Kéo lam máu ngoại vi thấy <b>nhiều mảnh vỡ hồng cầu (schistocytes chiếm 4,5%)</b>. Creatinine 1,8 mg/dL. <b>Đông máu cơ bản (PT, aPTT, Fibrinogen) hoàn toàn bình thường</b>."
+      ],
+      vitals: [
+        ["Nhiệt độ", "38,4 °C"],
+        ["Huyết áp", "130/80"],
+        ["Mạch", "108 l/ph"],
+        ["Nhịp thở", "20 l/ph"]
+      ],
+      stem: "Bước xử trí cấp cứu khẩn cấp nhất giúp cứu sống bệnh nhân là gì?",
+      choices: [
+        "Thay huyết tương cấp cứu (Plasma Exchange - PEX) kết hợp Corticoid",
+        "Truyền ngay 2 khối tiểu cầu đậm đặc để nâng số lượng tiểu cầu",
+        "Truyền tĩnh mạch liên tục Heparin không phân đoạn",
+        "Chỉ định phẫu thuật cắt lách cấp cứu",
+        "Truyền khối hồng cầu kết hợp dùng Vitamin K đường tĩnh mạch"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân có <b>ngũ chứng kinh điển của Ban xuất huyết giảm tiểu cầu huyết khối (Thrombotic Thrombocytopenic Purpura - TTP)</b>: (1) Giảm tiểu cầu nặng; (2) Thiếu máu tán huyết vi mạch (mảnh vỡ hồng cầu schistocytes trên lam máu); (3) Triệu chứng thần kinh dao động; (4) Suy thận nhẹ; (5) Sốt. Đông máu cơ bản (PT/aPTT) bình thường giúp phân biệt rõ ràng với DIC.",
+        "Cơ chế do tự kháng thể ức chế enzym <b>ADAMTS13</b> (hoạt tính <10%), làm tích tụ các phân tử vWF siêu lớn gây ngưng tập tiểu cầu vi mạch khắp các cơ quan.",
+        "<b>Thay huyết tương (Plasma Exchange - PEX)</b> là cấp cứu tối khẩn (phải bắt đầu ngay trong vài giờ đầu) giúp loại bỏ tự kháng thể và cung cấp enzym ADAMTS13 mới, giúp giảm tỉ lệ tử vong từ >90% xuống dưới 15%. Phối hợp Corticoid và Rituximab.",
+        "<b>CHỐNG CHỈ ĐỊNH TUYỆT ĐỐI TRUYỀN TIỂU CẦU</b> vì tiểu cầu truyền vào sẽ làm bùng phát huyết khối vi mạch ồ ạt, gây nhồi máu não và đột tử."
+      ],
+      wrongs: {
+        1: "Truyền tiểu cầu trong TTP là 'đổ dầu vào lửa' — kích hoạt tạo thêm hàng loạt cục máu đông vi mạch làm tắc mạch não, tim và thận dẫn đến tử vong nhanh chóng.",
+        2: "Heparin không có vai trò và làm tăng nguy cơ xuất huyết não trên nền tiểu cầu 14.000/mm3.",
+        3: "Cắt lách không có vai trò trong xử trí cấp cứu TTP cấp tính.",
+        4: "Vitamin K không có tác dụng vì chức năng đông máu huyết tương (PT, aPTT) của bệnh nhân hoàn toàn bình thường."
+      },
+      objective:
+        "TTP đặc trưng bởi thiếu máu tán huyết vi mạch (schistocytes), giảm tiểu cầu nặng, triệu chứng thần kinh và đông máu cơ bản bình thường do thiếu hụt ADAMTS13. Xử trí cấp cứu tối khẩn là Thay huyết tương (PEX) + Corticoid; tuyệt đối KHÔNG truyền tiểu cầu."
+    },
+
+    {
+      spec: "Huyết học",
+      task: "Bước tiếp theo trong chẩn đoán",
+      short: "Đa u tủy xương (Multiple Myeloma - Tiêu chuẩn CRAB)",
+      vignette: [
+        "Nam 68 tuổi đến khám vì đau thắt lưng âm ỉ liên tục 4 tháng nay, đau tăng khi vận động và không đỡ khi nghỉ. Bệnh nhân mệt mỏi, sụt 4 kg và cảm thấy hoa mắt chóng mặt.",
+        "Khám: Niêm mạc nhợt nhạt, ấn đau chói tại đốt sống L2–L4. Không sốt, không có dấu hiệu chèn ép tủy cấp.",
+        "Xét nghiệm máu và nước tiểu: <b>Hemoglobin 8,6 g/dL</b> (đẳng sắc đẳng bào), Tốc độ lắng máu (ESR) tăng rất cao 115 mm/h. <b>Canxi huyết thanh tăng 11,8 mg/dL</b>. <b>Creatinine 2,3 mg/dL</b>. Protein toàn phần huyết thanh 9,2 g/dL (Albumin 3,0 g/dL, <b>khoảng trống Globulin tăng 6,2 g/dL</b>). X-quang cột sống thắt lưng và xương sọ: Nhiều ổ tiêu xương hình đục lỗ tròn (<b>punched-out lytic lesions</b>)."
+      ],
+      vitals: [
+        ["Nhiệt độ", "36,8 °C"],
+        ["Huyết áp", "135/85"],
+        ["Mạch", "80 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Bộ xét nghiệm bước tiếp theo thích hợp nhất để xác định chẩn đoán ở bệnh nhân này là gì?",
+      choices: [
+        "Điện di protein huyết thanh và nước tiểu (SPEP/UPEP) kết hợp chọc hút sinh thiết tủy xương",
+        "Chụp xạ hình xương bằng Technetium-99m (Bone Scan)",
+        "Định lượng sắt huyết thanh, Ferritin và tổng khả năng gắn sắt (TIBC)",
+        "Chụp cắt lớp vi tính ổ bụng có tiêm thuốc cản quang tĩnh mạch",
+        "Cấy máu 2 mẫu và siêu âm tim qua thực quản"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân có đầy đủ <b>tiêu chuẩn kinh điển CRAB của Đa u tủy xương (Multiple Myeloma)</b>: (C) <b>C</b>alcium tăng (11,8 mg/dL); (R) <b>R</b>enal failure - Suy thận (Creatinine 2,3); (A) <b>A</b>nemia - Thiếu máu (Hb 8,6); (B) <b>B</b>one lesions - Tổn thương tiêu xương đục lỗ.",
+        "Bước tiếp theo để xác định chẩn đoán gồm: (1) <b>Điện di protein huyết thanh và nước tiểu (SPEP/UPEP) có cố định miễn dịch</b> để phát hiện dải đơn dòng (M-spike do chuỗi nặng IgG/IgA hoặc chuỗi nhẹ Bence-Jones); (2) <b>Sinh thiết và chọc hút tủy xương</b> để định lượng tỉ lệ tương bào dòng vô tính (Clonal plasma cells ≥ 10%).",
+        "Lưu ý: <b>Xạ hình xương (Bone scan bằng Tc-99m) thường ÂM TÍNH GIẢ</b> trong Đa u tủy xương vì tổn thương tủy xương là tiêu xương do hủy cốt bào thuần túy mà không có phản ứng tạo xương của tạo cốt bào."
+      ],
+      wrongs: {
+        1: "Xạ hình xương Tc-99m phụ thuộc vào hoạt động của tạo cốt bào; trong đa u tủy xương tổn thương là hủy xương thuần túy nên bone scan thường âm tính giả và không được khuyến cáo.",
+        2: "Thiếu máu trong đa u tủy là do tương bào ác tính thâm nhiễm tủy xương và suy thận thiếu EPO, không phải do thiếu sắt đơn thuần.",
+        3: "Thuốc cản quang tiêm tĩnh mạch chống chỉ định trên bệnh nhân nghi ngờ đa u tủy xương có suy thận vì nguy cơ hoại tử ống thận cấp và suy thận tắc nghẽn do chuỗi nhẹ kết tủa.",
+        4: "Không có bằng chứng viêm nội tâm mạc nhiễm khuẩn trên lâm sàng."
+      },
+      objective:
+        "Đa u tủy xương đặc trưng bởi tứ chứng CRAB (Tăng canxi, suy thận, thiếu máu, tổn thương tiêu xương đục lỗ). Chẩn đoán xác định bằng Điện di protein huyết thanh/nước tiểu (SPEP/UPEP tìm M-spike) và sinh thiết tủy xương (tương bào ≥10%). Tránh dùng thuốc cản quang và tránh chụp xạ hình xương."
+    },
+
+    {
+      spec: "Thận – Điện giải",
+      task: "Bước chẩn đoán tiếp theo",
+      short: "Hội chứng thận hư biến chứng huyết khối tĩnh mạch thận",
+      vignette: [
+        "Nam 45 tuổi có tiền sử mắc <b>Bệnh cầu thận màng (Membranous Nephropathy)</b> với hội chứng thận hư kháng trị (Protein niệu 24 giờ là 9,5 g, Albumin huyết thanh 1,8 g/dL), đang điều trị ngoại trú.",
+        "Hôm nay bệnh nhân đột ngột xuất hiện <b>đau quặn dữ dội hông lưng bên trái</b> lan xuống bẹn, kèm <b>tiểu máu đại thể</b> toàn bãi và sốt nhẹ.",
+        "Khám: Bụng mềm, ấn đau chói vùng góc sườn lưng trái, nghiệm pháp chạm thận và bập bềnh thận bên trái dương tính. Phù toàn thân hai chi dưới mức độ nhiều."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,9 °C"],
+        ["Huyết áp", "148/92"],
+        ["Mạch", "90 l/ph"],
+        ["Nhịp thở", "18 l/ph"]
+      ],
+      stem: "Biến chứng nào sau đây giải thích rõ nhất bệnh cảnh cấp tính của bệnh nhân và cần chụp CT mạch máu thận để xác định?",
+      choices: [
+        "Huyết khối tĩnh mạch thận trái (Renal Vein Thrombosis)",
+        "Viêm đài bể thận cấp do vi khuẩn Gram âm",
+        "Sỏi niệu quản trái gây tắc nghẽn cấp tính",
+        "Viêm cầu thận tiến triển nhanh (RPGN)",
+        "Thiếu máu cục bộ động mạch mạc treo tràng trên"
+      ],
+      answer: 0,
+      why: [
+        "<b>Hội chứng thận hư</b> gây tình trạng <b>tăng đông máu trầm trọng</b> do: (1) Mất chất chống đông tự nhiên <b>Antithrombin III</b> qua nước tiểu; (2) Giảm nồng độ Protein C và Protein S; (3) Tăng tổng hợp fibrinogen tại gan và tăng kết tập tiểu cầu.",
+        "<b>Huyết khối tĩnh mạch thận (Renal Vein Thrombosis - RVT)</b> là biến chứng tắc mạch kinh điển và nguy hiểm nhất, đặc biệt thường gặp nhất ở bệnh nhân <b>Bệnh cầu thận màng</b> (tỉ lệ lên tới 20–30%) khi Albumin máu < 2,0 g/dL.",
+        "Biểu hiện cấp tính: Đau hông lưng đột ngột, đái máu đại thể, thận to ứ máu và chức năng thận suy giảm cấp. Chẩn đoán xác định bằng <b>CT/MRI mạch máu thận (CT Angiography / MRV)</b> hoặc siêu âm Doppler; điều trị bằng <b>thuốc chống đông toàn thân</b>."
+      ],
+      wrongs: {
+        1: "Viêm đài bể thận cấp thường có sốt cao rét run, tiểu buốt dắt và bạch cầu niệu/trụ bạch cầu, không giải thích được tình trạng đái máu đại thể rầm rộ trên nền bệnh cầu thận màng tăng đông.",
+        2: "Sỏi niệu quản gây cơn đau bão thận nhưng không liên quan trực tiếp đến tình trạng tăng đông mất Antithrombin III của hội chứng thận hư nặng.",
+        3: "Viêm cầu thận tiến triển nhanh (RPGN) gây suy thận tiến triển trong vài tuần/tháng với trụ hồng cầu, không gây đau hông lưng cấp tính đột ngột một bên kèm thận to.",
+        4: "Tắc động mạch mạc treo gây đau bụng quanh rốn dữ dội không tương xứng với triệu chứng thực thể, không gây đái máu đại thể và đau hông lưng."
+      },
+      objective:
+        "Hội chứng thận hư (đặc biệt là Bệnh cầu thận màng có Albumin < 2g/dL) gây tăng đông máu do mất Antithrombin III qua nước tiểu, dẫn đến biến chứng Huyết khối tĩnh mạch thận (RVT) biểu hiện bằng đau hông lưng cấp, đái máu đại thể và thận to. Xác định bằng CT mạch máu và điều trị bằng chống đông."
+    },
+
+    {
+      spec: "Thấp khớp",
+      task: "Lựa chọn điều trị nền tảng",
+      short: "Viêm khớp dạng thấp - Điều trị DMARDs sớm",
+      vignette: [
+        "Nữ 38 tuổi đến khám vì đau và sưng các khớp bàn ngón tay (MCP), khớp liên đốt gần (PIP) và cổ tay hai bên đối xứng kéo dài hơn 3 tháng nay. Bệnh nhân có tình trạng <b>cứng khớp buổi sáng kéo dài hơn 90 phút</b>, khiến việc cầm nắm đồ vật và đánh răng rất khó khăn.",
+        "Khám khớp: Sưng, nóng và ấn đau đối xứng tại khớp cổ tay, MCP 2, 3 và PIP 2, 3 cả hai bàn tay. Khớp liên đốt xa (DIP) hoàn toàn bình thường.",
+        "Xét nghiệm: Tốc độ lắng máu (ESR) 65 mm/h, CRP 28 mg/L. <b>Kháng thể kháng peptid citrullin vòng (Anti-CCP) dương tính mạnh (> 250 U/mL)</b>, Yếu tố dạng thấp (RF) dương tính."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,0 °C"],
+        ["Huyết áp", "120/75"],
+        ["Mạch", "76 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Thuốc chống thấp khớp làm thay đổi diễn tiến bệnh (DMARD) nền tảng cần được bắt đầu càng sớm càng tốt cho bệnh nhân này là gì?",
+      choices: [
+        "Methotrexate đường uống kết hợp bổ sung Acid Folic",
+        "Chỉ dùng Paracetamol hoặc NSAID đơn độc khi có cơn đau",
+        "Tiêm Corticoid nội khớp định kỳ hàng tuần thay thế thuốc uống",
+        "Thuốc ức chế TNF-alpha sinh học (Infliximab) đơn độc ngay từ đầu",
+        "Phẫu thuật cắt bao hoạt dịch khớp sớm"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh nhân có đầy đủ tiêu chuẩn chẩn đoán <b>Viêm khớp dạng thấp (Rheumatoid Arthritis - RA)</b>: viêm đa khớp đối xứng mạn tính (>6 tuần) ưu thế khớp nhỏ bàn tay (MCP, PIP, cổ tay - chừa khớp DIP), cứng khớp sáng >60 phút, và <b>Anti-CCP dương tính mạnh</b> (độ đặc hiệu >95% cho RA và tiên lượng bệnh nặng bào mòn khớp).",
+        "Khuyến cáo của Hội Thấp khớp học Hoa Kỳ (ACR) và Châu Âu (EULAR): <b>Methotrexate (csDMARD) là lựa chọn nền tảng ĐẦU TAY số một</b>, cần được bắt đầu ngay khi có chẩn đoán để ngăn chặn sự hủy hoại sụn khớp và biến dạng khớp không hồi phục.",
+        "Bắt buộc bổ sung <b>Acid Folic (1 mg/ngày hoặc 5 mg/tuần)</b> để giảm các tác dụng phụ của methotrexate (loét miệng, buồn nôn, độc tính tủy xương và men gan)."
+      ],
+      wrongs: {
+        1: "Paracetamol và NSAID chỉ giúp giảm đau triệu chứng tạm thời, hoàn toàn KHÔNG ngăn chặn được quá trình bào mòn và phá hủy khớp xương.",
+        2: "Corticoid chỉ được dùng như 'cầu nối' ngắn hạn trong vài tuần đầu khi chờ Methotrexate phát huy tác dụng (sau 6–12 tuần), không dùng tiêm nội khớp đơn độc kéo dài.",
+        3: "Thuốc sinh học (chẹn TNF, chẹn IL-6) chỉ được chỉ định bước hai khi bệnh nhân đáp ứng kém hoặc không dung nạp với DMARD kinh điển như Methotrexate.",
+        4: "Phẫu thuật chỉ đặt ra ở giai đoạn muộn khi khớp đã bị phá hủy hoàn toàn cần thay khớp nhân tạo, không có vai trò ở giai đoạn khởi phát."
+      },
+      objective:
+        "Viêm khớp dạng thấp đặc trưng bởi viêm khớp nhỏ đối xứng (MCP, PIP, cổ tay) và Anti-CCP dương tính. Methotrexate kết hợp Acid Folic là thuốc DMARD nền tảng đầu tay bắt buộc bắt đầu sớm để ngăn ngừa hủy hoại và biến dạng khớp vĩnh viễn."
+    },
+
+    {
+      spec: "Thấp khớp",
+      task: "Lựa chọn điều trị an toàn",
+      short: "Cơn Gout cấp ở bệnh nhân suy thận mạn",
+      vignette: [
+        "Nam 58 tuổi có tiền sử <b>Bệnh thận mạn giai đoạn 3b (eGFR 34 mL/ph/1,73m², Creatinine nền 2,2 mg/dL)</b> và tăng huyết áp, thức dậy lúc 3 giờ sáng vì đau dữ dội ngón chân cái bên phải sau khi ăn tiệc thịt bò và uống rượu tối qua.",
+        "Khám: <b>Khớp bàn ngón chân cái phải (MTP 1) sưng to, nóng đỏ rực, căng bóng và đau chói</b> khi chạm nhẹ vào ga trải giường (dấu hiệu Podagra). Không có sốt cao.",
+        "Chọc hút dịch khớp bàn ngón chân: Soi kính hiển vi phân cực thấy <b>nhiều tinh thể hình kim bắt màu lưỡng chiết quang âm tính mạnh (Monosodium urate)</b> nằm trong bào tương bạch cầu. Nồng độ Acid Uric huyết thanh 9,2 mg/dL."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,4 °C"],
+        ["Huyết áp", "145/90"],
+        ["Mạch", "88 l/ph"],
+        ["Nhịp thở", "16 l/ph"]
+      ],
+      stem: "Phương pháp điều trị cắt cơn gút cấp an toàn và thích hợp nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Corticoid đường toàn thân (Prednisolone đường uống hoặc tiêm nội khớp)",
+        "Thuốc chống viêm không steroid NSAID (Indomethacin liều cao)",
+        "Colchicine liều cao 1 mg uống mỗi 2 giờ cho đến khi hết đau",
+        "Bắt đầu ngay Allopurinol liều cao 300 mg/ngày trong cơn đau cấp",
+        "Aspirin liều thấp 81 mg đường uống"
+      ],
+      answer: 0,
+      why: [
+        "Chẩn đoán xác định <b>Cơn Gout cấp</b> (Acute Gouty Arthritis) với hình ảnh tinh thể muối urate hình kim lưỡng chiết quang âm tính mạnh dưới kính hiển vi phân cực.",
+        "Bệnh nhân có <b>Bệnh thận mạn giai đoạn 3b (eGFR 34 mL/ph)</b>, tạo ra chống chỉ định cho các thuốc cắt cơn thông thường: (1) <b>NSAIDs bị chống chỉ định tuyệt đối</b> vì gây co tiểu động mạch đến thận làm suy thận cấp trước thận nặng nề; (2) <b>Colchicine đào thải qua thận nên có nguy cơ ngộ độc thần kinh cơ và ức chế tủy xương nghiêm trọng</b> ở bệnh nhân suy thận.",
+        "Do đó, <b>Corticoid toàn thân (Prednisolone 30–35 mg/ngày trong 5 ngày) hoặc tiêm corticoid trực tiếp vào nội khớp</b> là <b>lựa chọn an toàn và hiệu quả nhất</b> ở bệnh nhân suy thận mạn.",
+        "<b>TUYỆT ĐỐI KHÔNG BẮT ĐẦU HOẶC THAY ĐỔI LIỀU ALLOPURINOL TRONG CƠN GOUT CẤP</b>: Sự thay đổi nồng độ acid uric máu đột ngột sẽ làm hòa tan một phần tinh thể tophi, kích hoạt giải phóng thêm tinh thể urate và làm cơn gout cấp kéo dài dữ dội hơn."
+      ],
+      wrongs: {
+        1: "NSAIDs (Indomethacin, Naproxen) gây ức chế prostaglandin tại thận, làm suy giảm lưu lượng máu đến thận và thúc đẩy suy thận cấp ở bệnh nhân đã có bệnh thận mạn.",
+        2: "Colchicine liều cao tích lũy độc tính ở bệnh nhân suy thận gây tiêu cơ vân, bệnh lý thần kinh cơ và tử vong.",
+        3: "Allopurinol là thuốc hạ acid uric duy trì, không có tác dụng chống viêm cắt cơn; bắt đầu Allopurinol trong cơn cấp sẽ làm bùng phát cơn đau nặng hơn.",
+        4: "Aspirin liều thấp gây ức chế bài tiết acid uric qua ống thận, làm tăng acid uric máu và kéo dài cơn gút."
+      },
+      objective:
+        "Cơn gút cấp đặc trưng bởi tinh thể urate hình kim lưỡng chiết quang âm tính. Ở bệnh nhân có bệnh thận mạn, NSAIDs bị chống chỉ định và Colchicine có độc tính cao, do đó Corticoid (toàn thân hoặc nội khớp) là lựa chọn an toàn nhất. Tuyệt đối không khởi đầu thuốc hạ acid uric (Allopurinol) trong cơn cấp."
+    },
+
+    {
+      spec: "Thần kinh",
+      task: "Bước điều trị đặc hiệu",
+      short: "Hội chứng Guillain-Barré sau nhiễm trùng tiêu hóa",
+      vignette: [
+        "Nam 26 tuổi đến khám vì yếu hai chân tăng dần khiến bệnh nhân đi lại loạng choạng và không thể tự leo cầu thang 3 ngày nay. Hai hôm nay yếu lan dần lên hai tay và cảm thấy tê bì đầu ngón tay ngón chân hình găng hình tất.",
+        "Bệnh nhân có tiền sử bị viêm dạ dày ruột cấp sốt phân lỏng (nghi do <i>Campylobacter jejuni</i>) cách đây 2 tuần đã tự khỏi.",
+        "Khám thần kinh: Sức cơ gốc chi hai chân 3/5, hai tay 4/5. <b>Mất hoàn toàn phản xạ gân xương (gân bánh chè, gân gót, gân cơ nhị đầu) ở cả bốn chi</b>. Cảm giác nông sâu giảm nhẹ kiểu ngọn chi. Khám dây thần kinh sọ chưa thấy liệt mặt hay nuốt khó.",
+        "Chọc dò tủy sống xét nghiệm dịch não tủy: Bạch cầu 2 tế bào/mm³ (bình thường < 5), <b>Protein dịch não tủy tăng rất cao 165 mg/dL</b> (bình thường 15–45) - hiện tượng <b>phân ly đạm - tế bào (albuminocytologic dissociation)</b>."
+      ],
+      vitals: [
+        ["Nhiệt độ", "37,0 °C"],
+        ["Huyết áp", "125/80"],
+        ["Mạch", "82 l/ph"],
+        ["Nhịp thở", "18 l/ph"],
+        ["Dung tích sống (FVC)", "38 mL/kg (bình thường > 60)"]
+      ],
+      stem: "Phương pháp điều trị đặc hiệu tốt nhất cho bệnh nhân này là gì?",
+      choices: [
+        "Immunoglobulin truyền tĩnh mạch (IVIG) hoặc Thay huyết tương (Plasma Exchange)",
+        "Tiêm tĩnh mạch Methylprednisolone liều cao (Pulse therapy)",
+        "Dùng kháng sinh Quinolone đường tĩnh mạch để diệt trừ Campylobacter",
+        "Châm cứu và tập vật lý trị liệu gắng sức cường độ cao",
+        "Dùng thuốc ức chế Cholinesterase (Pyridostigmine) đường uống"
+      ],
+      answer: 0,
+      why: [
+        "Bệnh cảnh kinh điển của <b>Hội chứng Guillain-Barré (GBS)</b> / Viêm đa dây thần kinh hủy myelin cấp tính (AIDP): yếu cơ gốc chi đối xứng tiến triển tăng dần từ dưới lên trên (ascending paralysis), mất phản xạ gân xương toàn thân, xuất hiện sau nhiễm trùng tiêu hóa <i>Campylobacter jejuni</i> (cơ chế phân tử tương đồng bắt chước miễn dịch).",
+        "Dịch não tủy có dấu hiệu đặc trưng là <b>hiện tượng phân ly đạm - tế bào</b> (Protein tăng cao rõ rệt trong khi số lượng tế bào bạch cầu hoàn toàn bình thường).",
+        "Hai phương pháp điều trị đặc hiệu có hiệu quả tương đương nhau là: <b>Immunoglobulin truyền tĩnh mạch (IVIG 0,4 g/kg/ngày x 5 ngày)</b> HOẶC <b>Thay huyết tương (Plasma Exchange)</b>.",
+        "<b>CORTICOID ĐƠN THUẦN HOÀN TOÀN KHÔNG CÓ HIỆU QUẢ</b> trong GBS (thậm chí có thể làm chậm hồi phục thần kinh) nên chống chỉ định dùng đơn độc. Cần theo dõi sát <b>Dung tích sống gắng sức (FVC)</b> và áp lực hít vào tối đa (NIF) để kịp thời đặt nội khí quản hỗ trợ thở máy khi FVC < 20 mL/kg."
+      ],
+      wrongs: {
+        1: "Nhiều thử nghiệm lâm sàng ngẫu nhiên lớn đã chứng minh Corticoid (Methylprednisolone) không có hiệu quả trong Guillain-Barré và không được khuyến cáo.",
+        2: "Nhiễm trùng Campylobacter đã kết thúc từ 2 tuần trước; cơ chế hiện tại là tự miễn kháng hạch thần kinh do bắt chước phân tử (molecular mimicry), kháng sinh không còn tác dụng.",
+        3: "Tập luyện gắng sức quá sớm trong giai đoạn tiến triển có thể gây tổn thương sợi trục vĩnh viễn và suy kiệt cơ tim mạch.",
+        4: "Pyridostigmine điều trị bệnh Nhược cơ (Myasthenia Gravis), không có tác dụng trên bệnh lý viêm đa rễ dây thần kinh ngoại biên như GBS."
+      },
+      objective:
+        "Hội chứng Guillain-Barré đặc trưng bởi liệt mềm tiến triển gốc chi từ dưới lên, mất phản xạ gân xương và phân ly đạm - tế bào trong DNT. Điều trị đặc hiệu bằng IVIG hoặc Thay huyết tương; Corticoid không có hiệu quả. Theo dõi sát dung tích sống (FVC) để phòng suy hô hấp cơ."
     }
   ]
 };
