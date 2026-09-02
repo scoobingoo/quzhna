@@ -207,6 +207,129 @@ a.brandline:hover{background:rgba(255,255,255,.2); transform:translateY(-1px)}
   font-size:10.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
 }
 .stats .accent b{color:#864CBF}
+.stat-highlight{
+  background:linear-gradient(135deg, rgba(134, 76, 191, 0.14), rgba(255, 166, 2, 0.16)) !important;
+  border-bottom:3px solid #FFA602;
+}
+.stat-highlight b{color:#FFA602 !important; text-shadow:0 0 12px rgba(255, 166, 2, 0.3)}
+
+/* ---------- Khối tiến trình tổng quan nổi bật (Progress Dashboard Hero) ---------- */
+.progress-hero{
+  margin-top:18px;
+  padding:22px 24px;
+  background:var(--surface);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border:1.5px solid var(--line-strong);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-lift);
+  position:relative;
+  overflow:hidden;
+}
+.progress-hero::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:4px;
+  background:linear-gradient(90deg, #FFA602, #E21B3C, #864CBF, #26890C);
+}
+.progress-hero-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+.progress-hero-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.progress-icon{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  background:linear-gradient(135deg, rgba(255,166,2,0.2), rgba(134,76,191,0.2));
+  border:1px solid rgba(255,166,2,0.3);
+  display:grid;
+  place-items:center;
+  font-size:22px;
+  flex:0 0 auto;
+}
+.progress-hero-title h3{
+  margin:0;
+  font-family:var(--sans);
+  font-size:18px;
+  font-weight:800;
+  color:var(--ink);
+  letter-spacing:-.01em;
+}
+.progress-hero-title p{
+  margin:2px 0 0;
+  font-size:13px;
+  color:var(--ink-3);
+}
+.btn-reset-all-subtle{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px 14px;
+  font-family:var(--sans);
+  font-size:12px;
+  font-weight:700;
+  color:var(--ink-3);
+  background:var(--surface-2);
+  border:1px solid var(--line);
+  border-radius:999px;
+  cursor:pointer;
+  transition:all .15s ease;
+}
+.btn-reset-all-subtle:hover{
+  color:#E21B3C;
+  border-color:#E21B3C;
+  background:rgba(226,27,60,0.1);
+  transform:translateY(-1px);
+}
+
+.overall-meter-wrap{
+  background:var(--surface-2);
+  padding:14px 16px;
+  border-radius:12px;
+  border:1px solid var(--line);
+}
+.overall-meter{
+  height:12px;
+  border-radius:999px;
+  background:rgba(0,0,0,0.14);
+  overflow:hidden;
+  position:relative;
+  box-shadow:inset 0 1px 3px rgba(0,0,0,0.2);
+}
+.overall-meter i{
+  display:block;
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg, #FFA602 0%, #E21B3C 50%, #864CBF 100%);
+  border-radius:999px;
+  box-shadow:0 0 12px rgba(255,166,2,0.5);
+  transition:width .6s cubic-bezier(.34, 1.56, .64, 1);
+}
+.overall-meter-labels{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-top:10px;
+  font-family:var(--mono);
+  font-size:13px;
+  color:var(--ink-2);
+  font-weight:600;
+}
+.overall-meter-labels b{
+  color:var(--ink);
+  font-weight:800;
+}
 
 /* ---------- header trang làm đề ---------- */
 .masthead{
@@ -240,11 +363,12 @@ a.brandline:hover{background:rgba(255,255,255,.2); transform:translateY(-1px)}
 
 /* ---------- thanh tiến trình ---------- */
 .railwrap{margin:18px 0 24px}
-.railmeter{height:7px; border-radius:999px; background:rgba(255,255,255,.2); overflow:hidden; margin-bottom:12px; backdrop-filter:blur(4px)}
+.railmeter{height:9px; border-radius:999px; background:rgba(255,255,255,.2); overflow:hidden; margin-bottom:12px; backdrop-filter:blur(4px); box-shadow:inset 0 1px 2px rgba(0,0,0,.2)}
 .railmeter i{
   display:block; height:100%; width:0;
   background:linear-gradient(90deg, #FFA602, #E21B3C, #864CBF);
   border-radius:999px; transition:width .35s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 0 10px rgba(255,166,2,.6);
 }
 .rail{display:flex; flex-wrap:wrap; gap:7px}
 .pip{
@@ -593,15 +717,25 @@ a.set:hover::before{opacity:1}
   font-family:var(--mono); font-size:12px; color:var(--ink-3);
 }
 .set .state{
-  font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
-  padding:4px 10px; border-radius:999px; white-space:nowrap;
+  font-size:11.5px; font-weight:800; letter-spacing:.05em; text-transform:uppercase;
+  padding:5px 12px; border-radius:999px; white-space:nowrap;
   font-family:var(--sans);
-  background:rgba(134,76,191,.15); color:#864CBF;
+  background:rgba(134,76,191,.15); color:var(--accent);
+  border:1px solid rgba(134,76,191,.3);
+  transition:all .2s ease;
 }
-.set .state.part{background:rgba(255,166,2,.18); color:#FFA602}
-.set .state.full{background:rgba(38,137,12,.18); color:#26890C}
-.set .prog{margin-top:14px; height:6px; border-radius:999px; background:var(--line); overflow:hidden}
-.set .prog i{display:block; height:100%; background:linear-gradient(90deg,#FFA602,#864CBF); border-radius:999px; transition:width .5s ease}
+.set .state.part{
+  background:rgba(255,166,2,.2); color:#FFA602;
+  border:1px solid rgba(255,166,2,.45);
+  box-shadow:0 0 10px rgba(255,166,2,.25);
+}
+.set .state.full{
+  background:rgba(38,137,12,.2); color:#26890C;
+  border:1px solid rgba(38,137,12,.45);
+  box-shadow:0 0 10px rgba(38,137,12,.25);
+}
+.set .prog{margin-top:14px; height:8px; border-radius:999px; background:var(--line); overflow:hidden; box-shadow:inset 0 1px 2px rgba(0,0,0,.15)}
+.set .prog i{display:block; height:100%; background:linear-gradient(90deg,#FFA602,#E21B3C,#864CBF); border-radius:999px; transition:width .5s ease; box-shadow:0 0 8px rgba(134,76,191,.4)}
 
 .section-label{
   margin:38px 0 0;
@@ -675,6 +809,10 @@ code{font-family:var(--mono); font-size:.9em; background:rgba(0,0,0,.25); color:
   .body{padding:20px 16px}
   .card-top{padding:12px 18px}
   .hero{padding:22px 20px; gap:18px}
+  .progress-hero{padding:18px 16px}
+  .progress-hero-head{flex-direction:column; align-items:flex-start; gap:12px}
+  .btn-reset-all-subtle{align-self:flex-start}
+  .overall-meter-labels{flex-direction:column; align-items:flex-start; gap:4px}
   .avatar.lg{width:86px; height:86px; font-size:86px}
   .vignette{font-size:16.5px}
   .stem{font-size:17.5px}

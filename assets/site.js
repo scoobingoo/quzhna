@@ -97,31 +97,40 @@
     var cards = document.querySelectorAll(".set[data-set]");
     if (!cards.length) return;
     var doneAll = 0;
+    var totalAll = 0;
+    var setsDone = 0;
+    var setsInProgress = 0;
 
     cards.forEach(function (card) {
       var id = card.getAttribute("data-set");
       var count = Number(card.getAttribute("data-count")) || 0;
+      totalAll += count;
       var p = progressFor(id, count);
       doneAll += p.answered;
 
+      var pct = count ? Math.round((p.answered / count) * 100) : 0;
       var bar = card.querySelector(".prog i");
-      if (bar) bar.style.width = (count ? Math.round((p.answered / count) * 100) : 0) + "%";
+      if (bar) bar.style.width = pct + "%";
+
+      if (p.answered >= count && count > 0) setsDone++;
+      else if (p.answered > 0) setsInProgress++;
 
       var top = card.querySelector(".top");
       var oldReset = card.querySelector(".btn-card-reset");
       if (oldReset) oldReset.remove();
 
       var badge = card.querySelector(".state");
-      if (!badge) return;
-      if (p.answered === 0) {
-        badge.textContent = "Bắt đầu";
-        badge.className = "state";
-      } else if (p.answered >= count) {
-        badge.textContent = "Đã xong";
-        badge.className = "state full";
-      } else {
-        badge.textContent = p.answered + "/" + count;
-        badge.className = "state part";
+      if (badge) {
+        if (p.answered === 0) {
+          badge.textContent = "Bắt đầu";
+          badge.className = "state";
+        } else if (p.answered >= count) {
+          badge.textContent = "Đã xong · " + count + "/" + count + " ✓";
+          badge.className = "state full";
+        } else {
+          badge.textContent = "Đang làm · " + p.answered + "/" + count + " (" + pct + "%)";
+          badge.className = "state part";
+        }
       }
 
       if (p.answered > 0 && top) {
@@ -146,8 +155,33 @@
       }
     });
 
+    var overallPct = totalAll > 0 ? Math.round((doneAll / totalAll) * 100) : 0;
+
     var stat = document.getElementById("stat-done");
-    if (stat) stat.textContent = doneAll;
+    if (stat) stat.textContent = doneAll + "/" + (totalAll || 290);
+
+    var statPct = document.getElementById("stat-pct");
+    if (statPct) statPct.textContent = overallPct + "%";
+
+    var overallBar = document.getElementById("overall-progress-bar");
+    if (overallBar) overallBar.style.width = overallPct + "%";
+
+    var overallText = document.getElementById("overall-progress-text");
+    if (overallText) overallText.innerHTML = "<b>" + doneAll + "</b> / " + (totalAll || 290) + " ca (" + overallPct + "%)";
+
+    var overallSetsDone = document.getElementById("overall-sets-done");
+    if (overallSetsDone) overallSetsDone.textContent = setsDone + " / " + cards.length;
+
+    var overallMsg = document.getElementById("overall-progress-msg");
+    if (overallMsg) {
+      if (doneAll === 0) {
+        overallMsg.textContent = "Chưa có tiến trình · Chọn một bộ đề bên dưới để bắt đầu luyện tập!";
+      } else if (doneAll >= totalAll && totalAll > 0) {
+        overallMsg.textContent = "🎉 Xuất sắc! Bạn đã hoàn thành toàn bộ " + totalAll + " ca lâm sàng!";
+      } else {
+        overallMsg.textContent = "🔥 Bạn đã làm " + doneAll + " ca (" + overallPct + "%), còn " + (totalAll - doneAll) + " ca. Tiếp tục phát huy nhé!";
+      }
+    }
   }
 
   function wireResetAll() {

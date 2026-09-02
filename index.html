@@ -42,10 +42,35 @@
   </header>
 
   <div class="stats">
-    <div class="accent"><b>290</b><span>Ca lâm sàng</span></div>
+    <div class="accent"><b>290</b><span>Tổng số ca</span></div>
     <div><b>9</b><span>Bộ đề</span></div>
     <div><b>31</b><span>Chuyên khoa</span></div>
-    <div><b id="stat-done">0</b><span>Bạn đã làm</span></div>
+    <div class="stat-highlight"><b id="stat-done">0/290</b><span>Tiến độ hoàn thành (<span id="stat-pct">0%</span>)</span></div>
+  </div>
+
+  <div class="progress-hero">
+    <div class="progress-hero-head">
+      <div class="progress-hero-title">
+        <span class="progress-icon">📊</span>
+        <div>
+          <h3>Tiến trình ôn tập của bạn</h3>
+          <p id="overall-progress-msg">Chưa có tiến trình · Chọn một bộ đề bên dưới để bắt đầu luyện tập!</p>
+        </div>
+      </div>
+      <button id="btn-reset-all" class="btn-reset-all-subtle" type="button" title="Đặt lại toàn bộ tiến trình ôn tập">
+        🔄 Đặt lại toàn bộ
+      </button>
+    </div>
+
+    <div class="overall-meter-wrap">
+      <div class="overall-meter">
+        <i id="overall-progress-bar"></i>
+      </div>
+      <div class="overall-meter-labels">
+        <span id="overall-progress-text"><b>0</b> / 290 ca (0%)</span>
+        <span id="overall-sets-text"><b id="overall-sets-done">0 / 9</b> bộ đề hoàn thành</span>
+      </div>
+    </div>
   </div>
 
   <p class="section-label">Chuyên đề Nội khoa (150 ca · Theo AHA/ESC, GINA, ADA, KDIGO)</p>
@@ -168,13 +193,6 @@
     </ol>
   </div>
 
-  <footer>
-    <b>Tiến trình làm bài</b> được lưu trong trình duyệt của bạn (<code>localStorage</code>), không gửi đi đâu cả. Xóa dữ liệu trình duyệt sẽ mất tiến trình. Khi đang làm bài, bấm <kbd>A</kbd>–<kbd>E</kbd> để chọn đáp án và <kbd>Enter</kbd> để nộp.
-    <br><br>
-    <button id="btn-reset-all" class="btn ghost" style="font-size:12.5px; padding:6px 14px; margin-bottom:14px; border-radius:6px; cursor:pointer;">🔄 Xóa toàn bộ tiến trình &amp; làm lại từ đầu</button>
-    <br>
-    Nội dung dùng để ôn tập, <b>không thay thế phác đồ điều trị</b>. Mã nguồn mở trên GitHub — xem <code>README.md</code> để biết cách thêm bộ đề mới.
-  </footer>
 </div>
 
 <script src="assets/site.js?v=kahoot3"></script>
