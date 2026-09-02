@@ -19,6 +19,7 @@
   var CASES = SET.cases;
   var N = CASES.length;
   var LETTERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
+  var SHAPES = ["▲", "◆", "●", "■", "★", "⬟", "✦", "⬢"];
   var KEY = "step2ck:" + (SET.id || "default") + ":v1";
 
   function shufflePerm(len) {
@@ -214,14 +215,16 @@
     var wrongKeys = Object.keys(c.wrongs).sort(function (a, b) { return Number(a) - Number(b); });
     var wrongItems = wrongKeys
       .map(function (j) {
-        return '<li><span class="k">' + LETTERS[j] + '</span><span>' + c.wrongs[j] + "</span></li>";
+        var shp = SHAPES[j] || "●";
+        return '<li><span class="k k-c-' + (j % 5) + '"><i class="k-shape">' + shp + '</i> ' + LETTERS[j] + '</span><span>' + c.wrongs[j] + "</span></li>";
       })
       .join("");
+    var ansShape = SHAPES[c.answer] || "●";
     return (
       '<div class="expl">' +
         '<div class="verdict ' + (ok ? "ok" : "no") + '">' +
-          '<span class="mark">' + (ok ? "Chính xác." : "Chưa đúng.") + "</span>" +
-          '<span class="ans">Đáp án đúng: ' + LETTERS[c.answer] + " — " + c.choices[c.answer] + "</span>" +
+          '<span class="mark">' + (ok ? "🎉 Chính xác!" : "💥 Chưa đúng!") + "</span>" +
+          '<span class="ans">Đáp án đúng: <span class="k-pill k-c-' + (c.answer % 5) + '"><i class="k-shape">' + ansShape + '</i> ' + LETTERS[c.answer] + '</span> <b>' + c.choices[c.answer] + "</b></span>" +
         "</div>" +
         "<h3>Vì sao đáp án này đúng</h3>" +
         '<div class="prose">' +
@@ -229,7 +232,7 @@
         "</div>" +
         '<h3 class="spaced">Vì sao các lựa chọn còn lại sai</h3>' +
         '<ul class="wrongs">' + wrongItems + "</ul>" +
-        '<div class="objective"><h3>Mục tiêu học tập</h3><p>' + c.objective + "</p></div>" +
+        '<div class="objective"><h3>🎯 Mục tiêu học tập</h3><p>' + c.objective + "</p></div>" +
       "</div>"
     );
   }
@@ -243,15 +246,16 @@
 
     var choices = c.choices
       .map(function (t, j) {
-        var cls = "choice";
+        var cls = "choice k-c-" + (j % 5);
+        var shape = SHAPES[j] || "●";
         var tag = "";
         if (locked) {
           if (j === c.answer) {
             cls += " is-correct";
-            tag = '<span class="tag g">Đáp án đúng</span>';
+            tag = '<span class="tag g">✓ Đúng</span>';
           } else if (j === picked) {
             cls += " is-wrong";
-            tag = '<span class="tag r">Bạn đã chọn</span>';
+            tag = '<span class="tag r">✗ Đã chọn</span>';
           } else {
             cls += " is-muted";
           }
@@ -259,7 +263,7 @@
         return (
           '<button class="' + cls + '" data-j="' + j + '" aria-pressed="' + (picked === j) + '"' +
           (locked ? " disabled" : "") +
-          '><span class="k">' + LETTERS[j] + "</span><span>" + t + "</span>" + tag + "</button>"
+          '><span class="k"><i class="k-shape">' + shape + '</i> ' + LETTERS[j] + '</span><span class="c-text">' + t + '</span>' + tag + "</button>"
         );
       })
       .join("");
