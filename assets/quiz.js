@@ -21,16 +21,32 @@
   var LETTERS = ["A", "B", "C", "D", "E", "F", "G", "H"];
   var KEY = "step2ck:" + (SET.id || "default") + ":v1";
 
-  var state = blank();
+  function shufflePerm(len) {
+    var perm = [];
+    for (var i = 0; i < len; i++) perm.push(i);
+    for (var i = len - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = perm[i];
+      perm[i] = perm[j];
+      perm[j] = tmp;
+    }
+    return perm;
+  }
 
   function blank() {
-    return { i: 0, picked: fill(null), locked: fill(false), done: false };
+    var orders = [];
+    for (var i = 0; i < N; i++) {
+      orders.push(shufflePerm(CASES[i].choices.length));
+    }
+    return { i: 0, picked: fill(null), locked: fill(false), done: false, order: orders };
   }
   function fill(v) {
     var a = [];
     for (var i = 0; i < N; i++) a.push(v);
     return a;
   }
+
+  var state = blank();
 
   /* --- lưu tiến trình trên máy người dùng, hỏng thì bỏ qua --- */
   try {
@@ -40,6 +56,14 @@
       state.locked = saved.locked;
       state.done = !!saved.done;
       state.i = Math.min(Math.max(saved.i | 0, 0), N - 1);
+      if (Array.isArray(saved.order) && saved.order.length === N) {
+        state.order = saved.order;
+      } else {
+        state.order = [];
+        for (var idx = 0; idx < N; idx++) {
+          state.order.push(shufflePerm(CASES[idx].choices.length));
+        }
+      }
     }
   } catch (e) {}
 
@@ -49,12 +73,52 @@
     } catch (e) {}
   }
 
+  function getShuffledCase(idx) {
+    var c = CASES[idx];
+    if (!c || !Array.isArray(c.choices)) return c;
+    var perm = state.order && state.order[idx] ? state.order[idx] : null;
+    if (!perm || perm.length !== c.choices.length) {
+      return c;
+    }
+
+    var origAns = c.answer !== undefined ? c.answer : 0;
+    var newChoices = [];
+    var newAnswer = 0;
+    var newWrongs = {};
+
+    for (var j = 0; j < perm.length; j++) {
+      var origIdx = perm[j];
+      newChoices.push(c.choices[origIdx]);
+      if (origIdx === origAns) {
+        newAnswer = j;
+      } else if (c.wrongs && c.wrongs[origIdx] !== undefined) {
+        newWrongs[j] = c.wrongs[origIdx];
+      }
+    }
+
+    return {
+      spec: c.spec,
+      task: c.task,
+      short: c.short,
+      vignette: c.vignette,
+      vitals: c.vitals,
+      labs: c.labs,
+      stem: c.stem,
+      choices: newChoices,
+      answer: newAnswer,
+      why: c.why,
+      wrongs: newWrongs,
+      objective: c.objective
+    };
+  }
+
   function answeredCount() {
     return state.locked.filter(Boolean).length;
   }
   function correctCount() {
     return state.locked.reduce(function (n, l, i) {
-      return n + (l && state.picked[i] === CASES[i].answer ? 1 : 0);
+      var sc = getShuffledCase(i);
+      return n + (l && state.picked[i] === sc.answer ? 1 : 0);
     }, 0);
   }
 
@@ -89,7 +153,8 @@
     var rail = document.getElementById("rail");
     if (!rail) return;
     rail.innerHTML = "";
-    CASES.forEach(function (c, idx) {
+    CASES.forEach(function (origC, idx) {
+      var c = getShuffledCase(idx);
       var b = document.createElement("button");
       b.className = "pip";
       var st = "todo";
@@ -146,7 +211,8 @@
 
   function explanationHTML(c, picked) {
     var ok = picked === c.answer;
-    var wrongItems = Object.keys(c.wrongs)
+    var wrongKeys = Object.keys(c.wrongs).sort(function (a, b) { return Number(a) - Number(b); });
+    var wrongItems = wrongKeys
       .map(function (j) {
         return '<li><span class="k">' + LETTERS[j] + '</span><span>' + c.wrongs[j] + "</span></li>";
       })
@@ -170,7 +236,7 @@
 
   function renderCase() {
     var idx = state.i;
-    var c = CASES[idx];
+    var c = getShuffledCase(idx);
     var locked = state.locked[idx];
     var picked = state.picked[idx];
     var stage = document.getElementById("stage");
@@ -245,7 +311,8 @@
 
   function pick(j) {
     if (state.locked[state.i]) return;
-    if (j < 0 || j >= CASES[state.i].choices.length) return;
+    var c = getShuffledCase(state.i);
+    if (j < 0 || j >= c.choices.length) return;
     state.picked[state.i] = j;
     save();
     render();
@@ -319,7 +386,8 @@
   function bySpecHTML() {
     var order = [];
     var map = {};
-    CASES.forEach(function (c, i) {
+    CASES.forEach(function (origC, i) {
+      var c = getShuffledCase(i);
       if (!map[c.spec]) {
         map[c.spec] = { n: 0, ok: 0 };
         order.push(c.spec);
@@ -345,7 +413,8 @@
   function renderSummary() {
     var stage = document.getElementById("stage");
     var n = correctCount();
-    var rows = CASES.map(function (c, i) {
+    var rows = CASES.map(function (origC, i) {
+      var c = getShuffledCase(i);
       var ok = state.picked[i] === c.answer;
       return (
         '<a data-i="' + i + '"><span class="n">' + (i + 1) + "</span>" +
