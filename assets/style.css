@@ -335,67 +335,73 @@ table.labs td.val.lo::after{content:" ▼"; font-size:9px}
 /* ---------- câu hỏi và lựa chọn kiểu Kahoot ---------- */
 .stem{
   margin:26px 0 18px; padding-top:22px;
-  border-top:1px solid var(--line);
-  font-family:var(--sans); font-size:19px; font-weight:700; line-height:1.45;
-  text-wrap:balance;
+  border-top:2px solid var(--line);
+  font-family:var(--sans); font-size:20px; font-weight:800; line-height:1.45;
+  text-wrap:balance; color:var(--ink);
 }
-.choices{display:flex; flex-direction:column; gap:10px}
+.choices{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));
+  gap:12px;
+  margin-top:14px;
+}
 .choice{
   display:flex; gap:14px; align-items:center;
+  min-height:64px;
   width:100%; text-align:left;
   padding:14px 18px;
   background:var(--surface);
   border:2px solid var(--line);
   border-radius:14px;
-  font-family:var(--sans); font-size:16px; line-height:1.45; color:var(--ink);
+  font-family:var(--sans); font-size:16px; font-weight:600; line-height:1.45; color:var(--ink);
   cursor:pointer;
-  box-shadow:0 3px 0 rgba(0,0,0,.08);
+  box-shadow:0 4px 0 rgba(0,0,0,.08);
   transition:border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
 }
 .choice:hover:not(:disabled){
-  transform:translateY(-2px);
-  box-shadow:0 6px 14px rgba(0,0,0,.12);
+  transform:translateY(-3px) scale(1.01);
+  box-shadow:0 8px 18px rgba(0,0,0,.14);
 }
 .choice:active:not(:disabled){
-  transform:translateY(1px);
+  transform:translateY(2px);
   box-shadow:0 1px 0 rgba(0,0,0,.08);
 }
 
 .choice .k{
-  flex:0 0 auto; width:52px; height:34px;
-  display:inline-flex; align-items:center; justify-content:center; gap:4px;
+  flex:0 0 auto; width:56px; height:38px;
+  display:inline-flex; align-items:center; justify-content:center; gap:5px;
   border-radius:8px;
-  font-family:var(--sans); font-size:14px; font-weight:800; color:#FFFFFF;
-  box-shadow:0 2px 0 rgba(0,0,0,.2);
-  text-shadow:0 1px 2px rgba(0,0,0,.3);
+  font-family:var(--sans); font-size:15px; font-weight:800; color:#FFFFFF;
+  box-shadow:0 2px 0 rgba(0,0,0,.25);
+  text-shadow:0 1px 2px rgba(0,0,0,.35);
 }
-.k-shape{font-style:normal; font-size:13px}
-.c-text{flex:1 1 auto; font-weight:500}
+.k-shape{font-style:normal; font-size:14px}
+.c-text{flex:1 1 auto; font-weight:600; word-break:break-word}
 
 /* Bảng màu Kahoot rực rỡ */
 .choice.k-c-0 .k{background:#E21B3C} /* Đỏ tam giác */
-.choice.k-c-0:hover:not(:disabled){border-color:#E21B3C; background:rgba(226,27,60,.06)}
-.choice.k-c-0[aria-pressed="true"]{border-color:#E21B3C; background:rgba(226,27,60,.14); box-shadow:0 0 0 3px rgba(226,27,60,.35)}
+.choice.k-c-0:hover:not(:disabled){border-color:#E21B3C; background:rgba(226,27,60,.08)}
+.choice.k-c-0[aria-pressed="true"]{border-color:#E21B3C; background:rgba(226,27,60,.16); box-shadow:0 0 0 3px rgba(226,27,60,.45)}
 
 .choice.k-c-1 .k{background:#1368CE} /* Xanh dương thoi */
-.choice.k-c-1:hover:not(:disabled){border-color:#1368CE; background:rgba(19,104,206,.06)}
-.choice.k-c-1[aria-pressed="true"]{border-color:#1368CE; background:rgba(19,104,206,.14); box-shadow:0 0 0 3px rgba(19,104,206,.35)}
+.choice.k-c-1:hover:not(:disabled){border-color:#1368CE; background:rgba(19,104,206,.08)}
+.choice.k-c-1[aria-pressed="true"]{border-color:#1368CE; background:rgba(19,104,206,.16); box-shadow:0 0 0 3px rgba(19,104,206,.45)}
 
 .choice.k-c-2 .k{background:#FFA602} /* Vàng tròn */
-.choice.k-c-2:hover:not(:disabled){border-color:#FFA602; background:rgba(255,166,2,.06)}
-.choice.k-c-2[aria-pressed="true"]{border-color:#FFA602; background:rgba(255,166,2,.14); box-shadow:0 0 0 3px rgba(255,166,2,.35)}
+.choice.k-c-2:hover:not(:disabled){border-color:#FFA602; background:rgba(255,166,2,.08)}
+.choice.k-c-2[aria-pressed="true"]{border-color:#FFA602; background:rgba(255,166,2,.16); box-shadow:0 0 0 3px rgba(255,166,2,.45)}
 
 .choice.k-c-3 .k{background:#26890C} /* Xanh lá vuông */
-.choice.k-c-3:hover:not(:disabled){border-color:#26890C; background:rgba(38,137,12,.06)}
-.choice.k-c-3[aria-pressed="true"]{border-color:#26890C; background:rgba(38,137,12,.14); box-shadow:0 0 0 3px rgba(38,137,12,.35)}
+.choice.k-c-3:hover:not(:disabled){border-color:#26890C; background:rgba(38,137,12,.08)}
+.choice.k-c-3[aria-pressed="true"]{border-color:#26890C; background:rgba(38,137,12,.16); box-shadow:0 0 0 3px rgba(38,137,12,.45)}
 
 .choice.k-c-4 .k{background:#864CBF} /* Tím sao */
-.choice.k-c-4:hover:not(:disabled){border-color:#864CBF; background:rgba(134,76,191,.06)}
-.choice.k-c-4[aria-pressed="true"]{border-color:#864CBF; background:rgba(134,76,191,.14); box-shadow:0 0 0 3px rgba(134,76,191,.35)}
+.choice.k-c-4:hover:not(:disabled){border-color:#864CBF; background:rgba(134,76,191,.08)}
+.choice.k-c-4[aria-pressed="true"]{border-color:#864CBF; background:rgba(134,76,191,.16); box-shadow:0 0 0 3px rgba(134,76,191,.45)}
 
 .choice:disabled{cursor:default; transform:none}
-.choice.is-correct{border-color:#26890C !important; background:var(--good-soft) !important; box-shadow:0 0 0 3px rgba(38,137,12,.4) !important}
-.choice.is-wrong{border-color:#E21B3C !important; background:var(--bad-soft) !important; box-shadow:0 0 0 3px rgba(226,27,60,.4) !important}
+.choice.is-correct{border-color:#26890C !important; background:var(--good-soft) !important; box-shadow:0 0 0 4px #26890C, 0 6px 16px rgba(38,137,12,.3) !important}
+.choice.is-wrong{border-color:#E21B3C !important; background:var(--bad-soft) !important; box-shadow:0 0 0 4px #E21B3C, 0 6px 16px rgba(226,27,60,.3) !important}
 .choice.is-muted{opacity:.45}
 
 .tag{
