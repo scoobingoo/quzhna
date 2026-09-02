@@ -64,10 +64,25 @@
     var box = document.getElementById("scorebox");
     if (!box) return;
     var a = answeredCount();
+    var resetBtn = '<button type="button" class="btn-reset-curr" id="btn-reset-set" title="Xóa tiến trình và làm lại bộ đề này">🔄 Làm lại bộ đề</button>';
     box.innerHTML =
-      a === 0
+      (a === 0
         ? "<b>0/" + N + "</b>chưa bắt đầu"
-        : "<b>" + correctCount() + "/" + a + "</b>đúng trên " + a + " câu đã làm";
+        : "<b>" + correctCount() + "/" + a + "</b>đúng trên " + a + " câu đã làm") +
+      resetBtn;
+
+    var btn = document.getElementById("btn-reset-set");
+    if (btn) {
+      btn.onclick = function (e) {
+        e.stopPropagation();
+        if (confirm("Bạn có chắc muốn xóa toàn bộ kết quả để làm lại bộ đề này từ đầu không?")) {
+          state = blank();
+          save();
+          render();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      };
+    }
   }
 
   function renderRail() {

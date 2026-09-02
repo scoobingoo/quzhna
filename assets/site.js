@@ -106,6 +106,10 @@
       var bar = card.querySelector(".prog i");
       if (bar) bar.style.width = (count ? Math.round((p.answered / count) * 100) : 0) + "%";
 
+      var top = card.querySelector(".top");
+      var oldReset = card.querySelector(".btn-card-reset");
+      if (oldReset) oldReset.remove();
+
       var badge = card.querySelector(".state");
       if (!badge) return;
       if (p.answered === 0) {
@@ -117,6 +121,27 @@
       } else {
         badge.textContent = p.answered + "/" + count;
         badge.className = "state part";
+      }
+
+      if (p.answered > 0 && top) {
+        var rBtn = document.createElement("button");
+        rBtn.type = "button";
+        rBtn.className = "btn-card-reset";
+        rBtn.innerHTML = "🔄 Làm lại";
+        rBtn.title = "Xóa kết quả và làm lại bộ đề này";
+        rBtn.onclick = function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          var titleEl = card.querySelector("h2");
+          var name = titleEl ? titleEl.textContent : id;
+          if (confirm("Bạn có chắc muốn xóa kết quả của bộ đề \"" + name + "\" để làm lại từ đầu?")) {
+            try {
+              localStorage.removeItem("step2ck:" + id + ":v1");
+            } catch (err) {}
+            wireHomeProgress();
+          }
+        };
+        top.appendChild(rBtn);
       }
     });
 
