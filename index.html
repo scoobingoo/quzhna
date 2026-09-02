@@ -4,58 +4,117 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ôn thi USMLE Step 2 CK bằng tiếng Việt</title>
-<meta name="description" content="Các bộ ca lâm sàng kiểu UWorld cho USMLE Step 2 CK, viết bằng tiếng Việt, trọng tâm chẩn đoán và bước xử trí tiếp theo.">
+<meta name="description" content="42 ca lâm sàng kiểu UWorld cho USMLE Step 2 CK, viết bằng tiếng Việt, trọng tâm chẩn đoán và bước xử trí tiếp theo.">
+<meta name="theme-color" content="#0C6255">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%A9%BA</text></svg>">
+<script>
+  /* đặt giao diện trước khi vẽ để không bị nháy nền */
+  try {
+    var t = localStorage.getItem("step2ck:theme");
+    if (t) document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
 </head>
 <body>
 
 <div class="wrap">
-  <header class="masthead">
-    <div>
-      <div class="eyebrow">USMLE Step 2 CK · Tiếng Việt</div>
+
+  <div class="topbar">
+    <span class="brandline"><span class="dot"></span>Step 2 CK · Tiếng Việt</span>
+    <button class="themetoggle" type="button">Nền tối</button>
+  </div>
+
+  <header class="hero">
+    <div class="avatar lg">
+      <span class="fallback">QA</span>
+      <img src="assets/avatar.jpg" alt="Ảnh đại diện">
+    </div>
+    <div class="hero-text">
+      <div class="eyebrow">USMLE Step 2 CK</div>
       <h1>Ca lâm sàng Step 2 CK</h1>
-      <p>Các bộ ca kiểu UWorld: đọc bệnh án, chọn bước tiếp theo, đọc giải thích từng lựa chọn.</p>
+      <p>Bộ ca kiểu UWorld viết bằng tiếng Việt: đọc bệnh án, chọn bước tiếp theo, đọc giải thích cho từng lựa chọn — kể cả lựa chọn sai.</p>
+      <div class="owner">Góc ôn thi của <b>Quỳnh Anh</b> · tiến trình lưu ngay trong trình duyệt của bạn</div>
     </div>
   </header>
 
-  <div class="sets">
-    <a class="set" href="noi-khoa/">
-      <h2>Năm ca nội khoa</h2>
-      <p>Nhồi máu thất phải · tràn dịch cận viêm phổi · xuất huyết do giãn tĩnh mạch thực quản · cường aldosterone nguyên phát · giảm tiểu cầu do heparin.</p>
-      <span class="meta">5 ca · chẩn đoán &amp; bước xử trí tiếp theo</span>
-      <span class="state">Sẵn sàng</span>
-    </a>
+  <div class="stats">
+    <div class="accent"><b>42</b><span>Ca lâm sàng</span></div>
+    <div><b>4</b><span>Bộ đề</span></div>
+    <div><b>19</b><span>Chuyên khoa</span></div>
+    <div><b id="stat-done">0</b><span>Bạn đã làm</span></div>
   </div>
 
-  <p class="section-label">Dự kiến bổ sung</p>
+  <p class="section-label">Các bộ đề</p>
   <div class="sets">
-    <div class="set soon">
-      <h2>Sản phụ khoa</h2>
-      <p>Chưa có nội dung. Thêm bằng cách tạo một file trong thư mục <code>sets/</code> — xem README.</p>
-      <span class="state">Chưa có</span>
-    </div>
-    <div class="set soon">
-      <h2>Nhi khoa</h2>
-      <p>Chưa có nội dung.</p>
-      <span class="state">Chưa có</span>
-    </div>
-    <div class="set soon">
-      <h2>Ngoại khoa &amp; Cấp cứu</h2>
-      <p>Chưa có nội dung.</p>
-      <span class="state">Chưa có</span>
-    </div>
+
+    <a class="set" href="noi-khoa/" data-set="noi-khoa" data-count="12">
+      <div class="top">
+        <span class="ico" aria-hidden="true">🫀</span>
+        <h2>Nội khoa</h2>
+        <span class="state">Bắt đầu</span>
+      </div>
+      <p>Nhồi máu thất phải · tràn dịch cận viêm phổi · xuất huyết do giãn tĩnh mạch thực quản · cường aldosterone · giảm tiểu cầu do heparin · SIADH · viêm màng não · xuất huyết dưới nhện · toan ceton · viêm động mạch tế bào khổng lồ · thuyên tắc phổi · chèn ép tủy sống.</p>
+      <span class="meta">12 ca · Tim mạch, Hô hấp, Tiêu hóa, Nội tiết, Huyết học, Thần kinh, Nhiễm, Thấp khớp, Thận, Ung thư</span>
+      <span class="prog"><i></i></span>
+    </a>
+
+    <a class="set" href="san-phu-khoa/" data-set="san-phu-khoa" data-count="10">
+      <div class="top">
+        <span class="ico" aria-hidden="true">🤰</span>
+        <h2>Sản phụ khoa</h2>
+        <span class="state">Bắt đầu</span>
+      </div>
+      <p>Tiền sản giật có dấu hiệu nặng · rau bong non · thai ngoài tử cung vỡ · băng huyết sau sinh · ối vỡ non · nhịp tim thai giảm muộn · viêm vùng chậu · ra máu sau mãn kinh · xoắn buồng trứng · viêm nội mạc tử cung hậu sản.</p>
+      <span class="meta">10 ca · Sản khoa, Phụ khoa, Cấp cứu sản</span>
+      <span class="prog"><i></i></span>
+    </a>
+
+    <a class="set" href="nhi-khoa/" data-set="nhi-khoa" data-count="10">
+      <div class="top">
+        <span class="ico" aria-hidden="true">🧸</span>
+        <h2>Nhi khoa</h2>
+        <span class="state">Bắt đầu</span>
+      </div>
+      <p>Viêm thanh khí phế quản · lồng ruột · hẹp phì đại môn vị · bệnh Kawasaki · viêm tiểu phế quản · sốt ở trẻ sơ sinh · ban xuất huyết Henoch-Schönlein · toan ceton ở trẻ · teo đường mật · dị vật đường thở.</p>
+      <span class="meta">10 ca · Sơ sinh, Hô hấp nhi, Tiêu hóa nhi, Tim mạch nhi, Huyết học nhi</span>
+      <span class="prog"><i></i></span>
+    </a>
+
+    <a class="set" href="ngoai-cap-cuu/" data-set="ngoai-cap-cuu" data-count="10">
+      <div class="top">
+        <span class="ico" aria-hidden="true">🚑</span>
+        <h2>Ngoại khoa &amp; Cấp cứu</h2>
+        <span class="state">Bắt đầu</span>
+      </div>
+      <p>Viêm ruột thừa · thủng tạng rỗng · tắc ruột non thắt nghẹt · chấn thương bụng kín · tràn khí màng phổi áp lực · vỡ phình động mạch chủ bụng · thiếu máu mạc treo · hội chứng khoang · bỏng đường hô hấp · quá liều paracetamol.</p>
+      <span class="meta">10 ca · Ngoại tổng quát, Chấn thương, Mạch máu, Ngộ độc</span>
+      <span class="prog"><i></i></span>
+    </a>
+
+  </div>
+
+  <p class="section-label">Cách dùng bộ đề này cho hiệu quả</p>
+  <div class="tips">
+    <h3>Bốn thói quen đáng tập</h3>
+    <ol>
+      <li><b>Đọc câu hỏi trước bệnh án.</b> Biết trước đề hỏi chẩn đoán hay hỏi bước xử trí sẽ đổi hẳn cách bạn đọc phần dữ kiện.</li>
+      <li><b>Tự đặt chẩn đoán trước khi nhìn xuống các lựa chọn.</b> Nếu phải đọc hết năm lựa chọn mới nghĩ ra, đó là câu cần đánh dấu ôn lại.</li>
+      <li><b>Đặt mục tiêu dưới 90 giây mỗi câu.</b> Đề thi thật cho khoảng 1 phút 30 giây; luyện đúng nhịp đó ngay từ đầu.</li>
+      <li><b>Đọc cả phần giải thích của lựa chọn sai.</b> Bốn lựa chọn sai của một câu thường chính là đáp án đúng của bốn câu khác.</li>
+    </ol>
   </div>
 
   <footer>
-    <b>Tiến trình làm bài</b> được lưu trong trình duyệt của bạn, không gửi đi đâu cả. Xóa dữ liệu trình duyệt sẽ mất tiến trình.
+    <b>Tiến trình làm bài</b> được lưu trong trình duyệt của bạn (<code>localStorage</code>), không gửi đi đâu cả. Xóa dữ liệu trình duyệt sẽ mất tiến trình. Bấm <kbd>A</kbd>–<kbd>E</kbd> để chọn đáp án và <kbd>Enter</kbd> để nộp khi đang làm bài.
     <br><br>
-    Nội dung dùng để ôn tập, không thay thế phác đồ điều trị. Mã nguồn mở trên GitHub — xem <code>README.md</code> để biết cách thêm bộ đề mới.
+    Nội dung dùng để ôn tập, <b>không thay thế phác đồ điều trị</b>. Mã nguồn mở trên GitHub — xem <code>README.md</code> để biết cách thêm bộ đề mới.
   </footer>
 </div>
 
+<script src="assets/site.js"></script>
 </body>
 </html>

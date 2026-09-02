@@ -72,6 +72,7 @@
 
   function renderRail() {
     var rail = document.getElementById("rail");
+    if (!rail) return;
     rail.innerHTML = "";
     CASES.forEach(function (c, idx) {
       var b = document.createElement("button");
@@ -80,16 +81,22 @@
       if (state.locked[idx]) st = state.picked[idx] === c.answer ? "correct" : "wrong";
       if (!state.done && idx === state.i) st = "current";
       b.dataset.state = st;
-      b.innerHTML = '<span class="bar"></span><span class="lbl">' + (idx + 1) + " · " + c.spec + "</span>";
+      b.textContent = idx + 1;
+      b.title = "Câu " + (idx + 1) + " · " + c.spec;
+      b.setAttribute("aria-label", "Câu " + (idx + 1) + ", " + c.spec);
       b.disabled = !state.locked[idx] && idx !== state.i;
       b.onclick = function () {
         state.done = false;
         state.i = idx;
         save();
         render();
+        window.scrollTo({ top: 0, behavior: "smooth" });
       };
       rail.appendChild(b);
     });
+
+    var meter = document.getElementById("railmeter");
+    if (meter) meter.style.width = Math.round((answeredCount() / N) * 100) + "%";
   }
 
   function vitalsBlock(v) {
@@ -99,7 +106,10 @@
         return "<div><span>" + x[0] + "</span><b>" + x[1] + "</b></div>";
       })
       .join("");
-    return '<div class="datablock"><h4>Dấu hiệu sinh tồn</h4><div class="vitals">' + cells + "</div></div>";
+    return (
+      '<div class="datablock"><h4>Dấu hiệu sinh tồn</h4>' +
+      '<div class="scroll"><div class="vitals">' + cells + "</div></div></div>"
+    );
   }
 
   function labTable(labs) {
@@ -115,7 +125,7 @@
       .join("");
     return (
       '<div class="datablock"><h4>' + labs.title +
-      '</h4><table class="labs"><tbody>' + rows + "</tbody></table></div>"
+      '</h4><div class="scroll"><table class="labs"><tbody>' + rows + "</tbody></table></div></div>"
     );
   }
 
@@ -176,10 +186,13 @@
     var isLast = idx === N - 1;
     var actions = locked
       ? '<button class="btn" id="next">' + (isLast ? "Xem tổng kết" : "Câu tiếp theo") + "</button>" +
-        '<span class="hint">Câu ' + (idx + 1) + " / " + N + "</span>"
+        '<span class="hint">Câu ' + (idx + 1) + " / " + N + " · <kbd>Enter</kbd> để đi tiếp</span>"
       : '<button class="btn" id="submit"' + (picked === null ? " disabled" : "") + ">Kiểm tra đáp án</button>" +
         '<span class="hint">' +
-          (picked === null ? "Chọn một đáp án để tiếp tục." : "Đã chọn " + LETTERS[picked] + ". Nộp để xem giải thích.") +
+          (picked === null
+            ? "Bấm <kbd>A</kbd>–<kbd>" + LETTERS[c.choices.length - 1] + "</kbd> hoặc <kbd>1</kbd>–<kbd>" +
+              c.choices.length + "</kbd> để chọn nhanh."
+            : "Đã chọn " + LETTERS[picked] + ". <kbd>Enter</kbd> để xem giải thích.") +
         "</span>";
 
     var expl = locked ? explanationHTML(c, picked) : "";
@@ -190,7 +203,7 @@
         '<span class="chip">' + c.spec + "</span>" +
         '<span class="chip task">' + c.task + "</span>" +
       "</div>" +
-      '<div class="body">' +
+      '<div class="body fadein">' +
         '<div class="vignette">' +
           c.vignette.map(function (p) { return "<p>" + p + "</p>"; }).join("") +
         "</div>" +
@@ -204,34 +217,64 @@
 
     stage.querySelectorAll(".choice").forEach(function (btn) {
       btn.onclick = function () {
-        if (state.locked[state.i]) return;
-        state.picked[state.i] = Number(btn.dataset.j);
-        save();
-        render();
+        pick(Number(btn.dataset.j));
       };
     });
 
     var sub = document.getElementById("submit");
-    if (sub)
-      sub.onclick = function () {
-        if (state.picked[state.i] === null) return;
-        state.locked[state.i] = true;
-        save();
-        render();
-        var e = document.querySelector(".expl");
-        if (e) e.scrollIntoView({ behavior: "smooth", block: "start" });
-      };
+    if (sub) sub.onclick = submit;
 
     var nx = document.getElementById("next");
-    if (nx)
-      nx.onclick = function () {
-        if (isLast) state.done = true;
-        else state.i = idx + 1;
-        save();
-        render();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      };
+    if (nx) nx.onclick = advance;
   }
+
+  function pick(j) {
+    if (state.locked[state.i]) return;
+    if (j < 0 || j >= CASES[state.i].choices.length) return;
+    state.picked[state.i] = j;
+    save();
+    render();
+  }
+
+  function submit() {
+    if (state.locked[state.i] || state.picked[state.i] === null) return;
+    state.locked[state.i] = true;
+    save();
+    render();
+    var e = document.querySelector(".expl");
+    if (e) e.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function advance() {
+    if (!state.locked[state.i]) return;
+    if (state.i === N - 1) state.done = true;
+    else state.i = state.i + 1;
+    save();
+    render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  /* --- phím tắt: A–H hoặc 1–8 để chọn, Enter để nộp / đi tiếp --- */
+  document.addEventListener("keydown", function (ev) {
+    if (state.done) return;
+    if (ev.ctrlKey || ev.metaKey || ev.altKey) return;
+    var t = ev.target;
+    if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
+
+    if (ev.key === "Enter") {
+      ev.preventDefault();
+      if (state.locked[state.i]) advance();
+      else submit();
+      return;
+    }
+    var k = ev.key.toUpperCase();
+    var j = LETTERS.indexOf(k);
+    if (j === -1 && /^[1-8]$/.test(k)) j = Number(k) - 1;
+    if (j > -1) {
+      ev.preventDefault();
+      pick(j);
+    }
+  });
 
   function verdictLine(n) {
     var pct = n / N;
@@ -240,6 +283,48 @@
     if (pct >= 0.6) return "Ở mức trung bình. Ưu tiên ôn lại đúng những chuyên khoa của các câu sai trước khi làm bộ tiếp theo.";
     if (pct >= 0.4) return "Cần củng cố. Đọc lại phần giải thích của cả bộ, kể cả câu làm đúng do đoán.";
     return "Hãy xem bộ này như tài liệu học chứ không phải bài kiểm tra: đọc kỹ từng mục tiêu học tập rồi làm lại sau vài ngày.";
+  }
+
+  function scoreRing(n) {
+    var pct = Math.round((n / N) * 100);
+    var r = 36, circ = 2 * Math.PI * r;
+    var off = circ * (1 - n / N);
+    return (
+      '<div class="ring">' +
+        '<svg width="90" height="90" viewBox="0 0 90 90" aria-hidden="true">' +
+          '<circle class="track" cx="45" cy="45" r="' + r + '"></circle>' +
+          '<circle class="fill" cx="45" cy="45" r="' + r + '" ' +
+            'stroke-dasharray="' + circ.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '"></circle>' +
+        "</svg>" +
+        '<span class="pct">' + pct + "%</span>" +
+      "</div>"
+    );
+  }
+
+  function bySpecHTML() {
+    var order = [];
+    var map = {};
+    CASES.forEach(function (c, i) {
+      if (!map[c.spec]) {
+        map[c.spec] = { n: 0, ok: 0 };
+        order.push(c.spec);
+      }
+      map[c.spec].n++;
+      if (state.picked[i] === c.answer) map[c.spec].ok++;
+    });
+    var rows = order
+      .map(function (s) {
+        var d = map[s];
+        var pct = Math.round((d.ok / d.n) * 100);
+        var cls = pct >= 80 ? "" : pct >= 50 ? "mid" : "weak";
+        return (
+          '<div class="row"><span class="nm">' + s + "</span>" +
+          '<span class="track"><i class="' + cls + '" style="width:' + pct + '%"></i></span>' +
+          '<span class="sc">' + d.ok + "/" + d.n + "</span></div>"
+        );
+      })
+      .join("");
+    return '<h3 class="specs-h">Theo chuyên khoa</h3><div class="byspec">' + rows + "</div>";
   }
 
   function renderSummary() {
@@ -255,9 +340,14 @@
     }).join("");
 
     stage.innerHTML =
-      '<div class="summary">' +
-        "<h2>Kết quả: " + n + " / " + N + "</h2>" +
+      '<div class="summary fadein">' +
+        "<h2>Kết quả bộ đề</h2>" +
         '<p class="lede">' + verdictLine(n) + "</p>" +
+        '<div class="bigscore">' + scoreRing(n) +
+          '<div class="num"><b>' + n + " / " + N + "</b>" +
+          "<span>câu trả lời đúng</span></div>" +
+        "</div>" +
+        bySpecHTML() +
         '<div class="tally">' + rows + "</div>" +
         '<div class="actions">' +
           '<button class="btn" id="again">Làm lại từ đầu</button>' +

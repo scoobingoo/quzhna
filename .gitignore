@@ -1,3 +1,11 @@
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Tài liệu
+docs/
+tai-lieu/
+tailieu/
+*.pdf
+*.docx
+*.doc
