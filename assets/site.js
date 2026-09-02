@@ -124,10 +124,32 @@
     if (stat) stat.textContent = doneAll;
   }
 
+  function wireResetAll() {
+    var btn = document.getElementById("btn-reset-all");
+    if (!btn) return;
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (confirm("Bạn có chắc muốn xóa toàn bộ tiến trình làm bài của tất cả các bộ đề để làm lại từ đầu không?")) {
+        try {
+          var keys = [];
+          for (var i = 0; i < localStorage.length; i++) {
+            var k = localStorage.key(i);
+            if (k && k.indexOf("step2ck:") === 0 && k !== THEME_KEY) {
+              keys.push(k);
+            }
+          }
+          keys.forEach(function (k) { localStorage.removeItem(k); });
+        } catch (err) {}
+        window.location.reload();
+      }
+    });
+  }
+
   function init() {
     wireToggle();
     wireAvatars();
     wireHomeProgress();
+    wireResetAll();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
