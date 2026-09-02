@@ -1,1322 +1,1608 @@
 /* ==========================================================================
-   Bộ đề: Nội tiết & Chuyển hóa — 30 ca lâm sàng chuyên sâu theo guideline ADA & Endocrine Society.
-   Tài liệu tham khảo: Sách Nội tiết học trong thực hành lâm sàng, Bệnh viện Bạch Mai.
+   Bộ đề: Nội tiết & Chuyển hóa — 30 ca lâm sàng nâng cao mức độ khó nhất USMLE Step 2 CK
+   Tài liệu chuẩn: ADA Standards of Care, Endocrine Society Guidelines, ATA Guidelines, Williams Textbook of Endocrinology
    ========================================================================== */
 window.QUIZ_SET = {
-  id: "noi-tiet",
-  eyebrow: "USMLE Step 2 CK · Chuyên đề Nội khoa",
-  title: "Nội tiết & Chuyển hóa",
-  blurb: "30 ca lâm sàng nội tiết chuyên sâu (ADA, Endocrine Society, Bạch Mai): DKA/HHS, ĐTĐ típ 2 và bảo vệ tim thận SGLT2i/GLP-1 RA, bão giáp/hôn mê phù niêm, Basedow, suy thượng thận cấp, Cushing, Conn, Pheochromocytoma, đái tháo nhạt, SIADH, MEN-1/MEN-2 và rối loạn chuyển hóa Canxi.",
-
-  cases: [
+  "id": "noi-tiet",
+  "eyebrow": "USMLE Step 2 CK · Chuyên đề Nội khoa",
+  "title": "Nội tiết & Chuyển hóa",
+  "blurb": "30 ca lâm sàng nội tiết và chuyển hóa chuyên sâu độ khó cao nhất (ADA, Endocrine Society, ATA): DKA, HHS, bão giáp, hôn mê phù niêm, suy thượng thận cấp, Cushing, Conn, Pheochromocytoma, đái tháo nhạt, SIADH, MEN và loãng xương.",
+  "cases": [
     {
-      spec: "Nội tiết",
-      task: "Bước xử trí cấp cứu",
-      short: "Nhiễm toan ceton do đái tháo đường (DKA)",
-      vignette: [
-        "Nữ 19 tuổi có tiền sử đái tháo đường típ 1, được người nhà đưa vào cấp cứu vì thở nhanh sâu dồn dập (thở Kussmaul), hơi thở có mùi táo chín (mùi acetone), đau bụng buồn nôn và lơ mơ.",
-        "Khám: Mắt trũng, niêm mạc khô kiệt, da đàn hồi kém, huyết áp 95/60 mm Hg, mạch 118 l/phút, nhịp thở 30 l/phút.",
-        "Xét nghiệm máu khẩn: <b>Glucose huyết tương 450 mg/dL</b>, <b>pH máu động mạch 7,15, HCO3- 9 mEq/L</b>, Khoảng trống Anion (Anion Gap) = 24 mEq/L (Toan chuyển hóa tăng khoảng trống Anion nặng), <b>Ceton máu và Ceton niệu (+++)</b>. <b>Kali huyết thanh 4,8 mEq/L</b>, Natri 130 mEq/L."
+      "spec": "Nội tiết",
+      "task": "Bước xử trí & Quản lý điện giải",
+      "short": "Toan ceton do đái tháo đường (DKA) - Chiến lược quản lý Kali và Insulin",
+      "vignette": [
+        "Nữ 21 tuổi có tiền sử Đái tháo đường típ 1 đang tiêm Insulin nền-nhanh, được đưa vào phòng cấp cứu vì buồn nôn, nôn mửa liên tục, đau bụng quanh rốn và thở sâu nhanh kiểu Kussmaul trong 24 giờ qua sau khi tự ý ngừng tiêm insulin do chán ăn.",
+        "Khám: Bệnh nhân lơ mơ, hơi thở có mùi táo chín (mùi ceton), dấu véo da mất rất chậm, niêm mạc khô ráp. Khí máu động mạch: pH 7,12, PaCO2 18 mm Hg, HCO3- 7 mEq/L (Toan chuyển hóa tăng Anion Gap = 24).",
+        "Xét nghiệm sinh hóa máu khẩn cấp: <b>Glucose máu 465 mg/dL; Kali huyết thanh 3,8 mEq/L (ngưỡng 3,5–5,0 mEq/L); Natri 130 mEq/L; Creatinine 1,5 mg/dL; Ceton máu và ceton niệu dương tính mạnh (4+)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "37,0 °C"],
-        ["Huyết áp", "95/60"],
-        ["Mạch", "118 l/ph"],
-        ["Nhịp thở", "30 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "37,0 °C"
+        ],
+        [
+          "Huyết áp",
+          "95/60 mm Hg"
+        ],
+        [
+          "Mạch",
+          "122 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "28 l/ph (thở sâu Kussmaul)"
+        ],
+        [
+          "SpO2",
+          "98% khí trời"
+        ]
       ],
-      stem: "Nguyên tắc hồi sức dịch, điện giải và insulin chuẩn xác nhất theo hướng dẫn ADA trong giờ đầu tiên là gì?",
-      choices: [
-        "Truyền tĩnh mạch nhanh 1.000–1.500 mL NaCl 0,9% trong giờ đầu + Bắt đầu truyền Insulin Regular tĩnh mạch liên tục 0,1 đơn vị/kg/giờ + Bổ sung Kali vào dịch truyền ngay khi K máu < 5,2 mEq/L để phòng ngừa hạ kali máu do insulin",
-        "Tiêm tĩnh mạch Bolus Insulin liều cao và KHÔNG truyền dịch để tránh phù não",
-        "Truyền dung dịch Natri Bicarbonate 8,4% liều cao ngay lập tức cho mọi bệnh nhân DKA",
-        "Chỉ cho uống viên hạ đường huyết Metformin và bù nước bằng đường uống",
-        "Chờ kết quả cấy máu sau 48 giờ mới bắt đầu dùng insulin"
+      "stem": "Theo Hướng dẫn chuẩn của Hiệp hội Đái tháo đường Hoa Kỳ (ADA 2024), bước xử trí bù dịch, kali và khởi động insulin đúng đắn nhất là gì?",
+      "choices": [
+        "Hồi sức truyền dung dịch muối đẳng trương NaCl 0,9% (1000 mL/giờ), BỔ SUNG KALI (20–30 mEq Kali Chloride vào mỗi lít dịch truyền) NGAY ĐỒNG THỜI KHI BẮT ĐẦU TRUYỀN INSULIN tĩnh mạch liên tục (0,1 U/kg/h) để phòng ngừa hạ Kali máu gây tử vong; thêm Glucose 5% khi đường huyết hạ xuống < 200 mg/dL",
+        "Tiêm tĩnh mạch Bolus Insulin liều cao 0,4 U/kg ngay lập tức mà không cần bù Kali vì nồng độ Kali máu ban đầu vẫn bình thường (3,8 mEq/L)",
+        "Truyền ngay Bicarbonate 100 mEq tĩnh mạch để nâng pH máu lên > 7,30",
+        "Chờ bù đủ 5 lít dịch trong 24 giờ rồi mới bắt đầu tiêm Insulin",
+        "Truyền dung dịch Natri Clorid 0,45% tốc độ 100 mL/h và tiêm Insulin dưới da ngắt quãng"
       ],
-      answer: 0,
-      why: [
-        "Xử trí <b>Nhiễm toan ceton do đái tháo đường (DKA)</b> theo khuyến cáo <b>ADA (American Diabetes Association)</b>:",
-        "1. <b>Bù dịch tinh thể là ưu tiên hàng đầu</b>: Truyền nhanh <b>NaCl 0,9% với tốc độ 1.000–1.500 mL trong giờ đầu tiên</b> để phục hồi thể tích nội mạch và tưới máu mô.",
-        "2. <b>Insulin</b>: Truyền <b>Insulin Regular tĩnh mạch liên tục 0,1 đơn vị/kg/giờ</b> (chỉ tiêm khi Kali máu ≥ 3,3 mEq/L; nếu K < 3,3 mEq/L thì BẮT BUỘC BÙ KALI TRƯỚC rồi mới dùng insulin để tránh ngừng tim do hạ kali máu).",
-        "3. <b>Bù Kali</b>: Dù Kali máu xét nghiệm ban đầu có thể bình thường hoặc hơi cao do toan máu đẩy K ra ngoài tế bào, <b>tổng lượng Kali toàn cơ thể luôn luôn bị thiếu hụt nặng</b>. Khi truyền insulin và dịch, Kali sẽ đi ào ạt vào lại nội bào; do đó <b>bắt buộc phải pha 20–30 mEq Kali vào mỗi lít dịch truyền ngay khi Kali máu < 5,2 mEq/L</b>.",
-        "4. <b>Khi Glucose máu giảm xuống < 200 mg/dL</b>: <b>Đổi dịch sang Glucose 5% pha NaCl 0,45%</b> trong khi vẫn tiếp tục duy trì truyền insulin cho đến khi hết toan ceton (pH > 7,30, HCO3- ≥ 18 mEq/L và Anion Gap đóng lại)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có <b>Toan ceton do đái tháo đường (Diabetic Ketoacidosis - DKA)</b> mức độ nặng: pH < 7,20, HCO3- < 10 mEq/L, Anion Gap = 24, Ceton máu (+).",
+        "<b>Sinh lý bệnh học phân bố Kali trong DKA</b>: Mặc dù Kali huyết thanh đo được là 3,8 mEq/L (bình thường), nhưng <b>TỔNG LƯỢNG KALI TRONG TOÀN CƠ THỂ ĐANG BỊ THIẾU HỤT NGHIÊM TRỌNG</b> (do bài niệu thẩm thấu làm mất kali qua nước tiểu). Toan máu và thiếu insulin làm dịch chuyển kali từ trong tế bào ra ngoài lòng mạch tạo nồng độ kali máu giả tạo.",
+        "<b>Quy tắc sống còn của ADA về quản lý Kali và Insulin</b>:",
+        "1. Nếu Kali máu < 3,3 mEq/L: BẮT BUỘC TRÌ HOÃN INSULIN và bù Kali trước cho đến khi K > 3,3 mEq/L (vì insulin lùa kali vào tế bào sẽ gây hạ kali máu kịch phát dẫn đến rung thất ngừng tim và liệt cơ hô hấp).",
+        "2. Nếu <b>Kali máu từ 3,3 đến 5,2 mEq/L</b>: <b>Bắt đầu truyền Insulin tĩnh mạch (0,1 U/kg/h) ĐỒNG THỜI BỔ SUNG 20–30 mEq K+/lít dịch truyền</b> để duy trì Kali máu từ 4,0–5,0 mEq/L.",
+        "3. <b>Khi Glucose máu hạ xuống < 200 mg/dL</b>: Bắt buộc <b>pha thêm Glucose 5% (hoặc 10%) vào dịch truyền</b> và giảm tốc độ truyền insulin để duy trì đường huyết 150–200 mg/dL cho đến khi hết toan ceton (Anion Gap đóng < 12 và HCO3- ≥ 18 mEq/L), tránh hạ đường huyết và phù não."
       ],
-      wrongs: {
-        1: "Không truyền dịch sẽ làm tụt huyết áp sốc giảm thể tích và suy thận cấp hoại tử ống thận.",
-        2: "Bicarbonate KHÔNG ĐƯỢC KHUYẾN CÁO thường quy vì gây toan dịch não tủy nghịch lý, hạ kali máu và trì hoãn thoái lui ceton; chỉ xem xét khi pH < 6,9.",
-        3: "Metformin chống chỉ định tuyệt đối trong DKA vì làm tăng nguy cơ toan acid lactic tử vong.",
-        4: "Trì hoãn insulin sẽ khiến quá trình sinh ceton tiếp diễn dẫn đến phù não và tử vong."
+      "wrongs": {
+        "1": "Truyền insulin đơn độc mà không bù kali khi K = 3,8 mEq/L sẽ đẩy nhanh bệnh nhân vào hạ kali máu tử vong do loạn nhịp tim.",
+        "2": "Bicarbonate chỉ cân nhắc khi toan máu cực nặng đe dọa tính mạng (pH < 6,90); dùng bừa bãi gây toan dịch não tủy nghịch lý và hạ kali máu.",
+        "3": "Trì hoãn insulin quá lâu làm thể ceton tiếp tục sinh sôi gây toan máu nặng hơn.",
+        "4": "DKA nặng bắt buộc dùng Insulin truyền tĩnh mạch liên tục chứ không dùng insulin tiêm dưới da."
       },
-      objective:
-        "DKA đòi hỏi bù dịch NaCl 0,9% tích cực đầu tiên, truyền Insulin tĩnh mạch liên tục, bắt buộc bù Kali sớm khi K < 5,2 mEq/L và thêm Glucose 5% khi đường máu < 200 mg/dL cho đến khi đóng khoảng trống Anion."
+      "objective": "Trong DKA, khi Kali máu 3.3-5.2 mEq/L, bắt buộc bù 20-30 mEq K+/L dịch truyền đồng thời với truyền Insulin tĩnh mạch; thêm Glucose 5% khi đường huyết < 200 mg/dL để tiếp tục truyền insulin đóng khoảng trống Anion gap an toàn."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước xử trí tiếp theo",
-      short: "Hôn mê tăng áp lực thẩm thấu do đái tháo đường (HHS)",
-      vignette: [
-        "Cụ ông 78 tuổi mắc đái tháo đường típ 2 sống một mình, bị viêm phổi 5 ngày nay nhưng không uống nước được. Cụ được hàng xóm phát hiện trong tình trạng hôn mê sâu, co giật cục bộ nửa người bên phải.",
-        "Khám: Dấu hiệu mất nước mức độ cực kỳ nghiêm trọng (mắt trũng sâu, niêm mạc khô nứt nẻ, véo da mất sau nhiều giây), huyết áp 80/50 mm Hg, mạch nhanh nhỏ 126 l/phút.",
-        "Xét nghiệm máu khẩn: <b>Glucose huyết tương tăng cực cao 1.050 mg/dL</b>, <b>Áp lực thẩm thấu huyết tương hiệu dụng = 345 mOsm/kg</b> (tiêu chuẩn HHS > 320 mOsm/kg), <b>pH máu 7,38, HCO3- 23 mEq/L (Không có toan ceton)</b>, Ceton niệu âm tính. <b>Natri máu 152 mEq/L (Natri hiệu chỉnh = 152 + 1,6 x [(1050-100)/100] = 167 mEq/L)</b>, BUN 54 mg/dL, Creatinine 2,6 mg/dL."
+      "spec": "Nội tiết",
+      "task": "Phân biệt cấp cứu & Hồi sức dịch",
+      "short": "Tăng áp lực thẩm thấu do đái tháo đường (HHS) - Bù dịch hồi sức",
+      "vignette": [
+        "Cụ ông 78 tuổi có tiền sử Đái tháo đường típ 2 và tăng huyết áp, sống một mình, được hàng xóm phát hiện trong tình trạng lơ mơ, mất định hướng, không tự đi lại được sau một đợt viêm phổi kéo dài 5 ngày.",
+        "Khám: Bệnh nhân lơ mơ (Glasgow 11 điểm), mắt trũng sâu, niêm mạc lưỡi khô nứt nẻ, véo da mất sau nhiều giây, huyết áp tụt 85/50 mm Hg, mạch nhanh 124 l/ph.",
+        "Xét nghiệm khẩn cấp: <b>Glucose máu tăng cực cao 980 mg/dL; Áp lực thẩm thấu huyết thanh hiệu dụng (Effective Serum Osmolality) = 358 mOsm/kg (ngưỡng bình thường 275–295 mOsm/kg); Natri máu đo được 132 mEq/L; Kali 4,4 mEq/L; BUN 54 mg/dL; Creatinine 2,4 mg/dL</b>; Khí máu động mạch: pH 7,36, HCO3- 22 mEq/L; Ceton máu và ceton niệu âm tính."
       ],
-      vitals: [
-        ["Nhiệt độ", "38,0 °C"],
-        ["Huyết áp", "80/50"],
-        ["Mạch", "126 l/ph"],
-        ["Nhịp thở", "18 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "37,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "85/50 mm Hg"
+        ],
+        [
+          "Mạch",
+          "124 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "18 l/ph (không có thở Kussmaul)"
+        ],
+        [
+          "SpO2",
+          "94% khí trời"
+        ]
       ],
-      stem: "Đặc điểm bệnh sinh chính và bước can thiệp cấp cứu quan trọng nhất để cứu sống bệnh nhân là gì?",
-      choices: [
-        "Tình trạng tăng áp lực thẩm thấu máu cực cao gây mất nước nội bào tế bào não; can thiệp quan trọng nhất là Hồi sức bù lượng dịch khổng lồ (thiếu hụt 8–10 lít) bằng NaCl 0,9% (sau đó đổi NaCl 0,45% vì tăng natri máu hiệu chỉnh) kết hợp Insulin liều thấp",
-        "Tiêm thuốc chống động kinh Phenytoin liều cao đơn độc",
-        "Tiêm tĩnh mạch dung dịch Natri Clorid ưu trương 3%",
-        "Cho bệnh nhân uống dung dịch Oresol qua sonde dạ dày",
-        "Chỉ định lọc máu cấp cứu ngay lập tức mà không bù dịch"
+      "stem": "Chẩn đoán phân biệt cấp cứu đái tháo đường và can thiệp điều trị quan trọng nhất mang tính sống còn là gì?",
+      "choices": [
+        "Hội chứng Tăng áp lực thẩm thấu do đái tháo đường (Hyperosmolar Hyperglycemic State - HHS); can thiệp sống còn quan trọng nhất là hồi sức dịch tích cực ban đầu bằng dung dịch NaCl 0,9% (1000–1500 mL trong giờ đầu) để bù đắp lượng dịch thiếu hụt khổng lồ (8–10 lít) và khôi phục tưới máu mô",
+        "Toan ceton do đái tháo đường (DKA) mức độ nặng; chỉ định tiêm tĩnh mạch Bolus Insulin liều cao ngay lập tức",
+        "Đột quỵ nhồi máu não diện rộng; chỉ định chụp CTA sọ não và dùng thuốc tiêu sợi huyết",
+        "Hạ natri máu giảm thể tích; chỉ định truyền dung dịch muối ưu trương NaCl 3% khẩn cấp",
+        "Nhiễm khuẩn huyết từ đường tiết niệu; chỉ định dùng kháng sinh đơn thuần và hạn chế dịch"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có <b>Hội chứng tăng áp lực thẩm thấu tăng đường huyết (Hyperosmolar Hyperglycemic State - HHS)</b>:",
-        "- Tiêu chuẩn chẩn đoán: <b>Glucose máu > 600 mg/dL (ở đây 1.050 mg/dL) + Áp lực thẩm thấu máu hiệu dụng > 320 mOsm/kg (ở đây 345 mOsm/kg) + Không có toan chuyển hóa (pH > 7,30, HCO3- > 18)</b>.",
-        "- Cơ chế: Bệnh nhân ĐTĐ típ 2 vẫn còn một lượng nhỏ insulin nội sinh đủ để ức chế quá trình phân giải mỡ sinh ceton, nhưng không đủ để kiểm soát đường huyết. Lợi niệu thẩm thấu kéo dài làm <b>mất nước cực kỳ nghiêm trọng (ước tính thiếu hụt từ 8 đến 10–12 lít nước)</b>, dẫn đến teo tế bào não và co giật/hôn mê.",
-        "- Xử trí cấp cứu: <b>BÙ DỊCH KHỔNG LỒ LÀ BIỆN PHÁP SỐNG CÒN QUAN TRỌNG NHẤT</b> (ban đầu dùng NaCl 0,9% nâng huyết áp, sau đó chuyển sang <b>NaCl 0,45% nửa trương</b> vì Natri hiệu chỉnh rất cao 167 mEq/L) kết hợp <b>Insulin truyền tĩnh mạch liều thấp</b>.",
-        "- Tỉ lệ tử vong của HHS cao hơn DKA nhiều lần (10–20% so với <1% của DKA)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có <b>Hội chứng Tăng áp lực thẩm thấu do đái tháo đường (Hyperosmolar Hyperglycemic State - HHS)</b> - một biến chứng cấp cứu có tỷ lệ tử vong cao hơn nhiều so với DKA (10–20%).",
+        "Tiêu chuẩn chẩn đoán kinh điển: 1. <b>Glucose máu tăng cực cao (> 600 mg/dL, thường > 1000 mg/dL)</b>; 2. <b>Áp lực thẩm thấu huyết thanh hiệu dụng tăng vọt (> 320 mOsm/kg)</b>; 3. <b>Rối loạn tri giác / lơ mơ / hôn mê sâu</b>; 4. <b>Không có toan ceton đáng kể (pH > 7,30, HCO3- > 18 mEq/L, Ceton âm tính)</b> do bệnh nhân ĐTĐ típ 2 vẫn còn một lượng nhỏ insulin nội sinh đủ để ức chế quá trình sinh ceton tại gan nhưng không đủ để đưa glucose vào tế bào.",
+        "<b>Can thiệp số 1 quyết định sống còn</b>: <b>HỒI SỨC DỊCH TÍCH CỰC (Aggressive Fluid Resuscitation)</b>. Bệnh nhân HHS bị mất nước khủng khiếp qua bài niệu thẩm thấu (<b>thiếu hụt từ 8 đến 10–12 lít nước</b>, tương đương 10–15% trọng lượng cơ thể). Bắt đầu truyền <b>NaCl 0,9% 1000–1500 mL trong giờ đầu tiên</b> để ổn định huyết động, sau đó điều chỉnh dịch theo nồng độ Natri hiệu chỉnh.",
+        "Insulin chỉ bắt đầu sau khi đã bù dịch ban đầu để tránh tụt huyết áp trụy mạch do dịch chuyển nước nhanh vào nội bào."
       ],
-      wrongs: {
-        1: "Co giật ở đây là do tăng ALTT máu và tổn thương chuyển hóa; bù dịch hạ ALTT sẽ hết co giật mà không cần dùng thuốc động kinh đơn độc.",
-        2: "NaCl 3% ưu trương chống chỉ định tuyệt đối vì làm ALTT máu tăng vọt gây tử vong ngay lập tức.",
-        3: "Bệnh nhân đang hôn mê tụt huyết áp bắt buộc bù dịch tĩnh mạch cấp cứu, uống qua sonde không kịp và nguy cơ trào ngược hít sặc.",
-        4: "Lọc máu khi đang thiếu 10 lít dịch sẽ làm sập tuần hoàn tử vong."
+      "wrongs": {
+        "1": "Bệnh nhân không có toan máu (pH 7,36) hay ceton; tiêm insulin liều cao ngay mà chưa bù dịch sẽ làm tụt thể tích lòng mạch gây sốc tuần hoàn tử vong.",
+        "2": "Rối loạn tri giác ở đây hoàn toàn do tăng áp lực thẩm thấu máu làm teo mất nước tế bào não, hồi phục khi hạ thẩm thấu.",
+        "3": "Natri đo được 132 mEq/L nhưng Natri hiệu chỉnh = 132 + 1,6 x (980-100)/100 = 146 mEq/L (tăng natri máu thực sự do mất nước tự do); truyền NaCl 3% sẽ làm tăng áp lực thẩm thấu chết người.",
+        "4": "Hạn chế dịch là sai lầm chết người trong tình trạng mất nước 8-10 lít của HHS."
       },
-      objective:
-        "HHS (đường máu > 600 mg/dL, ALTT > 320 mOsm/kg, không toan ceton) gây mất nước cực nặng (8–10 lít); xử trí sống còn là hồi sức bù dịch lượng lớn (NaCl 0,9% đổi sang NaCl 0,45% nếu Na hiệu chỉnh cao) kết hợp Insulin."
+      "objective": "HHS (Glucose > 600 mg/dL, ALTT > 320 mOsm/kg, không toan ceton, lơ mơ) gây mất nước cực nặng (8-10 lít); can thiệp sống còn hàng đầu là hồi sức bù dịch tích cực bằng NaCl 0.9% trước khi truyền insulin."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Lựa chọn thuốc theo khuyến cáo ADA",
-      short: "Đái tháo đường típ 2 kèm bệnh tim mạch xơ vữa và suy tim",
-      vignette: [
-        "Nam 62 tuổi có tiền sử Đái tháo đường típ 2 8 năm, Tăng huyết áp và <b>Nhồi máu cơ tim cũ kèm Suy tim phân suất tống máu giảm (HFrEF, EF 35%)</b>. Bệnh nhân đang dùng Metformin 1.000 mg x 2 lần/ngày, Carvedilol, Sacubitril/Valsartan và Spironolactone.",
-        "Khám: Thể trạng béo phì (BMI 32 kg/m²), huyết áp 128/78 mm Hg, không phù.",
-        "Xét nghiệm máu: <b>HbA1c 8,4%</b> (mục tiêu < 7,0%), <b>Độ lọc cầu thận eGFR 52 mL/ph/1,73m²</b>, Tỉ số Albumin/Creatinine nước tiểu (uACR) 180 mg/g (tăng bài tiết albumin vi thể)."
+      "spec": "Nội tiết",
+      "task": "Lựa chọn thuốc bảo vệ tim thận",
+      "short": "Đái tháo đường típ 2 kèm bệnh tim mạch xơ vữa (ASCVD) và bệnh thận mạn (CKD)",
+      "vignette": [
+        "Nam 62 tuổi có tiền sử Đái tháo đường típ 2 mắc 12 năm và Nhồi máu cơ tim có đặt stent động mạch vành (Bệnh tim mạch do xơ vữa - ASCVD) cách đây 2 năm. Hiện bệnh nhân đang dùng Metformin 1000 mg x 2 lần/ngày, Atorvastatin 40 mg, Aspirin 81 mg và Lisinopril 20 mg/ngày.",
+        "Khám: Huyết áp 134/82 mm Hg, BMI 31 kg/m2 (Béo phì độ 1).",
+        "Xét nghiệm kiểm tra: <b>HbA1c 7,8%</b>; Mức lọc cầu thận ước tính <b>eGFR = 42 mL/ph/1,73 m2 (Bệnh thận mạn giai đoạn G3b)</b>; Tỷ lệ Albumin/Creatinine niệu <b>UACR = 380 mg/g (Tăng Albumin niệu mức độ A3)</b>; Kali máu 4,6 mEq/L."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "128/78"],
-        ["Mạch", "72 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "134/82 mm Hg"
+        ],
+        [
+          "Mạch",
+          "68 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Theo đồng thuận ADA / KDIGO và ESC mới nhất, nhóm thuốc hạ đường huyết nào là chỉ định bắt buộc ưu tiên hàng đầu phối hợp thêm để vừa kiểm soát đường huyết vừa giảm tái nhập viện do suy tim và bảo vệ thận?",
-      choices: [
-        "Thuốc ức chế kênh đồng vận chuyển Natri - Glucose 2 (SGLT2 inhibitor: Dapagliflozin hoặc Empagliflozin)",
-        "Thuốc nhóm Sulfonylurea thế hệ 2 (Gliclazide hoặc Glimepiride)",
-        "Thuốc nhóm Thiazolidinedione (Pioglitazone)",
-        "Insulin NPH tiêm dưới da liều cao trước khi đi ngủ",
-        "Thuốc ức chế enzym Alpha-glucosidase (Acarbose)"
+      "stem": "Theo Hướng dẫn chuẩn cập nhật của Hiệp hội Đái tháo đường Hoa Kỳ và KDIGO (ADA/KDIGO Consensus 2024), nhóm thuốc hạ đường huyết nào được khuyến cáo BẮT BUỘC PHỐI HỢP THÊM để giảm biến cố tim mạch và làm chậm suy thận?",
+      "choices": [
+        "Thuốc ức chế đồng vận chuyển Natri-Glucose 2 (SGLT2 inhibitor, như Empagliflozin hoặc Dapagliflozin) HOẶC Thuốc đồng vận thụ thể GLP-1 (GLP-1 RA có bằng chứng tim mạch, như Semaglutide hoặc Dulaglutide) độc lập với mức HbA1c",
+        "Thêm thuốc nhóm Sulfonylurea (như Glibenclamide liều cao)",
+        "Thêm thuốc nhóm Thiazolidinedione (Pioglitazone 45 mg/ngày)",
+        "Thêm thuốc ức chế men DPP-4 (Saxagliptin 5 mg/ngày)",
+        "Bắt đầu tiêm ngay lập tức phác đồ Insulin hỗn hợp 2 mũi/ngày và ngừng Metformin"
       ],
-      answer: 0,
-      why: [
-        "Theo khuyến cáo mới nhất của <b>ADA Standards of Care và KDIGO</b>, ở bệnh nhân Đái tháo đường típ 2 có <b>Suy tim (HFrEF/HFpEF) HOẶC Bệnh thận mạn (CKD với eGFR 20–60 hoặc có Albumin niệu)</b>:",
-        "1. <b>Thuốc ức chế SGLT2 (SGLT2 inhibitors: Dapagliflozin, Empagliflozin) là CHỈ ĐỊNH ƯU TIÊN BẮT BUỘC HÀNG ĐẦU</b> bất kể mức HbA1c ban đầu là bao nhiêu.",
-        "2. Lợi ích chứng minh vượt trội: <b>Giảm 30% tỉ lệ nhập viện vì suy tim, giảm tử vong tim mạch và làm chậm rõ rệt tốc độ suy giảm chức năng thận</b> (nhờ cơ chế giảm tái hấp thu natri-glucose ở ống lượn gần, phục hồi phản hồi cầu - ống thận làm giảm áp lực nội cầu thận).",
-        "3. Ngoài ra, nếu bệnh nhân có Bệnh tim mạch do xơ vữa (ASCVD) nổi trội, <b>Thuốc đồng vận thụ thể GLP-1 (GLP-1 RA: Semaglutide, Liraglutide, Dulaglutide)</b> cũng là lựa chọn ưu tiên hàng đầu giúp giảm biến cố mạch vành, đột quỵ và giảm cân mạnh mẽ.",
-        "Lưu ý: <b>Pioglitazone (TZD) BỊ CHỐNG CHỈ ĐỊNH TUYỆT ĐỐI trong Suy tim</b> vì gây giữ muối nước làm bùng phát đợt cấp suy tim."
+      "answer": 0,
+      "why": [
+        "Theo Đồng thuận cập nhật <b>ADA/KDIGO 2024 về Quản lý Đái tháo đường trên Bệnh nhân có Bệnh thận mạn (CKD) và Bệnh tim mạch do xơ vữa (ASCVD)</b>:",
+        "Ở bệnh nhân ĐTĐ típ 2 có <b>Bệnh thận mạn (eGFR 20–60 mL/ph hoặc Albumin niệu UACR > 30 mg/g)</b> VÀ <b>Bệnh tim mạch xơ vữa đã xác lập (ASCVD: tiền sử NMCT/stent vành)</b>, chỉ định phối hợp thuốc được đưa ra <b>ĐỘC LẬP VỚI MỨC HbA1c BAN ĐẦU</b>:",
+        "1. <b>Thuốc ức chế SGLT2 (SGLT2i: Empagliflozin, Dapagliflozin, Canagliflozin)</b>: Lựa chọn hàng đầu giúp giảm tiến triển suy thận giai đoạn cuối, giảm nhập viện vì suy tim và giảm tử vong tim mạch (tiếp tục duy trì cho đến khi chạy thận nhân tạo).",
+        "2. <b>Thuốc đồng vận thụ thể GLP-1 (GLP-1 RA: Semaglutide, Liraglutide, Dulaglutide)</b>: Giảm mạnh các biến cố tim mạch lớn 3-point MACE (tử vong tim mạch, đột quỵ, nhồi máu cơ tim), giảm albumin niệu và hỗ trợ giảm cân mạnh mẽ.",
+        "Sự kết hợp giữa <b>Metformin + SGLT2i + GLP-1 RA + Thuốc ức chế men chuyển/chẹn thụ thể (ACEi/ARB) + Finerenone</b> tạo thành 'Trụ cột đa tầng bảo vệ tim thận'."
       ],
-      wrongs: {
-        1: "Sulfonylurea gây nguy cơ hạ đường huyết và tăng cân, không có lợi ích bảo vệ tim mạch hay bảo vệ thận trong suy tim.",
-        2: "Pioglitazone (TZD) chống chỉ định tuyệt đối ở bệnh nhân suy tim vì gây ứ dịch phù phổi cấp.",
-        3: "Insulin gây tăng cân và tăng nguy cơ hạ đường huyết, không có tác dụng bảo vệ tim thận đặc hiệu như SGLT2i.",
-        4: "Acarbose hiệu quả hạ HbA1c yếu và không cải thiện tiên lượng sống còn tim mạch."
+      "wrongs": {
+        "1": "Sulfonylurea thế hệ cũ (Glibenclamide) thải qua thận gây nguy cơ hạ đường huyết kéo dài nguy hiểm ở bệnh nhân CKD và không có lợi ích tim thận.",
+        "2": "Pioglitazone gây giữ muối nước, phù và làm tăng nguy cơ suy tim sung huyết trên bệnh nhân có bệnh mạch vành.",
+        "3": "Saxagliptin (DPP-4i) có cảnh báo làm tăng tỷ lệ nhập viện do suy tim (SAVOR-TIMI trial).",
+        "4": "Metformin liều 1000 mg/ngày vẫn an toàn và được phép sử dụng khi eGFR 30-44 mL/ph; chưa có chỉ định tiêm insulin khi chưa dùng SGLT2i/GLP-1RA."
       },
-      objective:
-        "Ở bệnh nhân ĐTĐ típ 2 có kèm Suy tim hoặc Bệnh thận mạn (CKD/Albumin niệu), thuốc ức chế SGLT2 (Dapagliflozin, Empagliflozin) là chỉ định ưu tiên hàng đầu giúp giảm nhập viện do suy tim và bảo vệ thận; chống chỉ định TZD (Pioglitazone) trong suy tim."
+      "objective": "Ở bệnh nhân ĐTĐ típ 2 có kèm ASCVD và Bệnh thận mạn (CKD/Albumin niệu), khuyến cáo bắt buộc dùng SGLT2i (Empagliflozin) hoặc GLP-1RA (Semaglutide) độc lập với mức HbA1c để bảo vệ tim mạch và làm chậm thoái triển chức năng thận."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán phân biệt",
-      short: "Hạ đường huyết và phân biệt căn nguyên bằng C-peptide",
-      vignette: [
-        "Nữ 34 tuổi là điều dưỡng viên, được đưa vào cấp cứu vì vã mồ hôi, run rẩy, lú lẫn và ngất xỉu trong ca trực đêm.",
-        "Test nhanh đường mao mạch tại giường: <b>Glucose máu 32 mg/dL (Hạ đường huyết nặng)</b>. Sau khi tiêm tĩnh mạch 50 mL Glucose 30%, bệnh nhân tỉnh táo hoàn toàn (Tam chứng Whipple dương tính). Bệnh nhân phủ nhận tiền sử đái tháo đường hay dùng bất kỳ thuốc nào.",
-        "Mẫu máu xét nghiệm lấy đúng vào thời điểm bệnh nhân đang bị hạ đường huyết (Glucose < 50 mg/dL) cho kết quả:",
-        "- <b>Insulin huyết thanh: Tăng rất cao (45 mcU/mL)</b> (không bị ức chế).",
-        "- <b>C-peptide huyết thanh: Giảm cực thấp / Không phát hiện được (< 0,1 ng/mL)</b>.",
-        "- <b>Proinsulin: Bình thường</b>.",
-        "- <b>Sàng lọc thuốc hạ đường huyết nhóm Sulfonylurea trong máu và nước tiểu: Âm tính</b>."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán bão giáp & Phác đồ điều trị 4 bước",
+      "short": "Cơn bão giáp (Thyroid Storm) - Thang điểm Burch-Wartofsky & Phác đồ 4 bước",
+      "vignette": [
+        "Nữ 32 tuổi có tiền sử Bệnh Basedow (Graves' disease) bỏ thuốc kháng giáp Methimazole 2 tháng nay. Bệnh nhân bị sốt xuất huyết Dengue cách đây 3 ngày, sau đó đột ngột xuất hiện kích động la hét, sốt cao vọt, nôn ói, tiêu chảy xối xả và tim đập nhanh dồn dập.",
+        "Khám cấp cứu: Bệnh nhân mê sảng kích động nặng, da nóng bừng vã mồ hôi đầm đìa, vàng mắt nhẹ. <b>Thân nhiệt 40,2 °C, Huyết áp 150/70 mm Hg, Nhịp tim 164 l/ph loạn nhịp hoàn toàn (Rung nhĩ đáp ứng thất nhanh), nghe ran ẩm ở hai đáy phổi (Phù phổi suy tim cấp)</b>. Tuyến giáp to độ II có tiếng thổi tâm thu liên tục.",
+        "Điểm đánh giá <b>Burch-Wartofsky Point Scale = 75 điểm (Ngưỡng ≥ 45 điểm: Khẳng định Cơn bão giáp)</b>. Xét nghiệm: TSH < 0,01 mcIU/mL, Free T4 > 6,5 ng/dL (tăng vọt)."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "115/70"],
-        ["Mạch", "98 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "40,2 °C"
+        ],
+        [
+          "Huyết áp",
+          "150/70 mm Hg"
+        ],
+        [
+          "Mạch",
+          "164 l/ph (Rung nhĩ)"
+        ],
+        [
+          "Nhịp thở",
+          "30 l/ph"
+        ],
+        [
+          "SpO2",
+          "92% khí trời"
+        ]
       ],
-      stem: "Căn nguyên nào giải thích chính xác nhất kết quả xét nghiệm hạ đường huyết này?",
-      choices: [
-        "Tự tiêm Insulin ngoại sinh do rối loạn tâm thần giả bệnh (Factitious Hypoglycemia / Exogenous Insulin injection)",
-        "U tiết insulin tuyến tụy (Insulinoma)",
-        "Ngộ độc thuốc uống hạ đường huyết Sulfonylurea giấu kín",
-        "Hội chứng tự miễn kháng insulin (Bệnh Hirata)",
-        "Suy tuyến thượng thận nguyên phát"
+      "stem": "Phác đồ điều trị nội khoa 4 bước chuẩn mực theo Hướng dẫn của Hiệp hội Tuyến giáp Hoa Kỳ (ATA) được thực hiện theo thứ tự nào?",
+      "choices": [
+        "1. Chẹn Beta (Propranolol đường uống hoặc Esmolol truyền TM); 2. Thuốc kháng giáp tổng hợp liều cao (Propylthiouracil - PTU ưu tiên hơn Methimazole vì ức chế thêm enzym 5'-deiodinase ngoại biên); 3. Dung dịch Iod vô cơ (Lugol hoặc SSKI) CHO SAU PTU ÍT NHẤT 1 GIỜ; 4. Corticoid tĩnh mạch (Hydrocortisone 100 mg mỗi 8h)",
+        "Cho ngay dung dịch Iod vô cơ Lugol liều cao trước rồi mới cho kháng giáp tổng hợp",
+        "Chỉ định phẫu thuật cắt toàn bộ tuyến giáp cấp cứu ngay trong đêm",
+        "Uống Iod phóng xạ I-131 liều cao ngay tại phòng cấp cứu",
+        "Tiêm Aspirin tĩnh mạch liều cao để hạ sốt và tiêm Digoxin"
       ],
-      answer: 0,
-      why: [
-        "Sinh hóa tổng hợp Insulin nội sinh: Tuyến tụy tổng hợp phân tử <b>Proinsulin</b>, sau đó phân cắt thành <b>Insulin và C-peptide với tỉ lệ đồng phân tử 1:1</b> và cùng được giải phóng vào máu.",
-        "Phân biệt các nguyên nhân hạ đường huyết có nồng độ Insulin cao:",
-        "1. <b>Tiêm Insulin ngoại sinh (Exogenous Insulin)</b>: Chế phẩm insulin tổng hợp <b>CHỈ CHỨA INSULIN NGUYÊN CHẤT MÀ HOÀN TOÀN KHÔNG CÓ C-PEPTIDE</b>. Nồng độ insulin ngoại sinh cao sẽ ức chế ngược tuyến tụy tiết insulin nội sinh -> <b>Insulin huyết thanh TĂNG CAO trong khi C-PEPTIDE VÀ PROINSULIN GIẢM CỰC THẤP / ÂM TÍNH</b> (thường gặp ở nhân viên y tế hoặc người nhà bệnh nhân đái tháo đường).",
-        "2. <b>U tiết Insulin (Insulinoma)</b>: Tăng tiết insulin nội sinh -> <b>Insulin TĂNG + C-peptide TĂNG + Proinsulin TĂNG</b>, sàng lọc Sulfonylurea âm tính.",
-        "3. <b>Uống thuốc Sulfonylurea (hoặc Meglitinide)</b>: Thuốc kích thích tế bào beta tụy tiết insulin nội sinh -> <b>Insulin TĂNG + C-peptide TĂNG</b> kèm <b>Sàng lọc Sulfonylurea trong máu/nước tiểu DƯƠNG TÍNH</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân bị <b>Cơn bão giáp (Thyroid Storm)</b> - một biến chứng cấp cứu nội tiết tối khẩn cấp có tỷ lệ tử vong lên tới 20–30%.",
+        "<b>Phác đồ điều trị 4 bước chuẩn mực theo ATA</b>:",
+        "1. <b>Chẹn Beta Giao cảm (Propranolol uống 60–80 mg mỗi 4–6h hoặc Esmolol tĩnh mạch)</b>: Kiểm soát nhanh triệu chứng cường giao cảm (hạ nhịp tim, chống loạn nhịp rung nhĩ); Propranolol liều cao còn có tác dụng phụ ức chế chuyển T4 thành T3 ngoại biên.",
+        "2. <b>Thuốc kháng giáp tổng hợp (Thionamides: Propylthiouracil - PTU liều nạp 500–1000 mg rồi 200 mg mỗi 4h)</b>: <b>PTU ĐƯỢC ƯU TIÊN HƠN METHIMAZOLE trong cơn bão giáp</b> vì vừa ức chế tổng hợp hormone mới tại tuyến giáp vừa <b>ức chế men 5'-deiodinase ngăn chuyển T4 thành T3 tại mô ngoại biên</b>.",
+        "3. <b>Dung dịch Iod vô cơ (SSKI hoặc Dung dịch Lugol)</b>: Ức chế giải phóng hormone giáp dự trữ vào máu qua <b>Hiệu ứng Wolff-Chaikoff</b>. <b>QUY TẮC BẮT BUỘC: PHẢI CHO IOD VÔ CƠ SAU LIỀU PTU ÍT NHẤT 1 GIỜ</b> (nếu cho iod trước, iod sẽ làm nguyên liệu cho tuyến giáp tổng hợp thêm nhiều hormone mới gây bùng phát bão giáp dữ dội hơn - Hiện tượng Jod-Basedow).",
+        "4. <b>Corticoid đường tĩnh mạch (Hydrocortisone 100 mg mỗi 8 giờ hoặc Dexamethasone 2 mg mỗi 6 giờ)</b>: Dự phòng suy thượng thận tương đối và ức chế bổ sung chuyển đổi T4 thành T3.",
+        "5. Hạ sốt: Dùng <b>Acetaminophen và làm mát cơ thể</b>. <b>CHỐNG CHỈ ĐỊNH TUYỆT ĐỐI ASPIRIN/NSAIDs</b> vì cạnh tranh gắn kết với TBG làm tăng vọt nồng độ hormone giáp tự do trong máu."
       ],
-      wrongs: {
-        1: "Insulinoma làm tăng đồng thời cả Insulin, C-peptide và Proinsulin; ở đây C-peptide âm tính hoàn toàn.",
-        2: "Uống Sulfonylurea làm tăng C-peptide và xét nghiệm sàng lọc thuốc trong nước tiểu phải dương tính.",
-        3: "Kháng thể kháng insulin tự miễn có C-peptide tăng cao và hiệu giá kháng thể dương tính.",
-        4: "Suy thượng thận có insulin máu thấp thích hợp khi hạ đường huyết."
+      "wrongs": {
+        "1": "Cho Iod vô cơ trước kháng giáp tổng hợp sẽ tạo nguyên liệu bùng phát bão giáp nặng hơn (phải cho sau PTU ít nhất 1 giờ).",
+        "2": "Phẫu thuật tuyến giáp trong lúc đang bão giáp có tỷ lệ tử vong trên bàn mổ gần 100%.",
+        "3": "I-131 phóng xạ gây viêm phá hủy phóng thích ồ ạt hormone vào máu làm bão giáp bùng phát chết người.",
+        "4": "Aspirin đẩy T4/T3 tự do ra khỏi protein huyết tương làm cơn bão giáp nặng hơn."
       },
-      objective:
-        "Hạ đường huyết do tiêm Insulin ngoại sinh đặc trưng bởi Insulin huyết thanh tăng cao nhưng C-peptide và Proinsulin giảm thấp/âm tính (khác với Insulinoma và ngộ độc Sulfonylurea có cả Insulin và C-peptide cùng tăng)."
+      "objective": "Điều trị Cơn bão giáp theo trình tự: 1. Chẹn Beta (Propranolol); 2. Kháng giáp tổng hợp (PTU liều cao); 3. Dung dịch Iod vô cơ (cho sau PTU ít nhất 1h để khóa giải phóng hormone); 4. Hydrocortisone tĩnh mạch; cấm dùng Aspirin."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước xử trí cấp cứu",
-      short: "Cơn bão giáp trạng (Thyroid Storm)",
-      vignette: [
-        "Nữ 28 tuổi có tiền sử bệnh Basedow (Graves' disease) tự ý bỏ thuốc kháng giáp 3 tháng nay, vừa trải qua một đợt nhổ răng số 8 bị nhiễm trùng. Bệnh nhân được đưa vào cấp cứu vì sốt cao đùng đùng 40,5 °C, vã mồ hôi đầm đìa, tim đập nhanh dồn dập, nôn mửa tiêu chảy dữ dội và kích động mê sảng.",
-        "Khám: Mắt lồi rõ hai bên, tuyến giáp to độ II có tiếng thổi tâm thu liên tục tại bướu giáp. Điện tâm đồ: Rung nhĩ đáp ứng thất rất nhanh 165 l/phút. Huyết áp 150/60 mm Hg.",
-        "Điểm số thang điểm Burch-Wartofsky đánh giá bão giáp = <b>65 điểm (Khẳng định Cơn bão giáp / Thyroid Storm)</b>."
+      "spec": "Nội tiết",
+      "task": "Xử trí cấp cứu suy giáp nặng",
+      "short": "Hôn mê phù niêm (Myxedema Coma) - Levothyroxine & Hydrocortisone liều stress",
+      "vignette": [
+        "Cụ bà 74 tuổi có tiền sử suy giáp tự miễn sau phẫu thuật cắt tuyến giáp 10 năm trước nhưng không tái khám và tự bỏ thuốc Levothyroxine 6 tháng nay. Bệnh nhân được người nhà phát hiện bất tỉnh trong phòng ngủ không sưởi ấm vào một ngày mùa đông lạnh giá.",
+        "Khám cấp cứu: Bệnh nhân hôn mê (Glasgow 8 điểm), thở rất nông chậm, phù niêm toàn thân mặt tròn như trăng, mi mắt phù mọng, da khô thô ráp lạnh ngắt, phản xạ gân gót pha thư giãn chậm kéo dài (Delayed relaxation of DTRs).",
+        "Dấu hiệu sinh tồn: <b>Hạ thân nhiệt nặng 34,1 °C, Nhịp tim chậm 42 l/ph, Huyết áp tụt 80/50 mm Hg</b>.",
+        "Xét nghiệm máu khẩn cấp: <b>TSH tăng cực cao 115 mcIU/mL, Free T4 không đo được (< 0,1 ng/dL); Natri máu giảm nặng 122 mEq/L; Glucose máu hạ 52 mg/dL; Khí máu động mạch có Toan hô hấp và ứ CO2 nặng (PaCO2 62 mm Hg)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "40,5 °C"],
-        ["Huyết áp", "150/60"],
-        ["Mạch", "165 l/ph (rung nhĩ)"],
-        ["Nhịp thở", "28 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "34,1 °C (Hạ thân nhiệt nặng)"
+        ],
+        [
+          "Huyết áp",
+          "80/50 mm Hg"
+        ],
+        [
+          "Mạch",
+          "42 l/ph (Nhịp chậm xoang)"
+        ],
+        [
+          "Nhịp thở",
+          "8 l/ph (Suy hô hấp ức chế trung tâm)"
+        ],
+        [
+          "SpO2",
+          "85% khí trời"
+        ]
       ],
-      stem: "Thứ tự phối hợp 4 nhóm thuốc điều trị cấp cứu chuẩn xác nhất theo guideline ATA/Endocrine Society là gì?",
-      choices: [
-        "Thuốc chẹn beta (Propranolol liều cao) + Thuốc kháng giáp tổng hợp liều cao (Propylthiouracil - PTU) + Dung dịch Iod vô cơ (Dung dịch Lugol/SSKI dùng SAU PTU ít nhất 1 giờ) + Corticoid tĩnh mạch (Hydrocortisone)",
-        "Dùng dung dịch Iod (Lugol) ngay lập tức trước khi cho uống thuốc kháng giáp",
-        "Cho uống Aspirin liều cao để hạ sốt khẩn cấp",
-        "Tiêm thuốc kháng giáp Methimazole đơn độc và chuyển về phòng bệnh thường",
-        "Chỉ định phẫu thuật cắt toàn bộ tuyến giáp cấp cứu ngay trong đêm"
+      "stem": "Chẩn đoán biến chứng cấp cứu và nguyên tắc bắt buộc khi dùng liệu pháp hormone thay thế đường tĩnh mạch theo ATA là gì?",
+      "choices": [
+        "Hôn mê phù niêm (Myxedema Coma); BẮT BUỘC TIÊM TĨNH MẠCH HYDROCORTISONE LIỀU STRESS (100 mg mỗi 8 giờ) TRƯỚC HOẶC ĐỒNG THỜI VỚI LEVOTHYROXINE (T4) / LIOTHYRONINE (T3) đường tĩnh mạch để phòng ngừa Cơn suy thượng thận cấp kịch phát gây trụy mạch tử vong",
+        "Tiêm tĩnh mạch Levothyroxine liều cao đơn độc và làm ấm bệnh nhân thật nhanh bằng chăn sưởi điện nhiệt độ cao",
+        "Đột quỵ hạ thân nhiệt do tuổi già; chỉ định chụp MRI não và truyền Glucose 50%",
+        "Hôn mê hạ đường huyết đơn thuần; chỉ định truyền liên tục Dextrose 10%",
+        "Chỉ định chạy thận nhân tạo cấp cứu để đào thải độc chất chuyển hóa"
       ],
-      answer: 0,
-      why: [
-        "<b>Cơn bão giáp trạng (Thyroid Storm)</b> là cấp cứu nội tiết tối khẩn cấp với tỉ lệ tử vong lên tới 20–30%.",
-        "Phác đồ điều trị đa tầng theo khuyến cáo <b>ATA (American Thyroid Association)</b>:",
-        "1. <b>Thuốc chẹn beta giao cảm</b>: <b>Propranolol tĩnh mạch hoặc uống liều cao</b> (vừa kiểm soát nhịp nhanh/rung nhĩ, vừa có tác dụng ức chế chuyển T4 thành T3 ở ngoại vi).",
-        "2. <b>Thuốc kháng giáp tổng hợp (Thionamides)</b>: <b>PTU (Propylthiouracil) được ưu tiên hơn Methimazole trong cơn bão giáp</b> vì PTU vừa ức chế tổng hợp hormone mới vừa ức chế men 5'-deiodinase ngoại vi.",
-        "3. <b>Dung dịch Iod vô cơ (Lugol / SSKI / Potassium Iodide)</b>: <b>BẮT BUỘC DÙNG SAU KHI ĐÃ UỐNG PTU ÍT NHẤT 1 GIỜ</b> (hiệu ứng Wolff-Chaikoff ức chế giải phóng hormone giáp; nếu dùng Iod trước khi phong bế tuyến giáp bằng PTU, tuyến giáp sẽ dùng lượng Iod này làm nguyên liệu tổng hợp thêm hormone gây bùng phát bão giáp nặng hơn - hiệu ứng Jod-Basedow).",
-        "4. <b>Corticoid đường tĩnh mạch</b>: <b>Hydrocortisone 100 mg mỗi 8 giờ</b> (ức chế chuyển T4 thành T3 và dự phòng suy thượng thận tương đối do tăng chuyển hóa).",
-        "5. <b>CHỐNG CHỈ ĐỊNH DÙNG ASPIRIN ĐỂ HẠ SỐT</b>: Aspirin cạnh tranh gắn kết với TBG (Thyroid Binding Globulin) làm đẩy hormone T3/T4 tự do vào máu tăng cao hơn; bắt buộc dùng <b>Paracetamol</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có <b>Hôn mê phù niêm (Myxedema Coma)</b> - tình trạng mất bù tối cấp tính của suy giáp nặng đe dọa tính mạng (tử vong 30–50%).",
+        "<b>Đặc trưng lâm sàng & sinh hóa kinh điển</b>: 1. Rối loạn tri giác / hôn mê; 2. <b>Hạ thân nhiệt nặng (< 35 °C)</b>; 3. <b>Mạch chậm, tụt huyết áp</b>; 4. <b>Suy hô hấp ứ trệ CO2</b>; 5. <b>Hạ Natri máu (do SIADH) và Hạ đường huyết</b>.",
+        "<b>QUY TẮC VÀNG SỐNG CÒN TRONG ĐIỀU TRỊ HORMONE</b>:",
+        "<b>BẮT BUỘC PHẢI TIÊM HYDROCORTISONE LIỀU STRESS TĨNH MẠCH (100 mg tiêm mạch rồi 100 mg mỗi 8h) TRƯỚC HOẶC ĐỒNG THỜI VỚI HORMONE TUYẾN GIÁP</b>.",
+        "<b>Lý do sinh lý bệnh học</b>: Bệnh nhân suy giáp nặng thường bị suy giảm dự trữ tuyến thượng thận thứ phát (hoặc suy đa tuyến tự miễn Schmidt). Khi tiêm Levothyroxine vào cơ thể, chuyển hóa tế bào tăng vọt làm tăng dị hóa và phân hủy Cortisol nhanh chóng; nếu không bổ sung Corticoid trước, bệnh nhân sẽ rơi vào <b>Cơn suy thượng thận cấp (Adrenal Crisis) dẫn đến sốc trụy tim mạch tử vong ngay lập tức</b>.",
+        "Biện pháp hỗ trợ: Đặt nội khí quản thở máy hỗ trợ thông khí; <b>Làm ấm thụ động (Passive rewarming bằng chăn đắp thường)</b>, TRÁNH làm ấm chủ động quá nhanh vì gây giãn mạch ngoại vi dẫn đến sốc tụt HA sâu hơn."
       ],
-      wrongs: {
-        1: "Dùng dung dịch Iod trước PTU sẽ cung cấp nguyên liệu cho tuyến giáp tổng hợp thêm hormone làm bão giáp bùng nổ tử vong.",
-        2: "Aspirin chống chỉ định tuyệt đối vì đẩy T3/T4 tự do ra khỏi protein vận chuyển TBG làm tăng nồng độ hormone tự do trong máu.",
-        3: "Methimazole đơn độc không đủ kiểm soát cơn bão giáp và không ức chế chuyển T4 thành T3 nhanh bằng PTU.",
-        4: "Phẫu thuật tuyến giáp trong cơn bão giáp có tỉ lệ tử vong chu phẫu gần 100% và bị chống chỉ định tuyệt đối."
+      "wrongs": {
+        "1": "Dùng Levothyroxine đơn độc mà không có Hydrocortisone sẽ kích phát cơn suy thượng thận cấp tử vong; làm ấm quá nhanh bằng chăn điện gây giãn mạch sốc trụy mạch.",
+        "2": "TSH 115 mcIU/mL và phù niêm khẳng định suy giáp mất bù chứ không phải đột quỵ đơn thuần.",
+        "3": "Hạ đường huyết chỉ là một biểu hiện trong bức tranh suy giáp nặng toàn thể.",
+        "4": "Chạy thận nhân tạo không có chỉ định và làm hạ thân nhiệt nặng hơn."
       },
-      objective:
-        "Cơn bão giáp điều trị chuẩn bằng 4 nhóm thuốc: Propranolol + PTU + Dung dịch Lugol (dùng sau PTU ít nhất 1h để tránh hiệu ứng Jod-Basedow) + Hydrocortisone tĩnh mạch; hạ sốt bằng Paracetamol, tuyệt đối tránh dùng Aspirin."
+      "objective": "Trong Hôn mê phù niêm (Myxedema Coma: hôn mê, hạ thân nhiệt, mạch chậm, hạ Natri), BẮT BUỘC tiêm Hydrocortisone liều stress tĩnh mạch TRƯỚC HOẶC ĐỒNG THỜI với Levothyroxine tiêm tĩnh mạch để ngăn ngừa suy thượng thận cấp tử vong."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước xử trí cấp cứu",
-      short: "Hôn mê phù niêm (Myxedema Coma)",
-      vignette: [
-        "Cụ bà 76 tuổi có tiền sử suy giáp tự ý bỏ thuốc Levothyroxine 1 năm nay, được đưa vào cấp cứu vào một ngày mùa đông giá rét trong tình trạng hôn mê, thở chậm nông và phù toàn thân.",
-        "Khám: <b>Hạ thân nhiệt nặng 34,2 °C</b>, nhịp tim rất chậm 42 l/phút, huyết áp tụt 80/50 mm Hg, nhịp thở 8 l/phút. Mặt tròn phù niêm không lõm, mi mắt mọng, giọng khàn đặc, phản xạ gân gót pha thư giãn chậm kéo dài (Hung-up reflex).",
-        "Xét nghiệm máu khẩn: <b>TSH tăng cực cao > 100 mcIU/mL, Free T4 giảm gần bằng 0</b>, <b>Natri huyết thanh giảm nặng 118 mEq/L (Hạ natri máu)</b>, Đường máu 55 mg/dL. Khí máu động mạch có ứ trệ CO2 toan hô hấp (PaCO2 65 mm Hg)."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán phân biệt đau tuyến giáp & Xạ hình",
+      "short": "Viêm tuyến giáp bán cấp De Quervain (Subacute Thyroiditis)",
+      "vignette": [
+        "Nữ 36 tuổi đến khám vì <b>đau vùng cổ trước dữ dội, đau tăng lên khi nuốt và đau lan chói lên góc hàm và tai hai bên</b> kéo dài 2 tuần qua. Khởi phát sau một đợt sốt, đau họng do nhiễm virus đường hô hấp trên cách đây 3 tuần.",
+        "Kèm theo bệnh nhân thấy hồi hộp, tim đập nhanh, sụt 2 kg và run nhẹ hai bàn tay. Khám: Thân nhiệt 37,9 °C. Tuyến giáp to nhẹ hai bên, <b>cực kỳ đau đớn khi sờ nắn (Exquisitely tender thyroid gland)</b>.",
+        "Xét nghiệm máu: <b>Tốc độ máu lắng (ESR) tăng rất cao 92 mm/h; CRP 64 mg/L</b>; TSH giảm thấp 0,02 mcIU/mL; Free T4 tăng cao 3,2 ng/dL; Kháng thể kháng giáp Anti-TPO âm tính.",
+        "Xạ hình tuyến giáp với độ tập trung Iod phóng xạ <b>(Radioactive Iodine Uptake - RAIU 24 giờ) giảm rất thấp đạt 1% (Bình thường 15–25%)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "34,2 °C"],
-        ["Huyết áp", "80/50"],
-        ["Mạch", "42 l/ph"],
-        ["Nhịp thở", "8 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "37,9 °C"
+        ],
+        [
+          "Huyết áp",
+          "130/80 mm Hg"
+        ],
+        [
+          "Mạch",
+          "104 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Phác đồ điều trị cấp cứu hồi sức và thứ tự dùng hormone chuẩn xác nhất là gì?",
-      choices: [
-        "Hỗ trợ hô hấp (đặt nội khí quản thở máy) + Ủ ấm thụ động + Bắt đầu tiêm tĩnh mạch Hydrocortisone TRƯỚC HOẶC ĐỒNG THỜI với Hormone tuyến giáp tĩnh mạch (Levothyroxine T4 phối hợp Liothyronine T3)",
-        "Cho uống Levothyroxine liều cao qua sonde dạ dày đơn độc mà không dùng corticoid",
-        "Ủ ấm chủ động bên ngoài bằng chăn điện nhiệt độ cao ngay lập tức",
-        "Truyền dung dịch Natri Bicarbonate liều cao đơn độc",
-        "Tiêm thuốc co mạch Dopamine liều tối đa đơn độc"
+      "stem": "Chẩn đoán bệnh lý tuyến giáp và biện pháp điều trị nội khoa được lựa chọn đầu tay là gì?",
+      "choices": [
+        "Viêm tuyến giáp bán cấp dạng u hạt (Subacute Granulomatous / De Quervain's Thyroiditis); điều trị triệu chứng bằng Thuốc chống viêm không steroid (NSAIDs, như Ibuprofen) hoặc Corticoid đường uống (Prednisone) khi đau nặng, phối hợp Chẹn Beta để giảm triệu chứng nhiễm độc giáp",
+        "Bệnh Basedow (Graves' disease); điều trị bằng thuốc kháng giáp tổng hợp Methimazole",
+        "Viêm tuyến giáp Hashimoto thể bùng phát; điều trị bằng Levothyroxine liều cao",
+        "Áp xe tuyến giáp do vi khuẩn sinh mủ (Viêm giáp cấp); chỉ định rạch tháo mủ cấp cứu",
+        "Ung thư tuyến giáp thể nhú; chỉ định phẫu thuật cắt toàn bộ tuyến giáp"
       ],
-      answer: 0,
-      why: [
-        "<b>Hôn mê phù niêm (Myxedema Coma)</b> là biến chứng suy giáp nặng mất bù đe dọa tính mạng (tử vong 30–40%) thường khởi phát sau nhiễm trùng, thời tiết lạnh hoặc dùng thuốc an thần ở người cao tuổi.",
-        "Đặc trưng lâm sàng: <b>Tam chứng Hạ thân nhiệt (<35 °C) + Rối loạn tri giác hôn mê + Suy hô hấp nhịp thở chậm/ứ CO2</b> kết hợp nhịp tim chậm, hạ natri máu và hạ đường huyết.",
-        "Nguyên tắc xử trí cấp cứu sống còn:",
-        "1. <b>Bảo vệ đường thở</b>: Đặt nội khí quản thở máy sớm vì bệnh nhân bị ức chế trung tâm hô hấp và phù nề đường thở trên.",
-        "2. <b>Ủ ấm thụ động</b> (dùng chăn thường trong phòng ấm; <b>tránh ủ ấm chủ động bằng nhiệt bên ngoài</b> vì gây giãn mạch ngoại vi đột ngột làm sụp huyết áp và sốc).",
-        "3. <b>BẮT BUỘC TIÊM HYDROCORTISONE TĨNH MẠCH TRƯỚC KHI TRUYỀN LEVOTHYROXINE</b>: Bệnh nhân suy giáp nặng thường có suy thượng thận thứ phát tiềm tàng. Nếu bù hormone giáp trước, tốc độ chuyển hóa toàn thân tăng vọt sẽ làm cạn kiệt lượng cortisol ít ỏi còn lại, đẩy bệnh nhân vào <b>Cơn suy thượng thận cấp (Adrenal Crisis) gây ngừng tim tử vong ngay lập tức</b>.",
-        "4. <b>Hormone giáp tĩnh mạch</b>: Nạp liều cao Levothyroxine (T4) 200–400 mcg tĩnh mạch phối hợp Liothyronine (T3) tĩnh mạch."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có bệnh cảnh kinh điển của <b>Viêm tuyến giáp bán cấp dạng u hạt (Subacute Granulomatous Thyroiditis / De Quervain's Thyroiditis)</b>.",
+        "<b>Đặc trưng lâm sàng & cận lâm sàng kinh điển</b>:",
+        "1. Tiền sử <b>nhiễm virus hô hấp trên (Coxsackie, Adenovirus, Cúm)</b> vài tuần trước;",
+        "2. <b>Đau tuyến giáp dữ dội lan lên hàm/tai, chạm vào cực kỳ đau (Exquisitely tender thyroid)</b>;",
+        "3. <b>Dấu ấn viêm tăng vọt: Tốc độ máu lắng ESR > 60–100 mm/h</b>;",
+        "4. Giai đoạn sớm (Giai đoạn nhiễm độc giáp giải phóng): Các nang tuyến giáp bị phá hủy giải phóng ồ ạt hormone vào máu -> <b>TSH giảm, Free T4 tăng</b>;",
+        "5. <b>Độ tập trung Iod phóng xạ (RAIU) GIẢM RẤT THẤP (< 2–5%)</b>: Do các tế bào nang giáp đang bị viêm tổn thương không thể bắt giữ iod (giúp phân biệt tuyệt đối với bệnh Basedow - vốn có RAIU tăng rất cao > 50–80% lan tỏa).",
+        "<b>Điều trị</b>: Bệnh tự giới hạn sau vài tuần đến vài tháng. Điều trị giảm đau chống viêm: <b>NSAIDs (Ibuprofen / Naproxen)</b> cho thể nhẹ/trung bình; <b>Corticoid uống (Prednisone 40 mg/ngày giảm liều dần)</b> cho thể đau nặng; <b>Propranolol</b> kiểm soát nhịp nhanh. <b>KHÔNG DÙNG THUỐC KHÁNG GIÁP TỔNG HỢP (Methimazole/PTU)</b> vì tuyến giáp không tăng tổng hợp hormone mới."
       ],
-      wrongs: {
-        1: "Bù hormone giáp đơn thuần mà không có Hydrocortisone sẽ kích hoạt cơn suy thượng thận cấp tử vong tức thì.",
-        2: "Ủ ấm chủ động bằng chăn điện gây giãn mạch ngoại vi đột ngột làm tụt huyết áp sốc không hồi phục.",
-        3: "Bicarbonate không giải quyết được nguyên nhân ức chế hô hấp do thiếu hormone giáp.",
-        4: "Thuốc co mạch không có hiệu quả khi thụ thể catecholamine chưa được kích hoạt bởi hormone giáp và cortisol."
+      "wrongs": {
+        "1": "Basedow không gây đau tuyến giáp, ESR bình thường và RAIU tăng rất cao lan tỏa.",
+        "2": "Hashimoto tuyến giáp chắc không đau và Anti-TPO dương tính rất cao.",
+        "3": "Viêm giáp cấp sinh mủ do vi khuẩn (Suppurative thyroiditis) cực hiếm, thường ở trẻ có xoang lê bẩm sinh gây sưng nóng đỏ đau một bên tạo ổ mủ rõ rệt.",
+        "4": "Ung thư tuyến giáp là nhân giáp cứng không đau, không làm tăng ESR > 90 mm/h."
       },
-      objective:
-        "Hôn mê phù niêm (hạ thân nhiệt, nhịp chậm, suy hô hấp, hạ Na) bắt buộc tiêm Hydrocortisone tĩnh mạch trước hoặc đồng thời với Levothyroxine tĩnh mạch để phòng ngừa suy thượng thận cấp tử vong; chỉ ủ ấm thụ động."
+      "objective": "Viêm tuyến giáp bán cấp De Quervain (sau nhiễm virus, tuyến giáp đau dữ dội, ESR tăng rất cao, RAIU giảm rất thấp < 2%) điều trị giảm đau bằng NSAIDs hoặc Prednisone; không dùng thuốc kháng giáp tổng hợp."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và lựa chọn điều trị",
-      short: "Bệnh Basedow (Graves' Disease) và bệnh mắt nội tiết",
-      vignette: [
-        "Nữ 30 tuổi đến khám vì sụt 6 kg trong 2 tháng dù ăn rất nhiều, hồi hộp đánh trống ngực, sợ nóng vã mồ hôi, run tay và mắt lồi to dần gây cộm xốn nhìn đôi.",
-        "Khám: Tuyến giáp to lan tỏa độ II, mềm mịn, nghe có tiếng thổi tâm thu liên tục ở hai cực trên tuyến giáp. <b>Lồi mắt hai bên (Exophthalmos), co rút cơ nâng mi mắt và phù niêm trước xương chày (Pretibial myxedema)</b>.",
-        "Xét nghiệm: <b>TSH giảm < 0,01 mcIU/mL, Free T4 tăng cao 48 pmol/L</b>. Kháng thể kháng thụ thể TSH (<b>TRAb / TSI - Thyroid Stimulating Immunoglobulin</b>) dương tính mạnh 18 IU/L (bình thường < 1,5). Xạ hình tuyến giáp bằng Iod phóng xạ (RAIU): <b>Tuyến giáp tăng bắt xạ lan tỏa đồng nhất toàn bộ hai thùy (Diffuse homogenous uptake)</b>."
+      "spec": "Nội tiết",
+      "task": "Cấp cứu sốc suy thượng thận & Xử trí",
+      "short": "Cơn suy thượng thận cấp (Adrenal Crisis) - Tiêm Hydrocortisone khẩn cấp",
+      "vignette": [
+        "Nam 48 tuổi có tiền sử Bệnh Addison (Suy thượng thận nguyên phát tự miễn) đang dùng thuốc thay thế Hydrocortisone 20 mg/ngày và Fludrocortisone 0,1 mg/ngày.",
+        "Hai ngày trước bệnh nhân bị viêm dạ dày ruột nôn ói nhiều không uống được thuốc. Bệnh nhân được người nhà đưa vào viện trong tình trạng lơ mơ, sốt 38,9 °C, đau quặn bụng dữ dội như viêm phúc mạc.",
+        "Dấu hiệu sinh tồn: <b>Huyết áp tụt sâu 70/40 mm Hg trơ với truyền nhanh 2 lít dung dịch muối đẳng trương; Mạch 128 l/ph; Da sạm màu đen đồng ở các nếp gấp bàn tay và niêm mạc miệng</b>.",
+        "Xét nghiệm máu: <b>Natri giảm nặng 124 mEq/L; Kali tăng cao 6,2 mEq/L; Glucose máu hạ 55 mg/dL; Creatinine tăng 2,1 mg/dL</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "37,4 °C"],
-        ["Huyết áp", "145/65 (áp lực mạch rộng)"],
-        ["Mạch", "112 l/ph"],
-        ["Nhịp thở", "18 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "38,9 °C"
+        ],
+        [
+          "Huyết áp",
+          "70/40 mm Hg (Sốc kháng dịch)"
+        ],
+        [
+          "Mạch",
+          "128 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "22 l/ph"
+        ],
+        [
+          "SpO2",
+          "96% khí trời"
+        ]
       ],
-      stem: "Phương pháp điều trị nào sau đây bị CHỐNG CHỈ ĐỊNH hoặc cần thận trọng tối đa vì có nguy cơ làm nặng thêm bệnh mắt Basedow (Graves' Orbitopathy)?",
-      choices: [
-        "Điều trị bằng Iod phóng xạ I-131 đơn độc (Radioactive Iodine Ablation)",
-        "Thuốc kháng giáp tổng hợp Methimazole đường uống",
-        "Thuốc chẹn beta giao cảm Propranolol",
-        "Phẫu thuật cắt gần toàn bộ tuyến giáp",
-        "Corticoid đường tĩnh mạch liều cao (Methylprednisolone)"
+      "stem": "Theo Hướng dẫn của Endocrine Society, hành động xử trí cấp cứu mang tính quyết định sống còn ngay tại thời điểm này là gì?",
+      "choices": [
+        "Tiêm tĩnh mạch Bolus ngay lập tức Hydrocortisone 100 mg (hoặc Dexamethasone 4 mg) phối hợp truyền dung dịch Dextrose 5% trong NaCl 0,9% mà KHÔNG CẦN CHỜ ĐỢI kết quả định lượng Cortisol hay test ACTH",
+        "Tiếp tục truyền thêm 3 lít dung dịch NaCl 0,9% và chờ kết quả xét nghiệm Cortisol máu sau 4 giờ",
+        "Tiêm tĩnh mạch Norepinephrine liều cao đơn độc để nâng huyết áp",
+        "Chỉ định phẫu thuật mở bụng thăm dò khẩn cấp vì nghi ngờ thủng ruột",
+        "Tiêm Insulin tĩnh mạch để hạ nồng độ Kali máu"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có <b>Bệnh Basedow (Graves' Disease)</b> điển hình: Bướu giáp mạch lan tỏa, bướu lồi mắt (Graves' Ophthalmopathy), phù niêm trước xương chày, <b>kháng thể kích thích thụ thể TSH (TSI/TRAb) dương tính</b> và xạ hình RAIU tăng bắt xạ lan tỏa đồng nhất.",
-        "Đặc điểm điều trị quan trọng về <b>Bệnh mắt Basedow</b>:",
-        "- <b>ĐIỀU TRỊ BẰNG IOD PHÓNG XẠ I-131 ĐƠN ĐỘC CÓ NGUY CƠ LÀM NẶNG THÊM RÕ RỆT BỆNH MẮT BASEDOW</b>: Tia xạ làm phá hủy tế bào tuyến giáp giải phóng ồ ạt kháng nguyên TSH-R vào máu, làm tăng sinh kháng thể TRAb tấn công thụ thể TSH và IGF-1R trên nguyên bào sợi hốc mắt, gây viêm phù nề và lồi mắt nặng nề hơn (thậm chí mất thị lực).",
-        "- Nếu bệnh nhân có bệnh mắt mức độ vừa-nặng đang hoạt động: <b>Ưu tiên điều trị bằng Thuốc kháng giáp tổng hợp (Methimazole) HOẶC Phẫu thuật cắt tuyến giáp</b>; nếu bắt buộc dùng I-131 thì phải <b>dùng kèm Corticoid toàn thân dự phòng</b>.",
-        "- Phụ nữ mang thai 3 tháng đầu ưu tiên dùng <b>PTU</b> (do Methimazole có nguy cơ gây dị tật teo lỗ mũi sau / bất sản da đầu); từ tam cá nguyệt 2 trở đi đổi sang <b>Methimazole</b> để tránh độc gan của PTU."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân bị <b>Cơn suy thượng thận cấp (Adrenal Crisis / Acute Adrenocortical Insufficiency)</b> - một biến chứng cấp cứu đe dọa tính mạng xuất hiện khi nhu cầu cortisol của cơ thể tăng cao (nhiễm trùng, nôn ói) nhưng không được bù đủ liều stress.",
+        "<b>Đặc trưng lâm sàng & sinh hóa kinh điển</b>: 1. <b>Sốc tụt huyết áp kháng trị với bù dịch và vận mạch</b> (do mất tác dụng hiệp đồng của cortisol lên trương lực mạch máu); 2. <b>Đau bụng dữ dội, nôn ói, sốt cao (giả viêm phúc mạc)</b>; 3. <b>Bộ ba rối loạn điện giải đặc thù: Hạ Natri máu + Tăng Kali máu + Hạ Glucose máu</b> (kèm sạm da do tăng ACTH trong Addison).",
+        "<b>NGUYÊN TẮC XỬ TRÍ SỐNG CÒN</b>: <b>TIÊM TĨNH MẠCH NGAY LẬP TỨC HYDROCORTISONE 100 MG BOLUS</b> (sau đó 50–100 mg mỗi 6–8h) + <b>HỒI SỨC DỊCH D5 0,9% NaCl</b>. <b>TUYỆT ĐỐI KHÔNG ĐƯỢC TRÌ HOÃN ĐIỀU TRỊ ĐỂ CHỜ KẾT QUẢ XÉT NGHIỆM CORTISOL HAY TEST ACTH</b> (trì hoãn sẽ dẫn đến ngừng tim tử vong).",
+        "(Nếu chưa từng chẩn đoán suy thượng thận và muốn làm test Cosyntropin sau đó: dùng Dexamethasone 4 mg TM thay thế vì Dexamethasone không gây nhiễu xét nghiệm định lượng cortisol máu)."
       ],
-      wrongs: {
-        1: "Methimazole không làm nặng bệnh mắt và là thuốc kháng giáp đầu tay chuẩn ở người lớn không mang thai 3 tháng đầu.",
-        2: "Propranolol giúp kiểm soát nhanh triệu chứng giao cảm tim nhanh run tay.",
-        3: "Phẫu thuật cắt tuyến giáp không làm tăng TRAb và không làm nặng bệnh mắt.",
-        4: "Corticoid truyền tĩnh mạch là điều trị chuẩn cho bệnh mắt Basedow thể hoạt động mức độ nặng."
+      "wrongs": {
+        "1": "Trì hoãn tiêm corticoid để chờ xét nghiệm sẽ làm bệnh nhân tử vong do trụy mạch không hồi phục.",
+        "2": "Vận mạch Norepinephrine đơn độc không có tác dụng nếu thiếu Cortisol (Cortisol cần thiết để tăng tính nhạy cảm của thụ thể alpha-1 adrenergic).",
+        "3": "Đau bụng ở đây là do suy thượng thận cấp, mổ mở không cần thiết có nguy cơ tử vong chu phẫu cực cao.",
+        "4": "Tiêm insulin sẽ làm nặng thêm tình trạng hạ đường huyết nặng (55 mg/dL) gây co giật hôn mê."
       },
-      objective:
-        "Điều trị Iod phóng xạ I-131 có nguy cơ làm nặng thêm bệnh mắt Basedow do kích hoạt giải phóng kháng thể TRAb; ở bệnh nhân có bệnh mắt hoạt động ưu tiên dùng Methimazole hoặc Phẫu thuật, hoặc phải dùng kèm Corticoid dự phòng nếu dùng I-131."
+      "objective": "Cơn suy thượng thận cấp (sốc tụt HA kháng dịch, đau bụng, hạ Natri, tăng Kali, hạ đường huyết) cần xử trí tối khẩn cấp bằng tiêm tĩnh mạch ngay Hydrocortisone 100 mg + D5 NaCl 0.9% mà không được chờ kết quả xét nghiệm."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Viêm giáp bán cấp De Quervain sau nhiễm virus",
-      vignette: [
-        "Nữ 36 tuổi đến khám vì <b>đau dữ dội ở vùng cổ trước lan lên hàm dưới và hai tai 1 tuần nay, nuốt đau và quay đầu đau</b>. Hai tuần trước bệnh nhân có sốt, đau họng và viêm đường hô hấp trên.",
-        "Khám: <b>Tuyến giáp to nhẹ, mật độ chắc và ẤN ĐAU CHÓI DỮ DỘI (Exquisitely tender thyroid gland)</b>. Bệnh nhân có run tay nhẹ và tim nhanh 98 l/phút.",
-        "Xét nghiệm máu: <b>Tốc độ lắng máu (ESR) tăng rất cao 92 mm/h, CRP 45 mg/L</b>. TSH giảm thấp 0,05 mcIU/mL, Free T4 tăng cao (giai đoạn nhiễm độc giáp thoáng qua). <b>Độ tập trung Iod phóng xạ tại tuyến giáp (RAIU 24h) giảm gần bằng 0 (Very low / undetectable RAIU < 1%)</b>."
+      "spec": "Nội tiết",
+      "task": "Quy trình chẩn đoán hội chứng Cushing",
+      "short": "Hội chứng Cushing - Quy trình phân tầng chẩn đoán và Đo ACTH",
+      "vignette": [
+        "Nữ 34 tuổi đến khám vì tăng 12 kg trong 6 tháng qua dù ăn ít. Bệnh nhân nhận thấy mặt tròn đỏ, mọc nhiều lông mép và mụn trứng cá, kinh nguyệt thưa không đều và dễ xuất hiện các vết bầm tím tự nhiên trên da.",
+        "Khám thực thể: Huyết áp 155/95 mm Hg, BMI 32 kg/m2. <b>Khuôn mặt tròn như mặt trăng (Moon facies), ứ mỡ vùng sau gáy (Trâu gù - Buffalo hump), béo phì vùng thân mình nhưng teo cơ gốc chi, da bụng mỏng có nhiều vết rạn da màu tím đỏ đậm rộng 1,5 cm (> 1 cm)</b>.",
+        "Các xét nghiệm sàng lọc bước 1 khẳng định Cường Cortisol tự do: Cortisol tự do trong nước tiểu 24 giờ (UFC) tăng gấp 4 lần bình thường; Test ức chế bằng Dexamethasone liều thấp 1 mg qua đêm không ức chế được Cortisol (nồng độ Cortisol sáng hôm sau = 18 mcg/dL, ngưỡng bình thường < 1,8 mcg/dL)."
       ],
-      vitals: [
-        ["Nhiệt độ", "37,8 °C"],
-        ["Huyết áp", "125/75"],
-        ["Mạch", "98 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "155/95 mm Hg"
+        ],
+        [
+          "Mạch",
+          "78 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Chẩn đoán xác định và thuốc điều trị đầu tay để giảm đau và chống viêm là gì?",
-      choices: [
-        "Viêm giáp bán cấp dạng u hạt (De Quervain's / Subacute Granulomatous Thyroiditis); điều trị giảm đau bằng NSAID liều cao (như Ibuprofen) hoặc Corticoid đường uống (Prednisone)",
-        "Viêm giáp mủ cấp do vi khuẩn; điều trị bằng phẫu thuật rạch tháo mủ cấp cứu",
-        "Bệnh Basedow khởi phát; điều trị bằng thuốc kháng giáp Methimazole liều cao",
-        "Ung thư tuyến giáp thể tủy; phẫu thuật cắt tuyến giáp toàn phần",
-        "Viêm tuyến giáp Hashimoto; bắt buộc bổ sung Levothyroxine ngay lập tức"
+      "stem": "Theo Hướng dẫn chuẩn của Endocrine Society, bước xét nghiệm tiếp theo bắt buộc phải thực hiện để xác định nguyên nhân là gì?",
+      "choices": [
+        "Định lượng nồng độ hormone vỏ thượng thận ACTH huyết tương buổi sáng để phân biệt Hội chứng Cushing phụ thuộc ACTH (ACTH bình thường hoặc tăng) với Hội chứng Cushing không phụ thuộc ACTH (ACTH bị ức chế < 5 pg/mL)",
+        "Chụp ngay lập tức Cộng hưởng từ (MRI) tuyến yên có tiêm thuốc đối quang từ",
+        "Chụp ngay lập tức Cắt lớp vi tính (CT) tuyến thượng thận hai bên",
+        "Chỉ định phẫu thuật cắt bỏ cả hai tuyến thượng thận",
+        "Bắt đầu điều trị bằng thuốc ức chế tổng hợp steroid Ketoconazole"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Viêm tuyến giáp bán cấp De Quervain (Subacute Granulomatous Thyroiditis / De Quervain's Thyroiditis)</b>:",
-        "- Bệnh sử: Xuất hiện sau một đợt <b>nhiễm virus đường hô hấp trên</b> (Coxsackie, Adenovirus, Cúm).",
-        "- Dấu hiệu lâm sàng đặc trưng kinh điển số một: <b>TUYẾN GIÁP SƯNG TO VÀ ẤN ĐAU CHÓI DỮ DỘI (Tender thyroid gland) LAN LÊN GÓC HÀM VÀ TAI</b>.",
-        "- Cận lâm sàng đặc trưng: <b>Tốc độ lắng máu (ESR) tăng rất cao (> 50–100 mm/h)</b> + Tình trạng nhiễm độc giáp thoáng qua do vỡ các nang giáp giải phóng hormone có sẵn vào máu.",
-        "- Chẩn đoán phân biệt vàng: <b>Độ tập trung Iod phóng xạ (RAIU) GIẢM RẤT THẤP (< 1–3%)</b> do các tế bào nang giáp bị viêm tổn thương không còn khả năng bắt giữ iod (khác hoàn toàn với bệnh Basedow có RAIU tăng cao lan tỏa).",
-        "Tiến triển tự khỏi theo 3 giai đoạn: Nhiễm độc giáp -> Suy giáp thoáng qua -> Bình giáp hoàn toàn sau vài tháng.",
-        "Điều trị: <b>NSAID liều cao (Ibuprofen, Aspirin)</b> cho thể nhẹ-vừa; <b>Corticoid uống (Prednisone 40 mg/ngày)</b> cho thể đau nhiều sốt cao. Thuốc chẹn beta (Propranolol) kiểm soát tim nhanh. <b>KHÔNG DÙNG THUỐC KHÁNG GIÁP (Methimazole/PTU)</b> vì tuyến giáp không tăng tổng hợp hormone mới."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có biểu hiện lâm sàng kinh điển của <b>Hội chứng Cushing (Cushing Syndrome)</b> với các dấu hiệu có độ đặc hiệu cao nhất: <b>Vết rạn da màu tím rộng > 1 cm (Purple striae), Teo cơ gốc chi, Da mỏng dễ bầm tím</b>.",
+        "Sau khi đã xác lập chẩn đoán Cường Cortisol (bằng ít nhất 2 xét nghiệm sàng lọc bước 1 dương tính: UFC 24h, Test Dexamethasone 1mg qua đêm, hoặc Cortisol nước bọt nửa đêm), <b>BƯỚC TIẾP THEO BẮT BUỘC LÀ ĐO NỒNG ĐỘ ACTH HUYẾT TƯƠNG (Plasma ACTH Level)</b>:",
+        "1. <b>Nếu ACTH bị ức chế thấp (< 5 pg/mL) -> Cushing KHÔNG PHỤ THUỘC ACTH (ACTH-independent)</b>: Do u tuyến vỏ thượng thận lành tính/ác tính hoặc quá sản thượng thận -> Chỉ định <b>Chụp CT tuyến thượng thận</b>.",
+        "2. <b>Nếu ACTH bình thường hoặc tăng (> 15–20 pg/mL) -> Cushing PHỤ THUỘC ACTH (ACTH-dependent)</b>: Do <b>U tuyến yên tiết ACTH (Bệnh Cushing - Cushing Disease, chiếm 70%)</b> HOẶC <b>U tiết ACTH lạc chỗ (Ectopic ACTH, như ung thư phổi tế bào nhỏ, chiếm 15%)</b> -> Bước tiếp theo là làm <b>Test Dexamethasone liều cao 8 mg</b> hoặc <b>Lấy mẫu máu xoang đá dưới hai bên (Bilateral Inferior Petrosal Sinus Sampling - BIPSS)</b> và <b>MRI tuyến yên</b>.",
+        "Chụp MRI tuyến yên hoặc CT thượng thận trước khi đo ACTH là sai lầm vì có thể phát hiện u ngẫu nhiên không hoạt động (Incidentaloma) dẫn đến phẫu thuật nhầm."
       ],
-      wrongs: {
-        1: "Viêm giáp mủ cấp do vi khuẩn (hiếm gặp, do rò xoang lê) có áp xe hóa mủ khu trú 1 bên sốt cao rét run, không phải viêm giáp bán cấp toàn bộ 2 thùy sau virus.",
-        2: "Thuốc kháng giáp hoàn toàn không có tác dụng vì cơ chế là vỡ nang giải phóng hormone cũ chứ không phải tăng tổng hợp mới.",
-        3: "Ung thư giáp thường là nhân giáp cứng chắc không đau, không sốt tăng ESR cao sau nhiễm virus.",
-        4: "Giai đoạn đầu đang nhiễm độc giáp, không được dùng Levothyroxine."
+      "wrongs": {
+        "1": "Chụp MRI tuyến yên trước khi đo ACTH là sai quy trình; nếu bệnh nhân có u thượng thận thì tổn thương thấy trên MRI tuyến yên chỉ là u ngẫu nhiên lành tính.",
+        "2": "Chụp CT thượng thận trước khi đo ACTH có thể bỏ sót bệnh Cushing tuyến yên.",
+        "3": "Cắt thượng thận 2 bên chỉ là biện pháp cứu vãn cuối cùng khi các phương pháp phẫu thuật u tuyến yên/lạc chỗ thất bại.",
+        "4": "Ketoconazole chỉ dùng tạm thời để kiểm soát cortisol trước mổ, không phải bước chẩn đoán."
       },
-      objective:
-        "Viêm giáp bán cấp De Quervain (sau nhiễm virus, tuyến giáp đau chói, ESR tăng rất cao, RAIU giảm gần bằng 0); điều trị bằng NSAID hoặc Corticoid để chống viêm giảm đau, không dùng thuốc kháng giáp tổng hợp."
+      "objective": "Sau khi khẳng định Hội chứng Cushing, bước tiếp theo bắt buộc là Đo ACTH huyết tương buổi sáng để phân biệt thể phụ thuộc ACTH (bệnh Cushing u tuyến yên hoặc u tiết ACTH lạc chỗ) với thể không phụ thuộc ACTH (u tuyến thượng thận)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước xử trí cấp cứu",
-      short: "Cơn suy tuyến thượng thận cấp (Adrenal Crisis)",
-      vignette: [
-        "Nam 38 tuổi có tiền sử bệnh Addison (Suy thượng thận nguyên phát tự miễn) đang điều trị Hydrocortisone và Fludrocortisone. Bệnh nhân bị sốt cao nôn ói và tiêu chảy cấp do ngộ độc thức ăn 2 ngày nay nhưng không tăng liều thuốc.",
-        "Bệnh nhân được đưa vào cấp cứu trong tình trạng lơ mơ, da sạm đen ở các nếp gấp bàn tay và niêm mạc má, thở nhanh, da tái lạnh vã mồ hôi. <b>Huyết áp tụt sâu 75/40 mm Hg không đáp ứng sau khi đã truyền 1.500 mL NaCl 0,9%</b>.",
-        "Xét nghiệm máu khẩn: <b>Natri máu giảm thấp 124 mEq/L (Hạ natri máu)</b>, <b>Kali máu tăng cao 6,2 mEq/L (Tăng kali máu)</b>, Glucose máu giảm 52 mg/dL (Hạ đường huyết), BUN/Creatinine tăng cao."
+      "spec": "Nội tiết",
+      "task": "Sàng lọc & Phân biệt vị trí cường Aldosterone",
+      "short": "Cường Aldosterone nguyên phát (Hội chứng Conn) - Tỷ lệ ARR & AVS",
+      "vignette": [
+        "Nam 44 tuổi đến khám vì tăng huyết áp dai dẳng dù đang phối hợp 3 thuốc hạ áp liều tối ưu gồm Amlodipine 10 mg, Valsartan 160 mg và Hydrochlorothiazide 25 mg/ngày (Tăng huyết áp kháng trị).",
+        "Xét nghiệm máu định kỳ: <b>Kali huyết thanh hạ 3,1 mEq/L; Bicarbonate tăng 31 mEq/L (Kiềm chuyển hóa); Natri 144 mEq/L; Creatinine 0,9 mg/dL</b>.",
+        "Bệnh nhân được ngưng lợi tiểu, bù kali về bình thường và làm xét nghiệm sàng lọc chuyên sâu: <b>Nồng độ Aldosterone huyết tương (PAC) tăng cao 28 ng/dL; Hoạt tính Renin huyết tương (PRA) bị ức chế rất thấp < 0,6 ng/mL/h -> Tỷ lệ PAC/PRA (ARR) = 46 (Tăng rất cao > 20–30)</b>. Nghiệm pháp truyền muối đẳng trương khẳng định Aldosterone không bị ức chế."
       ],
-      vitals: [
-        ["Nhiệt độ", "38,5 °C"],
-        ["Huyết áp", "75/40"],
-        ["Mạch", "122 l/ph"],
-        ["Nhịp thở", "24 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,7 °C"
+        ],
+        [
+          "Huyết áp",
+          "168/102 mm Hg"
+        ],
+        [
+          "Mạch",
+          "72 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Bước can thiệp cấp cứu sống còn quyết định hàng đầu cần thực hiện NGAY LẬP TỨC là gì?",
-      choices: [
-        "Tiêm tĩnh mạch Hydrocortisone 100 mg Bolus ngay lập tức (sau đó 50–100 mg mỗi 6 giờ) kết hợp Hồi sức bù dịch NaCl 0,9% và Glucose 5%",
-        "Chờ làm nghiệm pháp kích thích bằng ACTH (Synacthen test) trong 60 phút rồi mới tiêm thuốc",
-        "Tiêm tĩnh mạch Furosemide để hạ kali máu khẩn cấp",
-        "Dùng thuốc vận mạch Noradrenaline liều cao đơn độc mà không dùng corticoid",
-        "Cho bệnh nhân uống viên Fludrocortisone liều gấp đôi"
+      "stem": "Chụp CT bụng thấy nốt giảm tỷ trọng 1,2 cm ở tuyến thượng thận trái và dày nhẹ tuyến thượng thận phải. Bước tiếp theo chuẩn mực nhất để quyết định chỉ định phẫu thuật cắt thượng thận là gì?",
+      "choices": [
+        "Lấy mẫu máu tĩnh mạch tuyến thượng thận chọn lọc hai bên (Adrenal Vein Sampling - AVS) để phân biệt tăng tiết Aldosterone khu trú một bên (chỉ định phẫu thuật nội soi cắt thượng thận) với quá sản thượng thận hai bên (chỉ định điều trị nội khoa bằng thuốc kháng thụ thể Mineralocorticoid)",
+        "Chỉ định phẫu thuật nội soi cắt toàn bộ tuyến thượng thận bên trái ngay lập tức dựa trên hình ảnh CT",
+        "Chỉ định phẫu thuật cắt cả hai tuyến thượng thận",
+        "Chỉ định xạ hình tuyến thượng thận với I-131 Iodocholesterol",
+        "Thêm thuốc chẹn kênh Calci nhóm Non-Dihydropyridine"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân bị <b>Cơn suy tuyến thượng thận cấp (Acute Adrenal Crisis)</b> - cấp cứu tối khẩn cấp do thiếu hụt Cortisol và Aldosterone tuyệt đối trong bối cảnh stress nhiễm trùng cấp tính (ngộ độc thức ăn).",
-        "Đặc trưng lâm sàng và sinh hóa kinh điển:",
-        "- <b>Sốc tụt huyết áp kháng trị với bù dịch và vận mạch</b> (do mất tác dụng hiệp đồng của cortisol lên trương lực co mạch của catecholamine).",
-        "- Bộ ba điện giải: <b>Hạ Natri máu + Tăng Kali máu + Hạ Glucose máu</b>.",
-        "- Tăng sắc tố da niêm mạc (Hyperpigmentation) do ACTH và MSH tăng cao phản ứng bù trừ trong suy thượng thận nguyên phát.",
-        "Xử trí tối khẩn sống còn: <b>TIÊM TĨNH MẠCH HYDROCORTISONE 100 MG NGAY LẬP TỨC</b> (không được trì hoãn để làm xét nghiệm chẩn đoán vì sẽ khiến bệnh nhân ngừng tim tử vong). Hydrocortisone liều 100 mg vừa cung cấp hoạt tính Glucocorticoid mạnh vừa có hoạt tính Mineralocorticoid giữ muối nước (không cần bổ sung thêm Fludrocortisone trong giai đoạn cấp) + Bù dịch NaCl 0,9% và Glucose 5%."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có <b>Cường Aldosterone nguyên phát (Primary Aldosteronism / Hội chứng Conn)</b> - nguyên nhân hàng đầu gây tăng huyết áp thứ phát (chiếm 5–10% dân số tăng huyết áp và 20% THA kháng trị).",
+        "<b>Đặc trưng kinh điển</b>: <b>Tăng huyết áp kháng trị + Hạ Kali máu tự phát/do lợi tiểu + Kiềm chuyển hóa</b>. Xét nghiệm sàng lọc: <b>Tỷ lệ Aldosterone/Renin (ARR) > 20–30 kèm Aldosterone > 15 ng/dL</b>.",
+        "<b>Vấn đề then chốt trong định hướng điều trị</b>: Phải phân biệt chính xác giữa 2 thể bệnh chính:",
+        "1. <b>U tuyến vỏ thượng thận tiết Aldosterone một bên (Aldosterone-Producing Adenoma - APA)</b>: Chiếm 35%, <b>ĐIỀU TRỊ TRIỆT CĂN BẰNG PHẪU THUẬT NỘI SOI CẮT TUYẾN THƯỢNG THẬN 1 BÊN</b>.",
+        "2. <b>Quá sản vỏ thượng thận hai bên vô căn (Bilateral Idiopathic Hyperplasia - IAH)</b>: Chiếm 60–65%, <b>ĐIỀU TRỊ NỘI KHOA SUỐT ĐỜI BẰNG THUỐC KHÁNG ALDOSTERONE (Spironolactone hoặc Eplerenone)</b> (phẫu thuật không chữa khỏi bệnh).",
+        "<b>TIÊU CHUẨN VÀNG PHÂN BIỆT</b>: <b>Lấy mẫu máu tĩnh mạch tuyến thượng thận chọn lọc hai bên (Adrenal Vein Sampling - AVS)</b>. CT scan tuyến thượng thận có tỷ lệ dương tính giả và âm tính giả rất cao (do u ngẫu nhiên không chức năng Incidentaloma gặp ở 10% người trung niên hoặc vi u không nhìn thấy trên CT). Bắt buộc phải làm AVS trước khi phẫu thuật (trừ bệnh nhân < 35 tuổi có u đơn độc một bên điển hình > 1 cm)."
       ],
-      wrongs: {
-        1: "Trì hoãn điều trị để làm test chẩn đoán trên bệnh nhân đang sốc tụt huyết áp là sai lầm chết người kinh điển.",
-        2: "Lợi tiểu làm giảm thể tích tuần hoàn và làm tụt huyết áp sập tuần hoàn tử vong.",
-        3: "Vận mạch không thể co mạch hiệu quả nếu thiếu Cortisol.",
-        4: "Bệnh nhân đang nôn ói và sốc nặng, thuốc uống không hấp thu được."
+      "wrongs": {
+        "1": "Mổ ngay dựa vào CT có nguy cơ cắt nhầm một u ngẫu nhiên lành tính không hoạt động trong khi bệnh nhân thực chất bị quá sản 2 bên.",
+        "2": "Cắt 2 bên gây suy thượng thận vĩnh viễn cần dùng thuốc thay thế suốt đời.",
+        "3": "Xạ hình Iodocholesterol có độ phân giải kém và không còn là chuẩn mực.",
+        "4": "Non-DHP CCB không giải quyết được cơ chế tăng aldosterone."
       },
-      objective:
-        "Cơn suy thượng thận cấp (sốc tụt huyết áp kháng dịch, hạ Na, tăng K, hạ đường huyết) đòi hỏi tiêm tĩnh mạch Hydrocortisone 100 mg ngay lập tức kết hợp bù dịch NaCl 0,9% và Glucose; tuyệt đối không trì hoãn để làm xét nghiệm."
+      "objective": "Cường Aldosterone nguyên phát (ARR > 20-30, THA kháng trị, hạ Kali) sau khi xác chẩn cần Lấy mẫu máu tĩnh mạch thượng thận 2 bên (AVS) để phân biệt u tiết một bên (phẫu thuật cắt thượng thận) với quá sản 2 bên (điều trị Spironolactone)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và định vị",
-      short: "Hội chứng Cushing và thuật toán chẩn đoán nguyên nhân",
-      vignette: [
-        "Nữ 38 tuổi đến khám vì tăng 12 kg trong 6 tháng, mặt tròn như mặt trăng (Moon facies), tích tụ mỡ ở vùng gáy (Gù trâu - Buffalo hump) và béo bụng trung tâm trong khi hai tay hai chân teo nhỏ và yếu cơ gốc chi.",
-        "Khám: <b>Nhiều vết rạn da màu tím đỏ rộng > 1 cm ở bụng và đùi (Purple striae)</b>, rậm lông mặt, nhiều vết bầm tím tự nhiên trên da mỏng. Huyết áp 155/95 mm Hg.",
-        "Các xét nghiệm sàng lọc bước 1 khẳng định Hội chứng Cushing (Tăng cortisol tự do trong nước tiểu 24h gấp 4 lần và Cortisol huyết tương lúc 8h sáng sau Test ức chế Dexamethasone liều thấp 1mg qua đêm không ức chế được = 16 mcg/dL, bình thường < 1,8).",
-        "Xét nghiệm bước 2: <b>Nồng độ ACTH huyết tương tăng cao 85 pg/mL (Hội chứng Cushing phụ thuộc ACTH)</b>. Tiến hành <b>Test ức chế Dexamethasone liều cao (8 mg qua đêm): Nồng độ Cortisol huyết thanh GIẢM ĐƯỢC TRÊN 50% so với ban đầu (bị ức chế thành công)</b>."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán u tủy thượng thận & Nguyên tắc chẹn thụ thể",
+      "short": "U tủy thượng thận (Pheochromocytoma) - Chuẩn bị tiền phẫu Chẹn Alpha trước Chẹn Beta",
+      "vignette": [
+        "Nam 39 tuổi đến khám vì các cơn kịch phát xuất hiện 2–3 lần mỗi tuần gồm: <b>Đau đầu dữ dội như búa bổ, vã mồ hôi đầm đìa ướt sũng áo, đánh trống ngực tim đập thình thịch và cảm giác lo âu hoảng loạn cực độ (Tam chứng kinh điển 3P: Pain, Perspiration, Palpitations)</b>.",
+        "Cơn kéo dài khoảng 15–20 phút rồi tự hết. Trong cơn huyết áp đo được vọt lên tới 210/120 mm Hg.",
+        "Xét nghiệm chẩn đoán: <b>Nồng độ Metanephrine và Normetanephrine tự do trong huyết tương tăng gấp 6 lần giới hạn trên bình thường; Định lượng Metanephrine niệu 24 giờ tăng rất cao</b>. Chụp CT bụng phát hiện khối u tủy thượng thận phải kích thước 4,5 cm giàu mạch máu."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "155/95"],
-        ["Mạch", "78 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "37,0 °C"
+        ],
+        [
+          "Huyết áp",
+          "165/100 mm Hg"
+        ],
+        [
+          "Mạch",
+          "106 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "18 l/ph"
+        ]
       ],
-      stem: "Căn nguyên chính xác của hội chứng Cushing ở bệnh nhân này là gì và phương tiện hình ảnh học bước tiếp theo cần làm là gì?",
-      choices: [
-        "Bệnh Cushing (Cushing Disease) do U tuyến yên tăng tiết ACTH (Corticotroph adenoma); bước tiếp theo là Chụp cộng hưởng từ tuyến yên (Pituitary MRI có tiêm đối quang từ)",
-        "U vỏ thượng thận tăng tiết Cortisol tự chủ (Adrenal adenoma); chụp CT tuyến thượng thận",
-        "Hội chứng tiết ACTH lạc chỗ do Ung thư phổi tế bào nhỏ (SCLC); chụp CT ngực",
-        "Hội chứng Cushing ngoại sinh do lạm dụng thuốc Corticoid",
-        "U tủy thượng thận Pheochromocytoma"
+      "stem": "Nguyên tắc chuẩn bị dùng thuốc tiền phẫu bắt buộc theo thứ tự nào trước khi tiến hành phẫu thuật cắt bỏ khối u?",
+      "choices": [
+        "BẮT BUỘC DÙNG THUỐC CHẸN ALPHA-ADRENERGIC (như Phenoxybenzamine hoặc Doxazosin) TRƯỚC TIÊN trong 10–14 ngày; sau khi đã phong bế hoàn toàn thụ thể alpha mới ĐƯỢC PHÉP DÙNG THÊM THUỐC CHẸN BETA (như Propranolol hoặc Metoprolol) để kiểm soát nhịp tim nhanh",
+        "Dùng thuốc chẹn Beta-adrenergic (như Propranolol) đơn độc trước tiên trong 2 tuần để hạ nhịp tim nhanh",
+        "Tiêm tĩnh mạch Labetalol liều cao rồi chuyển mổ cấp cứu ngay trong ngày",
+        "Không cần chuẩn bị thuốc tiền phẫu, chỉ định mổ nội soi cắt u ngay",
+        "Dùng thuốc ức chế men chuyển Enalapril phối hợp lợi tiểu quai Furosemide"
       ],
-      answer: 0,
-      why: [
-        "Thuật toán tiếp cận chẩn đoán Hội chứng Cushing chuẩn quốc tế:",
-        "1. <b>Bước 1: Khẳng định hội chứng Cushing (Tăng cortisol máu tự do)</b>: Dùng ít nhất 2 trong 3 test (Cortisol tự do nước tiểu 24h, Cortisol nước bọt ban đêm, Test ức chế Dexamethasone liều thấp 1mg).",
-        "2. <b>Bước 2: Định lượng nồng độ ACTH huyết tương</b>:",
-        "- Nếu ACTH giảm thấp (< 5 pg/mL) -> <b>Không phụ thuộc ACTH</b> (U vỏ thượng thận -> chụp CT thượng thận).",
-        "- Nếu ACTH tăng cao (> 15–20 pg/mL) -> <b>Phụ thuộc ACTH</b> (tiến sang Bước 3).",
-        "3. <b>Bước 3: Phân biệt Bệnh Cushing (U tuyến yên) vs Tiết ACTH lạc chỗ (U ngoài tuyến yên như SCLC)</b>:",
-        "- <b>Bệnh Cushing do u tuyến yên</b>: Các tế bào u tuyến yên vẫn còn bảo tồn một phần cơ chế ức chế điều hòa ngược âm tính -> <b>Test Dexamethasone LIỀU CAO (8 mg) làm Cortisol GIẢM > 50%</b> (và Test kích thích CRH làm ACTH tăng vọt).",
-        "- <b>Tiết ACTH lạc chỗ (Ectopic ACTH như ung thư phổi)</b>: Hoàn toàn không chịu sự điều hòa ngược -> Test Dexamethasone liều cao KHÔNG ỨC CHẾ ĐƯỢC (Cortisol không giảm).",
-        "-> Kết luận bệnh nhân bị <b>Bệnh Cushing (Cushing's Disease) do U tuyến yên</b>; bước tiếp theo là <b>Chụp MRI tuyến yên</b> để định vị khối u và phẫu thuật cắt u qua xoang bướm (Transsphenoidal surgery)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân mắc <b>U tủy thượng thận (Pheochromocytoma)</b> tiết catecholamine (Epinephrine và Norepinephrine) quá mức từ các tế bào ưa crom.",
+        "Tam chứng lâm sàng kinh điển: <b>Đau đầu kịch phát (Headache) + Vã mồ hôi đầm đìa (Sweating) + Đánh trống ngực/nhịp nhanh (Tachycardia)</b> trên nền tăng huyết áp kịch phát hoặc liên tục.",
+        "<b>QUY TẮC VÀNG TIỀN PHẪU SỐNG CÒN (ALPHA BLOCKADE BEFORE BETA BLOCKADE)</b>:",
+        "1. <b>BƯỚC 1: PHONG BẾ ALPHA-ADRENERGIC TRƯỚC (Alpha-blocker first)</b>: Dùng thuốc chẹn alpha không hồi phục <b>Phenoxybenzamine</b> (hoặc chẹn alpha-1 chọn lọc Doxazosin) trong <b>10–14 ngày trước mổ</b> kết hợp bù dịch và chế độ ăn nhiều muối để mở rộng thể tích lòng mạch bị co thắt.",
+        "2. <b>BƯỚC 2: MỚI ĐƯỢC DÙNG CHẸN BETA (Beta-blocker after)</b>: Bắt đầu chẹn beta 2–3 ngày trước mổ để kiểm soát nhịp tim nhanh phản xạ.",
+        "<b>NGUY HIỂM CHẾT NGƯỜI NẾU DÙNG CHẸN BETA TRƯỚC</b>: Nếu dùng chẹn beta trước khi chẹn alpha, thụ thể beta-2 (gây giãn mạch) bị phong bế trong khi thụ thể alpha-1 (gây co mạch) bị kích thích không đối kháng bởi lượng lớn Catecholamine tuần hoàn (<b>Unopposed Alpha Stimulation</b>) -> Gây <b>CO THẮT MẠCH TOÀN THÂN CỰC ĐỘ DẪN ĐẾN CƠN TĂNG HUYẾT ÁP TỐI CẤP, PHÙ PHỔI CẤP, NHỒI MÁU CƠ TIM VÀ XUẤT HUYẾT NÃO TỬ VONG</b>."
       ],
-      wrongs: {
-        1: "U vỏ thượng thận có nồng độ ACTH bị ức chế giảm gần bằng 0.",
-        2: "Tiết ACTH lạc chỗ do ung thư phổi không bị ức chế bởi Dexamethasone liều cao 8mg.",
-        3: "Cushing do thuốc ngoại sinh có nồng độ ACTH và Cortisol nội sinh đều giảm thấp.",
-        4: "Pheochromocytoma tiết catecholamine gây cơn tăng huyết áp tim nhanh, không gây rạn da tím và mặt tròn."
+      "wrongs": {
+        "1": "Dùng chẹn beta trước gây co thắt mạch không đối kháng (Unopposed alpha stimulation) dẫn đến cơn tăng HA kịch phát tử vong.",
+        "2": "Labetalol có tỷ lệ chẹn beta mạnh hơn alpha (tỷ lệ 7:1) nên vẫn có nguy cơ gây co mạch không đối kháng nguy hiểm.",
+        "3": "Phẫu thuật không chuẩn bị thuốc sẽ làm giải phóng ồ ạt catecholamine khi chạm vào khối u gây tử vong trên bàn mổ.",
+        "4": "Lợi tiểu làm giảm thể tích lòng mạch trầm trọng hơn ở bệnh nhân u tủy thượng thận vốn đang bị cô đặc máu nặng."
       },
-      objective:
-        "Thuật toán Cushing: ACTH cao + Test Dexamethasone liều cao 8mg ức chế được Cortisol > 50% khẳng định Bệnh Cushing do u tuyến yên; chỉ định chụp MRI tuyến yên và phẫu thuật nội soi qua xoang bướm."
+      "objective": "Trong Pheochromocytoma, BẮT BUỘC dùng thuốc chẹn Alpha (Phenoxybenzamine) trước trong 10-14 ngày, sau đó mới thêm chẹn Beta; tuyệt đối cấm dùng chẹn Beta trước vì nguy cơ co mạch không đối kháng gây cơn tăng HA tử vong."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Hội chứng Conn (Cường Aldosterone nguyên phát)",
-      vignette: [
-        "Nam 44 tuổi đến khám vì tăng huyết áp kháng trị (huyết áp 165/100 mm Hg dù đang phối hợp 3 thuốc hạ áp gồm Amlodipine, Valsartan và Metoprolol) kèm mệt mỏi và yếu cơ hai chân từng đợt.",
-        "Xét nghiệm máu: <b>Kali huyết thanh giảm thấp 2,9 mEq/L (Hạ kali máu tự phát)</b>, Natri 144 mEq/L, Bicarbonate máu tăng 31 mEq/L (Kiềm chuyển hóa).",
-        "Xét nghiệm sàng lọc nội tiết chuyên sâu: <b>Nồng độ Aldosterone huyết tương (PAC) tăng cao 38 ng/dL</b>, <b>Hoạt độ Renin huyết tương (PRA) bị ức chế giảm thấp 0,4 ng/mL/h</b> -> <b>Tỉ số Aldosterone/Renin (ARR) = 95</b> (tiêu chuẩn sàng lọc dương tính khi ARR > 20–30)."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán phân biệt đái tháo nhạt & Test dDAVP",
+      "short": "Đái tháo nhạt (Diabetes Insipidus) - Test nhịn nước & Đáp ứng Desmopressin",
+      "vignette": [
+        "Nam 28 tuổi sau phẫu thuật chấn thương sọ não do tai nạn giao thông 3 tuần trước, đến khám vì <b>tiểu nhiều liên tục 8–10 lít nước tiểu mỗi ngày (tiểu cả ngày lẫn đêm), kèm theo khát nước dữ dội và luôn thèm uống nước đá lạnh</b>.",
+        "Xét nghiệm máu và nước tiểu ban đầu: Glucose máu bình thường (92 mg/dL); <b>Natri huyết thanh tăng nhẹ 146 mEq/L; Áp lực thẩm thấu huyết tương tăng cao 298 mOsm/kg; Áp lực thẩm thấu nước tiểu (Urine Osmolality) rất loãng đạt 110 mOsm/kg (Tỷ trọng nước tiểu < 1,005)</b>.",
+        "Bệnh nhân được làm Nghiệm pháp nhịn nước (Water Deprivation Test): Áp lực thẩm thấu nước tiểu vẫn giữ nguyên ở mức 120 mOsm/kg dù áp lực thẩm thấu máu tăng lên 308 mOsm/kg. Sau đó bệnh nhân được <b>tiêm dưới da 2 mcg Desmopressin (dDAVP - dẫn xuất tổng hợp của ADH): Áp lực thẩm thấu nước tiểu đo lại sau 1 giờ tăng vọt lên 480 mOsm/kg (Tăng > 300% so với trước tiêm)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "165/100"],
-        ["Mạch", "76 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "118/74 mm Hg"
+        ],
+        [
+          "Mạch",
+          "76 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Cơ chế sinh lý bệnh và nhóm thuốc điều trị nội khoa đặc hiệu kháng thụ thể là gì?",
-      choices: [
-        "Tăng tiết Aldosterone tự chủ nguyên phát từ vỏ thượng thận gây tăng tái hấp thu Natri và tăng bài xuất Kali/H+ tại ống lượn xa; điều trị bằng Thuốc kháng thụ thể Mineralocorticoid (Spironolactone hoặc Eplerenone)",
-        "Hẹp động mạch thận gây cường Aldosterone thứ phát; điều trị bằng thuốc ức chế men chuyển",
-        "U tủy thượng thận; điều trị bằng thuốc chẹn alpha",
-        "Suy thận mạn giai đoạn cuối; điều trị bằng chạy thận nhân tạo",
-        "Hội chứng Cushing; điều trị bằng Ketoconazole"
+      "stem": "Chẩn đoán phân biệt thể bệnh đái tháo nhạt và thuốc điều trị duy trì lâu dài được lựa chọn là gì?",
+      "choices": [
+        "Đái tháo nhạt trung ương (Central Diabetes Insipidus) do thiếu hụt bài tiết ADH từ tuyến yên kinh sau chấn thương sọ não; điều trị duy trì lâu dài bằng Desmopressin (dDAVP) xịt mũi hoặc đường uống",
+        "Đái tháo nhạt do thận (Nephrogenic Diabetes Insipidus); điều trị bằng Hydrochlorothiazide",
+        "Chứng uống nhiều do tâm căn (Primary Psychogenic Polydipsia); điều trị bằng hạn chế uống nước",
+        "Hội chứng tiết ADH không thích hợp (SIADH); điều trị bằng truyền muối ưu trương",
+        "Đái tháo đường típ 1; điều trị bằng tiêm Insulin"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Cường Aldosterone nguyên phát (Primary Hyperaldosteronism / Hội chứng Conn)</b>:",
-        "- Biểu hiện: <b>Tăng huyết áp kháng trị + Hạ kali máu tự phát (hoặc sau dùng lợi tiểu nhẹ) + Kiềm chuyển hóa</b>.",
-        "- Cơ chế: U vỏ thượng thận tiết Aldosterone (Conn adenoma) hoặc Tăng sản tuyến thượng thận hai bên tự chủ kích thích bơm ENaC và H+/K+-ATPase ở tế bào chính ống góp thận -> <b>Tăng tái hấp thu Na+ giữ nước (gây tăng HA nhưng không phù do hiện tượng thoát Aldosterone) VÀ Tăng bài tiết K+, H+ vào nước tiểu (gây hạ Kali máu và kiềm chuyển hóa)</b>.",
-        "- Thể tích nội mạch tăng làm <b>ỨC CHẾ TIẾT RENIN TỪ BỘ MÁY CẠNH CẦU THẬN -> Tỉ số PAC/PRA (ARR) TĂNG CAO > 20–30</b> (phân biệt với Hẹp động mạch thận có Renin TĂNG CAO).",
-        "- Điều trị: <b>Thuốc đối kháng thụ thể Mineralocorticoid (MRA: Spironolactone hoặc Eplerenone)</b> nếu do tăng sản hai bên; <b>Phẫu thuật nội soi cắt tuyến thượng thận mang u</b> nếu do u một bên (sau khi làm nghiệm pháp lấy mẫu máu tĩnh mạch thượng thận AVS để phân định bên tổn thương)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có <b>Hội chứng Đái nhiều - Uống nhiều (Polyuria-Polydipsia Syndrome)</b> với nước tiểu cực kỳ loãng (ALTT niệu < ALTT máu).",
+        "<b>Quy trình phân biệt kinh điển bằng Nghiệm pháp nhịn nước và Test dDAVP</b>:",
+        "1. <b>Nghiệm pháp nhịn nước (Water Deprivation Test)</b>: Giúp phân biệt <b>Chứng uống nhiều do tâm căn (Psychogenic Polydipsia)</b> với Đái tháo nhạt thực sự. Ở người uống nhiều do tâm căn, nhịn nước sẽ kích thích tuyến yên tiết ADH làm cô đặc nước tiểu (ALTT niệu tăng vọt > 600–800 mOsm/kg). Ở bệnh nhân đái tháo nhạt, nhịn nước ALTT niệu vẫn trơ không tăng (< 300 mOsm/kg).",
+        "2. <b>Test Desmopressin (dDAVP Test)</b>: Giúp phân biệt <b>Đái tháo nhạt trung ương (Central DI)</b> với <b>Đái tháo nhạt do thận (Nephrogenic DI)</b>:",
+        "- <b>Đái tháo nhạt trung ương (Central DI)</b>: Do vùng dưới đồi/tuyến yên sau mất khả năng tiết ADH (sau chấn thương sọ não/mổ tuyến yên). Khi tiêm dDAVP ngoại sinh, ống góp thận đáp ứng hoàn hảo làm <b>Áp lực thẩm thấu nước tiểu TĂNG VỌT > 50–100% (ở đây tăng > 300%)</b> -> Điều trị bằng <b>Desmopressin (dDAVP)</b>.",
+        "- <b>Đái tháo nhạt do thận (Nephrogenic DI)</b>: Do thụ thể V2 ở ống góp kháng ADH (do dùng Lithium hoặc tăng canxi máu). Tiêm dDAVP nước tiểu <b>KHÔNG HOẶC HẦU NHƯ KHÔNG ĐÁP ỨNG (< 10–50%)</b> -> Điều trị bằng Hydrochlorothiazide + Amiloride + Ăn nhạt."
       ],
-      wrongs: {
-        1: "Hẹp động mạch thận gây cường Aldosterone THỨ PHÁT có Renin máu tăng rất cao (ARR < 10); ở đây Renin bị ức chế hoàn toàn.",
-        2: "Pheochromocytoma tiết catecholamine không làm tăng chọn lọc Aldosterone có Renin ức chế.",
-        3: "Suy thận mạn thường gây tăng kali máu và toan chuyển hóa, không gây hạ kali máu kiềm chuyển hóa.",
-        4: "Không có các triệu chứng lâm sàng của hội chứng Cushing."
+      "wrongs": {
+        "1": "Đái tháo nhạt do thận sẽ không đáp ứng với tiêm dDAVP (ALTT niệu không tăng sau tiêm dDAVP).",
+        "2": "Uống nhiều tâm căn ALTT niệu sẽ tự tăng cô đặc khi nhịn nước mà không cần tiêm dDAVP.",
+        "3": "SIADH có Natri máu giảm thấp và nước tiểu cô đặc (ALTT niệu > 300), trái ngược với đái tháo nhạt.",
+        "4": "Glucose máu bình thường loại trừ đái tháo đường."
       },
-      objective:
-        "Cường Aldosterone nguyên phát (Conn: tăng HA kháng trị, hạ Kali máu, kiềm chuyển hóa, tỉ số Aldosterone/Renin ARR > 20); điều trị bằng Spironolactone/Eplerenone hoặc phẫu thuật cắt u thượng thận nội soi."
+      "objective": "Đái tháo nhạt trung ương (thiếu hụt ADH) chẩn đoán khi nhịn nước ALTT niệu không tăng nhưng sau tiêm dDAVP ALTT niệu tăng vọt > 50-100%; điều trị duy trì bằng Desmopressin (dDAVP)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và chuẩn bị phẫu thuật",
-      short: "U tủy thượng thận (Pheochromocytoma) - Chẹn Alpha trước chẹn Beta sau",
-      vignette: [
-        "Nam 42 tuổi đến khám vì các cơn kịch phát xuất hiện 2–3 lần mỗi tuần: <b>đau đầu dữ dội như búa bổ, vã mồ hôi ướt đẫm áo, hồi hộp đánh trống ngực tim đập thình thịch và cảm giác lo âu hoảng sợ tột độ (Tam chứng kinh điển 5P)</b>. Sau cơn bệnh nhân mệt lả và đi tiểu nhiều.",
-        "Khám TRONG CƠN: Da tái nhợt, run đầu chi, <b>huyết áp tăng vọt 220/120 mm Hg, mạch 130 l/phút</b>. Ngoài cơn huyết áp hoàn toàn bình thường 120/80 mm Hg.",
-        "Xét nghiệm nội tiết: <b>Nồng độ Metanephrines và Normetanephrines tự do trong huyết tương tăng gấp 5 lần giới hạn trên</b> (kết hợp Metanephrines nước tiểu 24h tăng cao). Chụp CT ổ bụng: <b>Khối u tủy thượng thận bên phải kích thước 4,5 cm ngấm thuốc cản quang không đồng nhất</b>."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán hạ Natri máu & Tốc độ hiệu chỉnh an toàn",
+      "short": "Hội chứng tiết ADH không thích hợp (SIADH) - Thể tích bình thường & NaCl 3%",
+      "vignette": [
+        "Nam 66 tuổi có tiền sử hút thuốc lá 40 bao-năm, được đưa vào phòng cấp cứu vì lú lẫn, lơ mơ tăng dần, buồn nôn và <b>xuất hiện một cơn co giật toàn thể kéo dài 2 phút</b> tại nhà.",
+        "Khám thực thể: Bệnh nhân lơ mơ, định hướng thời gian không gian kém. <b>Thể tích tuần hoàn hoàn toàn bình thường (Euvolemic): Niêm mạc ẩm, tĩnh mạch cổ không nổi, không có phù ngoại biên, không có hạ huyết áp tư thế</b>. Huyết áp 125/80 mm Hg, Mạch 76 l/ph.",
+        "Xét nghiệm máu và nước tiểu: <b>Natri huyết thanh giảm rất nặng 112 mEq/L; Áp lực thẩm thấu huyết tương rất thấp 235 mOsm/kg; Áp lực thẩm thấu nước tiểu cao bất thường 480 mOsm/kg (> 100 mOsm/kg); Natri niệu tăng cao 68 mEq/L (> 40 mEq/L); Axit Uric máu giảm thấp 2,1 mg/dL; Chức năng tuyến giáp và thượng thận hoàn toàn bình thường</b>.",
+        "Chụp X-quang ngực phát hiện một khối mờ 3 cm ở rốn phổi phải nghi ngờ Ung thư phổi tế bào nhỏ (Small Cell Lung Cancer)."
       ],
-      vitals: [
-        ["Nhiệt độ", "37,2 °C"],
-        ["Huyết áp trong cơn", "220/120"],
-        ["Mạch trong cơn", "130 l/ph"],
-        ["Nhịp thở", "22 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "125/80 mm Hg"
+        ],
+        [
+          "Mạch",
+          "76 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "18 l/ph"
+        ]
       ],
-      stem: "Nguyên tắc chuẩn bị thuốc điều trị nội khoa bắt buộc trước khi tiến hành phẫu thuật cắt bỏ khối u là gì?",
-      choices: [
-        "Bắt đầu bằng Thuốc chẹn thụ thể Alpha-adrenergic (Phenoxybenzamine hoặc Doxazosin) trước trong 10–14 ngày; CHỈ DÙNG THUỐC CHẸN BETA SAU KHI ĐÃ ĐẠT PHONG BẾ ALPHA ĐẦY ĐỦ",
-        "Dùng thuốc chẹn Beta (Propranolol) đơn độc liều cao ngay từ đầu",
-        "Tiến hành phẫu thuật cắt u cấp cứu ngay mà không cần chuẩn bị thuốc",
-        "Dùng thuốc ức chế men chuyển Enalapril đơn độc",
-        "Chỉ định xạ trị khối u thượng thận"
+      "stem": "Chẩn đoán hội chứng rối loạn nội tiết và phác đồ xử trí cấp cứu co giật kèm giới hạn tốc độ nâng Natri an toàn trong 24 giờ đầu để phòng biến chứng thần kinh là gì?",
+      "choices": [
+        "Hội chứng tiết ADH không thích hợp (SIADH); cấp cứu co giật bằng truyền tĩnh mạch dung dịch muối ưu trương NaCl 3% (bolus 100 mL trong 10 phút, lặp lại đến khi hết co giật); TỐC ĐỘ NÂNG NATRI MÁU TUYỆT ĐỐI KHÔNG VƯỢT QUÁ 8 mEq/L TRONG 24 GIỜ ĐẦU để ngăn ngừa Hội chứng hủy myelin cầu não (Osmotic Demyelination Syndrome - ODS)",
+        "Hạ Natri máu do mất muối qua thận; truyền ngay 3000 mL dung dịch NaCl 0,9% tốc độ nhanh",
+        "Suy tuyến vỏ thượng thận thứ phát; tiêm tĩnh mạch Dexamethasone liều cao",
+        "Đái tháo nhạt do thận; điều trị bằng truyền dịch tự do theo nhu cầu",
+        "Nâng Natri máu càng nhanh càng tốt lên mức bình thường 140 mEq/L trong vòng 6 giờ"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>U tủy thượng thận (Pheochromocytoma)</b> xuất phát từ tế bào ưa crom (Chromaffin cells) tủy thượng thận tiết quá mức Catecholamine (Epinephrine và Norepinephrine).",
-        "Tam chứng kinh điển: <b>Cơn đau đầu kịch phát (Headache) + Vã mồ hôi nhiều (Sweating) + Tim nhanh hồi hộp (Tachycardia)</b> trên nền tăng huyết áp kịch phát.",
-        "Chẩn đoán xác định: <b>Định lượng Metanephrines tự do huyết tương</b> (độ nhạy >97%) hoặc Metanephrines nước tiểu 24h.",
-        "<b>NGUYÊN TẮC VÀNG TRONG CHUẨN BỊ PHẪU THUẬT: CHẸN ALPHA TRƯỚC, CHẸN BETA SAU (ALPHA-BLOCKADE BEFORE BETA-BLOCKADE)</b>:",
-        "- Bắt buộc dùng <b>Thuốc chẹn alpha không hồi phục (Phenoxybenzamine) hoặc chẹn alpha-1 chọn lọc (Doxazosin) trong ít nhất 10–14 ngày trước mổ</b> để giãn mạch kiểm soát huyết áp và bù đủ thể tích nội mạch.",
-        "- <b>TUYỆT ĐỐI KHÔNG DÙNG CHẸN BETA ĐƠN ĐỘC HOẶC DÙNG TRƯỚC CHẸN ALPHA</b>: Vì nếu chẹn thụ thể Beta-2 (thụ thể gây giãn mạch), lượng Catecholamine khổng lồ trong máu sẽ tác động hoàn toàn không đối kháng lên thụ thể Alpha-1 gây <b>co thắt mạch máu toàn thân cực độ (Unopposed Alpha-agonist effect), dẫn đến cơn tăng huyết áp kịch phát ác tính, phù phổi cấp và đột quỵ tử vong</b>.",
-        "- Thuốc chẹn beta chỉ được thêm vào sau 2–3 ngày phong bế alpha để điều trị nhịp nhanh."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có <b>Hội chứng tiết ADH không thích hợp (Syndrome of Inappropriate Antidiuretic Hormone - SIADH)</b> do khối u thần kinh nội tiết <b>Ung thư phổi tế bào nhỏ (SCLC)</b> tiết ADH lạc chỗ.",
+        "<b>Tiêu chuẩn chẩn đoán SIADH (Bartter-Schwartz criteria)</b>: 1. <b>Hạ Natri máu nhược trương (Hyponatremia với ALTT máu < 275 mOsm/kg)</b>; 2. <b>Thể tích dịch ngoại bào bình thường trên lâm sàng (Euvolemia)</b>; 3. <b>Nước tiểu cô đặc không thích hợp: ALTT niệu > 100 mOsm/kg</b>; 4. <b>Natri niệu cao (> 40 mEq/L)</b> dù ăn uống bình thường; 5. Axit Uric máu giảm và BUN thấp; 6. Chức năng thận, tuyến giáp và thượng thận bình thường.",
+        "<b>Xử trí cấp cứu đợt hạ Natri máu nặng có triệu chứng thần kinh đe dọa tính mạng (Co giật, hôn mê)</b>:",
+        "- <b>Truyền dung dịch muối ưu trương NaCl 3% (Bolus 100–150 mL trong 10–20 phút)</b> để nâng nhanh Natri máu lên 4–6 mEq/L nhằm cắt cơn co giật và giảm phù não cấp tính.",
+        "- <b>QUY TẮC AN TOÀN SỐNG CÒN</b>: <b>TỐC ĐỘ NÂNG NATRI MÁU TỐI ĐA KHÔNG ĐƯỢC VƯỢT QUÁ 6–8 mEq/L TRONG 24 GIỜ ĐẦU TIÊN (và < 18 mEq/L trong 48 giờ)</b>.",
+        "<b>Nguy cơ khi bù Natri quá nhanh</b>: <b>Hội chứng hủy Myelin thẩm thấu / Hủy myelin cầu não trung tâm (Osmotic Demyelination Syndrome - ODS / Central Pontine Myelinolysis)</b> dẫn đến liệt tứ chi co cứng, liệt hành tủy và hội chứng khóa trong (Locked-in syndrome) không hồi phục."
       ],
-      wrongs: {
-        1: "Chẹn beta đơn độc trước chẹn alpha là sai lầm chết người kinh điển trong USMLE vì gây co mạch không đối kháng đẩy huyết áp lên mức tử vong.",
-        2: "Phẫu thuật khi chưa chuẩn bị chẹn alpha sẽ gây bão catecholamine khi phẫu thuật viên chạm vào u dẫn đến ngừng tim trên bàn mổ.",
-        3: "Ức chế men chuyển không phong bế được tác dụng trực tiếp của catecholamine lên mạch máu.",
-        4: "Pheochromocytoma là khối u phẫu thuật triệt căn, không dùng xạ trị đơn thuần."
+      "wrongs": {
+        "1": "Truyền NaCl 0,9% đẳng trương trong SIADH sẽ làm Natri máu tụt sâu hơn (vì cơ thể bài tiết muối ưu trương qua nước tiểu và giữ lại nước tự do).",
+        "2": "Chức năng thượng thận bình thường loại trừ suy thượng thận.",
+        "3": "Đái tháo nhạt gây tăng natri máu và nước tiểu cực loãng.",
+        "4": "Nâng Natri quá nhanh lên 140 mEq/L trong 6 giờ sẽ gây teo tế bào thần kinh và hủy myelin cầu não tử vong."
       },
-      objective:
-        "Pheochromocytoma chẩn đoán bằng Metanephrines huyết tương/niệu; chuẩn bị phẫu thuật BẮT BUỘC dùng Chẹn Alpha (Phenoxybenzamine) trước ít nhất 10-14 ngày, chỉ thêm Chẹn Beta sau khi đã phong bế alpha đầy đủ để tránh co mạch không đối kháng tử vong."
+      "objective": "SIADH (Hạ Natri máu thể tích bình thường, ALTT niệu > 100, Natri niệu > 40) có co giật điều trị cấp cứu bằng NaCl 3% ưu trương; bắt buộc giới hạn tốc độ nâng Natri < 8 mEq/L trong 24h đầu để phòng hội chứng hủy myelin cầu não (ODS)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán phân biệt",
-      short: "Đái tháo nhạt trung ương sau mổ u tuyến yên",
-      vignette: [
-        "Nam 26 tuổi vừa trải qua phẫu thuật nội soi qua xoang bướm cắt bỏ khối u tuyến yên (Craniopharyngioma) cách đây 2 ngày. Bệnh nhân đột ngột xuất hiện <b>tiểu nhiều dữ dội với thể tích nước tiểu lên tới 7,5 lít/24 giờ kèm khát nước liên tục, thích uống nước đá lạnh</b>.",
-        "Xét nghiệm máu và nước tiểu:",
-        "- <b>Natri huyết thanh tăng 148 mEq/L</b>, Áp lực thẩm thấu huyết tương tăng 305 mOsm/kg.",
-        "- <b>Áp lực thẩm thấu nước tiểu giảm rất thấp 110 mOsm/kg</b> (Nước tiểu bị pha loãng không thích hợp < 300 mOsm/kg, tỉ trọng nước tiểu 1.002).",
-        "Tiến hành <b>Nghiệm pháp tiêm thử nghiệm Desmopressin (dDAVP Test)</b>: Sau khi tiêm 2 mcg dDAVP dưới da, <b>Áp lực thẩm thấu nước tiểu tăng vọt lên 520 mOsm/kg (Tăng > 100% so với ban đầu)</b> và thể tích nước tiểu giảm rõ rệt."
+      "spec": "Nội tiết",
+      "task": "Quy trình chẩn đoán & Nghiệm pháp ức chế",
+      "short": "Bệnh to đầu chi (Acromegaly) - Sàng lọc IGF-1 & Test ức chế OGTT",
+      "vignette": [
+        "Nam 42 tuổi đến khám vì nhận thấy kích thước bàn tay và bàn chân to dần trong 3 năm qua: <b>Phải đổi cỡ nhẫn cưới và cỡ giày từ số 40 lên số 44</b>. Bệnh nhân than phiền mệt mỏi, đau nhức khớp, giọng nói trở nên trầm khàn ồm ồm, ngáy to và ngừng thở khi ngủ.",
+        "Khám thực thể: <b>Khuôn mặt thô ráp, xương trán nhô cao (Frontal bossing), hàm dưới vẩu dài ra phía trước làm răng thưa (Prognathism), lưỡi to dày (Macroglossia), bàn tay dày bè như chiếc xẻng</b>. Huyết áp 150/95 mm Hg.",
+        "Xét nghiệm máu lúc đói: Glucose máu tăng 145 mg/dL; Nồng độ hormone tăng trưởng GH ngẫu nhiên dao động không ổn định."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "118/74"],
-        ["Mạch", "80 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,7 °C"
+        ],
+        [
+          "Huyết áp",
+          "150/95 mm Hg"
+        ],
+        [
+          "Mạch",
+          "74 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Chẩn đoán xác định và phương pháp điều trị duy trì lâu dài thích hợp nhất là gì?",
-      choices: [
-        "Đái tháo nhạt trung ương (Central Diabetes Insipidus) do tổn thương giải phóng ADH từ thùy sau tuyến yên; điều trị duy trì bằng Desmopressin (dDAVP) đường xịt mũi hoặc uống",
-        "Đái tháo nhạt do thận (Nephrogenic DI); điều trị bằng thuốc lợi tiểu Thiazide",
-        "Hội chứng cuồng uống tâm căn (Primary Psychogenic Polydipsia); điều trị bằng hạn chế nước",
-        "Đái tháo đường mất kiểm soát; điều trị bằng Insulin",
-        "Hội chứng mất muối do não (Cerebral Salt Wasting); điều trị bằng truyền NaCl 3%"
+      "stem": "Theo Hướng dẫn chuẩn của Endocrine Society, xét nghiệm sàng lọc bước 1 có độ nhạy cao nhất và nghiệm pháp động học tiêu chuẩn vàng để khẳng định chẩn đoán u tiết GH là gì?",
+      "choices": [
+        "Xét nghiệm sàng lọc đầu tay: Định lượng nồng độ yếu tố tăng trưởng giống Insulin-1 (IGF-1) huyết thanh; Nghiệm pháp khẳng định tiêu chuẩn vàng: Nghiệm pháp dung nạp Glucose đường uống (OGTT 75g đo GH) cho thấy nồng độ GH không bị ức chế xuống < 1 ng/mL",
+        "Đo nồng độ GH lúc nửa đêm; khẳng định bằng test kích thích Insulin",
+        "Chụp X-quang xương sọ và bàn tay; khẳng định bằng đo nồng độ Prolactin",
+        "Định lượng Cortisol máu tự do; khẳng định bằng test Dexamethasone",
+        "Chỉ cần đo GH ngẫu nhiên 1 lần duy nhất lúc sáng sớm"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có <b>Đái tháo nhạt trung ương (Central Diabetes Insipidus - CDI)</b> - biến chứng rất phổ biến sau phẫu thuật vùng tuyến yên - cuống tuyến yên.",
-        "Cơ chế: Tổn thương thùy sau tuyến yên / nhân trên thị và nhân cạnh não thất vùng dưới đồi làm <b>mất khả năng tổng hợp và bài tiết hormone chống bài niệu ADH (Vasopressin)</b> -> Ống lượn xa và ống góp không thể tái hấp thu nước -> <b>Đa niệu nước tiểu loãng (ALTT niệu < 300 mOsm/kg) + Tăng ALTT máu và tăng natri máu</b>.",
-        "Phân biệt giữa <b>Đái tháo nhạt trung ương (Central DI)</b> và <b>Đái tháo nhạt do thận (Nephrogenic DI)</b> bằng <b>Nghiệm pháp tiêm Desmopressin (dDAVP test)</b>:",
-        "- <b>Đái tháo nhạt trung ương</b>: Thận hoàn toàn bình thường, chỉ thiếu hormone ADH -> <b>Sau khi tiêm dDAVP, ALTT nước tiểu TĂNG VỌT TRÊN 50–100%</b> (đáp ứng hoàn hảo).",
-        "- <b>Đái tháo nhạt do thận</b> (do đột biến thụ thể V2 hoặc ngộ độc Lithium): Ống thận trơ với ADH -> <b>Sau khi tiêm dDAVP, ALTT nước tiểu KHÔNG ĐỔI hoặc chỉ tăng rất nhẹ (< 10–50%)</b>.",
-        "Điều trị duy trì cho Đái tháo nhạt trung ương: <b>Desmopressin (dDAVP) xịt mũi hoặc uống</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có biểu hiện lâm sàng kinh điển của <b>Bệnh to đầu chi (Acromegaly)</b> do một khối u tuyến yên tiết hormone tăng trưởng (GH-secreting Pituitary Adenoma) xuất hiện sau tuổi dậy thì (khi các đĩa sụn tiếp hợp đã đóng kín).",
+        "<b>Quy trình chẩn đoán xác định chuẩn mực 3 bước của Endocrine Society</b>:",
+        "1. <b>BƯỚC 1 - SÀNG LỌC ĐẦU TAY (Initial Screening)</b>: <b>Định lượng nồng độ IGF-1 (Insulin-like Growth Factor 1) huyết thanh</b>. (Lý do: GH được bài tiết theo từng xung ngắt quãng và có thời gian bán hủy rất ngắn nên đo GH ngẫu nhiên không có giá trị chẩn đoán; trong khi IGF-1 do gan tiết ra dưới tác dụng của GH có nồng độ ổn định suốt cả ngày phản ánh chính xác lượng GH tích lũy).",
+        "2. <b>BƯỚC 2 - NGHIỆM PHÁP ĐỘNG HỌC XÁC CHẨN (Confirmatory Test)</b>: <b>Nghiệm pháp dung nạp Glucose đường uống (Oral Glucose Tolerance Test - OGTT 75g đo GH)</b>. Ở người bình thường, tăng đường huyết sẽ ức chế hoàn toàn vùng dưới đồi làm nồng độ GH hạ xuống < 1 ng/mL (hoặc < 0,4 ng/mL). Ở bệnh nhân Acromegaly, khối u tự chủ tiết GH nên <b>GH KHÔNG BỊ ỨC CHẾ (GH ≥ 1 ng/mL sau uống đường)</b>.",
+        "3. <b>BƯỚC 3 - HÌNH ẢNH HỌC</b>: <b>Chụp MRI tuyến yên có cản từ</b> để xác định vị trí và kích thước khối u (thường là Macroadenoma > 1 cm).",
+        "Điều trị đầu tay: <b>Phẫu thuật cắt u tuyến yên qua xoang bướm (Transsphenoidal surgery)</b>."
       ],
-      wrongs: {
-        1: "Đái tháo nhạt do thận không đáp ứng với dDAVP ngoại sinh; ở đây ALTT niệu tăng vọt từ 110 lên 520 (>300%).",
-        2: "Cuồng uống tâm căn có ALTT máu giảm thấp (<280 mOsm/kg) và khi làm nghiệm pháp nhịn nước ALTT niệu sẽ tự cô đặc > 600 mOsm/kg mà không cần tiêm dDAVP.",
-        3: "Đường máu bình thường, không có lợi niệu thẩm thấu do glucose.",
-        4: "Mất muối do não gây hạ natri máu và thể tích dịch giảm, không gây tăng natri máu nước tiểu loãng."
+      "wrongs": {
+        "1": "Test hạ đường huyết bằng insulin dùng để đánh giá THIẾU HỤT GH, không dùng để chẩn đoán thừa GH (Acromegaly).",
+        "2": "X-quang không đủ độ nhạy và đặc hiệu để chẩn đoán Acromegaly.",
+        "3": "Cortisol dùng chẩn đoán Hội chứng Cushing.",
+        "4": "GH tiết theo xung dao động liên tục nên đo GH ngẫu nhiên đơn độc có tỷ lệ âm tính giả và dương tính giả rất cao."
       },
-      objective:
-        "Đái tháo nhạt trung ương (thiếu ADH sau mổ tuyến yên) gây đa niệu loãng và tăng ALTT máu; chẩn đoán phân biệt bằng nghiệm pháp dDAVP làm ALTT niệu tăng vọt > 50-100%; điều trị bằng Desmopressin (dDAVP)."
+      "objective": "Chẩn đoán Acromegaly (tăng cỡ giày/nhẫn, hàm vẩu, dày lưỡi): Sàng lọc đầu tay bằng định lượng IGF-1 huyết thanh; tiêu chuẩn vàng xác chẩn bằng Nghiệm pháp dung nạp Glucose (OGTT) thấy GH không bị ức chế (< 1 ng/mL)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Hội chứng tiết ADH không thích hợp (SIADH)",
-      vignette: [
-        "Nam 66 tuổi có tiền sử ung thư phổi đang điều trị, nhập viện vì mệt mỏi, buồn nôn, chán ăn, đi lại loạng choạng và lú lẫn nhẹ.",
-        "Khám: Bệnh nhân tỉnh nhưng định hướng chậm, không phù, niêm mạc ẩm bình thường, véo da bình thường, tĩnh mạch cổ không nổi (<b>Thể tích dịch nội mạch hoàn toàn bình thường - Euvolemic state</b>). Huyết áp 125/75 mm Hg.",
-        "Xét nghiệm máu và nước tiểu:",
-        "- <b>Natri huyết thanh giảm nặng 119 mEq/L (Hạ natri máu thực sự)</b>, Áp lực thẩm thấu huyết tương giảm 248 mOsm/kg (bình thường 275–295).",
-        "- <b>Áp lực thẩm thấu nước tiểu tăng cao 460 mOsm/kg (> 100 mOsm/kg - Nước tiểu cô đặc không thích hợp)</b>.",
-        "- <b>Natri trong nước tiểu tăng cao 52 mEq/L (> 30–40 mEq/L)</b>.",
-        "- Chức năng tuyến giáp (TSH, FT4), chức năng tuyến thượng thận (Cortisol lúc 8h sáng) và chức năng thận (Creatinine) hoàn toàn bình thường."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán phân biệt tăng Canxi máu phụ thuộc PTH",
+      "short": "Cường cận giáp nguyên phát (PHPT) vs Tăng canxi máu giảm canxi niệu gia đình (FHH)",
+      "vignette": [
+        "Nữ 48 tuổi đi khám sức khỏe định kỳ phát hiện tăng Canxi máu không triệu chứng. Khai thác tiền sử: Mẹ đẻ và em trai ruột của bệnh nhân cũng có nồng độ Canxi máu tăng nhẹ nhiều năm nay mà không có sỏi thận hay gãy xương.",
+        "Xét nghiệm máu: <b>Canxi toàn phần tăng 10,9 mg/dL (ngưỡng 8,5–10,5 mg/dL); Canxi ion hóa 1,38 mmol/L; Hormone cận giáp PTH nguyên vẹn (Intact PTH) tăng nhẹ 72 pg/mL (ngưỡng 15–65 pg/mL); Phosphate máu 2,6 mg/dL (hơi thấp)</b>; Vitamin D 25(OH)D bình thường 32 ng/mL; Creatinine 0,8 mg/dL.",
+        "Xét nghiệm nước tiểu 24 giờ: Nồng độ Canxi trong nước tiểu 24 giờ rất thấp 65 mg/24h (Bình thường > 100–250 mg/24h); <b>Phân số bài xuất Canxi qua thận (Fractional Excretion of Calcium - FeCa) = 0,004 (FeCa = 0,4%, thấp hơn rất nhiều so với ngưỡng 1%)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "125/75"],
-        ["Mạch", "74 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "120/75 mm Hg"
+        ],
+        [
+          "Mạch",
+          "70 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "14 l/ph"
+        ]
       ],
-      stem: "Biện pháp điều trị ban đầu nền tảng cho Hạ natri máu đẳng thể tích do SIADH mức độ vừa không có triệu chứng co giật là gì?",
-      choices: [
-        "Hạn chế lượng nước uống vào nghiêm ngặt (< 800–1.000 mL/ngày)",
-        "Truyền tĩnh mạch nhanh 2 lít dung dịch NaCl 0,9% đẳng trương",
-        "Tiêm tĩnh mạch Furosemide liều cao kết hợp uống nhiều nước",
-        "Tiêm thuốc kháng sinh Vancomycin",
-        "Tiêm insulin nhanh liều cao"
+      "stem": "Chẩn đoán phân biệt bệnh lý chuyển hóa Canxi-PTH và thái độ xử trí phù hợp nhất là gì?",
+      "choices": [
+        "Tăng Canxi máu giảm Canxi niệu có tính gia đình (Familial Hypocalciuric Hypercalcemia - FHH) do đột biến bất hoạt gen thụ thể cảm nhận Canxi (<i>CaSR</i>); bệnh hoàn toàn lành tính, CHỐNG CHỈ ĐỊNH PHẪU THUẬT cắt tuyến cận giáp và không cần điều trị bằng thuốc",
+        "Cường tuyến cận giáp nguyên phát (Primary Hyperparathyroidism); chỉ định phẫu thuật cắt bỏ u tuyến cận giáp ngay",
+        "Cường cận giáp thứ phát do thiếu hụt Vitamin D; chỉ định bổ sung Cholecalciferol liều cao",
+        "Tăng canxi máu do bệnh u hạt ác tính Sarcoidosis; chỉ định dùng Corticoid",
+        "Tăng canxi máu do tiêu xương ác tính; chỉ định dùng Bisphosphonate truyền tĩnh mạch"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân thỏa mãn đầy đủ <b>Tiêu chuẩn chẩn đoán Hội chứng tiết ADH không thích hợp (SIADH)</b>:",
-        "1. <b>Hạ natri máu nhược trương (Hypotonic Hyponatremia: ALTT huyết tương < 275 mOsm/kg)</b>.",
-        "2. <b>Thể tích dịch nội mạch bình thường (Euvolemia)</b>: Không phù, không tăng áp lực tĩnh mạch cổ, không tụt huyết áp tư thế.",
-        "3. <b>Nước tiểu bị cô đặc không thích hợp</b>: <b>ALTT nước tiểu > 100 mOsm/kg</b> (ở đây 460 mOsm/kg).",
-        "4. <b>Mất muối qua nước tiểu</b>: <b>Natri niệu > 30–40 mEq/L</b> (ở đây 52 mEq/L).",
-        "5. Đã loại trừ suy giáp, suy thượng thận và suy thận.",
-        "Điều trị SIADH:",
-        "- <b>Biện pháp nền tảng đầu tay</b>: <b>HẠN CHẾ NƯỚC UỐNG VÀO (< 800–1.000 mL/24h)</b>.",
-        "- <b>LƯU Ý: TRUYỀN DUNG DỊCH NACL 0,9% ĐẲNG TRƯƠNG BỊ CHỐNG CHỈ ĐỊNH VÌ SẼ LÀM HẠ NATRI MÁU NẶNG HƠN</b> (Do ADH làm giữ lại toàn bộ lượng nước tự do trong khi thận bài xuất toàn bộ lượng muối truyền vào qua nước tiểu cô đặc).",
-        "- Nếu hạ natri máu nặng có triệu chứng thần kinh cấp (co giật, hôn mê): Truyền cấp cứu <b>NaCl 3% ưu trương</b> (nâng Natri không quá 8–10 mEq/L trong 24 giờ đầu để <b>phòng ngừa Hội chứng hủy Myelin cầu não thẩm thấu - Osmotic Demyelination Syndrome / CPM</b>).",
-        "- Thuốc đối kháng thụ thể V2 của Vasopressin: <b>Tolvaptan, Conivaptan</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có tình trạng <b>Tăng Canxi máu phụ thuộc PTH (PTH-dependent Hypercalcemia: Canxi tăng kèm PTH tăng hoặc không bị ức chế)</b>.",
+        "<b>Chẩn đoán phân biệt mang tính quyết định sống còn giữa 2 bệnh lý</b>:",
+        "1. <b>Cường tuyến cận giáp nguyên phát (Primary Hyperparathyroidism - PHPT)</b>: Thường do Adenoma tuyến cận giáp. Canxi máu tăng cao làm tăng lọc qua cầu thận -> <b>Canxi niệu 24h TĂNG CAO (> 200–250 mg/24h) VÀ Phân số bài xuất Canxi FeCa > 2% (FeCa > 0,02)</b> -> Điều trị bằng <b>Phẫu thuật cắt tuyến cận giáp</b>.",
+        "2. <b>Tăng Canxi máu giảm Canxi niệu có tính gia đình (Familial Hypocalciuric Hypercalcemia - FHH)</b>: Di truyền trội trên NST thường do <b>đột biến gen thụ thể cảm nhận canxi (<i>CaSR</i>)</b>. Thận và tuyến cận giáp bị 'trơ' với nồng độ canxi máu cao -> Ống thận tăng tái hấp thu canxi tối đa dẫn đến <b>CANXI NIỆU CỰC THẤP (< 100 mg/24h) VÀ FeCa < 1% (FeCa < 0,01)</b>.",
+        "<b>Thái độ xử trí FHH</b>: Đây là một <b>TÌNH TRẠNG HOÀN TOÀN LÀNH TÍNH</b>, không gây biến chứng sỏi thận, loãng xương hay suy thận. <b>CHỐNG CHỈ ĐỊNH TUYỆT ĐỐI PHẪU THUẬT CẮT TUYẾN CẬN GIÁP</b> (cắt tuyến cận giáp không làm giảm canxi máu và làm tăng nguy cơ suy cận giáp vô ích), bệnh nhân chỉ cần theo dõi định kỳ và tư vấn di truyền cho gia đình."
       ],
-      wrongs: {
-        1: "Truyền NaCl 0,9% trong SIADH là sai lầm kinh điển vì thận bài tiết muối và giữ nước lại, làm Natri máu tụt sâu hơn.",
-        2: "Uống nhiều nước sẽ làm ngộ độc nước gây co giật tử vong.",
-        3: "Kháng sinh không giải quyết được hội chứng SIADH cận ung thư.",
-        4: "Insulin dùng điều trị tăng đường huyết hoặc tăng kali máu, không dùng trong SIADH."
+      "wrongs": {
+        "1": "Chẩn đoán nhầm FHH thành PHPT và chỉ định mổ cắt cận giáp là một sai sót kinh điển trên USMLE Step 2 CK; FeCa < 0,01 loại trừ PHPT.",
+        "2": "Cường cận giáp thứ phát do thiếu Vitamin D có Canxi máu giảm hoặc bình thường thấp chứ không bao giờ tăng canxi máu.",
+        "3": "Sarcoidosis gây tăng hấp thu canxi tại ruột do đại thực bào u hạt tiết 1-alpha-hydroxylase biến đổi vitamin D; trong trường hợp đó PTH sẽ bị ức chế giảm thấp < 10 pg/mL.",
+        "4": "Ung thư tiêu xương có PTH bị ức chế giảm hoàn toàn."
       },
-      objective:
-        "SIADH (hạ natri máu đẳng thể tích, ALTT niệu > 100, Na niệu > 40) điều trị đầu tay bằng Hạn chế nước; tuyệt đối không truyền NaCl 0,9% (làm Natri máu tụt sâu hơn); nếu hạ Na nặng co giật dùng NaCl 3% ưu trương chỉnh liều chậm."
+      "objective": "Phân biệt Cường cận giáp nguyên phát (PHPT: FeCa > 2%, Canxi niệu cao) với Tăng canxi máu giảm canxi niệu gia đình (FHH: FeCa < 1%, đột biến gen CaSR); FHH là bệnh lành tính tuyệt đối không có chỉ định phẫu thuật."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và xác định",
-      short: "Bệnh to đầu chi (Acromegaly) do u tuyến yên tiết GH",
-      vignette: [
-        "Nam 45 tuổi đến khám vì nhận thấy <b>cỡ giày và cỡ nhẫn tăng liên tục trong 3 năm qua</b>, khuôn mặt thô ráp dần với xương gò má nhô to, hàm dưới nhô ra trước (Prognathism), khoảng cách giữa các răng thưa rộng và giọng nói trở nên trầm ồm.",
-        "Bệnh nhân than phiền mệt mỏi, đau nhức các khớp xương, ngáy to khi ngủ và tê bì ngón tay cái, trỏ, giữa hai bàn tay (Hội chứng ống cổ tay hai bên). Bệnh nhân mới được chẩn đoán Tăng huyết áp và Đái tháo đường típ 2.",
-        "Khám: Bàn tay bàn chân to dày hình mái chèo, da dày ẩm nhiều mồ hôi, lưỡi to (Macroglossia)."
+      "spec": "Nội tiết",
+      "task": "Cấp cứu hạ Canxi máu sau phẫu thuật",
+      "short": "Hạ Canxi máu sau cắt tuyến giáp toàn phần - Dấu Chvostek / Trousseau & Canxi Gluconate",
+      "vignette": [
+        "Nữ 42 tuổi vừa trải qua phẫu thuật cắt toàn bộ tuyến giáp điều trị ung thư tuyến giáp thể nhú cách đây 24 giờ. Bệnh nhân bắt đầu than phiền <b>cảm giác tê bì châm chích kiến bò dữ dội quanh miệng (Perioral numbness/paresthesia) và ở các đầu ngón tay ngón chân</b>.",
+        "Khám thực thể: Khi dùng ngón tay gõ nhẹ vào thân dây thần kinh số VII ở ngay trước gờ bình tai, quan sát thấy <b>các cơ mặt cùng bên co giật giật cơ môi và cơ cánh mũi (Dấu hiệu Chvostek dương tính rõ)</b>.",
+        "Khi bơm băng đo huyết áp ở cánh tay lên trên mức huyết áp tâm thu 20 mm Hg và giữ trong 3 phút, quan sát thấy <b>bàn tay bệnh nhân bị co cứng gập cổ tay, khép các ngón tay và gấp khớp bàn ngón tạo tư thế 'Bàn tay người đỡ đẻ' (Dấu hiệu Trousseau dương tính điển hình)</b>.",
+        "Xét nghiệm máu khẩn cấp: <b>Canxi toàn phần tụt sâu 6,8 mg/dL; Canxi ion hóa 0,78 mmol/L; Albumin 4,0 g/dL; PTH huyết thanh giảm thấp 4 pg/mL</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "148/92"],
-        ["Mạch", "76 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "125/75 mm Hg"
+        ],
+        [
+          "Mạch",
+          "84 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "18 l/ph"
+        ]
       ],
-      stem: "Xét nghiệm sàng lọc ban đầu có độ nhạy cao nhất và nghiệm pháp động lực học khẳng định chẩn đoán là gì?",
-      choices: [
-        "Sàng lọc bước 1 bằng Định lượng IGF-1 (Insulin-like Growth Factor 1) huyết thanh; Khẳng định bước 2 bằng Nghiệm pháp dung nạp 75g Glucose đường uống (OGTT không ức chế được GH xuống < 1 ng/mL)",
-        "Định lượng nồng độ GH huyết thanh ngẫu nhiên vào buổi sáng đơn độc",
-        "Chụp X-quang xương bàn chân",
-        "Định lượng Cortisol máu 8 giờ sáng",
-        "Nghiệm pháp nhịn nước kéo dài 12 giờ"
+      "stem": "Biện pháp xử trí cấp cứu khẩn cấp để ngăn ngừa biến chứng co thắt thanh quản và loạn nhịp tim là gì?",
+      "choices": [
+        "Tiêm tĩnh mạch chậm dung dịch Canxi Gluconate 10% (10–20 mL pha trong 100 mL Glucose 5% truyền trong 10–20 phút) dưới sự theo dõi điện tâm đồ liên tục, sau đó bổ sung Canxi đường uống và Calcitriol (1,25-(OH)2-Vitamin D3)",
+        "Uống viên Canxi Carbonate 500 mg đơn độc và cho bệnh nhân xuất viện",
+        "Tiêm tĩnh mạch Furosemide liều cao",
+        "Tiêm dưới da Calcitonin",
+        "Tiêm bắp Vitamin D2 Ergocalciferol 50.000 IU"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Bệnh to đầu chi (Acromegaly)</b> do <b>U tuyến yên tiết Hormone tăng trưởng GH (Somatotroph adenoma)</b> xuất hiện ở người trưởng thành sau khi các sụn tiếp hợp đã cốt hóa hoàn toàn.",
-        "Biểu hiện lâm sàng: To các đầu xương và mô mềm (tăng cỡ giày nhẫn, hàm dưới nhô vẩu, răng thưa, lưỡi to), dày da, hội chứng ống cổ tay hai bên, tăng huyết áp, đái tháo đường, phì đại cơ tim và tăng nguy cơ Polyp/Ung thư đại tràng.",
-        "Chiến lược cận lâm sàng chẩn đoán chuẩn:",
-        "1. <b>Sàng lọc bước 1 nhạy nhất</b>: <b>Định lượng IGF-1 huyết thanh (Somatomedin C)</b>. (Không dùng GH ngẫu nhiên vì GH tiết ngắt quãng theo nhịp sinh học và có thời gian bán thải rất ngắn vài phút, trong khi IGF-1 do gan tiết ra dưới kích thích của GH có nồng độ ổn định suốt cả ngày).",
-        "2. <b>Khẳng định bước 2</b>: <b>Nghiệm pháp dung nạp 75g Glucose đường uống (Oral Glucose Tolerance Test - OGTT)</b>:",
-        "- Bình thường nồng độ đường máu cao sẽ ức chế hoàn toàn thùy trước tuyến yên làm GH giảm xuống < 1 ng/mL (hoặc < 0,4 ng/mL).",
-        "- Trong Acromegaly, <b>u tuyến yên tiết GH tự chủ nên nồng độ GH KHÔNG THỂ BỊ ỨC CHẾ</b>.",
-        "3. <b>Hình ảnh</b>: Chụp <b>MRI tuyến yên</b> định vị khối u.",
-        "Điều trị lựa chọn số một: <b>Phẫu thuật nội soi cắt u qua xoang bướm (Transsphenoidal surgery)</b>; điều trị nội khoa bằng Đồng vận Somatostatin (Octreotide, Lanreotide) hoặc thuốc đối kháng thụ thể GH (Pegvisomant)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân bị <b>Hạ Canxi máu cấp tính có triệu chứng thần kinh cơ kích thích nặng (Acute Symptomatic Hypocalcemia)</b> do biến chứng <b>Suy tuyến cận giáp thoáng qua hoặc vĩnh viễn (Hypoparathyroidism)</b> sau phẫu thuật cắt toàn bộ tuyến giáp (do vô tình cắt bỏ hoặc làm tổn thương mạch máu nuôi 4 tuyến cận giáp).",
+        "<b>Dấu hiệu lâm sàng thần kinh cơ kinh điển</b>:",
+        "1. Tê bì dị cảm quanh môi và đầu chi;",
+        "2. <b>Dấu hiệu Chvostek (Chvostek sign)</b>: Gõ dây VII gây co giật cơ mặt cùng bên;",
+        "3. <b>Dấu hiệu Trousseau (Trousseau sign)</b>: Bơm băng đo HA gây co thắt bàn tay người đỡ đẻ (Carpopedal spasm) - có độ nhạy và đặc hiệu cao hơn Chvostek.",
+        "Nguy cơ biến chứng đe dọa tính mạng: <b>Co thắt thanh quản (Laryngospasm) gây ngạt thở cấp, Co giật toàn thể, và Rối loạn nhịp tim (Khoảng QT kéo dài trên ECG tiến triển thành Xoắn đỉnh)</b>.",
+        "<b>Xử trí cấp cứu khẩn cấp</b>: <b>Tiêm tĩnh mạch chậm dung dịch Canxi Gluconate 10%</b> (ưu tiên hơn Canxi Clorid vì ít gây hoại tử mô nếu chệch ven). Sau khi qua cơn cấp tính, chuyển sang <b>Uống Canxi nguyên tố liều cao phối hợp Calcitriol (Vitamin D hoạt tính)</b> vì thiếu PTH thận không thể tự chuyển hóa tạo 1,25-(OH)2-D3. Kiểm tra và bù Magie máu nếu có hạ Magie đi kèm."
       ],
-      wrongs: {
-        1: "Định lượng GH ngẫu nhiên có độ nhạy rất thấp và dễ dương tính/âm tính giả do GH tiết từng cơn.",
-        2: "X-quang chỉ thấy biến dạng xương, không chẩn đoán được nguyên nhân nội tiết.",
-        3: "Cortisol dùng cho bệnh Cushing, không phải Acromegaly.",
-        4: "Nghiệm pháp nhịn nước dùng cho đái tháo nhạt."
+      "wrongs": {
+        "1": "Uống canxi đơn thuần tác dụng quá chậm, không thể cắt cơn co cứng cơ và phòng co thắt thanh quản cấp tính.",
+        "2": "Furosemide là thuốc tăng đào thải canxi qua nước tiểu, dùng vào sẽ làm canxi máu tụt sâu hơn gây tử vong.",
+        "3": "Calcitonin là thuốc hạ canxi máu.",
+        "4": "Vitamin D2 cần men 1-alpha-hydroxylase ở thận do PTH kích hoạt mới có tác dụng; khi thiếu PTH bắt buộc phải dùng Calcitriol dạng hoạt tính."
       },
-      objective:
-        "Bệnh to đầu chi (Acromegaly: tăng kích thước bàn tay chân, hàm vẩu, hội chứng ống cổ tay) sàng lọc bước 1 bằng IGF-1 huyết thanh; khẳng định bước 2 bằng Nghiệm pháp dung nạp Glucose (OGTT không ức chế được GH); điều trị đầu tay bằng phẫu thuật qua xoang bướm."
+      "objective": "Hạ Canxi máu cấp sau mổ tuyến giáp (dấu Chvostek, Trousseau, tê quanh miệng) cần cấp cứu bằng tiêm tĩnh mạch chậm Canxi Gluconate 10%, sau đó duy trì bằng Canxi uống phối hợp Calcitriol dạng hoạt tính."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và chỉ định phẫu thuật",
-      short: "Cường tuyến cận giáp nguyên phát (Primary Hyperparathyroidism)",
-      vignette: [
-        "Nữ 58 tuổi đi khám vì mệt mỏi, đau mỏi xương khớp lan tỏa, táo bón mạn tính và có tiền sử <b>sỏi thận tái phát 2 lần</b> trong 3 năm qua.",
-        "Xét nghiệm máu và nước tiểu:",
-        "- <b>Canxi huyết thanh toàn phần tăng cao 11,8 mg/dL</b> (bình thường 8,5–10,5), Canxi ion hóa tăng.",
-        "- <b>Hormone tuyến cận giáp nguyên vẹn (Intact PTH) tăng cao 110 pg/mL</b> (bình thường 15–65 - tăng không thích hợp trong bối cảnh canxi máu cao).",
-        "- <b>Phosphat huyết thanh giảm thấp 2,1 mg/dL (Hạ phosphat máu)</b>.",
-        "- Canxi bài tiết trong nước tiểu 24 giờ tăng 350 mg/24h (loại trừ Tăng canxi máu giảm canxi niệu gia đình FHH).",
-        "Đo mật độ xương DEXA: Loãng xương nặng ưu thế ở 1/3 ngoài xương quay (vùng xương vỏ chịu tác động mạnh của PTH)."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán bệnh chuyển hóa xương & Điều trị",
+      "short": "Bệnh xương Paget (Paget Disease of Bone) - ALP tăng đơn độc & Bisphosphonate",
+      "vignette": [
+        "Nam 68 tuổi đến khám vì đau nhức âm ỉ sâu trong xương đùi và xương chày bên phải tăng dần trong 1 năm qua. Bệnh nhân nhận thấy <b>xương cẳng chân phải bị cong gập hình cung (Bowing deformity of the right tibia), đầu to ra phải mua mũ cỡ lớn hơn, và xuất hiện giảm thính lực tiếp nhận ở cả hai tai</b>.",
+        "Khám thực thể: Xương chày phải phì đại, sờ ấm nóng hơn bên đối diện (do tăng sinh mạch máu).",
+        "Xét nghiệm máu sinh hóa: <b>Men Alkaline Phosphatase (ALP) huyết thanh tăng rất cao 680 U/L (gấp 5 lần bình thường); Nồng độ Canxi toàn phần 9,4 mg/dL và Phosphate 3,2 mg/dL hoàn toàn bình thường; Men gan AST, ALT, GGT và chức năng thận hoàn toàn bình thường</b>.",
+        "Chụp X-quang xương sọ và xương chày: <b>Hình ảnh xương sọ dày lên loang lổ nhiều ổ xơ hóa xen kẽ tiêu xương dạng 'Bông gòn cuộn' (Cotton wool appearance)</b>, xương chày phì đại vỏ xương dày mất cấu trúc bè xương bình thường."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "130/80"],
-        ["Mạch", "74 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "135/85 mm Hg"
+        ],
+        [
+          "Mạch",
+          "76 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Căn nguyên phổ biến nhất và phương pháp điều trị triệt căn duy nhất cho bệnh nhân này là gì?",
-      choices: [
-        "U tuyến cận giáp đơn độc lành tính (Parathyroid Adenoma, chiếm 85%); điều trị triệt căn bằng Phẫu thuật cắt bỏ tuyến cận giáp mang u (Parathyroidectomy)",
-        "Tăng canxi máu do ung thư di căn xương; điều trị bằng hóa trị",
-        "Ngộ độc Vitamin D; điều trị bằng truyền dịch",
-        "Bệnh Sarcoidosis; điều trị bằng Corticoid",
-        "Suy thận mạn gây cường cận giáp thứ phát; điều trị bằng thuốc gắn phosphat"
+      "stem": "Cơ chế sinh lý bệnh học tế bào xương và nhóm thuốc điều trị đặc hiệu đầu tay là gì?",
+      "choices": [
+        "Rối loạn tái cấu trúc xương do hoạt động quá mức hỗn loạn của tế bào hủy xương (Osteoclasts) theo sau bởi sự tạo xương xơ hóa vô tổ chức của tế bào tạo xương (Osteoblasts); điều trị đầu tay bằng thuốc nhóm Bisphosphonate (như Zoledronic acid truyền tĩnh mạch hoặc Alendronate đường uống)",
+        "Thiếu hụt Vitamin D nặng gây nhuyễn xương; điều trị bằng Ergocalciferol",
+        "Ung thư di căn xương dạng tạo xương từ tiền liệt tuyến; điều trị bằng hóa trị",
+        "Viêm tủy xương mạn tính do vi khuẩn; điều trị bằng kháng sinh phổ rộng",
+        "Cường tuyến cận giáp nguyên phát; điều trị bằng Cinacalcet"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có <b>Cường tuyến cận giáp nguyên phát (Primary Hyperparathyroidism - PHPT)</b> với câu thần chú kinh điển: <i>'Stones, Bones, Abdominal groans, and Psychiatric overtones'</i> (Sỏi thận + Đau loãng xương + Táo bón/đau bụng + Trầm cảm lo âu).",
-        "Đặc điểm xét nghiệm kinh điển: <b>TĂNG CANXI MÁU + TĂNG PTH (hoặc PTH bình thường cao không bị ức chế) + GIẢM PHOSPHAT MÁU</b>.",
-        "Căn nguyên: 85% do <b>U tuyến cận giáp đơn độc lành tính (Parathyroid Adenoma)</b>, 15% do Tăng sản cả 4 tuyến cận giáp.",
-        "Chỉ định phẫu thuật cắt tuyến cận giáp (theo guideline quốc tế):",
-        "1. Bệnh nhân có triệu chứng (sỏi thận, gãy xương).",
-        "2. Canxi huyết thanh > 1,0 mg/dL trên giới hạn bình thường (ở đây 11,8 > 11,5).",
-        "3. Tuổi < 50 tuổi.",
-        "4. Mật độ xương T-score ≤ -2,5 tại bất kỳ vị trí nào.",
-        "5. Độ lọc cầu thận eGFR < 60 mL/ph hoặc Canxi niệu 24h > 400 mg/ngày.",
-        "-> <b>Phẫu thuật cắt tuyến cận giáp (Parathyroidectomy)</b> là <b>phương pháp điều trị triệt căn duy nhất</b> (định vị trước mổ bằng Xạ hình Sestamibi SPECT và Siêu âm cổ)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân mắc <b>Bệnh xương Paget (Paget Disease of Bone / Osteitis Deformans)</b> - một rối loạn chuyển hóa xương khu trú phổ biến ở người cao tuổi.",
+        "<b>Sinh lý bệnh 3 giai đoạn</b>: 1. Giai đoạn tiêu xương (Tăng hủy xương do các đại hủy cốt bào khổng lồ đa nhân); 2. Giai đoạn hỗn hợp (Hủy xương xen kẽ tạo xương ồ ạt); 3. Giai đoạn xơ hóa bất hoạt (Xương mới tạo ra có cấu trúc dạng khảm hỗn loạn - Mosaic pattern, giòn xốp và yếu).",
+        "<b>Đặc trưng sinh hóa kinh điển</b>: <b>Alkaline Phosphatase (ALP) tăng rất cao ĐƠN ĐỘC trong khi Canxi và Phosphate huyết thanh HOÀN TOÀN BÌNH THƯỜNG</b>.",
+        "<b>Biểu hiện lâm sàng</b>: 1. Đau xương, cong xương chi dưới; 2. <b>Tăng kích thước vòng đầu (phải đổi cỡ mũ lớn hơn)</b>; 3. <b>Điếc tiếp nhận / Mất thính lực (Sensorineural hearing loss)</b> do xương sọ phì đại chèn ép dây thần kinh số VIII; 4. Da vùng tổn thương ấm nóng và nguy cơ <b>Suy tim cung lượng cao (High-output heart failure)</b> do rò động-tĩnh mạch trong xương; 5. Nguy cơ thoái hóa ác tính thành <b>Osteosarcoma (< 1%)</b>.",
+        "Điều trị đầu tay: <b>Nhóm Bisphosphonate (Zoledronic acid truyền tĩnh mạch 5 mg liều duy nhất hoặc Risedronate/Alendronate uống)</b> giúp ức chế mạnh mẽ các hủy cốt bào và bình thường hóa ALP."
       ],
-      wrongs: {
-        1: "Tăng canxi máu do ung thư (tiết PTHrP hoặc di căn xương) có nồng độ PTH nguyên vẹn BỊ ỨC CHẾ GIẢM GẦN BẰNG 0.",
-        2: "Ngộ độc Vitamin D có 25-OH Vitamin D tăng rất cao và PTH bị ức chế giảm thấp.",
-        3: "Sarcoidosis có 1,25-(OH)2 Vitamin D tăng và PTH bị ức chế hoàn toàn.",
-        4: "Cường cận giáp thứ phát do suy thận có nồng độ Canxi máu GIẢM hoặc bình thường và Phosphat máu TĂNG CAO."
+      "wrongs": {
+        "1": "Nhuyễn xương (Osteomalacia) có Canxi và Phosphate máu giảm thấp, kèm đường gãy giả Looser.",
+        "2": "Di căn tiền liệt tuyến thường có PSA tăng cao và tổn thương đa ổ ở cột sống kèm đau dữ dội.",
+        "3": "Viêm tủy xương có sốt, sưng nóng đỏ đau và tăng CRP/bạch cầu.",
+        "4": "Cường cận giáp nguyên phát có Canxi máu tăng cao và PTH tăng."
       },
-      objective:
-        "Cường cận giáp nguyên phát (85% do u tuyến cận giáp) đặc trưng bởi Canxi máu tăng + PTH tăng/không ức chế + Phosphat máu giảm; phẫu thuật cắt tuyến cận giáp là điều trị triệt căn duy nhất."
+      "objective": "Bệnh xương Paget (đầu to đổi cỡ mũ, điếc tiếp nhận, xương chày cong) đặc trưng bởi ALP tăng rất cao đơn độc (Canxi và Phosphate bình thường); điều trị đặc hiệu đầu tay bằng Bisphosphonate (Zoledronic acid)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và xử trí cấp cứu",
-      short: "Hạ canxi máu cấp sau phẫu thuật cắt tuyến giáp",
-      vignette: [
-        "Nữ 42 tuổi vừa trải qua phẫu thuật cắt toàn bộ tuyến giáp điều trị ung thư tuyến giáp dạng nhú 24 giờ trước. Bệnh nhân than phiền xuất hiện cảm giác <b>tê bì châm chích kiến bò dữ dội quanh miệng và các đầu ngón tay ngón chân</b> kèm co cứng cơ bắp chân.",
-        "Khám: Bác sĩ gõ nhẹ vào trước gờ tai trên đường đi của dây thần kinh VII thấy <b>các cơ mặt cùng bên co giật mạnh (Dấu hiệu Chvostek dương tính)</b>; khi bơm bao đo huyết áp lên trên huyết áp tâm thu 20 mm Hg và giữ trong 3 phút, bàn tay bệnh nhân <b>co quắp gập các khớp bàn ngón và duỗi các khớp liên ngón tạo hình ảnh 'Bàn tay người đỡ đẻ' (Dấu hiệu Trousseau dương tính)</b>.",
-        "Điện tâm đồ: <b>Khoảng QT kéo dài (QTc 510 ms)</b>. Xét nghiệm: <b>Canxi huyết thanh toàn phần giảm thấp 6,4 mg/dL</b>, PTH giảm thấp 4 pg/mL."
+      "spec": "Nội tiết",
+      "task": "Nhận biết hội chứng đa u tuyến nội tiết",
+      "short": "Hội chứng đa u tuyến nội tiết Type 1 (MEN-1) - Tam chứng 3P & Gen Menin",
+      "vignette": [
+        "Nam 36 tuổi đến khám vì đau rát thượng vị dai dẳng và tiêu chảy phân mỡ tái diễn dù đã dùng thuốc ức chế bơm proton (PPI). Nội soi dạ dày phát hiện nhiều ổ loét sâu ở đoạn D2 tá tràng và hỗng tràng (Hội chứng Zollinger-Ellison u tiết Gastrin).",
+        "Khai thác tiền sử bệnh tật: Cách đây 2 năm bệnh nhân từng được phẫu thuật sỏi thận tái phát hai bên và xét nghiệm máu có <b>Tăng Canxi máu kèm nồng độ PTH tăng cao (Cường cận giáp nguyên phát do quá sản đa tuyến cận giáp)</b>.",
+        "Gần đây bệnh nhân xuất hiện giảm thị lực thị trường thái dương hai bên và giảm ham muốn tình dục; Chụp MRI sọ não phát hiện một khối <b>U tuyến yên tiết Prolactin (Prolactinoma) kích thước 1,4 cm chèn ép giao thoa thị giác</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "120/75"],
-        ["Mạch", "82 l/ph"],
-        ["Nhịp thở", "18 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "125/80 mm Hg"
+        ],
+        [
+          "Mạch",
+          "72 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Bước can thiệp điều trị cấp cứu dùng thuốc đường tĩnh mạch ngay lập tức là gì?",
-      choices: [
-        "Tiêm tĩnh mạch chậm Calci Gluconate 10% (1–2 ống trong 10–20 phút) dưới theo dõi monitor tim",
-        "Cho uống viên Canxi Carbonate đơn độc tại giường",
-        "Tiêm bắp Calcitonin liều cao",
-        "Tiêm tĩnh mạch Furosemide để tăng đào thải phospho",
-        "Tiêm tĩnh mạch dung dịch Kali Clorid"
+      "stem": "Chẩn đoán hội chứng di truyền ung thư nội tiết và đột biến gen nguyên nhân là gì?",
+      "choices": [
+        "Hội chứng đa u tuyến nội tiết Type 1 (MEN-1 / Hội chứng Wermer) do đột biến gen ức chế khối u <i>MEN1</i> trên nhiễm sắc thể số 11 mã hóa protein Menin; đặc trưng bởi Tam chứng 3P (Parathyroid, Pancreatic NET, Pituitary)",
+        "Hội chứng đa u tuyến nội tiết Type 2A (MEN-2A) do đột biến gen sinh ung <i>RET</i>",
+        "Hội chứng đa u tuyến nội tiết Type 2B (MEN-2B) do đột biến gen <i>RET</i>",
+        "Hội chứng Von Hippel-Lindau (VHL) do đột biến gen <i>VHL</i>",
+        "Hội chứng McCune-Albright do đột biến gen <i>GNAS</i>"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có <b>Hạ canxi máu cấp tính có triệu chứng đe dọa tính mạng</b> do <b>Suy tuyến cận giáp sau phẫu thuật cắt toàn bộ tuyến giáp (Post-thyroidectomy Hypoparathyroidism)</b> do vô tình làm tổn thương mạch máu nuôi hoặc cắt phải các tuyến cận giáp.",
-        "Triệu chứng thần kinh - cơ kinh điển do tăng tính hưng phấn màng tế bào thần kinh:",
-        "1. Dị cảm quanh miệng và đầu chi (Paresthesias).",
-        "2. <b>Dấu hiệu Chvostek</b>: Gõ dây VII gây co giật cơ mặt.",
-        "3. <b>Dấu hiệu Trousseau</b>: Bơm bao đo huyết áp gây co quắp bàn tay (Carpal spasm - nhạy và đặc hiệu hơn Chvostek).",
-        "4. Biến chứng nguy hiểm: <b>Co thắt thanh quản (Laryngospasm) gây ngạt thở, co giật toàn thể và Loạn nhịp tim do khoảng QT kéo dài</b>.",
-        "Xử trí cấp cứu: <b>Tiêm tĩnh mạch chậm CALCI GLUCONATE 10% (1–2 ống 10 mL pha trong Glucose 5% tiêm trong 10–20 phút)</b> dưới theo dõi monitor tim (ưu tiên Calci Gluconate hơn Calci Clorid vì ít gây hoại tử mô nếu chệch ven). Sau đó duy trì bằng <b>Canxi đường uống kết hợp Vitamin D hoạt tính (Calcitriol)</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có đầy đủ <b>Tam chứng kinh điển 3P của Hội chứng đa u tuyến nội tiết Type 1 (Multiple Endocrine Neoplasia Type 1 - MEN-1 / Wermer Syndrome)</b>:",
+        "1. <b>P</b>arathyroid (Tuyến cận giáp - gặp ở > 95% bệnh nhân): Cường cận giáp nguyên phát do quá sản cả 4 tuyến gây tăng canxi máu và sỏi thận tái phát (thường là biểu hiện đầu tiên);",
+        "2. <b>P</b>ancreatic / Duodenal Neuroendocrine Tumors (U thần kinh nội tiết tụy-tá tràng - gặp ở 70%): Phổ biến nhất là <b>Gastrinoma (gây Hội chứng Zollinger-Ellison loét dạ dày ruột đa ổ kháng trị)</b> hoặc Insulinoma (hạ đường huyết);",
+        "3. <b>P</b>ituitary (U tuyến yên - gặp ở 40%): Phổ biến nhất là <b>Prolactinoma (tiết Prolactin gây giảm tình dục, vô kinh/tiết sữa)</b> hoặc U tiết GH.",
+        "<b>Di truyền học</b>: Di truyền trội trên NST thường do đột biến mất chức năng của gen ức chế khối u <b><i>MEN1</i> trên NST 11q13 mã hóa protein Menin</b>."
       ],
-      wrongs: {
-        1: "Canxi đường uống có thời gian khởi phát tác dụng chậm nhiều giờ, không cứu được bệnh nhân đang có co thắt cơ và QT kéo dài đe dọa co thắt thanh quản tử vong.",
-        2: "Calcitonin là thuốc HẠ CANXI MÁU, dùng vào sẽ làm ngừng tim ngay lập tức.",
-        3: "Lợi tiểu Furosemide làm tăng thải canxi qua nước tiểu, làm hạ canxi máu nặng nề hơn.",
-        4: "Kali Clorid không có tác dụng điều trị hạ canxi máu."
+      "wrongs": {
+        "1": "MEN-2A gồm: Ung thư giáp thể tủy (MTC) + U tủy thượng thận (Pheochromocytoma) + Cường cận giáp (gen RET).",
+        "2": "MEN-2B gồm: MTC + Pheochromocytoma + Hình thái Marfan và U thần kinh niêm mạc (Mucosal neuromas).",
+        "3": "VHL gồm: U nguyên bào mạch máu tiểu não/võng mạc (Hemangioblastoma) + Ung thư tế bào thận (RCC) + Pheochromocytoma.",
+        "4": "McCune-Albright có dậy thì sớm ngoại biên, dát cà phê sữa bờ vỏ bọc biển rách (Coast of Maine) và loạn sản xơ đa xương."
       },
-      objective:
-        "Hạ canxi máu cấp sau mổ tuyến giáp (dấu hiệu Chvostek/Trousseau, co quắp cơ, QT kéo dài) là cấp cứu khẩn; xử trí ngay bằng tiêm tĩnh mạch chậm Calci Gluconate 10% dưới monitor tim, sau đó duy trì bằng Canxi uống + Calcitriol."
+      "objective": "Hội chứng MEN-1 (đột biến gen MEN1 mã hóa Menin) đặc trưng bởi Tam chứng 3P: Cường cận giáp (Parathyroid), U thần kinh nội tiết tụy/tá tràng Gastrinoma (Pancreas), và U tuyến yên Prolactinoma (Pituitary)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Bệnh Paget xương (Osteitis Deformans)",
-      vignette: [
-        "Nam 68 tuổi đến khám vì đau âm ỉ liên tục ở vùng xương chày cẳng chân phải và vùng xương chậu. Người nhà nhận thấy <b>cỡ mũ của bệnh nhân phải tăng lên trong 2 năm qua do xương sọ to dần</b>, và bệnh nhân xuất hiện <b>giảm thính lực tiếp nhận ở cả hai tai</b>.",
-        "Khám: Xương chày phải cong hình lưỡi kiếm ra trước, sờ da bên ngoài vùng xương ấm nóng hơn bên đối diện.",
-        "Xét nghiệm máu: <b>Phosphatase kiềm (ALP) tăng rất cao 650 U/L</b> (bình thường < 120), trong khi <b>Nồng độ Canxi huyết thanh và Phosphat huyết thanh hoàn toàn bình thường</b>. Chức năng gan bình thường.",
-        "X-quang: Dày vỏ xương, bè xương thô to xen kẽ các vùng tiêu xương và xơ hóa xương. Sinh thiết xương: <b>Hình ảnh xương dạng khảm / dạng ghép hình (Mosaic pattern of lamellar bone)</b> với các đường xi măng ngẫu nhiên."
+      "spec": "Nội tiết",
+      "task": "Nhận biết hội chứng MEN-2B & Đột biến RET",
+      "short": "Hội chứng đa u tuyến nội tiết Type 2B (MEN-2B) - Đột biến RET & U tủy giáp MTC",
+      "vignette": [
+        "Nam 18 tuổi có vóc dáng cao gầy mảnh khảnh, các ngón tay ngón chân dài khẳng khiu và khớp lỏng lẻo (<b>Hình thái giống hội chứng Marfan - Marfanoid habitus</b>), đến khám vì xuất hiện một khối cứng chắc không đau ở thùy giáp bên phải.",
+        "Khám vùng miệng và mắt: Phát hiện <b>nhiều nốt sần nhỏ màu hồng nhạt không đau mọc rải rác ở đầu lưỡi, niêm mạc môi trong và kết mạc mi mắt (U thần kinh niêm mạc - Mucosal neuromas)</b>.",
+        "Sinh thiết hút kim nhỏ (FNA) nhân giáp: <b>Ung thư biểu mô tuyến giáp thể tủy (Medullary Thyroid Carcinoma - MTC)</b>; Nồng độ <b>Calcitonin huyết thanh tăng cực cao 1850 pg/mL</b>.",
+        "Huyết áp đo được 165/105 mm Hg; Xét nghiệm Metanephrine tự do trong huyết tương tăng gấp 4 lần bình thường (U tủy thượng thận Pheochromocytoma đi kèm)."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "135/80"],
-        ["Mạch", "78 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "165/105 mm Hg"
+        ],
+        [
+          "Mạch",
+          "98 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Cơ chế rối loạn tái cấu trúc xương và thuốc điều trị đầu tay hiệu quả nhất là gì?",
-      choices: [
-        "Tăng hoạt tính hủy cốt bào quá mức ban đầu tiếp nối bằng quá trình tạo xương hỗn loạn vô tổ chức của tạo cốt bào; điều trị đầu tay bằng Thuốc nhóm Bisphosphonate (Axit Zoledronic truyền tĩnh mạch hoặc Alendronate đường uống)",
-        "Thiếu hụt Vitamin D mạn tính gây bệnh nhuyễn xương; điều trị bằng Ergocalciferol",
-        "Ung thư biểu mô di căn xương; điều trị bằng hóa chất",
-        "Nhiễm trùng viêm xương tủy xương mạn tính do tụ cầu; điều trị bằng kháng sinh 6 tháng",
-        "Đa u tủy xương; điều trị bằng Bortezomib"
+      "stem": "Chẩn đoán hội chứng di truyền, đột biến gen nguyên nhân và quy tắc phẫu thuật ưu tiên là gì?",
+      "choices": [
+        "Hội chứng đa u tuyến nội tiết Type 2B (MEN-2B) do đột biến gen sinh ung <i>RET</i>; BẮT BUỘC PHẪU THUẬT CẮT U TỦY THƯỢNG THẬN (Pheochromocytoma) TRƯỚC TIÊN (sau khi đã chuẩn bị chẹn Alpha) rồi mới tiến hành phẫu thuật cắt toàn bộ tuyến giáp",
+        "Hội chứng Marfan đơn thuần; chỉ định phẫu thuật thay quai động mạch chủ",
+        "Hội chứng MEN-1; chỉ định phẫu thuật cắt tuyến cận giáp trước",
+        "Hội chứng MEN-2A; chỉ định cắt tuyến giáp trước",
+        "U xơ thần kinh Type 1 (NF-1); chỉ định phẫu thuật cắt các khối u thần kinh da"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Bệnh Paget xương (Paget's Disease of Bone / Osteitis Deformans)</b>:",
-        "- Bệnh học qua 3 giai đoạn: (1) <b>Giai đoạn tiêu xương</b> do các hủy cốt bào khổng lồ đa nhân hoạt động quá mức; (2) <b>Giai đoạn hỗn hợp</b> tạo cốt bào tăng sinh bù trừ ồ ạt; (3) <b>Giai đoạn xơ hóa</b> tạo ra cấu trúc xương xốp yếu, biến dạng với <b>hình ảnh mô học dạng khảm (Mosaic pattern / Jigsaw puzzle pattern)</b>.",
-        "- Lâm sàng: Tăng kích thước xương sọ (tăng cỡ mũ), điếc tiếp nhận do chèn ép dây VIII qua lỗ ống tai trong, xương chày cong hình kiếm, da trên xương ấm do tăng sinh mạch máu.",
-        "- Bộ ba xét nghiệm đặc trưng: <b>PHOSPHATASE KIỀM (ALP) TĂNG CỰC CAO TRONG KHI CANXI VÀ PHOSPHAT MÁU HOÀN TOÀN BÌNH THƯỜNG</b>.",
-        "- Biến chứng nguy hiểm: Suy tim cung lượng cao (do dò động tĩnh mạch trong xương Paget) và <b>Chuyển dạng ác tính thành Ung thư xương (Osteosarcoma < 1%, nghi ngờ khi đau tăng vọt đột ngột và tổn thương phá hủy xương mới)</b>.",
-        "- Điều trị đầu tay: <b>Thuốc nhóm Bisphosphonate (Zoledronic acid truyền tĩnh mạch 1 liều duy nhất hoặc Alendronate)</b> để ức chế hủy cốt bào."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có đầy đủ các đặc trưng kinh điển của <b>Hội chứng đa u tuyến nội tiết Type 2B (MEN-2B)</b> di truyền trội trên NST thường do đột biến kích hoạt gen sinh ung <b>proto-oncogene <i>RET</i></b>.",
+        "<b>Bộ tứ đặc trưng của MEN-2B</b>:",
+        "1. <b>Ung thư biểu mô tuyến giáp thể tủy (Medullary Thyroid Carcinoma - MTC)</b>: Xuất phát từ tế bào cận nang C tiết <b>Calcitonin</b>, cực kỳ ác tính xuất hiện từ rất sớm ở trẻ em/thanh thiếu niên;",
+        "2. <b>U tủy thượng thận (Pheochromocytoma)</b>: Gặp ở 50% bệnh nhân (thường ở cả 2 bên thượng thận);",
+        "3. <b>U thần kinh niêm mạc (Mucosal Neuromas)</b>: Ở môi, đầu lưỡi, kết mạc mắt và hạch thần kinh ruột (gây phình đại tràng/táo bón);",
+        "4. <b>Hình thái giống Marfan (Marfanoid Habitus)</b>: Cao gầy, ngón tay dài, không có trật thủy tinh thể hay phình ĐMC.",
+        "<b>QUY TẮC PHẪU THUẬT SỐNG CÒN</b>: <b>LUÔN LUÔN PHẢI MỔ CẮT PHEOCHROMOCYTOMA TRƯỚC</b> (sau khi đã dùng chẹn alpha đủ 10–14 ngày). Nếu đưa bệnh nhân đi mổ cắt tuyến giáp trước, thuốc mê và thao tác phẫu thuật sẽ kích thích khối u tủy thượng thận phóng thích ồ ạt catecholamine gây cơn tăng huyết áp kịch phát tử vong ngay trên bàn mổ."
       ],
-      wrongs: {
-        1: "Nhuyễn xương (Osteomalacia) có Canxi máu giảm và Phosphat máu giảm, không có hình ảnh xương dạng khảm và tăng kích thước hộp sọ.",
-        2: "Di căn xương ác tính thường kèm đau dữ dội về đêm và Canxi máu tăng cao.",
-        3: "Viêm xương tủy xương có sốt, lỗ rò mủ và tăng bạch cầu/CRP.",
-        4: "Đa u tủy xương có tổn thương tiêu xương đục lỗ (punched-out lesions), thiếu máu và Canxi máu tăng."
+      "wrongs": {
+        "1": "Hội chứng Marfan do đột biến Fibrillin-1 có trật thủy tinh thể lên trên và phình gốc ĐMC, không có ung thư tủy giáp MTC hay u thần kinh niêm mạc.",
+        "2": "MEN-1 không có MTC hay u thần kinh niêm mạc.",
+        "3": "MEN-2A gồm MTC + Pheo + Cường cận giáp, KHÔNG CÓ hình thái Marfan hay u thần kinh niêm mạc.",
+        "4": "NF-1 có u sợi thần kinh ngoài da, đốm Lisch ở mống mắt và dát cà phê sữa."
       },
-      objective:
-        "Bệnh Paget xương (tăng kích thước hộp sọ, điếc, xương chày cong) đặc trưng bởi ALP tăng rất cao trong khi Canxi/Phosphat bình thường và mô học dạng khảm; điều trị đầu tay bằng Bisphosphonate (Zoledronic acid)."
+      "objective": "MEN-2B (đột biến RET) gồm: Ung thư giáp thể tủy (MTC), U tủy thượng thận (Pheochromocytoma), U thần kinh niêm mạc và hình thái Marfan; bắt buộc phẫu thuật cắt Pheochromocytoma trước khi mổ cắt tuyến giáp."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và sàng lọc gen",
-      short: "Hội chứng đa u tuyến nội tiết Típ 1 (MEN-1)",
-      vignette: [
-        "Nam 36 tuổi đến khám vì sỏi thận tái phát nhiều đợt. Xét nghiệm phát hiện <b>Canxi máu tăng 11,6 mg/dL và PTH tăng cao 98 pg/mL</b>, chẩn đoán Cường cận giáp nguyên phát do tăng sản 4 tuyến cận giáp.",
-        "Khai thác tiền sử bệnh nhân kể: 1 năm nay thường xuyên bị đau rát thượng vị và tiêu chảy phân mỡ do <b>Loét dạ dày tá tràng đa ổ kháng trị (Hội chứng Zollinger-Ellison do U Gastrinoma tụy)</b>. Ngoài ra bệnh nhân có giảm thị lực thái dương hai bên, chụp MRI phát hiện <b>Khối u tuyến yên tiết Prolactin (Prolactinoma)</b> kích thước 1,2 cm.",
-        "Tiền sử gia đình có mẹ đẻ từng phẫu thuật u tụy nội tiết và u tuyến cận giáp."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán phân biệt rậm lông & Đột biến 21-Hydroxylase",
+      "short": "Tăng sản thượng thận bẩm sinh thể khởi phát muộn (Nonclassic CAH) - Đo 17-OHP",
+      "vignette": [
+        "Nữ 22 tuổi đến khám vì <b>kinh nguyệt không đều (chu kỳ kinh thưa 45–60 ngày mới có một lần), mụn trứng cá bọc nặng kháng trị với các thuốc bôi da, và rậm lông tiến triển (mọc nhiều lông rậm ở ria mép, cằm, ngực và dọc đường trắng giữa bụng - Điểm Ferriman-Gallwey = 14)</b>.",
+        "Khám thực thể: Huyết áp bình thường 118/74 mm Hg, BMI 23 kg/m2 (thể trạng hoàn toàn cân đối, không béo phì). Khám bộ phận sinh dục ngoài hoàn toàn bình thường nữ tính, không có phì đại âm vật.",
+        "Xét nghiệm máu buổi sáng: Nồng độ Testosterone toàn phần tăng nhẹ 85 ng/dL; DHEA-S tăng nhẹ; LH và FSH bình thường.",
+        "Xét nghiệm chẩn đoán chuyên biệt: <b>Nồng độ 17-Hydroxyprogesterone (17-OHP) huyết thanh lúc sáng sớm tăng rất cao 980 ng/dL (Bình thường < 200 ng/dL); sau nghiệm pháp kích thích bằng ACTH (Cosyntropin test) nồng độ 17-OHP tăng vọt > 2500 ng/dL</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "125/75"],
-        ["Mạch", "76 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,7 °C"
+        ],
+        [
+          "Huyết áp",
+          "118/74 mm Hg"
+        ],
+        [
+          "Mạch",
+          "72 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Đột biến gen ức chế khối u nào là nguyên nhân của Hội chứng Đa u tuyến nội tiết Típ 1 (Tam chứng 3P) này?",
-      choices: [
-        "Đột biến gen MEN1 (mã hóa protein Menin) trên nhiễm sắc thể số 11",
-        "Đột biến tiền gen sinh ung RET (Proto-oncogene RET) trên nhiễm sắc thể 10",
-        "Đột biến gen VHL trên nhiễm sắc thể số 3",
-        "Đột biến gen NF1 (Neurofibromin)",
-        "Đột biến gen TP53 (Hội chứng Li-Fraumeni)"
+      "stem": "Cơ chế enzym khiếm khuyết di truyền và thuốc điều trị bước đầu tối ưu giúp điều hòa kinh nguyệt và giảm triệu chứng nam hóa là gì?",
+      "choices": [
+        "Thiếu hụt một phần men 21-Hydroxylase (do đột biến gen <i>CYP21A2</i>) làm ứ đọng tiền chất 17-OHP và chuyển hướng tổng hợp ồ ạt sang Androgen (Tăng sản thượng thận bẩm sinh thể không kinh điển / Nonclassic CAH); điều trị bằng Glucocorticoid liều thấp (như Hydrocortisone hoặc Dexamethasone lúc đi ngủ) để ức chế tiết ACTH tuyến yên",
+        "Hội chứng buồng trứng đa nang (PCOS); điều trị bằng Metformin đơn độc",
+        "U tế bào Leydig-Sertoli tiết Androgen ở buồng trứng; chỉ định phẫu thuật cắt buồng trứng",
+        "Thiếu hụt men 11-beta-Hydroxylase; điều trị bằng Spironolactone liều cao",
+        "Hội chứng Cushing tuyến thượng thận; chỉ định phẫu thuật cắt thượng thận"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có đầy đủ <b>Tam chứng 3P kinh điển của Hội chứng Đa u tuyến nội tiết Típ 1 (Multiple Endocrine Neoplasia Type 1 - MEN-1 / Hội chứng Wermer)</b> di truyền trội trên nhiễm sắc thể thường:",
-        "1. <b>Parathyroid (Tuyến cận giáp, >95% các ca)</b>: Cường cận giáp nguyên phát do tăng sản đa tuyến gây tăng canxi máu và sỏi thận.",
-        "2. <b>Pancreatic neuroendocrine tumors (U thần kinh nội tiết tụy/tá tràng, 60–70%)</b>: Thường gặp nhất là <b>Gastrinoma (gây hội chứng Zollinger-Ellison)</b> hoặc Insulinoma.",
-        "3. <b>Pituitary adenomas (U tuyến yên, 30–40%)</b>: Thường gặp nhất là <b>Prolactinoma</b> gây tăng tiết prolactin và chèn ép giao thoa thị giác.",
-        "Nguyên nhân di truyền: <b>Đột biến mất chức năng ở gen ức chế khối u MEN1 (mã hóa protein Menin) nằm trên cánh dài nhiễm sắc thể số 11 (11q13)</b>.",
-        "Phân biệt với <b>MEN-2A và MEN-2B</b>: Do đột biến gen <b>RET proto-oncogene</b>, đặc trưng bởi Ung thư tuyến giáp thể tủy (MTC) + U tủy thượng thận (Pheochromocytoma)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân mắc <b>Tăng sản thượng thận bẩm sinh thể không kinh điển / thể khởi phát muộn (Nonclassic Congenital Adrenal Hyperplasia - NCCAH / Late-onset CAH)</b> - một trong những nguyên nhân hàng đầu gây cường androgen ở phụ nữ trẻ.",
+        "<b>Cơ chế sinh hóa học</b>: Thiếu hụt một phần hoạt tính enzym <b>21-Hydroxylase (do đột biến gen <i>CYP21A2</i>)</b>. Tuyến thượng thận vẫn sản xuất đủ một lượng nhỏ Cortisol và Aldosterone để duy trì huyết áp bình thường (không có suy thượng thận mất muối sơ sinh như thể kinh điển), nhưng do Cortisol giảm nhẹ kích thích tuyến yên <b>tăng tiết ACTH</b> -> ACTH kích thích vỏ thượng thận quá mức làm <b>tiền chất 17-Hydroxyprogesterone (17-OHP) ứ đọng và bị chuyển hướng hoàn toàn sang con đường sinh tổng hợp Androgen (DHEA, Androstenedione, Testosterone)</b>.",
+        "<b>Phân biệt với Hội chứng Buồng trứng đa nang (PCOS)</b>: Biểu hiện lâm sàng rậm lông, mụn trứng cá và kinh thưa rất giống PCOS, nhưng NCCAH có <b>17-OHP huyết thanh buổi sáng tăng rất cao (> 200 ng/dL và vọt > 1000–1500 ng/dL sau test ACTH)</b>.",
+        "<b>Điều trị</b>: <b>Glucocorticoid liều thấp (Hydrocortisone hoặc Dexamethasone uống vào buổi tối trước khi đi ngủ)</b> giúp ức chế đỉnh tiết ACTH của tuyến yên vào ban đêm, từ đó làm giảm sản xuất Androgen tại tuyến thượng thận và hồi phục chu kỳ rụng trứng."
       ],
-      wrongs: {
-        1: "Đột biến RET gây hội chứng MEN-2A và MEN-2B (MTC + Pheochromocytoma).",
-        2: "Gen VHL gây hội chứng Von Hippel-Lindau (U nguyên bào mạch máu tiểu não, ung thư biểu mô tế bào thận RCC, u tủy thượng thận).",
-        3: "Gen NF1 gây bệnh U xơ thần kinh Típ 1 (nốt Von Recklinghausen, u sợi thần kinh, u tủy thượng thận).",
-        4: "Gen TP53 gây hội chứng Li-Fraumeni (ung thư vú, sarcom, u não, ung thư vỏ thượng thận ở người trẻ)."
+      "wrongs": {
+        "1": "PCOS có 17-OHP bình thường và thường liên quan đến béo phì, đề kháng insulin.",
+        "2": "U buồng trứng tiết Androgen gây nam hóa tối cấp tiến triển cực nhanh (phì đại âm vật, giọng trầm ồm, hói đầu kiểu nam) với Testosterone máu tăng cực cao > 150-200 ng/dL.",
+        "3": "Thiếu 11-beta-hydroxylase có tăng 11-deoxycorticosterone (DOC) gây tăng huyết áp nặng và hạ Kali máu.",
+        "4": "Bệnh nhân không có các dấu hiệu kiểu hình của Cushing (không rạn da tím, không teo cơ, cortisol bình thường)."
       },
-      objective:
-        "Hội chứng MEN-1 (Tam chứng 3P: U tuyến cận giáp + U tụy thần kinh nội tiết Gastrinoma/Insulinoma + U tuyến yên Prolactinoma) do đột biến gen ức chế khối u MEN1 (Menin) trên NST 11."
+      "objective": "Tăng sản thượng thận bẩm sinh thể muộn (Nonclassic CAH do thiếu một phần 21-hydroxylase) gây rậm lông và kinh thưa ở phụ nữ trẻ; chẩn đoán xác định bằng 17-OHP tăng cao (hoặc tăng vọt sau test ACTH); điều trị bằng Corticoid liều thấp."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và tầm soát",
-      short: "Hội chứng MEN-2B và đột biến gen RET",
-      vignette: [
-        "Nam 19 tuổi, thể trạng gầy cao lênh khênh, các ngón tay ngón chân dài ngoẵng và khớp lỏng lẻo giống hội chứng Marfan (<b>Thể tạng dạng Marfan - Marfanoid habitus</b>), đến khám vì sờ thấy một khối u cứng ở thùy giáp bên phải.",
-        "Khám niêm mạc miệng và mắt phát hiện: <b>Nhiều nốt u nhỏ màu hồng nhạt ở niêm mạc môi, đầu lưỡi và kết mạc mi mắt (U thần kinh niêm mạc - Mucosal neuromas)</b>. Bệnh nhân có tiền sử phình đại tràng do u hạch thần kinh ruột (Intestinal ganglioneuromatosis).",
-        "Sinh thiết nhân giáp: <b>Ung thư biểu mô tuyến giáp thể tủy (Medullary Thyroid Cancer - MTC)</b>. Xét nghiệm <b>Calcitonin huyết thanh tăng rất cao</b>.",
-        "Đo huyết áp: 185/110 mm Hg, nồng độ Metanephrines tự do trong nước tiểu 24h tăng cao (kèm U tủy thượng thận Pheochromocytoma)."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán phân biệt hạ đường huyết nội sinh vs ngoại sinh",
+      "short": "Hạ đường huyết do U tiết Insulin (Insulinoma) vs Bơm Insulin ngoại sinh / Sulfonylurea",
+      "vignette": [
+        "Nữ 38 tuổi làm nhân viên kế toán đến khám vì nhiều đợt vã mồ hôi, run tay, tim đập nhanh, hoa mắt chóng mặt và lú lẫn xuất hiện vào buổi sáng sớm khi thức dậy hoặc sau khi nhịn ăn kéo dài trong 6 tháng qua. Các triệu chứng này hết ngay lập tức sau khi bệnh nhân uống một cốc nước đường hoặc ăn bánh ngọt (<b>Tam chứng Whipple đầy đủ</b>).",
+        "Bệnh nhân được nhập viện thực hiện <b>Nghiệm pháp nhịn đói 72 giờ có theo dõi (72-hour Fasting Test)</b>. Sau 18 giờ nhịn đói, bệnh nhân xuất hiện triệu chứng lú lẫn vã mồ hôi và xét nghiệm máu ghi nhận:",
+        "1. <b>Glucose huyết tương hạ rất thấp đạt 38 mg/dL</b>;",
+        "2. <b>Nồng độ Insulin huyết thanh tăng cao không thích hợp đạt 18 mcU/mL (ngưỡng bình thường khi đói phải bị ức chế < 3 mcU/mL)</b>;",
+        "3. <b>Nồng độ C-peptide huyết thanh tăng cao đạt 3,8 ng/mL (ngưỡng bình thường khi đói < 0,6 ng/mL)</b>;",
+        "4. <b>Nồng độ Proinsulin huyết thanh tăng cao đạt 22 pmol/L</b>;",
+        "5. <b>Xét nghiệm sàng lọc các thuốc hạ đường huyết nhóm Sulfonylurea và Meglitinide trong huyết tương và nước tiểu đều ÂM TÍNH HOÀN TOÀN</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "185/110"],
-        ["Mạch", "108 l/ph"],
-        ["Nhịp thở", "18 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "120/75 mm Hg"
+        ],
+        [
+          "Mạch",
+          "102 l/ph (lúc hạ đường huyết)"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Chẩn đoán xác định hội chứng di truyền và đột biến gen nguyên nhân là gì?",
-      choices: [
-        "Hội chứng Đa u tuyến nội tiết Típ 2B (MEN-2B) do đột biến hoạt hóa tiền gen sinh ung RET (Proto-oncogene RET)",
-        "Hội chứng MEN-2A do đột biến gen MEN1",
-        "Hội chứng Marfan do đột biến gen FBN1",
-        "U xơ thần kinh Típ 1 (NF1)",
-        "Hội chứng McCune-Albright"
+      "stem": "Chẩn đoán nguyên nhân hạ đường huyết nội sinh và phương pháp điều trị triệt căn hàng đầu là gì?",
+      "choices": [
+        "U tế bào beta đảo tụy tiết Insulin tự chủ (Insulinoma); chẩn đoán hình ảnh định vị u (Nội soi siêu âm tụy EUS / Chụp CT tụy đa pha) và tiến hành Phẫu thuật bóc tách khối u tụy (Enucleation / Resection)",
+        "Tự ý tiêm Insulin ngoại sinh lén lút (Factitious Hypoglycemia do tiêm Insulin); điều trị bằng tư vấn tâm thần",
+        "Tự ý uống thuốc hạ đường huyết Sulfonylurea lén lút; điều trị bằng truyền Glucose",
+        "Suy tuyến yên toàn bộ gây thiếu hụt GH và Cortisol; điều trị bằng bù hormone",
+        "Hạ đường huyết phản ứng sau ăn (Reactive Hypoglycemia); điều trị bằng chia nhỏ bữa ăn"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có đầy đủ đặc điểm kinh điển của <b>Hội chứng Đa u tuyến nội tiết Típ 2B (MEN-2B)</b>:",
-        "1. <b>Ung thư biểu mô tuyến giáp thể tủy (Medullary Thyroid Carcinoma - MTC, 100%)</b> xuất phát từ tế bào C cận nang tiết <b>Calcitonin</b>, tiến triển cực kỳ ác tính xuất hiện từ rất sớm.",
-        "2. <b>U tủy thượng thận (Pheochromocytoma, 50%)</b>.",
-        "3. <b>U thần kinh niêm mạc (Mucosal Neuromas)</b> ở môi, lưỡi và mi mắt.",
-        "4. <b>Thể tạng dạng Marfan (Marfanoid Habitus)</b> và u hạch thần kinh đường ruột (Ganglioneuromatosis).",
-        "- Phân biệt giữa <b>MEN-2A</b> và <b>MEN-2B</b> (cả hai đều do đột biến hoạt hóa thụ thể tyrosine kinase <b>RET Proto-oncogene</b>):",
-        "- <b>MEN-2A</b>: <b>MTC + Pheochromocytoma + CƯỜNG CẬN GIÁP NGUYÊN PHÁT (Parathyroid hyperplasia)</b>.",
-        "- <b>MEN-2B</b>: <b>MTC + Pheochromocytoma + U THẦN KINH NIÊM MẠC + THỂ TẠNG DẠNG MARFAN</b> (HOÀN TOÀN KHÔNG CÓ CƯỜNG CẬN GIÁP).",
-        "Tất cả trẻ em mang đột biến gen RET gây MEN-2B đều có chỉ định <b>Phẫu thuật cắt toàn bộ tuyến giáp dự phòng (Prophylactic thyroidectomy)</b> ngay trong năm đầu đời."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có <b>Hạ đường huyết lúc đói do U tiết Insulin nội sinh (Insulinoma)</b> thỏa mãn hoàn hảo <b>Tam chứng Whipple</b> (Triệu chứng hạ đường huyết khi đói + Glucose máu < 55 mg/dL + Hồi phục ngay sau khi dùng đường).",
+        "<b>Quy tắc phân biệt kinh điển các nguyên nhân hạ đường huyết bằng Bộ ba: Insulin, C-peptide, Proinsulin và Sàng lọc thuốc</b>:",
+        "1. <b>U tiết Insulin (Insulinoma)</b>: Tế bào beta phân cắt Proinsulin tạo ra lượng bằng nhau Insulin và C-peptide -> <b>Insulin CAO + C-peptide CAO + Proinsulin CAO + Test thuốc hạ đường huyết ÂM TÍNH</b>.",
+        "2. <b>Tự tiêm Insulin ngoại sinh (Factitious Insulin Injection)</b>: Insulin đóng lọ thương mại không chứa C-peptide -> <b>Insulin TĂNG RẤT CAO nhưng C-peptide BỊ ỨC CHẾ THẤP (< 0,2 ng/mL) và Proinsulin THẤP</b>.",
+        "3. <b>Tự uống Sulfonylurea lén lút (Sulfonylurea Ingestion)</b>: Kích thích tế bào beta tiết insulin -> Insulin CAO + C-peptide CAO nhưng <b>XÉT NGHIỆM THUỐC TRONG MÁU/NƯỚC TIỂU DƯƠNG TÍNH</b>.",
+        "Điều trị Insulinoma: <b>Phẫu thuật bóc u tụy (Enucleation)</b> mang lại hiệu quả khỏi bệnh hoàn toàn ở > 90–95% bệnh nhân (Dùng Diazoxide hoặc Octreotide tạm thời để kiểm soát hạ đường huyết trước mổ)."
       ],
-      wrongs: {
-        1: "MEN-2A có kèm Cường cận giáp nguyên phát và không có u thần kinh niêm mạc hay thể tạng dạng Marfan.",
-        2: "Hội chứng Marfan chỉ có bất thường mô liên kết gãy xương/mắt/động mạch chủ, không có ung thư biểu mô thể tủy và u tủy thượng thận.",
-        3: "NF1 có u sợi thần kinh ngoài da và vết cà phê sữa, không có ung thư giáp thể tủy tiết calcitonin.",
-        4: "McCune-Albright có tam chứng dậy thì sớm, loạn sản xơ xương và vết cà phê sữa bờ rách."
+      "wrongs": {
+        "1": "Tự tiêm insulin ngoại sinh sẽ có C-peptide bị ức chế giảm rất thấp (vì nồng độ insulin cao ngoại sinh ức chế tế bào beta nội sinh tiết C-peptide).",
+        "2": "Uống Sulfonylurea sẽ tìm thấy thuốc trong máu hoặc nước tiểu.",
+        "3": "Suy tuyến yên sẽ có nồng độ Insulin và C-peptide giảm rất thấp khi hạ đường huyết.",
+        "4": "Hạ đường huyết phản ứng xảy ra sau khi ăn nhiều carbohydrate vài giờ chứ không xảy ra sau nhịn đói 18 giờ."
       },
-      objective:
-        "Hội chứng MEN-2B (Ung thư biểu mô giáp thể tủy MTC + U tủy thượng thận + U thần kinh niêm mạc môi lưỡi + Thể tạng dạng Marfan) do đột biến hoạt hóa gen RET; cần cắt tuyến giáp dự phòng sớm."
+      "objective": "Phân biệt hạ đường huyết: Insulinoma có Insulin CAO, C-peptide CAO, Proinsulin CAO và test Sulfonylurea ÂM TÍNH (khác tiêm insulin ngoại sinh có C-peptide THẤP); điều trị triệt căn bằng phẫu thuật bóc u tụy."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước xử trí cấp cứu",
-      short: "Cơn khủng hoảng tăng canxi máu ác tính",
-      vignette: [
-        "Nam 64 tuổi có tiền sử ung thư biểu mô tế bào vảy ở phổi, được đưa vào cấp cứu vì lơ mơ, lú lẫn, nôn mửa liên tục, táo bón nặng và tiểu tiện rất nhiều trong 3 ngày qua.",
-        "Khám: Dấu hiệu mất nước nặng, niêm mạc khô kiệt, da đàn hồi kém, huyết áp 95/60 mm Hg, mạch 108 l/phút.",
-        "Điện tâm đồ: <b>Khoảng QT bị rút ngắn rõ rệt (Shortened QT interval)</b>.",
-        "Xét nghiệm máu khẩn: <b>Canxi huyết thanh toàn phần tăng cực cao 15,2 mg/dL</b> (Canxi ion hóa tăng rất cao), <b>PTH nguyên vẹn (intact PTH) bị ức chế hoàn toàn < 3 pg/mL</b>. Nồng độ <b>Protein liên quan hormone tuyến cận giáp (PTHrP) trong máu tăng rất cao</b>. BUN 48 mg/dL, Creatinine 2,4 mg/dL."
+      "spec": "Nội tiết",
+      "task": "Sàng lọc đái tháo đường thai kỳ & Quản lý",
+      "short": "Đái tháo đường thai kỳ (GDM) - Nghiệm pháp OGTT 75g & Insulin",
+      "vignette": [
+        "Sản phụ 31 tuổi mang thai con so ở tuần thứ 26 của thai kỳ, có BMI trước mang thai là 28 kg/m2 và tiền sử gia đình có mẹ đẻ mắc đái tháo đường típ 2.",
+        "Bệnh nhân được chỉ định thực hiện Nghiệm pháp dung nạp Glucose đường uống 75g một bước (75-g 2-hour Oral Glucose Tolerance Test - OGTT) theo khuyến cáo thường quy ở tuần 24–28 của ADA/IADPSG.",
+        "Kết quả đường huyết tĩnh mạch: <b>Đường huyết lúc đói: 96 mg/dL (Ngưỡng chuẩn < 92 mg/dL); Đường huyết sau 1 giờ: 188 mg/dL (Ngưỡng chuẩn < 180 mg/dL); Đường huyết sau 2 giờ: 142 mg/dL (Ngưỡng chuẩn < 153 mg/dL)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "95/60"],
-        ["Mạch", "108 l/ph"],
-        ["Nhịp thở", "18 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "118/74 mm Hg"
+        ],
+        [
+          "Mạch",
+          "76 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Thứ tự phối hợp các bước điều trị cấp cứu hạ canxi máu chuẩn xác nhất là gì?",
-      choices: [
-        "Hồi sức bù dịch khẩn cấp bằng Truyền tĩnh mạch NaCl 0,9% tốc độ cao (200–300 mL/giờ) + Tiêm Calcitonin để hạ canxi nhanh trong 24–48h + Truyền tĩnh mạch Bisphosphonate (Axit Zoledronic) để duy trì tác dụng kéo dài",
-        "Tiêm tĩnh mạch thuốc lợi tiểu Furosemide liều cao ngay lập tức trước khi truyền dịch",
-        "Cho uống thuốc ức chế canxi Diltiazem liều cao",
-        "Tiêm thuốc hormone tuyến cận giáp Teriparatide",
-        "Chỉ định lọc máu cấp cứu ngay mà không cần truyền dịch"
+      "stem": "Chẩn đoán xác định và lựa chọn điều trị nội khoa bước đầu khi can thiệp dinh dưỡng tiết chế thất bại là gì?",
+      "choices": [
+        "Đái tháo đường thai kỳ (Gestational Diabetes Mellitus - GDM chẩn đoán chỉ cần ít nhất 1 chỉ số vượt ngưỡng); khởi đầu bằng tư vấn dinh dưỡng tiết chế và tập thể dục, nếu không đạt mục tiêu đường huyết thì Insulin là thuốc điều trị bước 1 được lựa chọn hàng đầu",
+        "Không mắc đái tháo đường thai kỳ vì chỉ có 2 chỉ số bất thường (cần cả 3 chỉ số mới chẩn đoán)",
+        "Chỉ định dùng Metformin ngay lập tức liều cao",
+        "Chỉ định dùng thuốc ức chế SGLT2 Empagliflozin",
+        "Chỉ định mổ lấy thai chủ động ngay ở tuần thứ 26"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân bị <b>Cơn khủng hoảng tăng canxi máu ác tính (Severe Malignant Hypercalcemia, Canxi > 14 mg/dL)</b> do <b>Ung thư phổi tế bào vảy tiết PTHrP (Humoral Hypercalcemia of Malignancy)</b>.",
-        "Canxi máu tăng rất cao làm mất khả năng cô đặc nước tiểu của thận (gây đái tháo nhạt do thận), dẫn đến mất nước và suy thận cấp nặng nề, làm canxi máu càng tăng cao theo vòng xoắn bệnh lý.",
-        "Phác đồ điều trị đa tầng chuẩn theo khuyến cáo quốc tế:",
-        "1. <b>Bước 1 QUAN TRỌNG NHẤT VÀ TIÊN QUYẾT: BÙ DỊCH THỂ TÍCH LỚN</b>: <b>Truyền tĩnh mạch NaCl 0,9% với tốc độ cao 200–300 mL/giờ</b> (3–4 lít trong 24h đầu) để phục hồi thể tích nội mạch, tăng độ lọc cầu thận và tăng bài xuất canxi qua nước tiểu.",
-        "2. <b>Bước 2 HẠ CANXI NHANH TỨC THÌ</b>: <b>Calcitonin tiêm dưới da/tiêm bắp (4–8 đơn vị/kg mỗi 12h)</b> giúp hạ canxi nhanh trong vòng vài giờ (nhưng bị hiện tượng dung nạp nhanh tachyphylaxis sau 48h).",
-        "3. <b>Bước 3 DUY TRÌ TÁC DỤNG KÉO DÀI</b>: <b>Bisphosphonate truyền tĩnh mạch (Zoledronic acid 4 mg hoặc Pamidronate)</b> ức chế mạnh hủy cốt bào, phát huy tác dụng sau 48–72h và duy trì hạ canxi trong 2–4 tuần.",
-        "Lưu ý: <b>Lợi tiểu quai (Furosemide) CHỈ ĐƯỢC DÙNG SAU KHI ĐÃ BÙ ĐỦ DỊCH NỘI MẠCH</b> và có dấu hiệu quá tải dịch; dùng Furosemide trước khi bù dịch sẽ làm tụt huyết áp và tử vong."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân được chẩn đoán xác định <b>Đái tháo đường thai kỳ (Gestational Diabetes Mellitus - GDM)</b> theo <b>Tiêu chuẩn 1 bước của ADA và Hiệp hội Quốc tế về Đái tháo đường và Thai kỳ (IADPSG)</b> được thực hiện ở tuần 24–28:",
+        "Chỉ cần <b>ÍCH NHẤT 1 TRONG 3 CHỈ SỐ ĐƯỜNG HUYẾT ĐẠT HOẶC VƯỢT NGƯỠNG</b> sau: 1. <b>Đường huyết lúc đói ≥ 92 mg/dL (ở đây 96 mg/dL)</b>; 2. <b>Đường huyết sau 1 giờ ≥ 180 mg/dL (ở đây 188 mg/dL)</b>; 3. <b>Đường huyết sau 2 giờ ≥ 153 mg/dL</b>.",
+        "<b>Mục tiêu kiểm soát đường huyết ở thai phụ</b>: Đường huyết lúc đói ≤ 95 mg/dL, 1 giờ sau ăn ≤ 140 mg/dL, hoặc 2 giờ sau ăn ≤ 120 mg/dL (để ngăn ngừa biến chứng thai to macrosomia, hạ đường huyết sơ sinh, hạ canxi máu sơ sinh và đa hồng cầu).",
+        "<b>Chiến lược điều trị</b>: Bước 1 là điều chỉnh chế độ ăn tiết chế và vận động nhẹ; nếu sau 1–2 tuần không đạt mục tiêu -> <b>INSULIN LÀ THUỐC ĐIỀU TRỊ NỘI KHOA HÀNG ĐẦU (First-line pharmacotherapy)</b> vì insulin không qua được hàng rào nhau thai, an toàn tuyệt đối cho thai nhi."
       ],
-      wrongs: {
-        1: "Dùng Furosemide khi bệnh nhân đang mất nước nặng sẽ làm sập thể tích tuần hoàn và suy thận cấp trầm trọng hơn.",
-        2: "Chẹn kênh canxi không làm giảm nồng độ canxi tự do trong máu.",
-        3: "Teriparatide là dẫn xuất PTH làm tăng thêm canxi máu.",
-        4: "Lọc máu chỉ chỉ định khi tăng canxi máu đe dọa tính mạng kèm suy thận vô niệu nặng không thể truyền dịch."
+      "wrongs": {
+        "1": "Theo tiêu chuẩn IADPSG/ADA 1 bước chỉ cần duy nhất 1 chỉ số bất thường là đủ tiêu chuẩn chẩn đoán GDM.",
+        "2": "Metformin và Glyburide có thể qua hàng rào nhau thai và không phải là lựa chọn ưu tiên hàng đầu theo ADA/ACOG.",
+        "3": "SGLT2i bị chống chỉ định tuyệt đối trong thai kỳ do nguy cơ dị tật thai và độc tính trên thận thai nhi.",
+        "4": "Thai 26 tuần còn rất non tháng, không có chỉ định mổ lấy thai khi chưa có suy thai cấp."
       },
-      objective:
-        "Tăng canxi máu ác tính nặng (>14 mg/dL) cấp cứu chuẩn gồm: Bù dịch NaCl 0,9% tốc độ cao trước tiên + Tiêm Calcitonin (hạ nhanh 24-48h) + Truyền Bisphosphonate (Axit Zoledronic duy trì dài hạn); không dùng Furosemide trước khi bù đủ dịch."
+      "objective": "Đái tháo đường thai kỳ (GDM) chẩn đoán ở tuần 24-28 bằng OGTT 75g khi có ≥ 1 chỉ số vượt ngưỡng (đói ≥ 92, 1h ≥ 180, 2h ≥ 153 mg/dL); Insulin là thuốc lựa chọn đầu tay khi dinh dưỡng tiết chế thất bại."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Hội chứng Sheehan (Suy tuyến yên sau sinh do băng huyết)",
-      vignette: [
-        "Nữ 29 tuổi đến khám vì mệt mỏi kiệt sức, sợ lạnh, da khô bong vảy, rụng lông nách lông mu và sút cân kể từ sau khi sinh con thứ hai cách đây 6 tháng. Bệnh nhân có tiền sử sinh nở bị <b>băng huyết sau sinh nặng nề (Postpartum hemorrhage) phải truyền 6 đơn vị máu và hồi sức tích cực</b>.",
-        "Bệnh nhân cho biết <b>sau khi sinh hoàn toàn không có sữa mẹ để cho con bú (Mất sữa sau sinh - Failure of lactation)</b> và đến nay <b>chưa từng có kinh nguyệt trở lại (Vô kinh thứ phát - Secondary amenorrhea)</b>.",
-        "Xét nghiệm nội tiết: <b>Prolactin giảm rất thấp, TSH giảm kèm FT4 giảm (Suy giáp thứ phát), ACTH giảm kèm Cortisol giảm (Suy thượng thận thứ phát), LH và FSH giảm kèm Estradiol giảm (Suy sinh dục thứ phát)</b>."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán thiếu hụt Vitamin D & X-quang",
+      "short": "Nhuyễn xương (Osteomalacia) - Thiếu Vitamin D & Đường gãy giả Looser",
+      "vignette": [
+        "Nữ 52 tuổi có tiền sử phẫu thuật cắt dạ dày nối hỗng tràng (Roux-en-Y) điều trị béo phì cách đây 4 năm nhưng không tuân thủ uống vitamin bổ sung. Bệnh nhân đến khám vì <b>đau nhức xương âm ỉ liên tục ở vùng thắt lưng, khung chậu và hai đùi, kèm theo yếu cơ gốc chi nặng khiến bệnh nhân đi lại lắc lư tướng đi như vịt (Waddling gait) và khó đứng dậy từ ghế</b>.",
+        "Xét nghiệm máu sinh hóa: <b>Nồng độ 25-Hydroxyvitamin D [25(OH)D] giảm rất thấp 7 ng/mL (Thiếu hụt nặng < 10 ng/mL); Canxi toàn phần giảm nhẹ 8,2 mg/dL; Phosphate huyết thanh giảm thấp 2,0 mg/dL; Alkaline Phosphatase (ALP) tăng cao 240 U/L; Hormone cận giáp PTH tăng cao 115 pg/mL (Cường cận giáp thứ phát)</b>.",
+        "Chụp X-quang xương chậu và cổ xương đùi hai bên: Giảm mật độ khoáng chất xương lan tỏa và <b>xuất hiện các dải sáng hẹp vuông góc với vỏ xương không hoàn toàn (Đường gãy giả Looser / Looser's zones / Pseudofractures)</b> ở bờ trong cổ xương đùi hai bên."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,2 °C"],
-        ["Huyết áp", "90/58"],
-        ["Mạch", "60 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "120/75 mm Hg"
+        ],
+        [
+          "Mạch",
+          "72 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Cơ chế tổn thương thiếu máu cục bộ của Hội chứng Sheehan là gì và hormone nào bắt buộc phải bù đầu tiên?",
-      choices: [
-        "Hoại tử thiếu máu cục bộ thùy trước tuyến yên do tụt huyết áp sốc mất máu trên nền tuyến yên phì đại tăng tưới máu trong thai kỳ; bắt buộc bù Hormone vỏ thượng thận (Hydrocortisone) TRƯỚC HOẶC ĐỒNG THỜI với Hormone tuyến giáp (Levothyroxine)",
-        "Viêm tuyến yên tự miễn tế bào lympho; điều trị bằng kháng thể đơn dòng",
-        "U tuyến yên chèn ép; phẫu thuật cắt u",
-        "Suy buồng trứng sớm nguyên phát; bù Estrogen đơn độc",
-        "Suy giáp nguyên phát do viêm giáp sau sinh; bù Levothyroxine đơn độc liều cao"
+      "stem": "Cơ chế khiếm khuyết mô học xương và chẩn đoán bệnh lý chuyển hóa xương này là gì?",
+      "choices": [
+        "Khiếm khuyết quá trình khoáng hóa chất nền hữu cơ (Osteoid) của xương ở người trưởng thành do thiếu hụt Vitamin D nặng (Bệnh Nhuyễn xương - Osteomalacia); điều trị bằng bổ sung Vitamin D3 (Cholecalciferol) liều cao phối hợp Canxi",
+        "Loãng xương nguyên phát (Osteoporosis); điều trị bằng Alendronate",
+        "Bệnh xương Paget; điều trị bằng Zoledronic acid",
+        "Cường cận giáp nguyên phát do u cận giáp; chỉ định phẫu thuật",
+        "Viêm đa cơ tự miễn (Polymyositis); điều trị bằng Prednisone"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Hội chứng Sheehan (Sheehan Syndrome / Postpartum Pituitary Necrosis)</b>:",
-        "- Cơ chế: Trong thai kỳ, thùy trước tuyến yên phì đại tăng kích thước gấp đôi (tăng sinh tế bào tiết prolactin Lactotrophs) nhưng hệ thống mạch máu nuôi dưỡng (hệ cửa tuyến yên) không tăng sinh tương xứng -> Khi xảy ra <b>băng huyết sau sinh nặng gây tụt huyết áp sốc mất máu</b>, tuyến yên bị <b>thiếu máu cục bộ và hoại tử nhồi máu toàn bộ thùy trước</b>.",
-        "- Dấu hiệu sớm nhất: <b>Mất sữa sau sinh (Thiếu Prolactin)</b>.",
-        "- Dấu hiệu tiếp theo: <b>Vô kinh thứ phát kéo dài (Thiếu LH/FSH)</b>, rụng lông nách lông mu, suy giáp thứ phát (thiếu TSH) và suy thượng thận thứ phát (thiếu ACTH).",
-        "- Nguyên tắc điều trị hormone thay thế suốt đời: <b>BẮT BUỘC BÙ GLUCOCORTICOID (Hydrocortisone/Prednisone) ĐẦU TIÊN TRƯỚC KHI BÙ LEVOTHYROXINE</b> để tránh làm tăng chuyển hóa gây bùng phát cơn suy thượng thận cấp tử vong."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân mắc <b>Bệnh Nhuyễn xương (Osteomalacia)</b> - tình trạng khiếm khuyết khoáng hóa chất nền xương hữu cơ (Osteoid) sau khi các đĩa sụn tiếp hợp đã đóng kín (ở trẻ em gọi là Bệnh Còi xương - Rickets).",
+        "Nguyên nhân: <b>Kém hấp thu Vitamin D nặng</b> sau phẫu thuật bắc cầu dạ dày (Roux-en-Y bypass làm thức ăn bỏ qua tá tràng và hỗng tràng gần - nơi hấp thu mỡ và vitamin tan trong mỡ D, A, K, E).",
+        "<b>Sinh lý bệnh học sinh hóa</b>: Thiếu Vitamin D -> Giảm hấp thu Canxi và Phosphate tại ruột -> Hạ Canxi máu kích thích <b>Cường tuyến cận giáp thứ phát (Tăng PTH)</b> -> PTH làm thận tăng đào thải Phosphate qua nước tiểu gây <b>Hạ Phosphate máu nặng</b>. Thiếu cả Canxi và Phosphate làm nền xương không thể khoáng hóa tạo tinh thể Hydroxyapatite.",
+        "<b>Đặc trưng X-quang kinh điển</b>: <b>Đường gãy giả Looser (Looser zones / Milkman lines / Pseudofractures)</b> là các dải sáng giảm đậm độ xương hẹp nằm vuông góc với vỏ xương (ở cổ xương đùi, xương mu, xương sườn) - dấu hiệu đặc hiệu xác chẩn Nhuyễn xương.",
+        "Điều trị: <b>Bổ sung Vitamin D3 (Cholecalciferol 50.000 IU/tuần trong 8 tuần) phối hợp Canxi Carbonate/Citrate</b>."
       ],
-      wrongs: {
-        1: "Viêm tuyến yên tế bào lympho không liên quan đến biến cố băng huyết sau sinh mất máu nặng.",
-        2: "Tuyến yên bị teo nhỏ và tạo hình ảnh hố yên rỗng (Empty sella) trên MRI, không phải u tuyến yên.",
-        3: "LH/FSH giảm thấp chứng tỏ suy buồng trứng thứ phát do tuyến yên, không phải tại buồng trứng.",
-        4: "Bù Levothyroxine trước khi bù Hydrocortisone sẽ đẩy bệnh nhân vào cơn suy thượng thận cấp tử vong."
+      "wrongs": {
+        "1": "Loãng xương (Osteoporosis) là giảm cả chất nền hữu cơ lẫn chất khoáng hóa (xương mỏng nhưng khoáng hóa bình thường), Canxi, Phosphate, ALP và PTH đều HOÀN TOÀN BÌNH THƯỜNG.",
+        "2": "Bệnh Paget có Canxi và Phosphate bình thường, ALP tăng rất cao và không có yếu cơ gốc chi.",
+        "3": "Cường cận giáp nguyên phát có Canxi máu tăng cao.",
+        "4": "Viêm đa cơ có men cơ CK và Aldolase tăng rất cao, Vitamin D và Phosphate bình thường."
       },
-      objective:
-        "Hội chứng Sheehan (hoại tử thùy trước tuyến yên sau băng huyết sinh con) gây mất sữa sau sinh, vô kinh, rụng lông mu và suy đa tuyến thứ phát; điều trị bắt buộc bù Hydrocortisone trước khi bù Levothyroxine."
+      "objective": "Nhuyễn xương (Osteomalacia do thiếu Vitamin D sau mổ dạ dày/kém hấp thu) gây đau xương, yếu cơ đi tướng vịt, hạ Canxi/Phosphate, tăng ALP/PTH và đường gãy giả Looser trên X-quang; điều trị bằng bổ sung Vitamin D liều cao + Canxi."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Tăng sản thượng thận bẩm sinh (CAH) thiếu men 21-Hydroxylase",
-      vignette: [
-        "Bé gái sơ sinh 12 ngày tuổi được đưa vào cấp cứu vì nôn trớ liên tục, bú kém, sụt cân và li bì. Khám bộ phận sinh dục ngoài phát hiện: <b>Âm vật phì đại to giống dương vật kèm dính nếp môi lớn tạo bìu rỗng (Cơ quan sinh dục ngoài mơ hồ / Nam hóa - Ambiguous genitalia / Virilization)</b>.",
-        "Khám cấp cứu: Bé có dấu hiệu mất nước nặng, huyết áp tụt 60/35 mm Hg, mạch 160 l/phút.",
-        "Xét nghiệm máu khẩn: <b>Natri máu giảm thấp 120 mEq/L (Hạ natri máu), Kali máu tăng rất cao 7,2 mEq/L (Tăng kali máu mất muối)</b>, Glucose máu 45 mg/dL. <b>Nồng độ 17-Hydroxyprogesterone (17-OHP) trong huyết thanh tăng vọt lên 4.500 ng/dL</b> (bình thường < 100 ng/dL)."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán hoại tử tuyến yên sau sinh",
+      "short": "Hội chứng Sheehan (Hoại tử thiếu máu tuyến yên sau sinh) - Suy tuyến yên toàn bộ",
+      "vignette": [
+        "Nữ 29 tuổi sinh con thứ hai cách đây 8 tháng. Quá trình sinh nở bị biến chứng <b>Băng huyết sau sinh ồ ạt do đờ tử cung, tụt huyết áp sâu kéo dài và phải truyền 6 đơn vị khối hồng cầu cấp cứu</b>.",
+        "Sau khi xuất viện về nhà, bệnh nhân <b>hoàn toàn không thể tiết sữa để cho con bú (Mất sữa sau sinh - Agalactorrhea)</b>. Trong 8 tháng qua, bệnh nhân <b>vô kinh liên tục, mệt mỏi kiệt sức, sợ lạnh, da khô nhợt nhạt và rụng toàn bộ lông mu và lông nách</b>.",
+        "Xét nghiệm nội tiết tố: <b>Prolactin < 1 ng/mL (rất thấp); TSH giảm 0,1 mcIU/mL kèm Free T4 giảm 0,4 ng/dL (Suy giáp thứ phát); Cortisol sáng thấp 2,1 mcg/dL kèm ACTH thấp 6 pg/mL (Suy thượng thận thứ phát); LH và FSH đều giảm rất thấp; IGF-1 giảm thấp</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,5 °C"],
-        ["Huyết áp", "60/35"],
-        ["Mạch", "160 l/ph"],
-        ["Nhịp thở", "28 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,2 °C (Hạ thân nhiệt nhẹ)"
+        ],
+        [
+          "Huyết áp",
+          "90/60 mm Hg"
+        ],
+        [
+          "Mạch",
+          "60 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "14 l/ph"
+        ]
       ],
-      stem: "Enzym bị thiếu hụt trong con đường sinh tổng hợp steroid và phác đồ điều trị hormone thay thế duy trì suốt đời là gì?",
-      choices: [
-        "Thiếu hụt enzym 21-Hydroxylase (chiếm 90–95% các ca CAH); điều trị duy trì bằng Hydrocortisone (thay thế glucocorticoid và ức chế ACTH) kết hợp Fludrocortisone (thay thế mineralocorticoid giữ muối)",
-        "Thiếu hụt enzym 11-beta-Hydroxylase; điều trị bằng thuốc hạ áp",
-        "Thiếu hụt enzym 17-alpha-Hydroxylase; điều trị bằng estrogen",
-        "Hội chứng bất nhạy cảm Androgen hoàn toàn; phẫu thuật cắt tinh hoàn",
-        "Hội chứng Turner (45,XO); điều trị bằng hormone tăng trưởng GH"
+      "stem": "Cơ chế bệnh sinh mạch máu và tên gọi hội chứng suy thùy trước tuyến yên sau sinh này là gì?",
+      "choices": [
+        "Hội chứng Sheehan (Hoại tử thiếu máu cục bộ tuyến yên sau sinh - Ischemic Pituitary Necrosis); do tuyến yên phì đại tăng sinh trong thai kỳ bị thiếu máu nuôi khi tụt huyết áp băng huyết nặng; điều trị bằng liệu pháp hormone thay thế suốt đời (Hydrocortisone trước rồi mới dùng Levothyroxine, phối hợp Estrogen/Progestin)",
+        "Viêm tuyến giáp sau sinh (Postpartum Thyroiditis); điều trị bằng Levothyroxine đơn độc",
+        "Hội chứng buồng trứng đa nang sau sinh; điều trị bằng Clomiphene",
+        "Trầm cảm sau sinh thể nặng; điều trị bằng thuốc ức chế tái hấp thu Serotonin (SSRI)",
+        "U tuyến yên tiết Prolactin (Prolactinoma); điều trị bằng Cabergoline"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Tăng sản tuyến thượng thận bẩm sinh (Congenital Adrenal Hyperplasia - CAH) thể mất muối cổ điển</b> do <b>Thiếu hụt enzym 21-Hydroxylase (chiếm > 90% các ca)</b> di truyền lặn trên NST thường:",
-        "1. Thiếu 21-Hydroxylase làm <b>chặn đứng con đường tổng hợp Cortisol và Aldosterone</b>:",
-        "- Thiếu Aldosterone -> Mất muối nước qua thận gây <b>Hạ Natri máu + Tăng Kali máu + Tụt huyết áp sốc</b> xuất hiện tuần thứ 1–2 sau sinh.",
-        "- Thiếu Cortisol -> Mất ức chế ngược làm <b>tuyến yên tăng tiết ACTH ồ ạt</b>, kích thích vỏ thượng thận phì đại.",
-        "2. Toàn bộ tiền chất bị ứ đọng (đặc biệt là <b>17-Hydroxyprogesterone / 17-OHP</b>) bị chuyển hướng ồ ạt sang con đường tổng hợp <b>Androgen (Testosterone)</b> -> Gây <b>Nam hóa cơ quan sinh dục ngoài ở bé gái (Âm vật phì đại, dính môi lớn)</b>.",
-        "Điều trị chuẩn suốt đời: <b>Hydrocortisone</b> (để bù Cortisol và ức chế ACTH nhằm giảm sản xuất Androgen) phối hợp <b>Fludrocortisone</b> (bù Mineralocorticoid để giữ muối nước)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân mắc <b>Hội chứng Sheehan (Hoại tử tuyến yên sau sinh / Postpartum Hypopituitarism)</b>.",
+        "<b>Cơ chế bệnh sinh</b>: Trong thai kỳ, thùy trước tuyến yên phì đại gấp đôi kích thước bình thường do các tế bào tiết Prolactin (Lactotrophs) tăng sinh mạnh mẽ để chuẩn bị tiết sữa, nhưng hệ thống mao mạch cấp máu cho tuyến yên (Hệ mạch cửa vùng dưới đồi-tuyến yên) không tăng sinh tương ứng -> <b>Tuyến yên cực kỳ nhạy cảm với tình trạng thiếu máu cục bộ</b>. Khi xảy ra <b>Băng huyết sau sinh tụt huyết áp nặng</b>, lượng máu nuôi bị sụt giảm đột ngột gây <b>Hoại tử nhồi máu thùy trước tuyến yên</b>.",
+        "<b>Dấu hiệu lâm sàng kinh điển sớm nhất</b>: <b>MẤT KHẢ NĂNG TIẾT SỮA CHO CON BÚ (Failure of lactation do thiếu Prolactin)</b> và <b>VÔ KINH KÉO DÀI (Amenorrhea do thiếu LH/FSH)</b>.",
+        "Theo sau là triệu chứng của <b>Suy đa tuyến thứ phát toàn bộ</b>: Mệt mỏi sợ lạnh (Suy giáp do thiếu TSH), Sụt huyết áp hạ đường huyết (Suy thượng thận do thiếu ACTH), Rụng lông nách lông mu (thiếu LH/FSH và DHEA).",
+        "Điều trị: <b>Bù hormone thay thế suốt đời</b>: Bắt buộc dùng <b>Hydrocortisone trước tiên</b>, sau đó mới cho <b>Levothyroxine</b>, và phối hợp liệu pháp Hormone thay thế sinh dục."
       ],
-      wrongs: {
-        1: "Thiếu 11-beta-Hydroxylase làm tích tụ 11-deoxycorticosterone (DOC) có hoạt tính giữ muối gây TĂNG HUYẾT ÁP và HẠ KALI MÁU, không gây mất muối hạ huyết áp.",
-        2: "Thiếu 17-alpha-Hydroxylase gây tăng huyết áp, hạ kali máu và không nam hóa (thiếu androgen).",
-        3: "Bất nhạy cảm Androgen (AIS) có kiểu nhân 46,XY và cơ quan sinh dục ngoài là nữ hoàn toàn, không có suy thượng thận mất muối.",
-        4: "Turner (45,XO) có cổ bàng quang, lùn và vô kinh nguyên phát, không có nam hóa âm vật và tăng 17-OHP."
+      "wrongs": {
+        "1": "Viêm tuyến giáp sau sinh không gây mất sữa, không làm rụng lông nách lông mu hay suy thượng thận.",
+        "2": "PCOS không liên quan đến băng huyết tụt huyết áp và Prolactin không bị triệt tiêu.",
+        "3": "Trầm cảm sau sinh không gây suy toàn bộ hormone tuyến yên trên xét nghiệm máu.",
+        "4": "Prolactinoma có Prolactin tăng rất cao và gây tiết sữa tự nhiên (Galactorrhea), ngược lại với Sheehan mất sữa hoàn toàn do Prolactin < 1."
       },
-      objective:
-        "Tăng sản thượng thận bẩm sinh do thiếu 21-Hydroxylase đặc trưng bởi 17-OHP tăng rất cao, nam hóa cơ quan sinh dục ở bé gái và suy thượng thận mất muối (hạ Na, tăng K, tụt HA); điều trị bằng Hydrocortisone + Fludrocortisone."
+      "objective": "Hội chứng Sheehan (hoại tử thiếu máu tuyến yên sau băng huyết sinh nở) biểu hiện sớm nhất bằng mất sữa và vô kinh thứ phát kéo dài kèm rụng lông nách/mu và suy giáp/suy thượng thận; điều trị bằng bù hormone thay thế suốt đời."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và cơ chế",
-      short: "Bệnh nhuyễn xương (Osteomalacia) do thiếu Vitamin D",
-      vignette: [
-        "Nữ 48 tuổi có tiền sử phẫu thuật cắt dạ dày nối hỗng tràng (Roux-en-Y gastric bypass) điều trị béo phì cách đây 3 năm, đến khám vì <b>đau nhức âm ỉ toàn bộ các xương chậu, cột sống và hai chân tăng dần</b> kèm yếu cơ gốc chi khiến bệnh nhân đi lại lạch bạch như dáng đi chim cánh cụt (Waddling gait) và khó khăn khi đứng dậy từ ghế.",
-        "Khám: Ấn đau tức lan tỏa ở xương chậu và xương chày. Cơ lực gốc chi đùi hai bên giảm 4/5.",
-        "Xét nghiệm máu: <b>Canxi huyết thanh giảm nhẹ 8,2 mg/dL, Phosphat huyết thanh giảm thấp 2,0 mg/dL (Hạ phosphat máu), Phosphatase kiềm (ALP) tăng cao 240 U/L</b>, <b>Nồng độ 25-Hydroxyvitamin D [25-(OH)D] giảm rất nặng 7 ng/mL</b> (bình thường > 30), <b>PTH nguyên vẹn tăng cao 135 pg/mL (Cường cận giáp thứ phát)</b>.",
-        "Chụp X-quang khung chậu và xương đùi: Giảm đậm độ xương toàn bộ và phát hiện các đường sáng mảnh vuông góc với vỏ xương không di lệch (<b>Đường nứt xương giả / Vùng Looser - Looser's zones / Pseudofractures</b>)."
+      "spec": "Nội tiết",
+      "task": "Hiệu chỉnh Natri theo Glucose máu",
+      "short": "Hạ Natri máu giả tạo do Tăng đường huyết nặng - Công thức hiệu chỉnh Katz",
+      "vignette": [
+        "Nam 23 tuổi mắc Đái tháo đường típ 1 được đưa vào phòng cấp cứu trong tình trạng hôn mê toan ceton (DKA) nặng.",
+        "Xét nghiệm sinh hóa máu khẩn cấp lúc vào viện ghi nhận: <b>Glucose huyết tương tăng cực cao 900 mg/dL; Natri huyết thanh đo được trên máy sinh hóa (Measured Sodium) = 125 mEq/L; Kali 4,8 mEq/L; Bicarbonate 8 mEq/L; pH máu 7,15</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "120/75"],
-        ["Mạch", "74 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "37,0 °C"
+        ],
+        [
+          "Huyết áp",
+          "90/60 mm Hg"
+        ],
+        [
+          "Mạch",
+          "120 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "28 l/ph"
+        ],
+        [
+          "SpO2",
+          "98% khí trời"
+        ]
       ],
-      stem: "Cơ chế khiếm khuyết khoáng hóa chất nền xương của bệnh cảnh này là gì?",
-      choices: [
-        "Khiếm khuyết quá trình khoáng hóa chất nền xương mới tạo (Osteoid) do thiếu hụt Canxi và Phosphat thứ phát sau thiếu hụt Vitamin D mạn tính (Bệnh nhuyễn xương - Osteomalacia)",
-        "Mất đồng đều cả chất khoáng và chất nền protein của xương trong Loãng xương",
-        "Tiêu xương quá mức do u tương bào ác tính",
-        "Đột biến gen Collagen type I trong tạo xương bất toàn",
-        "Xơ cứng xương do ngộ độc Fluoride"
+      "stem": "Sử dụng công thức hiệu chỉnh Natri chuẩn của Katz trong tăng đường huyết, nồng độ Natri máu hiệu chỉnh thực tế (Corrected Sodium) của bệnh nhân là bao nhiêu và ý nghĩa lâm sàng là gì?",
+      "choices": [
+        "Natri hiệu chỉnh = 137,8 mEq/L (nồng độ Natri thực sự của bệnh nhân hoàn toàn bình thường; tình trạng hạ Natri 125 mEq/L đo được chỉ là Hạ Natri máu giả tạo do Glucose ưu trương kéo nước tự do từ nội bào ra ngoại bào làm pha loãng)",
+        "Natri hiệu chỉnh = 125 mEq/L; bệnh nhân bị hạ Natri máu thực sự nặng cần truyền NaCl 3%",
+        "Natri hiệu chỉnh = 110 mEq/L; bệnh nhân bị mất muối nghiêm trọng",
+        "Natri hiệu chỉnh = 155 mEq/L; bệnh nhân bị ngộ độc muối",
+        "Natri hiệu chỉnh = 145 mEq/L"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Bệnh nhuyễn xương ở người lớn (Osteomalacia / ở trẻ em gọi là Còi xương Rickets)</b> thường xảy ra sau phẫu thuật giảm béo (Bariatric surgery), bệnh Celiac hoặc thiếu tiếp xúc ánh nắng mặt trời.",
-        "Cơ chế bệnh sinh:",
-        "1. Thiếu hụt trầm trọng <b>25-OH Vitamin D</b> làm giảm hấp thu Canxi và Phosphat tại ruột.",
-        "2. Canxi máu giảm kích thích tuyến cận giáp tăng tiết <b>PTH phản ứng bù trừ (Cường cận giáp thứ phát)</b>.",
-        "3. PTH tăng cao giúp duy trì canxi máu ở mức cận dưới bình thường nhưng lại <b>làm tăng bài tiết Phosphat ồ ạt qua nước tiểu -> gây HẠ PHOSPHAT MÁU NẶNG</b>.",
-        "4. Tích số [Canxi x Phosphat] giảm thấp khiến các tạo cốt bào dù tiết ra chất nền hữu cơ (Osteoid) bình thường nhưng <b>KHÔNG THỂ KHOÁNG HÓA VÀ LẮNG ĐỌNG TINH THỂ HYDROXYAPATITE LÊN CHẤT NỀN ĐƯỢC (Impaired mineralization of osteoid)</b>.",
-        "- Đặc trưng X-quang kinh điển: <b>Đường nứt xương giả (Looser's zones / Milkman lines)</b> là những đường thấu quang nhỏ vuông góc vỏ xương.",
-        "- Phân biệt với <b>Loãng xương (Osteoporosis)</b>: Loãng xương giảm cả khối lượng khoáng lẫn chất nền hữu cơ theo tỉ lệ bình thường (xét nghiệm Canxi, Phosphat, ALP, PTH đều HOÀN TOÀN BÌNH THƯỜNG).",
-        "Điều trị: <b>Bổ sung Vitamin D liều cao (Ergocalciferol / Cholecalciferol 50.000 IU/tuần) kết hợp Canxi</b>."
+      "answer": 0,
+      "why": [
+        "Hiện tượng <b>Hạ Natri máu dịch chuyển / Hạ Natri máu thẩm thấu giả tạo (Hyperglycemic Translocational / Pseudo-Hyponatremia)</b>:",
+        "Glucose là một chất có hoạt tính thẩm thấu hiệu dụng cao. Khi nồng độ Glucose máu tăng rất cao (> 200 mg/dL), áp lực thẩm thấu lòng mạch tăng vọt làm <b>kéo một lượng lớn nước tự do từ trong tế bào ra ngoài khoang gian bào và lòng mạch</b> -> Làm <b>pha loãng nồng độ Natri trong máu</b> khiến máy xét nghiệm đo được nồng độ Natri giảm thấp giả tạo.",
+        "<b>Công thức hiệu chỉnh Natri theo Glucose máu kinh điển của Katz</b>:",
+        "<b>Natri hiệu chỉnh = Natri đo được + 1,6 x [(Glucose máu - 100) / 100]</b>",
+        "Áp dụng vào bệnh nhân: Natri hiệu chỉnh = 125 + 1,6 x [(900 - 100) / 100] = 125 + 1,6 x 8 = 125 + 12,8 = <b>137,8 mEq/L</b>.",
+        "<b>Ý nghĩa lâm sàng sống còn</b>: Nồng độ Natri máu thực sự của bệnh nhân là <b>137,8 mEq/L (hoàn toàn bình thường)</b>. Khi bù dịch và truyền Insulin làm hạ đường huyết, nước tự do sẽ dịch chuyển ngược trở lại vào trong tế bào và nồng độ Natri đo được sẽ tự động tăng dần về bình thường mà <b>TUYỆT ĐỐI KHÔNG ĐƯỢC TRUYỀN MUỐI ƯU TRƯƠNG NaCl 3%</b>."
       ],
-      wrongs: {
-        1: "Loãng xương có các chỉ số sinh hóa máu (Canxi, Phosphat, ALP, PTH) hoàn toàn bình thường, không có Looser's zones và đau xương yếu cơ.",
-        2: "U tương bào gây tăng Canxi máu và ức chế PTH.",
-        3: "Tạo xương bất toàn (Osteogenesis imperfecta) do đột biến collagen type I gây củng mạc mắt xanh và gãy xương tái phát từ nhỏ.",
-        4: "Ngộ độc Fluoride làm tăng đậm độ xương đặc xơ."
+      "wrongs": {
+        "1": "Cho rằng Natri 125 mEq/L là thực và truyền NaCl 3% sẽ làm tăng Natri máu thực sự lên mức nguy hiểm (> 150-160 mEq/L) gây xuất huyết não.",
+        "2": "Natri không bị tụt xuống 110.",
+        "3": "Tính sai hệ số.",
+        "4": "Tính sai công thức hiệu chỉnh."
       },
-      objective:
-        "Nhuyễn xương (Osteomalacia do thiếu Vitamin D) gây khiếm khuyết khoáng hóa chất nền xương, đặc trưng bởi đau xương, yếu cơ, Looser's zones trên X-quang, Vitamin D giảm, PTH tăng, Canxi giảm nhẹ và Phosphat giảm."
+      "objective": "Trong tăng đường huyết nặng, Natri đo được bị hạ giả tạo do nước từ nội bào pha loãng lòng mạch; tính Natri hiệu chỉnh = Natri đo + 1.6 * [(Glucose - 100)/100]; không truyền NaCl 3% cho hạ Natri giả tạo."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Tăng cholesterol máu gia đình (Familial Hypercholesterolemia)",
-      vignette: [
-        "Nam 32 tuổi khỏe mạnh đến khám vì xuất hiện <b>các nốt cục cứng chắc không đau bám vào gân gót Achilles hai bên (U vàng gân - Tendon xanthomas) và ban vàng ở mí mắt (Xanthelasma)</b>, kèm vòng cung giác mạc sớm (Corneal arcus).",
-        "Tiền sử gia đình: Bố đẻ bị nhồi máu cơ tim đột tử năm 39 tuổi, chú ruột phải đặt stent mạch vành năm 41 tuổi.",
-        "Xét nghiệm bilan lipid máu lúc đói: <b>Cholesterol toàn phần 420 mg/dL</b>, <b>LDL-Cholesterol tăng cực cao 310 mg/dL</b> (tiêu chuẩn nghi ngờ > 190 mg/dL), Triglyceride 140 mg/dL (bình thường), HDL-C 45 mg/dL."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán u thần kinh nội tiết & Ban da NME",
+      "short": "U tiết Glucagon (Glucagonoma) - Ban đỏ hoại tử di chuyển (NME) & ĐTĐ",
+      "vignette": [
+        "Nam 56 tuổi đến khám vì tổn thương da lan tỏa tái diễn nhiều đợt trong 8 tháng qua. Khám da phát hiện: <b>Các mảng ban đỏ có mụn nước, bóng nước trợt loét đóng vảy tiết, trung tâm vết thương lành để lại dát tăng sắc tố nâu sẫm trong khi rìa ngoài tiếp tục lan rộng (Ban đỏ hoại tử di chuyển - Necrolytic Migratory Erythema / NME)</b> phân bố ưu thế ở vùng bẹn bìu, mông, quanh miệng và các chi.",
+        "Tiền sử mới được chẩn đoán Đái tháo đường típ 2 cách đây 6 tháng, sụt 8 kg, viêm teo niêm mạc lưỡi đỏ bóng và tiêu chảy từng đợt. Một tháng trước bệnh nhân bị huyết khối tĩnh mạch sâu chi dưới (DVT).",
+        "Xét nghiệm máu: Glucose máu đói 185 mg/dL; HbA1c 7,9%; Thiếu máu hồng cầu bình thường; <b>Nồng độ Glucagon huyết thanh lúc đói tăng rất cao 1450 pg/mL (Bình thường < 150 pg/mL)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "125/78"],
-        ["Mạch", "72 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "125/75 mm Hg"
+        ],
+        [
+          "Mạch",
+          "76 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Cơ chế thụ thể phân tử và phác đồ phối hợp thuốc hạ lipid máu tích cực tối ưu là gì?",
-      choices: [
-        "Đột biến mất chức năng gen thụ thể LDL (LDL Receptor gene) làm tế bào gan không thể thu nhận và thanh thải hạt LDL từ máu; điều trị tích cực bằng Statin cường độ cao (Atorvastatin 80 mg hoặc Rosuvastatin 40 mg) PHỐI HỢP Ezetimibe và Thuốc ức chế PCSK9 (Evolocumab / Alirocumab)",
-        "Thiếu hụt enzym Lipoprotein Lipase (LPL); điều trị bằng Fibrate đơn độc",
-        "Đột biến gen ApoE2; điều trị bằng chế độ ăn kiêng đơn thuần",
-        "Đột biến thụ thể Insulin; điều trị bằng Metformin",
-        "Tăng Triglyceride máu gia đình; điều trị bằng dầu cá Omega-3 liều cao"
+      "stem": "Chẩn đoán khối u nội tiết và vị trí giải phẫu thường gặp nhất của khối u này là gì?",
+      "choices": [
+        "U tiết Glucagon (Glucagonoma) xuất phát từ tế bào Alpha đảo tụy (thường nằm ở thân và đuôi tụy); chỉ định chụp CT/MRI tụy để định vị u và điều trị bằng phẫu thuật cắt u kết hợp Octreotide",
+        "U tiết Gastrin (Gastrinoma) ở tam giác tá tràng",
+        "U tiết VIP (VIPoma) ở tụy",
+        "Bệnh Pemphigus vulgaris tự miễn ở da",
+        "Bệnh Celiac gây viêm da dạng herpes"
       ],
-      answer: 0,
-      why: [
-        "Bệnh cảnh kinh điển của <b>Tăng cholesterol máu gia đình dị hợp tử (Heterozygous Familial Hypercholesterolemia - HeFH)</b> di truyền trội trên NST thường:",
-        "- Cơ chế: <b>Đột biến mất chức năng ở gen Thụ thể LDL (LDLR gene, chiếm 85–90%)</b> hoặc đột biến gen <i>APOB</i> / đột biến tăng chức năng <i>PCSK9</i> làm <b>suy giảm khả năng bắt giữ và giáng hóa LDL-C tại tế bào gan</b>, dẫn đến nồng độ LDL-C lưu hành trong máu tăng cực cao suốt từ lúc mới sinh.",
-        "- Dấu hiệu thực thể bệnh lý đặc trưng: <b>U vàng gân (Tendon xanthomas) đặc biệt ở gân gót Achilles và gân duỗi ngón tay</b> + Vòng cung giác mạc sớm trước 45 tuổi.",
-        "- Nguy cơ: Xơ vữa mạch vành tiến triển tối cấp gây nhồi máu cơ tim sớm ở độ tuổi 30–40.",
-        "- Phác đồ điều trị tích cực ba tầng theo khuyến cáo AHA/ACC/ESC (mục tiêu hạ LDL-C ≥ 50% và đạt < 55–70 mg/dL):",
-        "1. <b>Statin cường độ cao liều tối đa dung nạp</b> (Atorvastatin 80 mg hoặc Rosuvastatin 40 mg).",
-        "2. Phối hợp thêm <b>Ezetimibe 10 mg</b> (ức chế hấp thu cholesterol tại biểu mô ruột NPC1L1).",
-        "3. Thêm <b>Thuốc kháng thể đơn dòng ức chế enzym PCSK9 (Evolocumab hoặc Alirocumab tiêm dưới da mỗi 2 tuần)</b> giúp tăng tái sử dụng thụ thể LDL trên bề mặt tế bào gan."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân mắc <b>U tiết Glucagon (Glucagonoma)</b> - khối u thần kinh nội tiết hiếm gặp xuất phát từ các <b>tế bào Alpha của tiểu đảo tụy Langerhans (ưu thế ở thân và đuôi tụy)</b>.",
+        "<b>Quy tắc kinh điển 5D của Glucagonoma</b>:",
+        "1. <b>D</b>ermatitis: <b>Ban đỏ hoại tử di chuyển (Necrolytic Migratory Erythema - NME)</b> - tổn thương da đặc hiệu bệnh học 100% của Glucagonoma (ban đỏ bóng nước hoại tử đóng vảy, lan rộng ở ngoại vi và lành ở trung tâm, thường ở vùng nếp gấp/bẹn/quanh miệng);",
+        "2. <b>D</b>iabetes: Đái tháo đường nhẹ/trung bình (do glucagon kích thích tân tạo đường và ly giải glycogen tại gan);",
+        "3. <b>D</b>eep Vein Thrombosis: Tăng đông máu dẫn đến <b>Huyết khối tĩnh mạch sâu (DVT)</b> và thuyên tắc phổi;",
+        "4. <b>D</b>iarrhea: Tiêu chảy mạn tính;",
+        "5. <b>D</b>epression / Decline: Trầm cảm, sụt cân suy mòn và viêm teo gai lưỡi (Glossitis).",
+        "Chẩn đoán xác định: <b>Nồng độ Glucagon huyết thanh lúc đói tăng vọt > 500–1000 pg/mL</b>.",
+        "Điều trị: <b>Octreotide (thuốc tương tự somatostatin)</b> giúp cải thiện nhanh chóng tổn thương da NME và <b>Phẫu thuật cắt khối u tụy</b>."
       ],
-      wrongs: {
-        1: "Thiếu enzym LPL (Tăng lipid máu Type I) làm tăng Triglyceride và Chylomicron cực cao gây viêm tụy cấp và u vàng phát ban (Eruptive xanthomas), không gây u vàng gân gót.",
-        2: "Đột biến ApoE2 (Type III Dysbetalipoproteinemia) gây tăng cả Cholesterol và Triglyceride kèm u vàng lòng bàn tay (Palmar xanthomas).",
-        3: "Đột biến thụ thể insulin gây hội chứng kháng insulin nặng, không gây tăng chọn lọc LDL-C > 300.",
-        4: "Omega-3 chỉ hạ Triglyceride, không có tác dụng hạ LDL-C đột biến thụ thể."
+      "wrongs": {
+        "1": "Gastrinoma gây loét dạ dày tá tràng đa ổ kháng trị và tiêu chảy phân mỡ, không gây ban đỏ NME hay DVT.",
+        "2": "VIPoma gây hội chứng Verner-Morrison (WDHA: Tiêu chảy toàn nước xối xả, hạ Kali, vô toan dịch vị).",
+        "3": "Pemphigus vulgaris là bệnh da bọng nước tự miễn có dấu Nikolsky (+), không làm tăng đường huyết hay tăng Glucagon.",
+        "4": "Celiac có viêm da dạng herpes (mụn nước ngứa cùi chỏ/gối) và anti-tTG (+)."
       },
-      objective:
-        "Tăng cholesterol máu gia đình (HeFH do đột biến thụ thể LDL) đặc trưng bởi LDL-C > 190 mg/dL, u vàng gân gót Achilles và nhồi máu cơ tim sớm; điều trị tích cực bằng Statin cường độ cao phối hợp Ezetimibe và ức chế PCSK9."
+      "objective": "Glucagonoma (u tế bào alpha tụy) đặc trưng bởi hội chứng 5D: Ban đỏ hoại tử di chuyển (NME), Đái tháo đường (Diabetes), Huyết khối tĩnh mạch sâu (DVT), Tiêu chảy (Diarrhea) và Sụt cân; Glucagon máu tăng > 500 pg/mL."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Loãng xương sau mãn kinh và phòng ngừa gãy xương",
-      vignette: [
-        "Cụ bà 68 tuổi, thể trạng gầy nhỏ (BMI 19 kg/m²), mãn kinh năm 50 tuổi, đến khám vì đau lưng âm ỉ. Chiều cao của cụ đo được giảm 4 cm so với thời trẻ, cột sống lưng có gù nhẹ.",
-        "Chụp X-quang cột sống thắt lưng: <b>Hình ảnh lún xẹp đốt sống L1 và L3 mức độ nhẹ (Vertebral compression fractures)</b>.",
-        "Đo mật độ xương bằng phương pháp hấp phụ tia X năng lượng kép (DEXA scan): <b>Chỉ số T-score tại cổ xương đùi là -2,8 và tại cột sống thắt lưng là -3,1 (Tiêu chuẩn loãng xương khi T-score ≤ -2,5)</b>. Xét nghiệm Canxi, Phosphat, ALP, Creatinine và 25-OH Vitamin D trong giới hạn bình thường."
+      "spec": "Nội tiết",
+      "task": "Cấp cứu tăng Triglyceride máu nặng & Viêm tụy",
+      "short": "Viêm tụy cấp do Tăng Triglyceride máu nặng - Insulin truyền tĩnh mạch",
+      "vignette": [
+        "Nam 39 tuổi có tiền sử nghiện rượu và Đái tháo đường típ 2 kiểm soát kém (HbA1c 11,2%), nhập viện vì đau bụng thượng vị dữ dội đột ngột xuyên ra sau lưng kèm nôn ói liên tục.",
+        "Khám da: Xuất hiện <b>nhiều sẩn màu vàng cam kích thước 2–4 mm có quầng đỏ xung quanh mọc thành chùm ở mông, lưng và mặt duỗi hai cẳng tay (Ban vàng phát ban - Eruptive Xanthomas)</b>. Khám mắt phát hiện các mạch máu võng mạc có màu trắng sữa (<b>Lipemia retinalis</b>).",
+        "Rút máu xét nghiệm thấy <b>huyết thanh có màu đục trắng như sữa (Milky serum)</b>. Xét nghiệm: Lipase máu tăng 850 U/L; <b>Nồng độ Triglyceride huyết thanh tăng cực cao 3850 mg/dL (ngưỡng bình thường < 150 mg/dL); Glucose máu 340 mg/dL</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "125/75"],
-        ["Mạch", "72 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "37,6 °C"
+        ],
+        [
+          "Huyết áp",
+          "110/70 mm Hg"
+        ],
+        [
+          "Mạch",
+          "114 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "22 l/ph"
+        ]
       ],
-      stem: "Thuốc chống hủy xương đầu tay được khuyến cáo lựa chọn hàng đầu để điều trị và phòng ngừa gãy xương tái phát là gì?",
-      choices: [
-        "Thuốc nhóm Bisphosphonate đường uống (Alendronate hoặc Risedronate) kết hợp bổ sung Canxi và Vitamin D",
-        "Liệu pháp hormone thay thế Estrogen liều cao kéo dài đơn độc",
-        "Chỉ định uống Canxi đơn độc không cần dùng thuốc chống hủy xương",
-        "Thuốc giảm đau chống viêm không steroid NSAID kéo dài",
-        "Phẫu thuật cố định cột sống bằng nẹp vít toàn bộ"
+      "stem": "Chẩn đoán nguyên nhân viêm tụy cấp và liệu pháp điều trị nội khoa đặc hiệu khẩn cấp để hạ nhanh Triglyceride máu theo khuyến cáo là gì?",
+      "choices": [
+        "Viêm tụy cấp do Tăng Triglyceride máu mức độ rất nặng (> 1000 mg/dL); điều trị đặc hiệu khẩn cấp bằng Truyền tĩnh mạch Insulin liên tục (Regular Insulin 0,1 U/kg/h) phối hợp truyền Dextrose 5% theo dõi đường huyết (hoặc Lọc huyết tương PLEX) nhằm kích hoạt enzym Lipoprotein Lipase để hạ nhanh Triglyceride xuống < 500 mg/dL",
+        "Viêm tụy cấp do sỏi mật; chỉ định phẫu thuật cắt túi mật nội soi cấp cứu",
+        "Viêm tụy cấp do rượu đơn thuần; chỉ dùng dịch truyền và nhịn ăn",
+        "Uống ngay lập tức thuốc nhóm Fibrate liều cao (Fenofibrate 200 mg)",
+        "Uống dầu cá Omega-3 liều cao"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có <b>Loãng xương sau mãn kinh (Postmenopausal Osteoporosis)</b> đã có biến chứng gãy lún đốt sống và <b>T-score ≤ -2,5 trên DEXA</b>.",
-        "Cơ chế: Sau mãn kinh, sự thiếu hụt <b>Estrogen</b> làm mất tác dụng ức chế giải phóng cytokine tiền viêm (IL-1, IL-6, TNF-alpha) và làm tăng tín hiệu <b>RANKL</b>, dẫn đến tăng sinh và hoạt hóa quá mức các hủy cốt bào (Osteoclasts), làm tốc độ tiêu xương vượt xa tốc độ tạo xương.",
-        "Điều trị đầu tay theo guideline quốc tế (AACE/Endocrine Society):",
-        "1. <b>Thuốc nhóm Bisphosphonate đường uống (Alendronate 70 mg/tuần hoặc Risedronate 35 mg/tuần)</b> HOẶC <b>Zoledronic acid truyền tĩnh mạch 1 lần/năm</b> (gắn chặt vào bề mặt tinh thể hydroxyapatite và gây chết theo chương trình của hủy cốt bào).",
-        "2. <b>Hướng dẫn uống Bisphosphonate đường uống đúng cách</b>: <b>Uống vào buổi sáng ngay khi vừa ngủ dậy với 1 cốc nước lọc đầy (200–250 mL), giữ tư thế ngồi thẳng hoặc đứng ít nhất 30–60 phút và không ăn uống gì khác</b> trong thời gian này để <b>phòng ngừa biến chứng loét viêm thực quản do thuốc (Pill-induced esophagitis)</b>.",
-        "3. Bổ sung đầy đủ <b>Canxi (1.000–1.200 mg/ngày)</b> và <b>Vitamin D (800–1.000 IU/ngày)</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân bị <b>Viêm tụy cấp do Tăng Triglyceride máu mức độ rất nặng (Hypertriglyceridemia-induced Acute Pancreatitis - HTG-AP)</b> - nguyên nhân phổ biến thứ ba gây viêm tụy cấp (sau sỏi mật và rượu).",
+        "<b>Nguy cơ viêm tụy bùng phát</b>: Khi nồng độ Triglyceride máu <b>vượt ngưỡng > 1000 mg/dL (> 11,3 mmol/L)</b>.",
+        "<b>Cơ chế</b>: Lượng lớn Chylomicron và VLDL dư thừa bị men Lipase tụy trong vi tuần hoàn thủy phân giải phóng ồ ạt các <b>Axit béo tự do (Free Fatty Acids - FFAs) chưa gắn kết</b> vượt quá khả năng gắn kết của albumin -> FFAs gây độc tế bào nội mô mạch máu và tế bào nang tụy dẫn đến thiếu máu cục bộ và hoại tử tụy.",
+        "Dấu hiệu lâm sàng đặc hiệu: <b>Ban vàng phát ban (Eruptive Xanthomas)</b>, <b>Nhiễm lipid võng mạc (Lipemia retinalis)</b>, và <b>Huyết thanh đục như sữa (Lactescent / Milky serum)</b>.",
+        "<b>Liệu pháp điều trị cấp cứu đặc hiệu</b>:",
+        "- <b>TRUYỀN INSULIN TĨNH MẠCH LIÊN TỤC (Intravenous Insulin Infusion)</b>: Insulin kích hoạt mạnh mẽ men <b>Lipoprotein Lipase (LPL)</b> trên bề mặt nội mô mạch máu, giúp giáng hóa nhanh chóng Chylomicron và Triglyceride thành acid béo và đưa vào mô mỡ; truyền kèm Dextrose 5% để duy trì đường huyết 150–200 mg/dL.",
+        "- <b>Lọc huyết tương thay thế (Plasmapheresis / PLEX)</b>: Chỉ định khi viêm tụy hoại tử nặng, có suy tạng hoặc hạ canxi máu nặng để loại bỏ nhanh triglyceride trong vòng vài giờ.",
+        "- Thuốc uống nhóm Fibrate (Fenofibrate) chỉ dùng điều trị duy trì lâu dài sau khi qua giai đoạn cấp."
       ],
-      wrongs: {
-        1: "Liệu pháp hormone Estrogen không còn là lựa chọn đầu tay do tăng nguy cơ ung thư vú, đột quỵ và thuyên tắc huyết khối tĩnh mạch ở phụ nữ cao tuổi.",
-        2: "Canxi đơn độc không đủ để đảo ngược quá trình hủy xương của loãng xương đã có gãy đốt sống.",
-        3: "NSAIDs không chữa được loãng xương và tăng nguy cơ loét dạ dày/suy thận ở người già.",
-        4: "Gãy lún đốt sống không chèn ép tủy thần kinh hoàn toàn điều trị nội khoa bảo tồn, không mổ nẹp vít toàn bộ."
+      "wrongs": {
+        "1": "Không có sỏi mật trên hình ảnh học; nguyên nhân là tăng Triglyceride 3850 mg/dL.",
+        "2": "Chỉ nhịn ăn đơn thuần sẽ hạ Triglyceride rất chậm và tụy tiếp tục bị hoại tử.",
+        "3": "Fenofibrate đường uống tác dụng chậm sau vài ngày, không thể hạ nhanh triglyceride trong cấp cứu viêm tụy hoại tử.",
+        "4": "Omega-3 chỉ dùng duy trì mạn tính."
       },
-      objective:
-        "Loãng xương (T-score ≤ -2,5 hoặc có gãy xương lún đốt sống) điều trị đầu tay bằng Bisphosphonate đường uống (Alendronate) kèm Canxi + Vitamin D; hướng dẫn uống nhiều nước và ngồi thẳng 30 phút để phòng viêm loét thực quản."
+      "objective": "Viêm tụy cấp do tăng Triglyceride máu (> 1000 mg/dL, ban vàng phát ban, huyết thanh đục sữa) cần cấp cứu bằng Truyền tĩnh mạch Insulin liên tục (kích hoạt men LPL) hoặc Lọc huyết tương PLEX để hạ nhanh Triglyceride < 500 mg/dL."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và tế bào học",
-      short: "Ung thư tuyến giáp dạng nhú (Papillary Thyroid Carcinoma)",
-      vignette: [
-        "Nữ 34 tuổi đi khám sức khỏe tình cờ phát hiện nhân tuyến giáp. Khám cổ sờ thấy một <b>nhân cứng chắc, không đau, kích thước khoảng 1,8 cm ở thùy phải tuyến giáp di động theo nhịp nuốt</b> và một hạch cổ nhóm IV cùng bên to 1,2 cm.",
-        "Siêu âm tuyến giáp: <b>Nhân giáp giảm âm rất mạnh, chiều cao lớn hơn chiều rộng (Taller-than-wide), bờ đa cung không đều, có các nốt vi vôi hóa nhỏ dạng chấm cát (Microcalcifications) và có tăng sinh mạch máu nội khối (TIRADS 5)</b>. Chức năng tuyến giáp TSH hoàn toàn bình thường.",
-        "Tiến hành <b>Chọc hút tế bào bằng kim nhỏ (FNA) dưới hướng dẫn siêu âm</b>."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán ĐTĐ đơn gen di truyền",
+      "short": "Đái tháo đường MODY (MODY 2 vs MODY 3) - Đột biến GCK & HNF1A",
+      "vignette": [
+        "Nam 21 tuổi gầy gò hoàn toàn khỏe mạnh đi khám sức khỏe xin việc phát hiện <b>tăng Glucose máu lúc đói nhẹ dao động từ 115–135 mg/dL lặp lại nhiều lần, HbA1c 6,6%</b>. Bệnh nhân không có triệu chứng ăn nhiều, uống nhiều, tiểu nhiều hay sụt cân.",
+        "Khai thác phả hệ gia đình 3 thế hệ: <b>Mẹ đẻ (45 tuổi), ông ngoại (70 tuổi) và em gái ruột (17 tuổi) đều có tăng đường huyết lúc đói nhẹ tương tự phát hiện tình cờ từ khi còn trẻ, không ai bị biến chứng tim thận mắt và không ai cần tiêm Insulin (Di truyền trội trên nhiễm sắc thể thường)</b>.",
+        "Xét nghiệm miễn dịch: <b>Các tự kháng thể kháng đảo tụy (Anti-GAD65, Anti-IA2, ZnT8) đều ÂM TÍNH HOÀN TOÀN; Nồng độ C-peptide bình thường; Không có dấu hiệu đề kháng insulin (không béo phì, không gai đen)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "118/74"],
-        ["Mạch", "72 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,7 °C"
+        ],
+        [
+          "Huyết áp",
+          "115/70 mm Hg"
+        ],
+        [
+          "Mạch",
+          "68 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "14 l/ph"
+        ]
       ],
-      stem: "Đặc điểm nhân tế bào học kinh điển nào trên tiêu bản FNA khẳng định chẩn đoán Ung thư biểu mô tuyến giáp dạng nhú (Papillary Carcinoma)?",
-      choices: [
-        "Nhân tế bào sáng trong suốt có rãnh dọc khía nhân và thể cát vôi hóa đồng tâm (Orphan Annie eye nuclei, Nuclear grooves, and Psammoma bodies)",
-        "Lắng đọng chất dạng tinh bột Amyloid bắt màu đỏ Congo dương tính",
-        "Tế bào Hurthle ái toan tăng sinh đơn dòng",
-        "Thâm nhiễm tương bào và u hạt không bã đậu",
-        "Tế bào Reed-Sternberg đa nhân"
+      "stem": "Chẩn đoán thể đái tháo đường đơn gen MODY do đột biến gen cảm nhận glucose Glucokinase (MODY 2) và chiến lược quản lý đúng đắn là gì?",
+      "choices": [
+        "Đái tháo đường khởi phát ở người trẻ (MODY 2) do đột biến dị hợp tử gen <i>GCK</i> (Glucokinase); tình trạng tăng đường huyết nhẹ ổn định suốt đời, hầu như không bao giờ gây biến chứng mạch máu vi thể và KHÔNG CẦN BẤT KỲ ĐIỀU TRỊ THUỐC NÀO (chỉ theo dõi định kỳ)",
+        "Đái tháo đường típ 1 giai đoạn sớm; bắt buộc tiêm Insulin nền ngay",
+        "Đái tháo đường típ 2 trẻ tuổi; chỉ định điều trị bằng Metformin + SGLT2i",
+        "Đái tháo đường MODY 3 do đột biến gen HNF-1alpha; bắt buộc điều trị bằng Insulin liều cao",
+        "Bệnh đái tháo đường do ty thể (MIDD); điều trị bằng Coenzyme Q10"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân mắc <b>Ung thư biểu mô tuyến giáp dạng nhú (Papillary Thyroid Carcinoma - PTC)</b> - loại ung thư tuyến giáp phổ biến nhất (chiếm 80–85% các ca ung thư giáp, tiên lượng sống sau 10 năm >95%).",
-        "Đặc điểm hình ảnh siêu âm nguy cơ ác tính cao (TIRADS 5): Giảm âm, vi vôi hóa (Microcalcifications), bờ tua gai không đều, trục dọc (Taller than wide).",
-        "Đặc điểm tế bào học và mô bệnh học kinh điển trên tiêu bản FNA:",
-        "1. <b>Nhân mắt mồ côi Annie (Orphan Annie Eye Nuclei)</b>: Nhân tế bào to, sáng trong suốt do chất nhiễm sắc phân tán ra ngoại vi.",
-        "2. <b>Khía nhân dọc (Nuclear grooves / Coffee bean nuclei)</b> và thể vùi giả trong nhân (Intranuclear pseudoinclusions).",
-        "3. <b>Thể cát (Psammoma bodies)</b>: Các cấu trúc vôi hóa dạng lớp đồng tâm đặc trưng.",
-        "Đường di căn chủ yếu: <b>Di căn theo đường bạch huyết đến các hạch cổ khu vực</b>.",
-        "Điều trị chuẩn: <b>Phẫu thuật cắt toàn bộ tuyến giáp kết hợp vét hạch cổ</b> -> Xạ trị bằng Iod phóng xạ I-131 tiêu diệt mô giáp sót -> Uống Levothyroxine liều ức chế TSH."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân mắc <b>Đái tháo đường khởi phát ở người trẻ (Maturity-Onset Diabetes of the Young - MODY)</b> - nhóm đái tháo đường đơn gen (Monogenic Diabetes) di truyền trội trên NST thường.",
+        "Đặc điểm nhận diện MODY: 1. Khởi phát ở <b>người trẻ (< 25 tuổi)</b>; 2. <b>Không béo phì, không đề kháng insulin</b>; 3. <b>Tự kháng thể đảo tụy ÂM TÍNH</b>; 4. Có <b>tiền sử gia đình đái tháo đường liên tục qua ít nhất 3 thế hệ</b> (Di truyền trội NST thường); 5. Vẫn duy trì sản xuất C-peptide nội sinh.",
+        "<b>Hai thể MODY phổ biến nhất cần phân biệt tuyệt đối</b>:",
+        "1. <b>MODY 2 (Đột biến gen <i>GCK</i> mã hóa Glucokinase)</b>: Glucokinase là 'Bộ cảm biến Glucose' (Glucose sensor) của tế bào beta tụy. Đột biến làm nâng cao ngưỡng kích thích tiết insulin -> Dẫn đến <b>TĂNG ĐƯỜNG HUYẾT LÚC ĐÓI NHẸ (100–140 mg/dL, HbA1c 6,0–7,0%) ỔN ĐỊNH SUỐT ĐỜI TỪ KHI SINH RA</b>. <b>Bệnh hoàn toàn lành tính, KHÔNG GÂY BIẾN CHỨNG MẠCH MÁU VI THỂ VÀ KHÔNG CẦN ĐIỀU TRỊ BẰNG THUỐC</b> (thuốc hạ đường huyết không có tác dụng và không cần thiết, trừ khi mang thai).",
+        "2. <b>MODY 3 (Đột biến gen <i>HNF1A</i>)</b>: Chiếm 65% ca MODY, gây giảm tiết insulin tiến triển dẫn đến tăng đường huyết nặng có biến chứng vi mạch -> <b>ĐẶC BIỆT NHẠY CẢM VỚI THUỐC NHÓM SULFONYLUREA LIỀU THẤP (như Gliclazide)</b> (không cần tiêm insulin)."
       ],
-      wrongs: {
-        1: "Chất dạng tinh bột Amyloid bắt màu đỏ Congo phát huỳnh quang màu xanh táo dưới kính hiển vi phân cực là đặc trưng của Ung thư biểu mô tuyến giáp THỂ TỦY (Medullary Thyroid Cancer).",
-        2: "Tế bào Hurthle gặp trong Ung thư thể nang (Follicular) hoặc viêm giáp Hashimoto.",
-        3: "Thâm nhiễm tương bào gặp trong viêm giáp tự miễn.",
-        4: "Tế bào Reed-Sternberg gặp trong U lympho Hodgkin."
+      "wrongs": {
+        "1": "Tự kháng thể âm tính, diễn biến gia đình 3 thế hệ và không phụ thuộc insulin loại trừ ĐTĐ típ 1.",
+        "2": "Không có đề kháng insulin hay béo phì, MODY 2 không đáp ứng với Metformin.",
+        "3": "MODY 3 đáp ứng tuyệt vời với Sulfonylurea liều thấp chứ không cần insulin liều cao.",
+        "4": "ĐTĐ ty thể di truyền theo dòng mẹ và kèm theo điếc tiếp nhận (Hội chứng MIDD)."
       },
-      objective:
-        "Ung thư tuyến giáp dạng nhú (Papillary Carcinoma) di căn hạch cổ, tế bào học kinh điển có nhân mắt Orphan Annie, khía nhân và thể cát Psammoma bodies; điều trị bằng phẫu thuật cắt giáp vét hạch + I-131."
+      "objective": "MODY 2 (đột biến gen Glucokinase / GCK) gây tăng đường huyết đói nhẹ ổn định suốt đời không biến chứng, di truyền trội gia đình 3 thế hệ; không cần điều trị bằng thuốc (khác MODY 3 HNF1A đáp ứng nhạy với Sulfonylurea liều thấp)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và quản lý thai kỳ",
-      short: "Đái tháo đường thai kỳ (Gestational Diabetes Mellitus - GDM)",
-      vignette: [
-        "Thai phụ 28 tuổi mang thai con đầu ở <b>tuần thứ 26 của thai kỳ</b>, đi khám thai định kỳ. Thai phụ không có tiền sử đái tháo đường trước khi mang thai, thể trạng thừa cân trước mang thai (BMI 27 kg/m²).",
-        "Tiến hành làm <b>Nghiệm pháp dung nạp 75g Glucose đường uống 1 bước (75g 2-hour OGTT)</b> lúc đói vào buổi sáng:",
-        "- <b>Glucose huyết tương lúc đói: 98 mg/dL</b> (Ngưỡng chẩn đoán ≥ 92 mg/dL).",
-        "- Glucose huyết tương sau 1 giờ: 190 mg/dL (Ngưỡng chẩn đoán ≥ 180 mg/dL).",
-        "- Glucose huyết tương sau 2 giờ: 162 mg/dL (Ngưỡng chẩn đoán ≥ 153 mg/dL)."
+      "spec": "Nội tiết",
+      "task": "Nhận biết hội chứng tự miễn đa tuyến",
+      "short": "Hội chứng đa nội tiết tự miễn Type 1 (APS-1 / APECED) - Đột biến gen AIRE",
+      "vignette": [
+        "Bé gái 9 tuổi được đưa đến khám vì các đợt co rút cơ bàn tay bàn chân (Tetany) và co giật tái diễn. Tiền sử từ năm 3 tuổi bé đã bị <b>Nhiễm nấm Candida da niêm mạc mạn tính tái phát dai dẳng (Chronic Mucocutaneous Candidiasis) ở miệng, móng tay và lưỡi</b> kháng trị với nhiều đợt thuốc kháng nấm.",
+        "Gần đây bé xuất hiện mệt mỏi nhiều, da sạm đen sẫm màu ở các nếp gấp khớp, tụt huyết áp và thèm ăn muối mặn.",
+        "Xét nghiệm máu sinh hóa: <b>Canxi toàn phần giảm sâu 6,4 mg/dL kèm Phosphate tăng cao 6,8 mg/dL và PTH giảm rất thấp 5 pg/mL (Suy cận giáp tự miễn); Natri giảm 126 mEq/L, Kali tăng 5,8 mEq/L, Cortisol sáng thấp 2,0 mcg/dL kèm ACTH tăng rất cao (Bệnh Addison suy thượng thận tự miễn)</b>."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "118/74"],
-        ["Mạch", "78 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "85/50 mm Hg"
+        ],
+        [
+          "Mạch",
+          "92 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "18 l/ph"
+        ]
       ],
-      stem: "Chiến lược điều trị bước một ban đầu và thuốc hạ đường huyết lựa chọn đầu tay an toàn nhất khi chế độ ăn thất bại là gì?",
-      choices: [
-        "Chẩn đoán Đái tháo đường thai kỳ (GDM); bước một là Can thiệp chế độ dinh dưỡng tiết chế kết hợp tập thể dục nhẹ; nếu đường huyết không đạt mục tiêu thì Insulin là thuốc điều trị đầu tay chuẩn an toàn nhất",
-        "Kê đơn thuốc uống Sulfonylurea (Glibenclamide) ngay lập tức",
-        "Chỉ định đình chỉ thai nghén khẩn cấp",
-        "Uống thuốc ức chế SGLT2 Dapagliflozin",
-        "Không cần can thiệp gì vì đường huyết thai kỳ sẽ tự bình thường hóa sau sinh"
+      "stem": "Chẩn đoán hội chứng suy đa tuyến tự miễn và đột biến gen nguyên nhân là gì?",
+      "choices": [
+        "Hội chứng đa nội tiết tự miễn Type 1 (Autoimmune Polyglandular Syndrome Type 1 - APS-1 / APECED) do đột biến gen <i>AIRE</i> (Autoimmune Regulator) di truyền lặn trên nhiễm sắc thể thường; đặc trưng bởi Tam chứng kinh điển: Nấm Candida da niêm mạn tính + Suy tuyến cận giáp + Bệnh Addison",
+        "Hội chứng đa nội tiết tự miễn Type 2 (APS-2 / Hội chứng Schmidt) liên quan gen HLA-DR3/DR4",
+        "Hội chứng DiGeorge do mất đoạn 22q11.2",
+        "Hội chứng suy giảm miễn dịch kết hợp nặng (SCID)",
+        "Hội chứng IPEX do đột biến gen FOXP3"
       ],
-      answer: 0,
-      why: [
-        "Theo khuyến cáo <b>ADA và ACOG</b>, tất cả thai phụ không có đái tháo đường từ trước đều được sàng lọc <b>Đái tháo đường thai kỳ (GDM) ở tuần 24 đến 28 của thai kỳ</b> bằng nghiệm pháp 75g OGTT (chỉ cần <b>≥ 1 giá trị vượt ngưỡng</b> là khẳng định chẩn đoán: Lúc đói ≥ 92 mg/dL, 1h ≥ 180 mg/dL, 2h ≥ 153 mg/dL).",
-        "Cơ chế: Bánh rau thai bài tiết các hormone kháng insulin (Human Placental Lactogen - hPL, Progesterone, Cortisol) đạt đỉnh ở tam cá nguyệt thứ 3.",
-        "Chiến lược điều trị chuẩn:",
-        "1. <b>Bước 1</b>: <b>Tiết chế dinh dưỡng và vận động thể lực</b> (ăn chia nhỏ bữa, giảm carbohydrate tinh chế, theo dõi đường huyết mao mạch hàng ngày).",
-        "2. <b>Bước 2</b>: Nếu sau 1–2 tuần chế độ ăn không đạt mục tiêu (Đường huyết lúc đói ≤ 95 mg/dL và sau ăn 1h ≤ 140 mg/dL hoặc sau ăn 2h ≤ 120 mg/dL) -> <b>INSULIN LÀ THUỐC LỰA CHỌN HÀNG ĐẦU AN TOÀN NHẤT</b> (Insulin không qua hàng rào bánh rau thai, hiệu quả kiểm soát đường huyết tối ưu và giảm nguy cơ thai to, hạ đường huyết sơ sinh, đa ối).",
-        "Lưu ý: <b>Thuốc ức chế SGLT2 và GLP-1 RA CHỐNG CHỈ ĐỊNH trong thai kỳ</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có đầy đủ <b>Tam chứng kinh điển của Hội chứng Đa nội tiết tự miễn Type 1 (Autoimmune Polyglandular Syndrome Type 1 - APS-1 / APECED - Autoimmune Polyendocrinopathy-Candidiasis-Ectodermal Dystrophy)</b>:",
+        "1. <b>Nhiễm nấm Candida da niêm mạc mạn tính (Chronic Mucocutaneous Candidiasis)</b>: Xuất hiện sớm nhất trong những năm đầu đời;",
+        "2. <b>Suy tuyến cận giáp tự miễn (Autoimmune Hypoparathyroidism)</b>: Gây hạ canxi máu, tăng phosphate máu và co giật tetany;",
+        "3. <b>Bệnh Addison suy vỏ thượng thận tự miễn (Autoimmune Adrenal Insufficiency)</b>: Gây sạm da, hạ natri, tăng kali máu.",
+        "(Chẩn đoán xác định khi có ít nhất 2 trong 3 biểu hiện trên). Kèm theo loạn dưỡng ngoại bì (loạn dưỡng móng, rụng tóc từng mảng, men răng khiếm khuyết).",
+        "<b>Di truyền học</b>: Di truyền lặn trên NST thường do đột biến mất chức năng gen <b><i>AIRE</i> (Autoimmune Regulator)</b> trên NST 21. Gen AIRE bình thường biểu hiện các kháng nguyên đặc hiệu mô ở tuyến ức để dung nạp miễn dịch trung tâm; khi mất AIRE, các tế bào lympho T tự phản ứng không bị loại bỏ tràn ra ngoại vi tấn công đa cơ quan.",
+        "<b>Phân biệt với APS-2 (Hội chứng Schmidt)</b>: APS-2 xuất hiện ở người lớn, liên kết gen HLA-DR3/DR4, gồm: Bệnh Addison + Bệnh tuyến giáp tự miễn (Hashimoto/Graves) + Đái tháo đường típ 1 (KHÔNG CÓ nhiễm nấm Candida hay suy cận giáp)."
       ],
-      wrongs: {
-        1: "Sulfonylurea qua hàng rào bánh rau thai và có nguy cơ gây hạ đường huyết sơ sinh kéo dài và tăng cân thai nhi.",
-        2: "GDM kiểm soát nội khoa tốt đảm bảo thai kỳ an toàn, không có chỉ định đình chỉ thai.",
-        3: "SGLT2i chống chỉ định tuyệt đối trong thai kỳ do nguy cơ dị tật thận tiết niệu thai nhi.",
-        4: "Không kiểm soát đường huyết sẽ gây biến chứng thai to (Macrosomia), kẹt vai khi đẻ, đa ối và thai chết lưu."
+      "wrongs": {
+        "1": "APS-2 gặp ở người lớn gồm: Addison + Bệnh tuyến giáp + ĐTĐ típ 1; không có suy cận giáp hay nấm candida mạn tính.",
+        "2": "DiGeorge có bất sản tuyến ức, tim bẩm sinh thân chung động mạch và dị tật mặt, không có bệnh Addison.",
+        "3": "SCID gây nhiễm trùng cơ hội toàn thân nặng tử vong trong năm đầu đời nếu không ghép tủy.",
+        "4": "IPEX (đột biến FOXP3) gặp ở trẻ nam gồm: Viêm ruột tự miễn tiêu chảy dữ dội + ĐTĐ típ 1 sơ sinh + Chàm da eczema."
       },
-      objective:
-        "Đái tháo đường thai kỳ (sàng lọc tuần 24-28 bằng 75g OGTT) điều trị bước một bằng điều chỉnh dinh dưỡng/vận động; nếu không đạt mục tiêu thì Insulin là thuốc đầu tay an toàn nhất (không qua nhau thai)."
+      "objective": "Hội chứng APS-1 (APECED do đột biến gen AIRE) đặc trưng bởi Tam chứng: Nhiễm nấm Candida da niêm mạc mạn tính, Suy tuyến cận giáp tự miễn, và Bệnh Addison suy thượng thận tự miễn."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và biến chứng ác tính",
-      short: "Viêm giáp Hashimoto và biến chứng U lympho tuyến giáp",
-      vignette: [
-        "Cụ bà 70 tuổi có tiền sử mắc Viêm tuyến giáp Hashimoto điều trị Levothyroxine 15 năm nay, đến khám khẩn cấp vì <b>bướu tuyến giáp to lên cực kỳ nhanh chóng chỉ trong vòng 3 tuần qua</b>.",
-        "Khám cổ: Tuyến giáp to khổng lồ độ III, mật độ cứng chắc như gỗ, cố định dính chặt vào mô xung quanh, gây <b>khó thở thở rít thanh quản, nuốt nghẹn và khàn tiếng tiến triển nhanh</b> do chèn ép khí quản và thực quản. Xuất hiện nhiều hạch cổ to cứng hai bên.",
-        "Xét nghiệm: Kháng thể <b>Anti-TPO (Anti-Thyroperoxidase) dương tính rất cao > 1.000 IU/mL</b>. Chụp CT cổ: Khối u tuyến giáp khổng lồ thâm nhiễm chèn ép hẹp lòng khí quản."
+      "spec": "Nội tiết",
+      "task": "Lựa chọn thuốc tạo xương đồng hóa",
+      "short": "Loãng xương nặng (Severe Osteoporosis) có gãy xương - Teriparatide",
+      "vignette": [
+        "Cụ bà 72 tuổi tiền sử mãn kinh năm 48 tuổi, đến khám vì đau lưng dữ dội đột ngột sau khi cúi người bê chậu cây cảnh.",
+        "Chụp X-quang cột sống ngực thắt lưng phát hiện <b>gãy xẹp lún đốt sống T12 và L2 mới xuất hiện làm giảm > 30% chiều cao thân đốt sống</b>.",
+        "Đo mật độ xương bằng phương pháp hấp phụ tia X năng lượng kép (DEXA scan): <b>Chỉ số T-score tại cột sống thắt lưng L1-L4 = -3,6 SD; T-score cổ xương đùi = -3,1 SD (Loãng xương mức độ rất nặng có gãy xương do loãng xương / Severe Established Osteoporosis)</b>; Chức năng thận bình thường, Canxi máu và Calci niệu bình thường."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "130/80"],
-        ["Mạch", "76 l/ph"],
-        ["Nhịp thở", "22 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "125/75 mm Hg"
+        ],
+        [
+          "Mạch",
+          "72 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Biến chứng ác tính hiếm gặp nào có nguy cơ tăng gấp 60 lần ở bệnh nhân viêm giáp Hashimoto mạn tính và phương pháp sinh thiết xác định là gì?",
-      choices: [
-        "U lympho tuyến giáp nguyên phát (Primary Thyroid Lymphoma - thường là U lympho tế bào B lớn lan tỏa DLBCL); chẩn đoán bằng Sinh thiết lõi kim (Core needle biopsy) hoặc Sinh thiết mở",
-        "Ung thư biểu mô tuyến giáp thể nhú",
-        "Ung thư biểu mô tuyến giáp thể tủy",
-        "Bướu giáp đơn thuần lành tính to nhanh do xuất huyết trong nang",
-        "Áp xe tuyến giáp do vi khuẩn kỵ khí"
+      "stem": "Theo Hướng dẫn chuẩn của Hiệp hội Nội tiết Lâm sàng Hoa Kỳ (AACE 2020), nhóm thuốc nào được khuyến cáo LỰA CHỌN HÀNG ĐẦU để kích thích tạo xương mới nhanh chóng ở bệnh nhân loãng xương nguy cơ gãy xương cực cao này?",
+      "choices": [
+        "Thuốc đồng hóa kích thích tạo xương mới (Anabolic Bone-forming Agent, như Teriparatide hoặc Abaloparatide - thuốc tương tự PTH tái tổ hợp tiêm dưới da hàng ngày) trong 18–24 tháng, theo sau bởi thuốc chống hủy xương (Bisphosphonate)",
+        "Chỉ bổ sung Canxi và Vitamin D đường uống đơn thuần",
+        "Thuốc ức chế thụ thể Estrogen chọn lọc Raloxifene",
+        "Tiêm Calcitonin cá hồi xịt mũi kéo dài",
+        "Liệu pháp Hormone thay thế Estrogen liều cao đường uống"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân có biến chứng kinh điển của <b>U lympho tuyến giáp nguyên phát (Primary Thyroid Lymphoma - phần lớn là U lympho tế bào B lớn lan tỏa / DLBCL)</b>.",
-        "Dịch tễ học và cơ chế: <b>Bệnh nhân viêm tuyến giáp Hashimoto mạn tính có nguy cơ mắc U lympho tuyến giáp TĂNG GẤP 60 LẦN</b> so với người bình thường do quá trình kích thích viêm lympho mạn tính kéo dài hàng chục năm tại tuyến giáp.",
-        "Dấu hiệu lâm sàng báo động đỏ: <b>Tuyến giáp to nhanh đột ngột trong vài tuần ở bệnh nhân cao tuổi có tiền sử Hashimoto kèm triệu chứng chèn ép cơ học dữ dội (khó thở, nuốt nghẹn, khàn tiếng)</b>.",
-        "Chẩn đoán: <b>Chọc hút kim nhỏ (FNA) thường KHÔNG ĐỦ để phân biệt giữa viêm giáp Hashimoto nặng và u lympho</b>; do đó bắt buộc phải tiến hành <b>Sinh thiết lõi kim (Core Needle Biopsy) HOẶC Sinh thiết mở (Surgical biopsy)</b> để làm hóa mô miễn dịch (xác định dấu ấn CD20 của tế bào B).",
-        "Điều trị: Rất nhạy cảm với <b>Hóa trị phác đồ CHOP kết hợp Rituximab (R-CHOP) và Xạ trị</b>."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân được phân loại vào nhóm <b>Loãng xương nguy cơ gãy xương cực cao (Very High Fracture Risk / Severe Osteoporosis)</b>: Có chỉ số <b>T-score ≤ -3,0 SD KÈM GÃY XƯƠNG NÉN ĐỐT SỐNG MỚI</b>.",
+        "<b>Chiến lược điều trị hiện đại theo AACE/Endocrine Society Guidelines</b>:",
+        "Ở nhóm bệnh nhân nguy cơ cực cao này, khuyến cáo <b>KHỞI ĐẦU NGAY BẰNG THUỐC TẠO XƯƠNG ĐỒNG HÓA (Anabolic Bone-forming Agents)</b> thay vì dùng thuốc chống hủy xương thông thường:",
+        "1. <b>Teriparatide (PTH 1-34 tái tổ hợp) hoặc Abaloparatide (PTHrP tái tổ hợp)</b>: Tiêm dưới da ngắt quãng hàng ngày giúp kích thích trực tiếp các tế bào tạo xương (Osteoblasts) hoạt động mạnh hơn hủy cốt bào -> <b>LÀM TĂNG MẬT ĐỘ KHOÁNG XƯƠNG VÀ CẢI THIỆN CẤU TRÚC VI THỂ XƯƠNG NHANH CHÓNG</b>, giảm mạnh nguy cơ gãy xương tái phát.",
+        "2. <b>Romosozumab (Kháng thể đơn dòng kháng Sclerostin)</b>: Tác dụng kép vừa tăng tạo xương vừa giảm hủy xương.",
+        "3. <b>Quy tắc tiếp nối</b>: Liệu trình thuốc đồng hóa giới hạn trong <b>18–24 tháng</b> (để phòng nguy cơ ung thư xương trên mô hình động vật), sau đó <b>BẮT BUỘC PHẢI CHUYỂN TIẾP SANG THUỐC CHỐNG HỦY XƯƠNG (như Bisphosphonate Zoledronic acid hoặc Denosumab)</b> để bảo tồn khối lượng xương mới vừa tạo thành."
       ],
-      wrongs: {
-        1: "Ung thư thể nhú tiến triển rất chậm qua nhiều năm, không to nhanh đột ngột gây chèn ép khẩn cấp trong 3 tuần.",
-        2: "Ung thư thể tủy xuất phát từ tế bào C cận nang, không liên quan đến viêm giáp Hashimoto.",
-        3: "Xuất huyết trong nang gây đau chói dữ dội đột ngột và trên siêu âm là nang dịch có dịch máu, không phải khối u đặc thâm nhiễm dính cứng.",
-        4: "Áp xe giáp có sốt cao rét run, nóng đỏ đau tại chỗ và tăng bạch cầu cao."
+      "wrongs": {
+        "1": "Chỉ bổ sung Canxi và Vitamin D hoàn toàn không đủ để ngăn ngừa gãy xương mới ở bệnh nhân loãng xương nặng T-score -3,6.",
+        "2": "Raloxifene hiệu quả tăng mật độ xương rất yếu và chỉ dùng dự phòng loãng xương ở phụ nữ mới mãn kinh.",
+        "3": "Calcitonin hiệu quả chống gãy xương rất kém và có cảnh báo tăng nguy cơ ung thư khi dùng kéo dài.",
+        "4": "Liệu pháp Estrogen không còn dùng làm điều trị đầu tay ở phụ nữ 72 tuổi do nguy cơ huyết khối và đột quỵ tim mạch."
       },
-      objective:
-        "Viêm giáp Hashimoto mạn tính có nguy cơ cao tiến triển thành U lympho tuyến giáp (to nhanh trong vài tuần, chèn ép khí quản khàn tiếng); chẩn đoán xác định bằng Sinh thiết lõi kim (Core biopsy) và điều trị bằng Hóa xạ trị (R-CHOP)."
+      "objective": "Loãng xương rất nặng có gãy lún đốt sống (T-score < -3.0 kèm gãy xương) khuyến cáo điều trị đầu tay bằng thuốc kích thích tạo xương đồng hóa (Teriparatide) trong 18-24 tháng trước khi chuyển sang thuốc chống hủy xương (Bisphosphonate)."
     },
-
     {
-      spec: "Nội tiết",
-      task: "Bước chẩn đoán và điều trị",
-      short: "Đái tháo nhạt do thận do dùng thuốc Lithium",
-      vignette: [
-        "Nam 42 tuổi có tiền sử Rối loạn cảm xúc lưỡng cực đang điều trị duy trì ổn định bằng <b>Lithium Carbonate trong 4 năm qua</b>. Bệnh nhân đến khám vì <b>uống rất nhiều nước (5–6 lít/ngày) và đi tiểu liên tục cả ngày lẫn đêm</b>.",
-        "Xét nghiệm máu và nước tiểu:",
-        "- <b>Natri huyết thanh: 146 mEq/L (ở giới hạn trên bình thường cao)</b>, Áp lực thẩm thấu huyết tương: 302 mOsm/kg.",
-        "- <b>Áp lực thẩm thấu nước tiểu: 140 mOsm/kg (Nước tiểu bị pha loãng không thích hợp)</b>.",
-        "- Sau khi tiêm thử nghiệm <b>Desmopressin (dDAVP)</b>: Áp lực thẩm thấu nước tiểu <b>chỉ tăng nhẹ lên 155 mOsm/kg (< 10% - Hoàn toàn không đáp ứng với dDAVP)</b>.",
-        "- Nồng độ Lithium huyết thanh trong ngưỡng điều trị (0,9 mEq/L)."
+      "spec": "Nội tiết",
+      "task": "Chẩn đoán u vùng tuyến tùng & Hội chứng Parinaud",
+      "short": "U tuyến tùng (Pinealoma) - Hội chứng Parinaud & Dậy thì sớm giả",
+      "vignette": [
+        "Bé trai 11 tuổi được gia đình đưa đến khám vì đau đầu tăng dần vào buổi sáng kèm nôn vọt, nhìn đôi (song thị) và dáng đi loạng choạng trong 2 tháng qua. Người nhà nhận thấy bé phát triển chiều cao vượt trội, vỡ giọng ồm ồm, mọc lông mu rậm rạp và dương vật phì đại sớm (<b>Dậy thì sớm ở bé trai</b>).",
+        "Khám thần kinh và nhãn khoa phát hiện <b>Hội chứng Parinaud (Parinaud Dorsal Midbrain Syndrome)</b> điển hình:",
+        "1. <b>Liệt vận nhãn nhìn lên trên (Impaired upward vertical gaze)</b>;",
+        "2. <b>Đồng tử mất phản xạ với ánh sáng nhưng còn phản xạ co đồng tử khi nhìn gần / điều tiết (Phân ly ánh sáng - điều tiết / Light-Near Dissociation)</b>;",
+        "3. <b>Rung giật nhãn cầu co rút khi cố gắng nhìn lên trên (Convergence-retraction nystagmus)</b>;",
+        "4. Co rút mi mắt trên hai bên để lộ củng mạc (Dấu hiệu Collier).",
+        "Chụp MRI sọ não: Khối u kích thước 2,5 cm tại <b>Vùng tuyến tùng (Pineal region mass) chèn ép vào củ não sinh tư trên (Superior colliculus) và làm tắc cống não Sylvius gây não úng thủy tắc nghẽn</b>; Định lượng beta-hCG dịch não tủy và huyết thanh tăng cao."
       ],
-      vitals: [
-        ["Nhiệt độ", "36,8 °C"],
-        ["Huyết áp", "122/76"],
-        ["Mạch", "74 l/ph"],
-        ["Nhịp thở", "16 l/ph"]
+      "vitals": [
+        [
+          "Nhiệt độ",
+          "36,8 °C"
+        ],
+        [
+          "Huyết áp",
+          "120/75 mm Hg"
+        ],
+        [
+          "Mạch",
+          "76 l/ph"
+        ],
+        [
+          "Nhịp thở",
+          "16 l/ph"
+        ]
       ],
-      stem: "Cơ chế gây độc thận của Lithium và thuốc lợi tiểu nào được chỉ định điều trị đặc hiệu để ức chế kênh đưa Lithium vào tế bào ống góp thận?",
-      choices: [
-        "Lithium tích tụ trong tế bào chính ống góp qua kênh ENaC làm ức chế tín hiệu Aquaporin-2 gây Đái tháo nhạt do thận (Nephrogenic DI); điều trị đặc hiệu bằng Thuốc lợi tiểu Amiloride (chẹn kênh ENaC)",
-        "Lithium phá hủy thùy sau tuyến yên gây đái tháo nhạt trung ương; điều trị bằng dDAVP liều cao",
-        "Lithium gây hoại tử ống thận cấp; điều trị bằng chạy thận nhân tạo",
-        "Lithium kích thích bài tiết ANP từ tâm nhĩ; điều trị bằng bù muối",
-        "Hội chứng Fanconi; điều trị bằng bù bicarbonate"
+      "stem": "Chẩn đoán bản chất khối u vùng tuyến tùng và cơ chế giải thích tình trạng dậy thì sớm ở bé trai này là gì?",
+      "choices": [
+        "U tế bào mầm vùng tuyến tùng (Pineal Germinoma / Pinealoma) chèn ép đồi não giữa gây Hội chứng Parinaud và tiết dị chỗ beta-hCG (beta-hCG có cấu trúc tương đồng với LH kích thích trực tiếp tế bào Leydig tinh hoàn tiết Testosterone gây dậy thì sớm)",
+        "U sọ hầu (Craniopharyngioma) chèn ép giao thoa thị giác",
+        "U tuyến tùng tiết Melatonin gây ức chế trục hạ đồi-tuyến yên",
+        "U tủy thượng thận hai bên tiết Adrenaline",
+        "U bao dây thần kinh thính giác số VIII hai bên (Schwannoma)"
       ],
-      answer: 0,
-      why: [
-        "Bệnh nhân bị <b>Đái tháo nhạt do thận do thuốc (Lithium-induced Nephrogenic Diabetes Insipidus)</b> - tác dụng phụ thận mạn tính phổ biến nhất của Lithium (gặp ở 20–30% bệnh nhân dùng kéo dài).",
-        "Cơ chế sinh bệnh học phân tử:",
-        "1. Lithium đi vào trong các <b>tế bào chính của ống góp thận (Principal cells)</b> thông qua <b>Kênh biểu mô Natri (ENaC - Epithelial Sodium Channel)</b>.",
-        "2. Sự tích tụ Lithium trong bào tương sẽ ức chế men Adenylyl cyclase và enzym GSK-3beta, làm <b>mất khả năng đáp ứng của ống thận với hormone ADH -> các kênh nước Aquaporin-2 không thể hòa màng để tái hấp thu nước</b>.",
-        "3. Nghiệm pháp tiêm dDAVP: <b>Không có đáp ứng (ALTT niệu không tăng)</b> khẳng định cơ chế tại thận.",
-        "Điều trị đặc hiệu:",
-        "- Xem xét ngừng hoặc giảm liều Lithium nếu bác sĩ tâm thần cho phép.",
-        "- Thuốc điều trị đặc hiệu hàng đầu: <b>Thuốc lợi tiểu Amiloride</b> (Amiloride có tác dụng <b>phong bế trực tiếp kênh ENaC ở bờ lòng ống thận</b>, ngăn không cho Lithium tiếp tục đi vào tích tụ trong tế bào ống góp).",
-        "- Phối hợp <b>Lợi tiểu Thiazide (Hydrochlorothiazide) + Hạn chế muối</b> (gây giảm nhẹ thể tích tuần hoàn làm tăng tái hấp thu nước và natri bù trừ ở ống lượn gần, làm giảm lượng nước đổ về ống góp)."
+      "answer": 0,
+      "why": [
+        "Bệnh nhân có khối <b>U vùng tuyến tùng (Pineal Region Tumor / U tế bào mầm tuyến tùng - Germinoma)</b> chèn ép não giữa.",
+        "<b>Hội chứng Parinaud (Hội chứng lưng não giữa / Dorsal Midbrain Syndrome)</b> kinh điển do khối u chèn ép vào <b>Mảnh củ não sinh tư trên (Superior colliculi) và nhân vận nhãn liên hợp trước mái (Pretectal area)</b> gồm 4 dấu hiệu:",
+        "1. <b>Liệt nhìn lên trên (Upward gaze palsy)</b> (dấu hiệu đặc trưng nhất);",
+        "2. <b>Phân ly ánh sáng - điều tiết (Light-Near Dissociation)</b>: Mất phản xạ ánh sáng nhưng đồng tử vẫn co khi hội tụ nhìn gần;",
+        "3. <b>Rung giật nhãn cầu hội tụ - co rút (Convergence-retraction nystagmus)</b>;",
+        "4. <b>Co rút mi mắt (Collier's sign)</b>.",
+        "Tắc cống não Sylvius -> Gây <b>Não úng thủy tắc nghẽn (Obstructive hydrocephalus)</b> biểu hiện đau đầu, nôn vọt, phù gai thị.",
+        "<b>Cơ chế Dậy thì sớm ở bé trai (Precocious Puberty)</b>: Khối u tế bào mầm tiết ra <b>beta-hCG</b>; do chuỗi beta của hCG có cấu trúc tương đồng cao với <b>LH (Luteinizing Hormone)</b> nên beta-hCG kích hoạt trực tiếp các thụ thể LH trên <b>tế bào Leydig ở tinh hoàn để tăng tổng hợp và tiết Testosterone ồ ạt</b> gây dậy thì sớm độc lập với GnRH."
       ],
-      wrongs: {
-        1: "Lithium gây tổn thương thụ thể tại thận, không làm tổn thương tuyến yên; dDAVP hoàn toàn vô tác dụng.",
-        2: "Chức năng lọc cầu thận Creatinine bình thường, không phải hoại tử ống thận cấp cần chạy thận.",
-        3: "Không liên quan đến hormone ANP của tâm nhĩ.",
-        4: "Hội chứng Fanconi là tổn thương ống lượn gần gây mất glucose, acid amin, phosphat và acid uric qua nước tiểu."
+      "wrongs": {
+        "1": "Craniopharyngioma nằm ở hố yên/trên yên chèn ép giao thoa thị giác gây bán manh hai bên thái dương và suy tuyến yên, không gây hội chứng Parinaud.",
+        "2": "Melatonin ức chế dậy thì; ở đây là u tế bào mầm tiết beta-hCG kích thích dậy thì.",
+        "3": "U tủy thượng thận gây cơn tăng huyết áp, nhịp nhanh, không gây liệt nhìn lên trên hay não úng thủy.",
+        "4": "U Schwannoma tiền đình gây điếc tiếp nhận và ù tai (trong NF-2)."
       },
-      objective:
-        "Đái tháo nhạt do thận do Lithium (không đáp ứng với dDAVP) do Lithium đi qua kênh ENaC gây trơ với ADH; điều trị đặc hiệu bằng Thuốc lợi tiểu Amiloride (chẹn kênh ENaC ngăn Lithium vào tế bào ống góp) kết hợp Thiazide và hạn chế muối."
+      "objective": "U vùng tuyến tùng (Pinealoma) chèn ép củ não sinh tư gây Hội chứng Parinaud (liệt nhìn lên trên, đồng tử phân ly ánh sáng-điều tiết, não úng thủy) và tiết beta-hCG kích thích tế bào Leydig gây dậy thì sớm ở bé trai."
     }
   ]
 };
