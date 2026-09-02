@@ -71,11 +71,12 @@
   /* --- ảnh đại diện: nếu chưa có file ảnh thì hiện chữ cái dự phòng --- */
   function wireAvatars() {
     document.querySelectorAll(".avatar img").forEach(function (img) {
-      var hide = function () {
+      img.addEventListener("error", function () {
         img.style.display = "none";
-      };
-      if (img.complete && img.naturalWidth === 0) hide();
-      img.addEventListener("error", hide);
+      });
+      img.addEventListener("load", function () {
+        img.style.display = "block";
+      });
     });
   }
 
